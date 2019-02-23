@@ -4,6 +4,9 @@
 #include "pch.h"
 #include <cstdio>
 
+#include <windows.h>
+#include "detours.h"
+
 #define SDL_MAIN_HANDLED
 #include "SDL.h"
 
@@ -25,6 +28,9 @@ int main()
     if (win == nullptr) fatal("Couldn't create window");
 
     auto rdr = SDL_CreateRenderer(win, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+
+
+
 
 
     while (1)
