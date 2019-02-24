@@ -1,0 +1,54 @@
+
+Function: CopyContext
+	(redirected to DLL: kernel32.dll!CopyContext)
+	(redirected to function: CopyContext)
+Entry point:@ 0000000076DB7B40
+	48 83 EC 28                       sub rsp, 0x28                 IP:76db7b44
+	FF 15 BE 46 05 00                 call qword [rip+0x546be]      IP:76db7b4a
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:76d603a7
+	FF 15 5B BE 0A 00                 call qword [rip+0xabe5b]      IP:76d603ad
+
+Function: GetEnabledXStateFeatures
+	(redirected to DLL: kernel32.dll!GetEnabledXStateFeatures)
+	(redirected to function: GetEnabledXStateFeatures)
+Entry point:@ 0000000076DB7B10
+	48 8B 04 25 E0 03 FE 7F           mov rax, [0x7ffe03e0]         IP:76db7b18
+Relocated entry point:@ 0000000076D603A3
+	48 8B 04 25 E0 03 FE 7F           mov rax, [0x7ffe03e0]         IP:76d603ab
+
+Function: GetXStateFeaturesMask
+	(redirected to DLL: kernel32.dll!GetXStateFeaturesMask)
+	(redirected to function: GetXStateFeaturesMask)
+Entry point:@ 0000000076DB7980
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76db7985
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: InitializeContext
+	(redirected to DLL: kernel32.dll!InitializeContext)
+	(redirected to function: InitializeContext)
+Entry point:@ 0000000076DB7B70
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76db7b75
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: LocateXStateFeature
+	(redirected to DLL: kernel32.dll!LocateXStateFeature)
+	(redirected to function: LocateXStateFeature)
+Entry point:@ 0000000076DB7A40
+	48 83 EC 28                       sub rsp, 0x28                 IP:76db7a44
+	8B 41 30                          mov eax, [rcx+0x30]           IP:76db7a47
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:76d603a7
+	8B 41 30                          mov eax, [rcx+0x30]           IP:76d603aa
+
+Function: SetXStateFeaturesMask
+	(redirected to DLL: kernel32.dll!SetXStateFeaturesMask)
+	(redirected to function: SetXStateFeaturesMask)
+Entry point:@ 0000000076DB78C0
+	48 83 EC 28                       sub rsp, 0x28                 IP:76db78c4
+	44 8B 41 30                       mov r8d, [rcx+0x30]           IP:76db78c8
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:76d603a7
+	44 8B 41 30                       mov r8d, [rcx+0x30]           IP:76d603ab

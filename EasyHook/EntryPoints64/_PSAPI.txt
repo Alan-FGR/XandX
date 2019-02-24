@@ -1,0 +1,262 @@
+
+Function: EmptyWorkingSet
+Entry point:@ 0000000077131274
+	E9 9F 01 00 00                    jmp 0x1a4                     IP:77131279
+Relocated entry point:@ 00000000771403A3
+	48 B8 18 14 13 77 00 00 00 00     mov rax, 0x77131418           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: EnumDeviceDrivers
+Entry point:@ 0000000077131134
+	EB 06                             jmp 0x8                       IP:77131136
+	90                                nop                           IP:77131137
+	90                                nop                           IP:77131138
+	90                                nop                           IP:77131139
+Relocated entry point:@ 00000000771403A3
+	48 B8 3C 11 13 77 00 00 00 00     mov rax, 0x7713113c           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: EnumPageFilesA
+Entry point:@ 00000000771312EC
+	E9 3F 01 00 00                    jmp 0x144                     IP:771312f1
+Relocated entry point:@ 00000000771403A3
+	48 B8 30 14 13 77 00 00 00 00     mov rax, 0x77131430           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: EnumPageFilesW
+Entry point:@ 00000000771312E0
+	E9 63 01 00 00                    jmp 0x168                     IP:771312e5
+Relocated entry point:@ 00000000771403A3
+	48 B8 48 14 13 77 00 00 00 00     mov rax, 0x77131448           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: EnumProcessModules
+Entry point:@ 0000000077131050
+	EB 0E                             jmp 0x10                      IP:77131052
+	90                                nop                           IP:77131053
+	90                                nop                           IP:77131054
+	90                                nop                           IP:77131055
+Relocated entry point:@ 00000000771403A3
+	48 B8 60 10 13 77 00 00 00 00     mov rax, 0x77131060           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: EnumProcessModulesEx
+Entry point:@ 0000000077131240
+	48 83 EC 38                       sub rsp, 0x38                 IP:77131244
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:77131248
+Relocated entry point:@ 00000000771403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:771403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:771403ab
+
+Function: EnumProcesses
+Entry point:@ 00000000771311B0
+	EB 06                             jmp 0x8                       IP:771311b2
+	90                                nop                           IP:771311b3
+	90                                nop                           IP:771311b4
+	90                                nop                           IP:771311b5
+Relocated entry point:@ 00000000771403A3
+	48 B8 B8 11 13 77 00 00 00 00     mov rax, 0x771311b8           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetDeviceDriverBaseNameA
+Entry point:@ 0000000077131150
+	EB 06                             jmp 0x8                       IP:77131152
+	90                                nop                           IP:77131153
+	90                                nop                           IP:77131154
+	90                                nop                           IP:77131155
+Relocated entry point:@ 00000000771403A3
+	48 B8 58 11 13 77 00 00 00 00     mov rax, 0x77131158           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetDeviceDriverBaseNameW
+Entry point:@ 0000000077131170
+	EB 0E                             jmp 0x10                      IP:77131172
+	90                                nop                           IP:77131173
+	90                                nop                           IP:77131174
+	90                                nop                           IP:77131175
+Relocated entry point:@ 00000000771403A3
+	48 B8 80 11 13 77 00 00 00 00     mov rax, 0x77131180           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetDeviceDriverFileNameA
+Entry point:@ 00000000771312C8
+	E9 6F 01 00 00                    jmp 0x174                     IP:771312cd
+Relocated entry point:@ 00000000771403A3
+	48 B8 3C 14 13 77 00 00 00 00     mov rax, 0x7713143c           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetDeviceDriverFileNameW
+Entry point:@ 00000000771312D4
+	E9 9F 01 00 00                    jmp 0x1a4                     IP:771312d9
+Relocated entry point:@ 00000000771403A3
+	48 B8 78 14 13 77 00 00 00 00     mov rax, 0x77131478           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetMappedFileNameA
+Entry point:@ 00000000771312BC
+	E9 CF 01 00 00                    jmp 0x1d4                     IP:771312c1
+Relocated entry point:@ 00000000771403A3
+	48 B8 90 14 13 77 00 00 00 00     mov rax, 0x77131490           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetMappedFileNameW
+Entry point:@ 00000000771312B0
+	E9 F3 01 00 00                    jmp 0x1f8                     IP:771312b5
+Relocated entry point:@ 00000000771403A3
+	48 B8 A8 14 13 77 00 00 00 00     mov rax, 0x771314a8           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetModuleBaseNameA
+Entry point:@ 000000007713125C
+	E9 3B 02 00 00                    jmp 0x240                     IP:77131261
+Relocated entry point:@ 00000000771403A3
+	48 B8 9C 14 13 77 00 00 00 00     mov rax, 0x7713149c           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetModuleBaseNameW
+Entry point:@ 00000000771311C4
+	EB 06                             jmp 0x8                       IP:771311c6
+	90                                nop                           IP:771311c7
+	90                                nop                           IP:771311c8
+	90                                nop                           IP:771311c9
+Relocated entry point:@ 00000000771403A3
+	48 B8 CC 11 13 77 00 00 00 00     mov rax, 0x771311cc           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetModuleFileNameExA
+Entry point:@ 0000000077131268
+	E9 E7 01 00 00                    jmp 0x1ec                     IP:7713126d
+Relocated entry point:@ 00000000771403A3
+	48 B8 54 14 13 77 00 00 00 00     mov rax, 0x77131454           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetModuleFileNameExW
+Entry point:@ 0000000077131010
+	EB 06                             jmp 0x8                       IP:77131012
+	90                                nop                           IP:77131013
+	90                                nop                           IP:77131014
+	90                                nop                           IP:77131015
+Relocated entry point:@ 00000000771403A3
+	48 B8 18 10 13 77 00 00 00 00     mov rax, 0x77131018           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetModuleInformation
+Entry point:@ 0000000077131030
+	EB 06                             jmp 0x8                       IP:77131032
+	90                                nop                           IP:77131033
+	90                                nop                           IP:77131034
+	90                                nop                           IP:77131035
+Relocated entry point:@ 00000000771403A3
+	48 B8 38 10 13 77 00 00 00 00     mov rax, 0x77131038           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetPerformanceInfo
+Entry point:@ 00000000771311F0
+	EB 06                             jmp 0x8                       IP:771311f2
+	90                                nop                           IP:771311f3
+	90                                nop                           IP:771311f4
+	90                                nop                           IP:771311f5
+Relocated entry point:@ 00000000771403A3
+	48 B8 F8 11 13 77 00 00 00 00     mov rax, 0x771311f8           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetProcessImageFileNameA
+Entry point:@ 00000000771312F8
+	E9 B7 01 00 00                    jmp 0x1bc                     IP:771312fd
+Relocated entry point:@ 00000000771403A3
+	48 B8 B4 14 13 77 00 00 00 00     mov rax, 0x771314b4           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetProcessImageFileNameW
+Entry point:@ 0000000077131310
+	E9 0F 01 00 00                    jmp 0x114                     IP:77131315
+Relocated entry point:@ 00000000771403A3
+	48 B8 24 14 13 77 00 00 00 00     mov rax, 0x77131424           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetProcessMemoryInfo
+Entry point:@ 00000000771311D8
+	EB 06                             jmp 0x8                       IP:771311da
+	90                                nop                           IP:771311db
+	90                                nop                           IP:771311dc
+	90                                nop                           IP:771311dd
+Relocated entry point:@ 00000000771403A3
+	48 B8 E0 11 13 77 00 00 00 00     mov rax, 0x771311e0           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: GetWsChanges
+Entry point:@ 000000007713128C
+	E9 DB 01 00 00                    jmp 0x1e0                     IP:77131291
+Relocated entry point:@ 00000000771403A3
+	48 B8 6C 14 13 77 00 00 00 00     mov rax, 0x7713146c           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: GetWsChangesEx
+Entry point:@ 0000000077131298
+	E9 23 02 00 00                    jmp 0x228                     IP:7713129d
+Relocated entry point:@ 00000000771403A3
+	48 B8 C0 14 13 77 00 00 00 00     mov rax, 0x771314c0           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: InitializeProcessForWsWatch
+Entry point:@ 0000000077131280
+	E9 DB 01 00 00                    jmp 0x1e0                     IP:77131285
+Relocated entry point:@ 00000000771403A3
+	48 B8 60 14 13 77 00 00 00 00     mov rax, 0x77131460           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+
+Function: QueryWorkingSet
+Entry point:@ 0000000077131204
+	EB 0A                             jmp 0xc                       IP:77131206
+	90                                nop                           IP:77131207
+	90                                nop                           IP:77131208
+	90                                nop                           IP:77131209
+Relocated entry point:@ 00000000771403A3
+	48 B8 10 12 13 77 00 00 00 00     mov rax, 0x77131210           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2
+
+Function: QueryWorkingSetEx
+Entry point:@ 0000000077131190
+	EB 06                             jmp 0x8                       IP:77131192
+	90                                nop                           IP:77131193
+	90                                nop                           IP:77131194
+	90                                nop                           IP:77131195
+Relocated entry point:@ 00000000771403A3
+	48 B8 98 11 13 77 00 00 00 00     mov rax, 0x77131198           IP:771403ad
+	FF E0                             jmp rax                       IP:771403af
+	90                                nop                           IP:771403b0
+	90                                nop                           IP:771403b1
+	90                                nop                           IP:771403b2

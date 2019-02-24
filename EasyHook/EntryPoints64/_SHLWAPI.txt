@@ -1,0 +1,2335 @@
+
+Function: AssocCreate
+ERROR: Ordinal redirect out of range
+
+Function: AssocGetPerceivedType
+ERROR: Ordinal redirect out of range
+
+Function: AssocIsDangerous
+ERROR: Ordinal redirect out of range
+
+Function: AssocQueryKeyA
+ERROR: Ordinal redirect out of range
+
+Function: AssocQueryKeyW
+ERROR: Ordinal redirect out of range
+
+Function: AssocQueryStringA
+ERROR: Ordinal redirect out of range
+
+Function: AssocQueryStringByKeyA
+ERROR: Ordinal redirect out of range
+
+Function: AssocQueryStringByKeyW
+ERROR: Ordinal redirect out of range
+
+Function: AssocQueryStringW
+ERROR: Ordinal redirect out of range
+
+Function: ChrCmpIA
+ERROR: Ordinal redirect out of range
+
+Function: ChrCmpIW
+ERROR: Ordinal redirect out of range
+
+Function: ColorAdjustLuma
+ERROR: Ordinal redirect out of range
+
+Function: ColorHLSToRGB
+ERROR: Ordinal redirect out of range
+
+Function: ColorRGBToHLS
+ERROR: Ordinal redirect out of range
+
+Function: ConnectToConnectionPoint
+	(redirected to function: SHCreateMemStream)
+Entry point:@ 000007FEFEC3E510
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fec3e515
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fed303a8
+
+Function: DelayLoadFailureHook
+ERROR: Ordinal redirect out of range
+
+Function: DllGetVersion
+ERROR: Ordinal redirect out of range
+
+Function: GetAcceptLanguagesA
+	(redirected to function: ColorRGBToHLS)
+Entry point:@ 000007FEFEC55F68
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fec55f6d
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fed303a8
+
+Function: GetAcceptLanguagesW
+	(redirected to function: ConnectToConnectionPoint)
+Entry point:@ 000007FEFEC3B230
+	EB 06                             jmp 0x8                       IP:fec3b232
+	90                                nop                           IP:fec3b233
+	90                                nop                           IP:fec3b234
+	90                                nop                           IP:fec3b235
+Relocated entry point:@ 000007FEFED303A3
+	48 B8 38 B2 C3 FE FE 07 00 00     mov rax, 0x7fefec3b238        IP:fed303ad
+	FF E0                             jmp rax                       IP:fed303af
+	90                                nop                           IP:fed303b0
+	90                                nop                           IP:fed303b1
+	90                                nop                           IP:fed303b2
+
+Function: GetMenuPosFromID
+ERROR: Ordinal redirect out of range
+
+Function: HashData
+ERROR: Ordinal redirect out of range
+
+Function: IStream_Copy
+ERROR: Ordinal redirect out of range
+
+Function: IStream_Read
+	(redirected to function: SHDeleteValueW)
+Entry point:@ 000007FEFEC2A8F8
+	FF F3                             push rbx                      IP:fec2a8fa
+	48 83 EC 30                       sub rsp, 0x30                 IP:fec2a8fe
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 30                       sub rsp, 0x30                 IP:feb303a9
+
+Function: IStream_ReadPidl
+ERROR: Ordinal redirect out of range
+
+Function: IStream_ReadStr
+	(redirected to DLL: user32.dll!IsCharAlphaW)
+	(redirected to function: IsCharAlphaW)
+Entry point:@ 0000000076EB3EF4
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76eb3ef9
+Relocated entry point:@ 0000000076D603A3
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76d603a8
+
+Function: IStream_Reset
+	(redirected to DLL: user32.dll!IsCharUpperW)
+	(redirected to function: IsCharUpperW)
+Entry point:@ 0000000076F0BBF0
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76f0bbf5
+Relocated entry point:@ 0000000076D603A3
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76d603a8
+
+Function: IStream_Size
+	(redirected to DLL: user32.dll!IsCharLowerW)
+	(redirected to function: IsCharLowerW)
+Entry point:@ 0000000076F0BB98
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76f0bb9d
+Relocated entry point:@ 0000000076D603A3
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76d603a8
+
+Function: IStream_Write
+	(redirected to DLL: user32.dll!IsCharAlphaNumericW)
+	(redirected to function: IsCharAlphaNumericW)
+Entry point:@ 0000000076E9B420
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76e9b425
+Relocated entry point:@ 0000000076D603A3
+	66 89 4C 24 08                    mov [rsp+0x8], cx             IP:76d603a8
+
+Function: IStream_WritePidl
+ERROR: Ordinal redirect out of range
+
+Function: IStream_WriteStr
+ERROR: Ordinal redirect out of range
+
+Function: IUnknown_AtomicRelease
+	(redirected to function: SHCreateShellPalette)
+Entry point:@ 000007FEFEC342E0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fec342e4
+	48 85 C9                          test rcx, rcx                 IP:fec342e7
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: IUnknown_GetSite
+	(redirected to function: SHStrDupW)
+Entry point:@ 000007FEFEC272CC
+	FF F3                             push rbx                      IP:fec272ce
+	56                                push rsi                      IP:fec272cf
+	57                                push rdi                      IP:fec272d0
+	48 83 EC 30                       sub rsp, 0x30                 IP:fec272d4
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	56                                push rsi                      IP:feb303a6
+	57                                push rdi                      IP:feb303a7
+	48 83 EC 30                       sub rsp, 0x30                 IP:feb303ab
+
+Function: IUnknown_GetWindow
+	(redirected to function: SHCreateStreamOnFileW)
+Entry point:@ 000007FEFEC331B4
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fec331b9
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: IUnknown_QueryService
+	(redirected to function: SHCreateThreadWithHandle)
+Entry point:@ 000007FEFEC31C28
+	FF F3                             push rbx                      IP:fec31c2a
+	55                                push rbp                      IP:fec31c2b
+	56                                push rsi                      IP:fec31c2c
+	57                                push rdi                      IP:fec31c2d
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	55                                push rbp                      IP:feb303a6
+	56                                push rsi                      IP:feb303a7
+	57                                push rdi                      IP:feb303a8
+
+Function: IUnknown_Set
+	(redirected to function: SHLoadIndirectString)
+Entry point:@ 000007FEFEC34300
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fec34305
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: IUnknown_SetSite
+	(redirected to DLL: USER32.dll!AppendMenuW)
+	(redirected to function: AppendMenuW)
+Entry point:@ 0000000076EA368C
+	FF F3                             push rbx                      IP:76ea368e
+	48 81 EC 80 00 00 00              sub rsp, 0x80                 IP:76ea3695
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 81 EC 80 00 00 00              sub rsp, 0x80                 IP:76d603ac
+
+Function: IntlStrEqWorkerA
+	(redirected to DLL: USER32.dll!CallWindowProcW)
+	(redirected to function: CallWindowProcW)
+Entry point:@ 0000000076EA3AF8
+	48 83 EC 38                       sub rsp, 0x38                 IP:76ea3afc
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:76ea3b01
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:76d603ac
+
+Function: IntlStrEqWorkerW
+	(redirected to DLL: USER32.dll!CharLowerW)
+	(redirected to function: CharLowerW)
+Entry point:@ 0000000076E9D540
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:76e9d545
+Relocated entry point:@ 0000000076D603A3
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:76d603a8
+
+Function: IsCharSpaceA
+	(redirected to DLL: USER32.dll!CharLowerBuffW)
+	(redirected to function: CharLowerBuffW)
+Entry point:@ 0000000076E9D4E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76e9d4e5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: IsCharSpaceW
+	(redirected to DLL: USER32.dll!CharNextW)
+	(redirected to function: CharNextW)
+Entry point:@ 0000000076EA2AE0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76ea2ae5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76d603a8
+
+Function: IsInternetESCEnabled
+	(redirected to DLL: USER32.dll!CharPrevW)
+	(redirected to function: CharPrevW)
+Entry point:@ 0000000076E9DB10
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76e9db15
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76d603a8
+
+Function: IsOS
+	(redirected to DLL: USER32.dll!CharToOemW)
+	(redirected to function: CharToOemW)
+Entry point:@ 0000000076F04B68
+	FF F7                             push rdi                      IP:76f04b6a
+	48 83 EC 40                       sub rsp, 0x40                 IP:76f04b6e
+Relocated entry point:@ 0000000076D603A3
+	FF F7                             push rdi                      IP:76d603a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:76d603a9
+
+Function: MLFreeLibrary
+	(redirected to DLL: USER32.dll!CharUpperW)
+	(redirected to function: CharUpperW)
+Entry point:@ 0000000076EAB710
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:76eab715
+Relocated entry point:@ 0000000076D603A3
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:76d603a8
+
+Function: MLLoadLibraryA
+	(redirected to DLL: USER32.dll!CharUpperBuffW)
+	(redirected to function: CharUpperBuffW)
+Entry point:@ 0000000076EABB90
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76eabb95
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: MLLoadLibraryW
+	(redirected to DLL: KERNEL32.dll!CompareStringW)
+	(redirected to function: CompareStringW)
+Entry point:@ 0000000076D84EB0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d84eb4
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76d84eb8
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76d603ab
+
+Function: ParseURLA
+	(redirected to DLL: USER32.dll!CopyAcceleratorTableW)
+	(redirected to function: CopyAcceleratorTableW)
+Entry point:@ 0000000076EB4650
+	4C 8B D1                          mov r10, rcx                  IP:76eb4653
+	B8 2C 10 00 00                    mov eax, 0x102c               IP:76eb4658
+Relocated entry point:@ 0000000076D603A3
+	4C 8B D1                          mov r10, rcx                  IP:76d603a6
+	B8 2C 10 00 00                    mov eax, 0x102c               IP:76d603ab
+
+Function: ParseURLW
+	(redirected to DLL: USER32.dll!CreateAcceleratorTableW)
+	(redirected to function: CreateAcceleratorTableW)
+Entry point:@ 0000000076E9B1E0
+	4C 8B D1                          mov r10, rcx                  IP:76e9b1e3
+	B8 F1 10 00 00                    mov eax, 0x10f1               IP:76e9b1e8
+Relocated entry point:@ 0000000076D603A3
+	4C 8B D1                          mov r10, rcx                  IP:76d603a6
+	B8 F1 10 00 00                    mov eax, 0x10f1               IP:76d603ab
+
+Function: PathAddBackslashA
+	(redirected to DLL: GDI32.dll!CreateDCW)
+	(redirected to function: CreateDCW)
+Entry point:@ 000007FEFECCA408
+	48 83 EC 38                       sub rsp, 0x38                 IP:fecca40c
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:fecca411
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fed303a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:fed303ac
+
+Function: PathAddBackslashW
+	(redirected to DLL: USER32.dll!CreateDialogParamW)
+	(redirected to function: CreateDialogParamW)
+Entry point:@ 0000000076EB74F0
+	48 8B C4                          mov rax, rsp                  IP:76eb74f3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76eb74f7
+Relocated entry point:@ 0000000076D603A3
+	48 8B C4                          mov rax, rsp                  IP:76d603a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76d603aa
+
+Function: PathAddExtensionA
+	(redirected to DLL: KERNEL32.dll!CreateDirectoryW)
+	(redirected to function: CreateDirectoryW)
+Entry point:@ 0000000076D7A220
+	EB 06                             jmp 0x8                       IP:76d7a222
+	90                                nop                           IP:76d7a223
+	90                                nop                           IP:76d7a224
+	90                                nop                           IP:76d7a225
+Relocated entry point:@ 0000000076D603A3
+	48 B8 28 A2 D7 76 00 00 00 00     mov rax, 0x76d7a228           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathAddExtensionW
+	(redirected to DLL: KERNEL32.dll!CreateEventW)
+	(redirected to function: CreateEventW)
+Entry point:@ 0000000076D84730
+	EB 06                             jmp 0x8                       IP:76d84732
+	90                                nop                           IP:76d84733
+	90                                nop                           IP:76d84734
+	90                                nop                           IP:76d84735
+Relocated entry point:@ 0000000076D603A3
+	48 B8 38 47 D8 76 00 00 00 00     mov rax, 0x76d84738           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathAppendA
+	(redirected to DLL: KERNEL32.dll!CreateFileW)
+	(redirected to function: CreateFileW)
+Entry point:@ 0000000076D80D10
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d80d15
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathAppendW
+	(redirected to DLL: GDI32.dll!CreateFontIndirectW)
+	(redirected to function: CreateFontIndirectW)
+Entry point:@ 000007FEFECC5204
+	FF F3                             push rbx                      IP:fecc5206
+	48 81 EC E0 01 00 00              sub rsp, 0x1e0                IP:fecc520d
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	48 81 EC E0 01 00 00              sub rsp, 0x1e0                IP:fed303ac
+
+Function: PathBuildRootA
+	(redirected to DLL: GDI32.dll!CreateICW)
+	(redirected to function: CreateICW)
+Entry point:@ 000007FEFECC7E20
+	48 83 EC 38                       sub rsp, 0x38                 IP:fecc7e24
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:fecc7e2c
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fed303a7
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:fed303af
+
+Function: PathBuildRootW
+	(redirected to DLL: USER32.dll!CreateWindowExW)
+	(redirected to function: CreateWindowExW)
+Entry point:@ 0000000076EA07B8
+	E9 83 FB 14 F9                    jmp 0xfffffffff914fb88        IP:76ea07bd
+Relocated entry point:@ 0000000076D603A3
+	48 B8 40 03 FF 6F 00 00 00 00     mov rax, 0x6fff0340           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+
+Function: PathCanonicalizeA
+	(redirected to DLL: USER32.dll!DefWindowProcW)
+	(redirected to function: DefWindowProcW)
+Entry point:@ 0000000076F18E9F
+	4E 54                             push rsp                      IP:76f18ea1
+	44 4C 4C 2E 4E 74 64              jz 0x6b                       IP:76f18ea8
+Relocated entry point:@ 0000000076D603A3
+	4E 54                             push rsp                      IP:76d603a5
+	44 4C 4C 2E 4E 74 64              jz 0x6b                       IP:76d603ac
+
+Function: PathCanonicalizeW
+	(redirected to DLL: KERNEL32.dll!DeleteFileW)
+	(redirected to function: DeleteFileW)
+Entry point:@ 0000000076D7A240
+	EB 06                             jmp 0x8                       IP:76d7a242
+	90                                nop                           IP:76d7a243
+	90                                nop                           IP:76d7a244
+	90                                nop                           IP:76d7a245
+Relocated entry point:@ 0000000076D603A3
+	48 B8 48 A2 D7 76 00 00 00 00     mov rax, 0x76d7a248           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathCombineA
+	(redirected to DLL: USER32.dll!DialogBoxIndirectParamW)
+	(redirected to function: DialogBoxIndirectParamW)
+Entry point:@ 0000000076EB4F64
+	48 83 EC 38                       sub rsp, 0x38                 IP:76eb4f68
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:76eb4f6d
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:76d603ac
+
+Function: PathCombineW
+	(redirected to DLL: USER32.dll!DialogBoxParamW)
+	(redirected to function: DialogBoxParamW)
+Entry point:@ 0000000076EAD428
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ead42d
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathCommonPrefixA
+	(redirected to DLL: USER32.dll!DispatchMessageW)
+	(redirected to function: DispatchMessageW)
+Entry point:@ 0000000076EA9910
+	33 D2                             xor edx, edx                  IP:76ea9912
+	E9 81 FE FF FF                    jmp 0xfffffffffffffe86        IP:76ea9917
+Relocated entry point:@ 0000000076D603A3
+	33 D2                             xor edx, edx                  IP:76d603a5
+	48 B8 98 97 EA 76 00 00 00 00     mov rax, 0x76ea9798           IP:76d603af
+	FF E0                             jmp rax                       IP:76d603b1
+
+Function: PathCommonPrefixW
+	(redirected to DLL: USER32.dll!DrawTextW)
+	(redirected to function: DrawTextW)
+Entry point:@ 0000000076EA6C60
+	48 83 EC 68                       sub rsp, 0x68                 IP:76ea6c64
+	33 C0                             xor eax, eax                  IP:76ea6c66
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 68                       sub rsp, 0x68                 IP:76d603a7
+	33 C0                             xor eax, eax                  IP:76d603a9
+
+Function: PathCompactPathA
+	(redirected to DLL: GDI32.dll!EnumFontFamiliesW)
+	(redirected to function: EnumFontFamiliesW)
+Entry point:@ 000007FEFECE904C
+	48 83 EC 48                       sub rsp, 0x48                 IP:fece9050
+	B8 01 00 00 00                    mov eax, 0x1                  IP:fece9055
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fed303a7
+	B8 01 00 00 00                    mov eax, 0x1                  IP:fed303ac
+
+Function: PathCompactPathExA
+	(redirected to DLL: GDI32.dll!EnumFontFamiliesExW)
+	(redirected to function: EnumFontFamiliesExW)
+Entry point:@ 000007FEFECCA814
+	48 83 EC 48                       sub rsp, 0x48                 IP:fecca818
+	4C 8B D2                          mov r10, rdx                  IP:fecca81b
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fed303a7
+	4C 8B D2                          mov r10, rdx                  IP:fed303aa
+
+Function: PathCompactPathExW
+	(redirected to DLL: KERNEL32.dll!EnumResourceNamesW)
+	(redirected to function: EnumResourceNamesW)
+Entry point:@ 0000000076DF8510
+	48 83 EC 38                       sub rsp, 0x38                 IP:76df8514
+	33 C0                             xor eax, eax                  IP:76df8516
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	33 C0                             xor eax, eax                  IP:76d603a9
+
+Function: PathCompactPathW
+	(redirected to DLL: KERNEL32.dll!FindFirstFileW)
+	(redirected to function: FindFirstFileW)
+Entry point:@ 0000000076D8B1B0
+	EB E6                             jmp 0xffffffffffffffe8        IP:76d8b1b2
+	90                                nop                           IP:76d8b1b3
+	90                                nop                           IP:76d8b1b4
+	90                                nop                           IP:76d8b1b5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 98 B1 D8 76 00 00 00 00     mov rax, 0x76d8b198           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathCreateFromUrlA
+	(redirected to DLL: KERNEL32.dll!FindResourceW)
+	(redirected to function: FindResourceW)
+Entry point:@ 0000000076D89000
+	49 8B C0                          mov rax, r8                   IP:76d89003
+	4C 8B C2                          mov r8, rdx                   IP:76d89006
+Relocated entry point:@ 0000000076D603A3
+	49 8B C0                          mov rax, r8                   IP:76d603a6
+	4C 8B C2                          mov r8, rdx                   IP:76d603a9
+
+Function: PathCreateFromUrlAlloc
+	(redirected to DLL: USER32.dll!FindWindowW)
+	(redirected to function: FindWindowW)
+Entry point:@ 0000000076E9D1C0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76e9d1c4
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76e9d1c9
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76d603ac
+
+Function: PathCreateFromUrlW
+	(redirected to DLL: KERNEL32.dll!FormatMessageW)
+	(redirected to function: FormatMessageW)
+Entry point:@ 0000000076D82CE0
+	48 83 EC 48                       sub rsp, 0x48                 IP:76d82ce4
+	48 8B 84 24 80 00 00 00           mov rax, [rsp+0x80]           IP:76d82cec
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:76d603a7
+	48 8B 84 24 80 00 00 00           mov rax, [rsp+0x80]           IP:76d603af
+
+Function: PathFileExistsA
+	(redirected to DLL: USER32.dll!GetClassInfoW)
+	(redirected to function: GetClassInfoW)
+Entry point:@ 0000000076EA1678
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea167d
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathFileExistsW
+	(redirected to DLL: USER32.dll!GetClassLongW)
+	(redirected to function: GetClassLongW)
+Entry point:@ 0000000076EA6424
+	FF F3                             push rbx                      IP:76ea6426
+	48 83 EC 20                       sub rsp, 0x20                 IP:76ea642a
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:76d603a9
+
+Function: PathFindExtensionA
+	(redirected to DLL: USER32.dll!GetClassNameW)
+	(redirected to function: GetClassNameW)
+Entry point:@ 0000000076EA4EA0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76ea4ea4
+	66 45 03 C0                       add r8w, r8w                  IP:76ea4ea8
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	66 45 03 C0                       add r8w, r8w                  IP:76d603ab
+
+Function: PathFindExtensionW
+	(redirected to DLL: USER32.dll!GetClipboardFormatNameW)
+	(redirected to function: GetClipboardFormatNameW)
+Entry point:@ 0000000076EB2C24
+	EB 0A                             jmp 0xc                       IP:76eb2c26
+	90                                nop                           IP:76eb2c27
+	90                                nop                           IP:76eb2c28
+	90                                nop                           IP:76eb2c29
+Relocated entry point:@ 0000000076D603A3
+	48 B8 30 2C EB 76 00 00 00 00     mov rax, 0x76eb2c30           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathFindFileNameA
+	(redirected to DLL: KERNEL32.dll!GetCurrentDirectoryW)
+	(redirected to function: GetCurrentDirectoryW)
+Entry point:@ 0000000076D8B9B0
+	EB 06                             jmp 0x8                       IP:76d8b9b2
+	90                                nop                           IP:76d8b9b3
+	90                                nop                           IP:76d8b9b4
+	90                                nop                           IP:76d8b9b5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 B8 B9 D8 76 00 00 00 00     mov rax, 0x76d8b9b8           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathFindFileNameW
+	(redirected to DLL: USER32.dll!GetDlgItemTextW)
+	(redirected to function: GetDlgItemTextW)
+Entry point:@ 0000000076EAE7FC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76eae801
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathFindNextComponentA
+	(redirected to DLL: KERNEL32.dll!GetFileAttributesW)
+	(redirected to function: GetFileAttributesW)
+Entry point:@ 0000000076D8B200
+	EB DE                             jmp 0xffffffffffffffe0        IP:76d8b202
+	90                                nop                           IP:76d8b203
+	90                                nop                           IP:76d8b204
+	90                                nop                           IP:76d8b205
+Relocated entry point:@ 0000000076D603A3
+	48 B8 E0 B1 D8 76 00 00 00 00     mov rax, 0x76d8b1e0           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathFindNextComponentW
+	(redirected to DLL: KERNEL32.dll!GetFullPathNameW)
+	(redirected to function: GetFullPathNameW)
+Entry point:@ 0000000076D86B80
+	E9 A3 F1 FF FF                    jmp 0xfffffffffffff1a8        IP:76d86b85
+Relocated entry point:@ 0000000076D603A3
+	48 B8 28 5D D8 76 00 00 00 00     mov rax, 0x76d85d28           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+
+Function: PathFindOnPathA
+	(redirected to DLL: KERNEL32.dll!GetLocaleInfoW)
+	(redirected to function: GetLocaleInfoW)
+Entry point:@ 0000000076D888E0
+	EB 06                             jmp 0x8                       IP:76d888e2
+	90                                nop                           IP:76d888e3
+	90                                nop                           IP:76d888e4
+	90                                nop                           IP:76d888e5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 E8 88 D8 76 00 00 00 00     mov rax, 0x76d888e8           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathFindOnPathW
+	(redirected to DLL: USER32.dll!GetMenuStringW)
+	(redirected to function: GetMenuStringW)
+Entry point:@ 0000000076EB5E24
+	48 83 EC 78                       sub rsp, 0x78                 IP:76eb5e28
+	33 C0                             xor eax, eax                  IP:76eb5e2a
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 78                       sub rsp, 0x78                 IP:76d603a7
+	33 C0                             xor eax, eax                  IP:76d603a9
+
+Function: PathFindSuffixArrayA
+	(redirected to DLL: USER32.dll!GetMessageW)
+	(redirected to function: GetMessageW)
+Entry point:@ 0000000076EA9E54
+	FF F3                             push rbx                      IP:76ea9e56
+	48 83 EC 20                       sub rsp, 0x20                 IP:76ea9e5a
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:76d603a9
+
+Function: PathFindSuffixArrayW
+	(redirected to DLL: KERNEL32.dll!GetModuleFileNameW)
+	(redirected to function: GetModuleFileNameW)
+Entry point:@ 0000000076D86BA0
+	EB 06                             jmp 0x8                       IP:76d86ba2
+	90                                nop                           IP:76d86ba3
+	90                                nop                           IP:76d86ba4
+	90                                nop                           IP:76d86ba5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 A8 6B D8 76 00 00 00 00     mov rax, 0x76d86ba8           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathGetArgsA
+	(redirected to DLL: KERNEL32.dll!GetSystemDirectoryW)
+	(redirected to function: GetSystemDirectoryW)
+Entry point:@ 0000000076D865C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d865c5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathGetArgsW
+	(redirected to DLL: KERNEL32.dll!SearchPathW)
+	(redirected to function: SearchPathW)
+Entry point:@ 0000000076D892A0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d892a4
+	48 8B 44 24 68                    mov rax, [rsp+0x68]           IP:76d892a9
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	48 8B 44 24 68                    mov rax, [rsp+0x68]           IP:76d603ac
+
+Function: PathGetCharTypeA
+	(redirected to DLL: KERNEL32.dll!GetModuleHandleW)
+	(redirected to function: GetModuleHandleW)
+Entry point:@ 0000000076D920C0
+	EB 06                             jmp 0x8                       IP:76d920c2
+	90                                nop                           IP:76d920c3
+	90                                nop                           IP:76d920c4
+	90                                nop                           IP:76d920c5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 C8 20 D9 76 00 00 00 00     mov rax, 0x76d920c8           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathGetCharTypeW
+	(redirected to DLL: GDI32.dll!GetObjectW)
+	(redirected to function: GetObjectW)
+Entry point:@ 000007FEFECC2674
+	FF F3                             push rbx                      IP:fecc2676
+	48 83 EC 20                       sub rsp, 0x20                 IP:fecc267a
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fed303a9
+
+Function: PathGetDriveNumberA
+	(redirected to DLL: KERNEL32.dll!GetPrivateProfileIntW)
+	(redirected to function: GetPrivateProfileIntW)
+Entry point:@ 0000000076DF16E0
+	FF F3                             push rbx                      IP:76df16e2
+	48 81 EC 70 02 00 00              sub rsp, 0x270                IP:76df16e9
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 81 EC 70 02 00 00              sub rsp, 0x270                IP:76d603ac
+
+Function: PathGetDriveNumberW
+	(redirected to DLL: KERNEL32.dll!GetProfileStringW)
+	(redirected to function: GetProfileStringW)
+Entry point:@ 0000000076DF1B80
+	48 83 EC 38                       sub rsp, 0x38                 IP:76df1b84
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:76df1b88
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:76d603ab
+
+Function: PathIsContentTypeA
+	(redirected to DLL: USER32.dll!GetPropW)
+	(redirected to function: GetPropW)
+Entry point:@ 0000000076EA888C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea8891
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathIsContentTypeW
+	(redirected to DLL: KERNEL32.dll!GetStringTypeExW)
+	(redirected to function: GetStringTypeExW)
+Entry point:@ 0000000076D77C40
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d77c44
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:76d77c49
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:76d603ac
+
+Function: PathIsDirectoryA
+	(redirected to DLL: KERNEL32.dll!GetTempFileNameW)
+	(redirected to function: GetTempFileNameW)
+Entry point:@ 0000000076DBC4D0
+	E9 EF 49 FE FF                    jmp 0xfffffffffffe49f4        IP:76dbc4d5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 C4 0E DA 76 00 00 00 00     mov rax, 0x76da0ec4           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+
+Function: PathIsDirectoryEmptyA
+	(redirected to DLL: KERNEL32.dll!GetTempPathW)
+	(redirected to function: GetTempPathW)
+Entry point:@ 0000000076DD2280
+	4C 8B C2                          mov r8, rdx                   IP:76dd2283
+	8B D1                             mov edx, ecx                  IP:76dd2285
+Relocated entry point:@ 0000000076D603A3
+	4C 8B C2                          mov r8, rdx                   IP:76d603a6
+	8B D1                             mov edx, ecx                  IP:76d603a8
+
+Function: PathIsDirectoryEmptyW
+	(redirected to DLL: GDI32.dll!GetTextExtentPoint32W)
+	(redirected to function: GetTextExtentPoint32W)
+Entry point:@ 000007FEFECC56F4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fecc56f8
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:fecc56fd
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fed303a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:fed303ac
+
+Function: PathIsDirectoryW
+	(redirected to DLL: GDI32.dll!GetTextFaceW)
+	(redirected to function: GetTextFaceW)
+Entry point:@ 000007FEFECC5690
+	48 83 EC 28                       sub rsp, 0x28                 IP:fecc5694
+	4D 85 C0                          test r8, r8                   IP:fecc5697
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fed303a7
+	4D 85 C0                          test r8, r8                   IP:fed303aa
+
+Function: PathIsFileSpecA
+	(redirected to DLL: GDI32.dll!GetTextMetricsW)
+	(redirected to function: GetTextMetricsW)
+Entry point:@ 000007FEFECC3620
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fecc3625
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fed303a8
+
+Function: PathIsFileSpecW
+	(redirected to DLL: USER32.dll!GetWindowLongW)
+	(redirected to function: GetWindowLongW)
+Entry point:@ 0000000076EA7F20
+	FF F3                             push rbx                      IP:76ea7f22
+	48 83 EC 20                       sub rsp, 0x20                 IP:76ea7f26
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:76d603a9
+
+Function: PathIsLFNFileSpecA
+	(redirected to DLL: USER32.dll!GetWindowTextW)
+	(redirected to function: GetWindowTextW)
+Entry point:@ 0000000076E9D728
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76e9d72d
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathIsLFNFileSpecW
+	(redirected to DLL: USER32.dll!GetWindowTextLengthW)
+	(redirected to function: GetWindowTextLengthW)
+Entry point:@ 0000000076E9C00C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76e9c011
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathIsNetworkPathA
+	(redirected to DLL: KERNEL32.dll!GetWindowsDirectoryW)
+	(redirected to function: GetWindowsDirectoryW)
+Entry point:@ 0000000076D77930
+	EB 06                             jmp 0x8                       IP:76d77932
+	90                                nop                           IP:76d77933
+	90                                nop                           IP:76d77934
+	90                                nop                           IP:76d77935
+Relocated entry point:@ 0000000076D603A3
+	48 B8 38 79 D7 76 00 00 00 00     mov rax, 0x76d77938           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathIsNetworkPathW
+	(redirected to DLL: USER32.dll!InsertMenuW)
+	(redirected to function: InsertMenuW)
+Entry point:@ 0000000076E98988
+	4C 8B DC                          mov r11, rsp                  IP:76e9898b
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:76e9898f
+Relocated entry point:@ 0000000076D603A3
+	4C 8B DC                          mov r11, rsp                  IP:76d603a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:76d603aa
+
+Function: PathIsPrefixA
+	(redirected to DLL: USER32.dll!IsDialogMessageW)
+	(redirected to function: IsDialogMessageW)
+Entry point:@ 0000000076EA6680
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea6685
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathIsPrefixW
+	(redirected to DLL: USER32.dll!LoadAcceleratorsW)
+	(redirected to function: LoadAcceleratorsW)
+Entry point:@ 0000000076E9AFD8
+	FF F3                             push rbx                      IP:76e9afda
+	48 83 EC 20                       sub rsp, 0x20                 IP:76e9afde
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:76d603a9
+
+Function: PathIsRelativeA
+	(redirected to DLL: USER32.dll!LoadBitmapW)
+	(redirected to function: LoadBitmapW)
+Entry point:@ 0000000076E96ED0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76e96ed4
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76e96ed9
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76d603ac
+
+Function: PathIsRelativeW
+	(redirected to DLL: USER32.dll!LoadCursorW)
+	(redirected to function: LoadCursorW)
+Entry point:@ 0000000076EA1444
+	48 83 EC 38                       sub rsp, 0x38                 IP:76ea1448
+	45 33 C9                          xor r9d, r9d                  IP:76ea144b
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	45 33 C9                          xor r9d, r9d                  IP:76d603aa
+
+Function: PathIsRootA
+	(redirected to DLL: USER32.dll!LoadIconW)
+	(redirected to function: LoadIconW)
+Entry point:@ 0000000076EA146C
+	48 83 EC 38                       sub rsp, 0x38                 IP:76ea1470
+	45 33 C9                          xor r9d, r9d                  IP:76ea1473
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	45 33 C9                          xor r9d, r9d                  IP:76d603aa
+
+Function: PathIsRootW
+	(redirected to DLL: USER32.dll!LoadImageW)
+	(redirected to function: LoadImageW)
+Entry point:@ 0000000076EA322C
+	48 83 EC 38                       sub rsp, 0x38                 IP:76ea3230
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76ea3234
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76d603ab
+
+Function: PathIsSameRootA
+	(redirected to DLL: KERNEL32.dll!LoadLibraryExW)
+	(redirected to function: LoadLibraryExW)
+Entry point:@ 0000000076D85AE0
+	EB F2                             jmp 0xfffffffffffffff4        IP:76d85ae2
+	8B D6                             mov edx, esi                  IP:76d85ae4
+	E9 1F DC FF FF                    jmp 0xffffffffffffdc24        IP:76d85ae9
+Relocated entry point:@ 0000000076D603A3
+	48 B8 D4 5A D8 76 00 00 00 00     mov rax, 0x76d85ad4           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	8B D6                             mov edx, esi                  IP:76d603b1
+	48 B8 08 37 D8 76 00 00 00 00     mov rax, 0x76d83708           IP:76d603bb
+	FF E0                             jmp rax                       IP:76d603bd
+
+Function: PathIsSameRootW
+	(redirected to DLL: USER32.dll!LoadMenuW)
+	(redirected to function: LoadMenuW)
+Entry point:@ 0000000076EA1838
+	FF F3                             push rbx                      IP:76ea183a
+	48 83 EC 20                       sub rsp, 0x20                 IP:76ea183e
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:76d603a9
+
+Function: PathIsSystemFolderA
+	(redirected to DLL: USER32.dll!LoadStringW)
+	(redirected to function: LoadStringW)
+Entry point:@ 0000000076E9F930
+	48 83 EC 38                       sub rsp, 0x38                 IP:76e9f934
+	33 C0                             xor eax, eax                  IP:76e9f936
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	33 C0                             xor eax, eax                  IP:76d603a9
+
+Function: PathIsSystemFolderW
+	(redirected to DLL: USER32.dll!MessageBoxIndirectW)
+	(redirected to function: MessageBoxIndirectW)
+Entry point:@ 0000000076F018C8
+	FF F3                             push rbx                      IP:76f018ca
+	48 81 EC C0 00 00 00              sub rsp, 0xc0                 IP:76f018d1
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 81 EC C0 00 00 00              sub rsp, 0xc0                 IP:76d603ac
+
+Function: PathIsUNCA
+	(redirected to DLL: USER32.dll!ModifyMenuW)
+	(redirected to function: ModifyMenuW)
+Entry point:@ 0000000076EB5C54
+	4C 8B DC                          mov r11, rsp                  IP:76eb5c57
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:76eb5c5b
+Relocated entry point:@ 0000000076D603A3
+	4C 8B DC                          mov r11, rsp                  IP:76d603a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:76d603aa
+
+Function: PathIsUNCServerA
+	(redirected to DLL: GDI32.dll!GetCharWidth32W)
+	(redirected to function: GetCharWidth32W)
+Entry point:@ 000007FEFECD4F50
+	48 83 EC 38                       sub rsp, 0x38                 IP:fecd4f54
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:fecd4f59
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fed303a7
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:fed303ac
+
+Function: PathIsUNCServerShareA
+	(redirected to DLL: GDI32.dll!GetCharacterPlacementW)
+	(redirected to function: GetCharacterPlacementW)
+Entry point:@ 000007FEFECE5560
+	48 83 EC 48                       sub rsp, 0x48                 IP:fece5564
+	83 64 24 5C 00                    and dword [rsp+0x5c], 0x0     IP:fece5569
+Relocated entry point:@ 000007FEFED303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fed303a7
+	83 64 24 5C 00                    and dword [rsp+0x5c], 0x0     IP:fed303ac
+
+Function: PathIsUNCServerShareW
+	(redirected to DLL: KERNEL32.dll!CopyFileW)
+	(redirected to function: CopyFileW)
+Entry point:@ 0000000076D78950
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d78954
+	45 85 C0                          test r8d, r8d                 IP:76d78957
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	45 85 C0                          test r8d, r8d                 IP:76d603aa
+
+Function: PathIsUNCServerW
+	(redirected to DLL: KERNEL32.dll!MoveFileW)
+	(redirected to function: MoveFileW)
+Entry point:@ 0000000076DFF7E0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76dff7e4
+	48 83 64 24 28 00                 and qword [rsp+0x28], 0x0     IP:76dff7ea
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	48 83 64 24 28 00                 and qword [rsp+0x28], 0x0     IP:76d603ad
+
+Function: PathIsUNCW
+	(redirected to DLL: USER32.dll!OemToCharW)
+	(redirected to function: OemToCharW)
+Entry point:@ 0000000076F04C30
+	FF F7                             push rdi                      IP:76f04c32
+	48 83 EC 30                       sub rsp, 0x30                 IP:76f04c36
+Relocated entry point:@ 0000000076D603A3
+	FF F7                             push rdi                      IP:76d603a5
+	48 83 EC 30                       sub rsp, 0x30                 IP:76d603a9
+
+Function: PathIsURLA
+	(redirected to DLL: KERNEL32.dll!OutputDebugStringW)
+	(redirected to function: OutputDebugStringW)
+Entry point:@ 0000000076D7AC10
+	EB 06                             jmp 0x8                       IP:76d7ac12
+	90                                nop                           IP:76d7ac13
+	90                                nop                           IP:76d7ac14
+	90                                nop                           IP:76d7ac15
+Relocated entry point:@ 0000000076D603A3
+	48 B8 18 AC D7 76 00 00 00 00     mov rax, 0x76d7ac18           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathIsURLW
+	(redirected to DLL: USER32.dll!PeekMessageW)
+	(redirected to function: PeekMessageW)
+Entry point:@ 0000000076EA8FD4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea8fd9
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathMakePrettyA
+	(redirected to DLL: USER32.dll!PostMessageW)
+	(redirected to function: PostMessageW)
+Entry point:@ 0000000076EA76D4
+	48 8B C4                          mov rax, rsp                  IP:76ea76d7
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76ea76db
+Relocated entry point:@ 0000000076D603A3
+	48 8B C4                          mov rax, rsp                  IP:76d603a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76d603aa
+
+Function: PathMakePrettyW
+	(redirected to DLL: USER32.dll!PostThreadMessageW)
+	(redirected to function: PostThreadMessageW)
+Entry point:@ 0000000076EA0B14
+	48 83 EC 28                       sub rsp, 0x28                 IP:76ea0b18
+	8D 82 C0 FD FF FF                 lea eax, [rdx-0x240]          IP:76ea0b1e
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:76d603a7
+	8D 82 C0 FD FF FF                 lea eax, [rdx-0x240]          IP:76d603ad
+
+Function: PathMakeSystemFolderA
+ERROR: Ordinal redirect out of range
+
+Function: PathMakeSystemFolderW
+ERROR: Ordinal redirect out of range
+
+Function: PathMatchSpecA
+ERROR: Ordinal redirect out of range
+
+Function: PathMatchSpecExA
+ERROR: Ordinal redirect out of range
+
+Function: PathMatchSpecExW
+ERROR: Ordinal redirect out of range
+
+Function: PathMatchSpecW
+ERROR: Ordinal redirect out of range
+
+Function: PathParseIconLocationA
+ERROR: Ordinal redirect out of range
+
+Function: PathParseIconLocationW
+ERROR: Ordinal redirect out of range
+
+Function: PathQuoteSpacesA
+ERROR: Ordinal redirect out of range
+
+Function: PathQuoteSpacesW
+ERROR: Ordinal redirect out of range
+
+Function: PathRelativePathToA
+ERROR: Ordinal redirect out of range
+
+Function: PathRelativePathToW
+ERROR: Ordinal redirect out of range
+
+Function: PathRemoveArgsA
+	(redirected to DLL: USER32.dll!RegisterClassW)
+	(redirected to function: RegisterClassW)
+Entry point:@ 0000000076EA0860
+	FF F3                             push rbx                      IP:76ea0862
+	48 81 EC 80 00 00 00              sub rsp, 0x80                 IP:76ea0869
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 81 EC 80 00 00 00              sub rsp, 0x80                 IP:76d603ac
+
+Function: PathRemoveArgsW
+	(redirected to DLL: USER32.dll!RegisterClipboardFormatW)
+	(redirected to function: RegisterClipboardFormatW)
+Entry point:@ 0000000076E9F304
+	48 83 EC 48                       sub rsp, 0x48                 IP:76e9f308
+	83 64 24 38 00                    and dword [rsp+0x38], 0x0     IP:76e9f30d
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:76d603a7
+	83 64 24 38 00                    and dword [rsp+0x38], 0x0     IP:76d603ac
+
+Function: PathRemoveBackslashA
+	(redirected to DLL: USER32.dll!RegisterWindowMessageW)
+	(redirected to function: RegisterWindowMessageW)
+Entry point:@ 0000000076E9F304
+	48 83 EC 48                       sub rsp, 0x48                 IP:76e9f308
+	83 64 24 38 00                    and dword [rsp+0x38], 0x0     IP:76e9f30d
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:76d603a7
+	83 64 24 38 00                    and dword [rsp+0x38], 0x0     IP:76d603ac
+
+Function: PathRemoveBackslashW
+	(redirected to DLL: USER32.dll!RemovePropW)
+	(redirected to function: RemovePropW)
+Entry point:@ 0000000076EA6FA0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea6fa5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathRemoveBlanksA
+	(redirected to DLL: USER32.dll!SendDlgItemMessageW)
+	(redirected to function: SendDlgItemMessageW)
+Entry point:@ 0000000076EADD9C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76eadda1
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathRemoveBlanksW
+	(redirected to DLL: USER32.dll!SendMessageW)
+	(redirected to function: SendMessageW)
+Entry point:@ 0000000076EA6B04
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea6b09
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathRemoveExtensionA
+	(redirected to DLL: KERNEL32.dll!SetCurrentDirectoryW)
+	(redirected to function: SetCurrentDirectoryW)
+Entry point:@ 0000000076D8BEE0
+	EB 06                             jmp 0x8                       IP:76d8bee2
+	90                                nop                           IP:76d8bee3
+	90                                nop                           IP:76d8bee4
+	90                                nop                           IP:76d8bee5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 E8 BE D8 76 00 00 00 00     mov rax, 0x76d8bee8           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: PathRemoveExtensionW
+	(redirected to DLL: USER32.dll!SetDlgItemTextW)
+	(redirected to function: SetDlgItemTextW)
+Entry point:@ 0000000076EACE1C
+	FF F3                             push rbx                      IP:76eace1e
+	48 83 EC 20                       sub rsp, 0x20                 IP:76eace22
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:76d603a9
+
+Function: PathRemoveFileSpecA
+	(redirected to DLL: USER32.dll!SetMenuItemInfoW)
+	(redirected to function: SetMenuItemInfoW)
+Entry point:@ 0000000076EA36E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea36e5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathRemoveFileSpecW
+	(redirected to DLL: USER32.dll!SetPropW)
+	(redirected to function: SetPropW)
+Entry point:@ 0000000076EA6F20
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea6f25
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathRenameExtensionA
+	(redirected to DLL: USER32.dll!SetWindowLongW)
+	(redirected to function: SetWindowLongW)
+Entry point:@ 0000000076EA3340
+	45 33 C9                          xor r9d, r9d                  IP:76ea3343
+	E9 7C FF FF FF                    jmp 0xffffffffffffff81        IP:76ea3348
+Relocated entry point:@ 0000000076D603A3
+	45 33 C9                          xor r9d, r9d                  IP:76d603a6
+	48 B8 C4 32 EA 76 00 00 00 00     mov rax, 0x76ea32c4           IP:76d603b0
+	FF E0                             jmp rax                       IP:76d603b2
+
+Function: PathRenameExtensionW
+	(redirected to DLL: USER32.dll!SetWindowsHookExW)
+	(redirected to function: SetWindowsHookExW)
+Entry point:@ 0000000076E9F804
+	48 83 EC 38                       sub rsp, 0x38                 IP:76e9f808
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76e9f80d
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76d603ac
+
+Function: PathSearchAndQualifyA
+	(redirected to DLL: USER32.dll!SetWindowTextW)
+	(redirected to function: SetWindowTextW)
+Entry point:@ 0000000076EA7024
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea7029
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: PathSearchAndQualifyW
+	(redirected to DLL: GDI32.dll!StartDocW)
+	(redirected to function: StartDocW)
+Entry point:@ 000007FEFECF884C
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fecf8851
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fed303a8
+
+Function: PathSetDlgItemPathA
+	(redirected to DLL: USER32.dll!SystemParametersInfoW)
+	(redirected to function: SystemParametersInfoW)
+Entry point:@ 0000000076E9F490
+	48 8B C4                          mov rax, rsp                  IP:76e9f493
+	48 89 70 08                       mov [rax+0x8], rsi            IP:76e9f497
+Relocated entry point:@ 0000000076D603A3
+	48 8B C4                          mov rax, rsp                  IP:76d603a6
+	48 89 70 08                       mov [rax+0x8], rsi            IP:76d603aa
+
+Function: PathSetDlgItemPathW
+	(redirected to DLL: USER32.dll!TranslateAcceleratorW)
+	(redirected to function: TranslateAcceleratorW)
+Entry point:@ 0000000076EA9380
+	48 83 EC 28                       sub rsp, 0x28                 IP:76ea9384
+	48 85 C9                          test rcx, rcx                 IP:76ea9387
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:76d603a7
+	48 85 C9                          test rcx, rcx                 IP:76d603aa
+
+Function: PathSkipRootA
+	(redirected to DLL: USER32.dll!UnregisterClassW)
+	(redirected to function: UnregisterClassW)
+Entry point:@ 0000000076E9D430
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:76e9d435
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:76d603a8
+
+Function: PathSkipRootW
+	(redirected to DLL: USER32.dll!VkKeyScanW)
+	(redirected to function: VkKeyScanW)
+Entry point:@ 0000000076EE0734
+	45 33 C0                          xor r8d, r8d                  IP:76ee0737
+	33 D2                             xor edx, edx                  IP:76ee0739
+Relocated entry point:@ 0000000076D603A3
+	45 33 C0                          xor r8d, r8d                  IP:76d603a6
+	33 D2                             xor edx, edx                  IP:76d603a8
+
+Function: PathStripPathA
+	(redirected to DLL: USER32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: PathStripPathW
+	(redirected to DLL: USER32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: PathStripToRootA
+ERROR: Ordinal redirect out of range
+
+Function: PathStripToRootW
+ERROR: Ordinal redirect out of range
+
+Function: PathUnExpandEnvStringsA
+ERROR: Ordinal redirect out of range
+
+Function: PathUnExpandEnvStringsW
+ERROR: Ordinal redirect out of range
+
+Function: PathUndecorateA
+ERROR: Ordinal redirect out of range
+
+Function: PathUndecorateW
+ERROR: Ordinal redirect out of range
+
+Function: PathUnmakeSystemFolderA
+ERROR: Ordinal redirect out of range
+
+Function: PathUnmakeSystemFolderW
+ERROR: Ordinal redirect out of range
+
+Function: PathUnquoteSpacesA
+	(redirected to DLL: KERNEL32.dll!CompareStringW)
+	(redirected to function: CompareStringW)
+Entry point:@ 0000000076D84EB0
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d84eb4
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76d84eb8
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76d603ab
+
+Function: PathUnquoteSpacesW
+ERROR: Ordinal redirect out of range
+
+Function: QISearch
+	(redirected to function: SHRegDeleteUSValueW)
+Entry point:@ 000007FEFEC34494
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fec34499
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: SHAllocShared
+	(redirected to function: AssocQueryStringByKeyA)
+Entry point:@ 000007FEFEC3135C
+	FF F3                             push rbx                      IP:fec3135e
+	55                                push rbp                      IP:fec3135f
+	56                                push rsi                      IP:fec31360
+	57                                push rdi                      IP:fec31361
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	55                                push rbp                      IP:feb303a6
+	56                                push rsi                      IP:feb303a7
+	57                                push rdi                      IP:feb303a8
+
+Function: SHAnsiToAnsi
+	(redirected to function: UrlCompareW)
+Entry point:@ 000007FEFEC50F38
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fec50f3d
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fed303a8
+
+Function: SHAnsiToUnicode
+	(redirected to function: SHRegCreateUSKeyW)
+Entry point:@ 000007FEFEC32BF4
+	45 8B C8                          mov r9d, r8d                  IP:fec32bf7
+	4C 8B C2                          mov r8, rdx                   IP:fec32bfa
+Relocated entry point:@ 000007FEFEB303A3
+	45 8B C8                          mov r9d, r8d                  IP:feb303a6
+	4C 8B C2                          mov r8, rdx                   IP:feb303a9
+
+Function: SHAutoComplete
+ERROR: Ordinal redirect out of range
+
+Function: SHCopyKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHCopyKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHCreateMemStream
+	(redirected to function: ColorAdjustLuma)
+Entry point:@ 000007FEFEC27B08
+	45 33 C0                          xor r8d, r8d                  IP:fec27b0b
+	E9 60 84 00 00                    jmp 0x8465                    IP:fec27b10
+Relocated entry point:@ 000007FEFEB303A3
+	45 33 C0                          xor r8d, r8d                  IP:feb303a6
+	48 B8 70 FF C2 FE FE 07 00 00     mov rax, 0x7fefec2ff70        IP:feb303b0
+	FF E0                             jmp rax                       IP:feb303b2
+
+Function: SHCreateShellPalette
+ERROR: Ordinal redirect out of range
+
+Function: SHCreateStreamOnFileA
+ERROR: Ordinal redirect out of range
+
+Function: SHCreateStreamOnFileEx
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHCreateStreamOnFileW
+ERROR: Ordinal redirect out of range
+
+Function: SHCreateStreamWrapper
+ERROR: Ordinal redirect out of range
+
+Function: SHCreateThread
+	(redirected to function: DelayLoadFailureHook)
+Entry point:@ 000007FEFEC2C950
+	48 83 EC 38                       sub rsp, 0x38                 IP:fec2c954
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fec2c95a
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb303a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:feb303ad
+
+Function: SHCreateThreadRef
+ERROR: Ordinal redirect out of range
+
+Function: SHCreateThreadWithHandle
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteEmptyKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteEmptyKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteOrphanKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteOrphanKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHDeleteValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHEnumKeyExA
+ERROR: Ordinal redirect out of range
+
+Function: SHEnumKeyExW
+ERROR: Ordinal redirect out of range
+
+Function: SHEnumValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHEnumValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHFormatDateTimeA
+	(redirected to function: UrlGetPartA)
+Entry point:@ 000007FEFEC4EDBC
+	FF F3                             push rbx                      IP:fec4edbe
+	57                                push rdi                      IP:fec4edbf
+	48 81 EC 38 02 00 00              sub rsp, 0x238                IP:fec4edc6
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	57                                push rdi                      IP:fed303a6
+	48 81 EC 38 02 00 00              sub rsp, 0x238                IP:fed303ad
+
+Function: SHFormatDateTimeW
+	(redirected to function: UrlGetPartW)
+Entry point:@ 000007FEFEC37400
+	48 FF 25 69 FD 04 00              jmp qword [rip+0x4fd69]       IP:fec37407
+Relocated entry point:@ 000007FEFED303A3
+	48 FF 25 C6 6D F5 FF              jmp qword [rip-0xa923a]       IP:fed303aa
+
+Function: SHFreeShared
+	(redirected to function: ChrCmpIA)
+Entry point:@ 000007FEFEC316FC
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fec31701
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: SHGetInverseCMAP
+ERROR: Ordinal redirect out of range
+
+Function: SHGetThreadRef
+ERROR: Ordinal redirect out of range
+
+Function: SHGetValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHGetValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHGetViewStatePropertyBag
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHIsChildOrSelf
+	(redirected to function: SHOpenRegStream2W)
+Entry point:@ 000007FEFEC34540
+	FF F3                             push rbx                      IP:fec34542
+	48 83 EC 20                       sub rsp, 0x20                 IP:fec34546
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: SHIsLowMemoryMachine
+ERROR: Ordinal redirect out of range
+
+Function: SHLoadIndirectString
+ERROR: Ordinal redirect out of range
+
+Function: SHLockShared
+	(redirected to function: AssocQueryStringByKeyW)
+Entry point:@ 000007FEFEC27264
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:fec2726a
+Relocated entry point:@ 000007FEFEB303A3
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:feb303a9
+
+Function: SHMessageBoxCheckA
+	(redirected to function: SHEnumKeyExA)
+Entry point:@ 000007FEFEC53650
+	FF F3                             push rbx                      IP:fec53652
+	55                                push rbp                      IP:fec53653
+	56                                push rsi                      IP:fec53654
+	57                                push rdi                      IP:fec53655
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	55                                push rbp                      IP:fed303a6
+	56                                push rsi                      IP:fed303a7
+	57                                push rdi                      IP:fed303a8
+
+Function: SHMessageBoxCheckW
+	(redirected to function: SHFreeShared)
+Entry point:@ 000007FEFEC534BC
+	FF F3                             push rbx                      IP:fec534be
+	55                                push rbp                      IP:fec534bf
+	56                                push rsi                      IP:fec534c0
+	57                                push rdi                      IP:fec534c1
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	55                                push rbp                      IP:fed303a6
+	56                                push rsi                      IP:fed303a7
+	57                                push rdi                      IP:fed303a8
+
+Function: SHOpenRegStream2A
+ERROR: Ordinal redirect out of range
+
+Function: SHOpenRegStream2W
+ERROR: Ordinal redirect out of range
+
+Function: SHOpenRegStreamA
+ERROR: Ordinal redirect out of range
+
+Function: SHOpenRegStreamW
+ERROR: Ordinal redirect out of range
+
+Function: SHPropertyBag_ReadStrAlloc
+ERROR: Ordinal redirect out of range
+
+Function: SHPropertyBag_WriteBSTR
+ERROR: Ordinal redirect out of range
+
+Function: SHQueryInfoKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHQueryInfoKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHQueryValueExA
+ERROR: Ordinal redirect out of range
+
+Function: SHQueryValueExW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegCloseUSKey
+ERROR: Ordinal redirect out of range
+
+Function: SHRegCreateUSKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegCreateUSKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegDeleteEmptyUSKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegDeleteEmptyUSKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegDeleteUSValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegDeleteUSValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegDuplicateHKey
+ERROR: Ordinal redirect out of range
+
+Function: SHRegEnumUSKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegEnumUSKeyW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegEnumUSValueA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegEnumUSValueW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegGetBoolUSValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegGetBoolUSValueW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegGetIntW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegGetPathA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegGetPathW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegGetUSValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegGetUSValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegGetValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegGetValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegOpenUSKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegOpenUSKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegQueryInfoUSKeyA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegQueryInfoUSKeyW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegQueryUSValueA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegQueryUSValueW
+ERROR: Ordinal redirect out of range
+
+Function: SHRegSetPathA
+ERROR: Ordinal redirect out of range
+
+Function: SHRegSetPathW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegSetUSValueA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegSetUSValueW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegWriteUSValueA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegWriteUSValueW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRegisterValidateTemplate
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHReleaseThreadRef
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHRunIndirectRegClientCommand
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHSendMessageBroadcastA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHSendMessageBroadcastW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHSetThreadRef
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHSetValueA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHSetValueW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHSkipJunction
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHStrDupA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHStrDupW
+ERROR: Ordinal redirect out of range
+
+Function: SHStripMneumonicA
+	(redirected to function: SHOpenRegStream2A)
+Entry point:@ 000007FEFEC53BC0
+	FF F3                             push rbx                      IP:fec53bc2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fec53bc6
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fed303a9
+
+Function: SHStripMneumonicW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHUnicodeToAnsi
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: SHUnicodeToUnicode
+	(redirected to function: UrlCreateFromPathA)
+Entry point:@ 000007FEFEC51004
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fec51009
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fed303a8
+
+Function: SHUnlockShared
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: ShellMessageBoxA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: ShellMessageBoxW
+ERROR: Ordinal redirect out of range
+
+Function: StrCSpnA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrCSpnIA
+ERROR: Ordinal redirect out of range
+
+Function: StrCSpnIW
+ERROR: Ordinal redirect out of range
+
+Function: StrCSpnW
+ERROR: Ordinal redirect out of range
+
+Function: StrCatBuffA
+ERROR: Ordinal redirect out of range
+
+Function: StrCatBuffW
+ERROR: Ordinal redirect out of range
+
+Function: StrCatChainW
+ERROR: Ordinal redirect out of range
+
+Function: StrCatW
+ERROR: Ordinal redirect out of range
+
+Function: StrChrA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrChrIA
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrChrIW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrChrNIW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrChrNW
+ERROR: Ordinal redirect out of range
+
+Function: StrChrW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrCmpCA
+	(redirected to function: PathUndecorateA)
+ERROR: Unable to allocate hook: Hooking jumps into the hooked entry point is not supported.
+	EB 00                             jmp 0x2                       IP:fec24ee6
+	8A 01                             mov al, [rcx]                 IP:fec24ee8
+	84 C0                             test al, al                   IP:fec24eea
+
+Function: StrCmpCW
+	(redirected to function: PathUndecorateW)
+ERROR: Unable to allocate hook: Hooking jumps into the hooked entry point is not supported.
+	EB 00                             jmp 0x2                       IP:fec32d02
+	0F B7 01                          movzx eax, word [rcx]         IP:fec32d05
+
+Function: StrCmpICA
+	(redirected to function: PathUnmakeSystemFolderA)
+Entry point:@ 000007FEFEC31140
+	4C 8B C9                          mov r9, rcx                   IP:fec31143
+	45 0F BE 01                       movsx r8d, byte [r9]          IP:fec31147
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B C9                          mov r9, rcx                   IP:feb303a6
+	45 0F BE 01                       movsx r8d, byte [r9]          IP:feb303aa
+
+Function: StrCmpICW
+	(redirected to function: PathUnmakeSystemFolderW)
+Entry point:@ 000007FEFEC33D10
+	4C 8B C9                          mov r9, rcx                   IP:fec33d13
+	45 0F B7 01                       movzx r8d, word [r9]          IP:fec33d17
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B C9                          mov r9, rcx                   IP:feb303a6
+	45 0F B7 01                       movzx r8d, word [r9]          IP:feb303aa
+
+Function: StrCmpIW
+ERROR: Ordinal redirect out of range
+
+Function: StrCmpLogicalW
+ERROR: Ordinal redirect out of range
+
+Function: StrCmpNA
+ERROR: Ordinal redirect out of range
+
+Function: StrCmpNCA
+	(redirected to function: PathStripToRootA)
+ERROR: Unable to allocate hook: Hooking far conditional jumps is not supported.
+	45 85 C0                          test r8d, r8d                 IP:fec3b06f
+	0F 84 A0 71 00 00                 jz 0x71a6                     IP:fec3b075
+
+Function: StrCmpNCW
+	(redirected to function: PathStripToRootW)
+Entry point:@ 000007FEFEC2D14C
+	45 33 C9                          xor r9d, r9d                  IP:fec2d14f
+	45 3B C1                          cmp r8d, r9d                  IP:fec2d152
+Relocated entry point:@ 000007FEFEB303A3
+	45 33 C9                          xor r9d, r9d                  IP:feb303a6
+	45 3B C1                          cmp r8d, r9d                  IP:feb303a9
+
+Function: StrCmpNIA
+ERROR: Ordinal redirect out of range
+
+Function: StrCmpNICA
+	(redirected to function: PathUnExpandEnvStringsA)
+Entry point:@ 000007FEFEC2521C
+	4C 8B D1                          mov r10, rcx                  IP:fec2521f
+	45 85 C0                          test r8d, r8d                 IP:fec25222
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B D1                          mov r10, rcx                  IP:feb303a6
+	45 85 C0                          test r8d, r8d                 IP:feb303a9
+
+Function: StrCmpNICW
+	(redirected to DLL: WINMM.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrCmpNIW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrCmpNW
+ERROR: Ordinal redirect out of range
+
+Function: StrCmpW
+ERROR: Ordinal redirect out of range
+
+Function: StrCpyNW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrCpyW
+ERROR: Ordinal redirect out of range
+
+Function: StrDupA
+ERROR: Ordinal redirect out of range
+
+Function: StrDupW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrFormatByteSize64A
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrFormatByteSizeA
+	(redirected to DLL: KERNEL32.dll!WritePrivateProfileStringW)
+	(redirected to function: WritePrivateProfileStringW)
+Entry point:@ 0000000076DF1670
+	4C 8B DC                          mov r11, rsp                  IP:76df1673
+	48 83 EC 48                       sub rsp, 0x48                 IP:76df1677
+Relocated entry point:@ 0000000076D603A3
+	4C 8B DC                          mov r11, rsp                  IP:76d603a6
+	48 83 EC 48                       sub rsp, 0x48                 IP:76d603aa
+
+Function: StrFormatByteSizeEx
+	(redirected to DLL: GDI32.dll!ExtTextOutW)
+	(redirected to function: ExtTextOutW)
+Entry point:@ 000007FEFECC3E70
+	FF F3                             push rbx                      IP:fecc3e72
+	55                                push rbp                      IP:fecc3e73
+	56                                push rsi                      IP:fecc3e74
+	57                                push rdi                      IP:fecc3e75
+Relocated entry point:@ 000007FEFED303A3
+	FF F3                             push rbx                      IP:fed303a5
+	55                                push rbp                      IP:fed303a6
+	56                                push rsi                      IP:fed303a7
+	57                                push rdi                      IP:fed303a8
+
+Function: StrFormatByteSizeW
+	(redirected to DLL: GDI32.dll!CreateFontW)
+	(redirected to function: CreateFontW)
+Entry point:@ 000007FEFECC7F74
+	48 81 EC 98 00 00 00              sub rsp, 0x98                 IP:fecc7f7b
+Relocated entry point:@ 000007FEFED303A3
+	48 81 EC 98 00 00 00              sub rsp, 0x98                 IP:fed303aa
+
+Function: StrFormatKBSizeA
+	(redirected to DLL: USER32.dll!DrawTextExW)
+	(redirected to function: DrawTextExW)
+Entry point:@ 0000000076EA8D00
+	48 83 EC 48                       sub rsp, 0x48                 IP:76ea8d04
+	48 8B 44 24 78                    mov rax, [rsp+0x78]           IP:76ea8d09
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:76d603a7
+	48 8B 44 24 78                    mov rax, [rsp+0x78]           IP:76d603ac
+
+Function: StrFormatKBSizeW
+	(redirected to DLL: USER32.dll!GetMenuItemInfoW)
+	(redirected to function: GetMenuItemInfoW)
+Entry point:@ 0000000076E98B38
+	48 8B C4                          mov rax, rsp                  IP:76e98b3b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76e98b3f
+Relocated entry point:@ 0000000076D603A3
+	48 8B C4                          mov rax, rsp                  IP:76d603a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76d603aa
+
+Function: StrFromTimeIntervalA
+	(redirected to DLL: USER32.dll!InsertMenuItemW)
+	(redirected to function: InsertMenuItemW)
+Entry point:@ 0000000076E98908
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76e9890d
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: StrFromTimeIntervalW
+	(redirected to DLL: GDI32.dll!CreateMetaFileW)
+	(redirected to function: CreateMetaFileW)
+Entry point:@ 000007FEFECCEC18
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feccec1d
+Relocated entry point:@ 000007FEFED303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fed303a8
+
+Function: StrIsIntlEqualA
+	(redirected to DLL: KERNEL32.dll!CreateMutexW)
+	(redirected to function: CreateMutexW)
+Entry point:@ 0000000076D80860
+	EB 06                             jmp 0x8                       IP:76d80862
+	90                                nop                           IP:76d80863
+	90                                nop                           IP:76d80864
+	90                                nop                           IP:76d80865
+Relocated entry point:@ 0000000076D603A3
+	48 B8 68 08 D8 76 00 00 00 00     mov rax, 0x76d80868           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: StrIsIntlEqualW
+	(redirected to DLL: KERNEL32.dll!ExpandEnvironmentStringsW)
+	(redirected to function: ExpandEnvironmentStringsW)
+Entry point:@ 0000000076D86650
+	EB F2                             jmp 0xfffffffffffffff4        IP:76d86652
+	90                                nop                           IP:76d86653
+	90                                nop                           IP:76d86654
+	90                                nop                           IP:76d86655
+Relocated entry point:@ 0000000076D603A3
+	48 B8 44 66 D8 76 00 00 00 00     mov rax, 0x76d86644           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: StrNCatA
+	(redirected to DLL: KERNEL32.dll!CreateSemaphoreW)
+	(redirected to function: CreateSemaphoreW)
+Entry point:@ 0000000076D78E10
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d78e14
+	C7 44 24 28 03 00 1F 00           mov dword [rsp+0x28], 0x1f0003IP:76d78e1c
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	C7 44 24 28 03 00 1F 00           mov dword [rsp+0x28], 0x1f0003IP:76d603af
+
+Function: StrNCatW
+	(redirected to DLL: KERNEL32.dll!IsBadStringPtrW)
+	(redirected to function: IsBadStringPtrW)
+Entry point:@ 0000000076DBCE50
+	48 83 EC 18                       sub rsp, 0x18                 IP:76dbce54
+	45 33 C9                          xor r9d, r9d                  IP:76dbce57
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 18                       sub rsp, 0x18                 IP:76d603a7
+	45 33 C9                          xor r9d, r9d                  IP:76d603aa
+
+Function: StrPBrkA
+	(redirected to DLL: KERNEL32.dll!LoadLibraryW)
+	(redirected to function: LoadLibraryW)
+Entry point:@ 0000000076D86420
+	45 33 C0                          xor r8d, r8d                  IP:76d86423
+	33 D2                             xor edx, edx                  IP:76d86425
+Relocated entry point:@ 0000000076D603A3
+	45 33 C0                          xor r8d, r8d                  IP:76d603a6
+	33 D2                             xor edx, edx                  IP:76d603a8
+
+Function: StrPBrkW
+	(redirected to DLL: KERNEL32.dll!GetTimeFormatW)
+	(redirected to function: GetTimeFormatW)
+Entry point:@ 0000000076D7BCE0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76d7bce5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76d603a8
+
+Function: StrRChrA
+	(redirected to DLL: KERNEL32.dll!GetDateFormatW)
+	(redirected to function: GetDateFormatW)
+Entry point:@ 0000000076D7B2F0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76d7b2f5
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:76d603a8
+
+Function: StrRChrIA
+	(redirected to DLL: KERNEL32.dll!GetPrivateProfileStringW)
+	(redirected to function: GetPrivateProfileStringW)
+Entry point:@ 0000000076D762E0
+	4C 8B DC                          mov r11, rsp                  IP:76d762e3
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:76d762e7
+Relocated entry point:@ 0000000076D603A3
+	4C 8B DC                          mov r11, rsp                  IP:76d603a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:76d603aa
+
+Function: StrRChrIW
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrRChrW
+	(redirected to DLL: USER32.dll!RegisterClassExW)
+	(redirected to function: RegisterClassExW)
+Entry point:@ 0000000076EA0E4C
+	48 83 EC 38                       sub rsp, 0x38                 IP:76ea0e50
+	83 39 50                          cmp dword [rcx], 0x50         IP:76ea0e53
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	83 39 50                          cmp dword [rcx], 0x50         IP:76d603aa
+
+Function: StrRStrIA
+	(redirected to DLL: USER32.dll!GetClassInfoExW)
+	(redirected to function: GetClassInfoExW)
+Entry point:@ 0000000076EA14F4
+	FF F3                             push rbx                      IP:76ea14f6
+	55                                push rbp                      IP:76ea14f7
+	56                                push rsi                      IP:76ea14f8
+	57                                push rdi                      IP:76ea14f9
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	55                                push rbp                      IP:76d603a6
+	56                                push rsi                      IP:76d603a7
+	57                                push rdi                      IP:76d603a8
+
+Function: StrRStrIW
+ERROR: Ordinal redirect out of range
+
+Function: StrRetToBSTR
+ERROR: Ordinal redirect out of range
+
+Function: StrRetToBufA
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrRetToBufW
+	(redirected to DLL: USER32.dll!FindWindowExW)
+	(redirected to function: FindWindowExW)
+Entry point:@ 0000000076EB8CD8
+	48 83 EC 38                       sub rsp, 0x38                 IP:76eb8cdc
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76eb8ce1
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:76d603ac
+
+Function: StrRetToStrA
+ERROR: Ordinal redirect out of range
+
+Function: StrRetToStrW
+ERROR: Ordinal redirect out of range
+
+Function: StrSpnA
+ERROR: Ordinal redirect out of range
+
+Function: StrSpnW
+ERROR: Ordinal redirect out of range
+
+Function: StrStrA
+ERROR: Ordinal redirect out of range
+
+Function: StrStrIA
+ERROR: Ordinal redirect out of range
+
+Function: StrStrIW
+ERROR: Ordinal redirect out of range
+
+Function: StrStrNIW
+ERROR: Ordinal redirect out of range
+
+Function: StrStrNW
+ERROR: Ordinal redirect out of range
+
+Function: StrStrW
+ERROR: Ordinal redirect out of range
+
+Function: StrToInt64ExA
+ERROR: Ordinal redirect out of range
+
+Function: StrToInt64ExW
+ERROR: Ordinal redirect out of range
+
+Function: StrToIntA
+	(redirected to DLL: USER32.dll!CallMsgFilterW)
+	(redirected to function: CallMsgFilterW)
+Entry point:@ 0000000076EA6620
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76ea6625
+Relocated entry point:@ 0000000076D603A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:76d603a8
+
+Function: StrToIntExA
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrToIntExW
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrToIntW
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrTrimA
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: StrTrimW
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: UrlApplySchemeA
+	(redirected to DLL: KERNEL32.dll!SetFileAttributesW)
+	(redirected to function: SetFileAttributesW)
+Entry point:@ 0000000076D82C40
+	EB 06                             jmp 0x8                       IP:76d82c42
+	90                                nop                           IP:76d82c43
+	90                                nop                           IP:76d82c44
+	90                                nop                           IP:76d82c45
+Relocated entry point:@ 0000000076D603A3
+	48 B8 48 2C D8 76 00 00 00 00     mov rax, 0x76d82c48           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: UrlApplySchemeW
+	(redirected to DLL: KERNEL32.dll!GetNumberFormatW)
+	(redirected to function: GetNumberFormatW)
+Entry point:@ 0000000076DBC620
+	48 83 EC 38                       sub rsp, 0x38                 IP:76dbc624
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76dbc628
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	8B 44 24 68                       mov eax, [rsp+0x68]           IP:76d603ab
+
+Function: UrlCanonicalizeA
+	(redirected to DLL: USER32.dll!MessageBoxW)
+	(redirected to function: MessageBoxW)
+Entry point:@ 0000000076F01360
+	48 83 EC 38                       sub rsp, 0x38                 IP:76f01364
+	45 33 DB                          xor r11d, r11d                IP:76f01367
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:76d603a7
+	45 33 DB                          xor r11d, r11d                IP:76d603aa
+
+Function: UrlCanonicalizeW
+	(redirected to DLL: KERNEL32.dll!FindNextFileW)
+	(redirected to function: FindNextFileW)
+Entry point:@ 0000000076D80DB0
+	EB 06                             jmp 0x8                       IP:76d80db2
+	90                                nop                           IP:76d80db3
+	90                                nop                           IP:76d80db4
+	90                                nop                           IP:76d80db5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 B8 0D D8 76 00 00 00 00     mov rax, 0x76d80db8           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: UrlCombineA
+ERROR: Ordinal redirect out of range
+
+Function: UrlCombineW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: UrlCompareA
+ERROR: Ordinal redirect out of range
+
+Function: UrlCompareW
+ERROR: Ordinal redirect out of range
+
+Function: UrlCreateFromPathA
+ERROR: Ordinal redirect out of range
+
+Function: UrlCreateFromPathW
+ERROR: Ordinal redirect out of range
+
+Function: UrlEscapeA
+ERROR: Ordinal redirect out of range
+
+Function: UrlEscapeW
+ERROR: Ordinal redirect out of range
+
+Function: UrlFixupW
+ERROR: Ordinal redirect out of range
+
+Function: UrlGetLocationA
+ERROR: Ordinal redirect out of range
+
+Function: UrlGetLocationW
+ERROR: Ordinal redirect out of range
+
+Function: UrlGetPartA
+ERROR: Ordinal redirect out of range
+
+Function: UrlGetPartW
+ERROR: Ordinal redirect out of range
+
+Function: UrlHashA
+ERROR: Ordinal redirect out of range
+
+Function: UrlHashW
+	(redirected to DLL: SHUNIMPL.dll!)
+ERROR: DLL redirect unreadable
+
+Function: UrlIsA
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: UrlIsNoHistoryA
+	(redirected to DLL: SHELL32.dll!)
+ERROR: DLL redirect unreadable
+
+Function: UrlIsNoHistoryW
+	(redirected to DLL: KERNEL32.dll!OpenEventW)
+	(redirected to function: OpenEventW)
+Entry point:@ 0000000076D8B890
+	EB 06                             jmp 0x8                       IP:76d8b892
+	90                                nop                           IP:76d8b893
+	90                                nop                           IP:76d8b894
+	90                                nop                           IP:76d8b895
+Relocated entry point:@ 0000000076D603A3
+	48 B8 98 B8 D8 76 00 00 00 00     mov rax, 0x76d8b898           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: UrlIsOpaqueA
+	(redirected to DLL: KERNEL32.dll!RemoveDirectoryW)
+	(redirected to function: RemoveDirectoryW)
+Entry point:@ 0000000076DBC240
+	E9 4F 4C FE FF                    jmp 0xfffffffffffe4c54        IP:76dbc245
+Relocated entry point:@ 0000000076D603A3
+	48 B8 94 0E DA 76 00 00 00 00     mov rax, 0x76da0e94           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+
+Function: UrlIsOpaqueW
+	(redirected to DLL: KERNEL32.dll!GetShortPathNameW)
+	(redirected to function: GetShortPathNameW)
+Entry point:@ 0000000076D79330
+	EB 0E                             jmp 0x10                      IP:76d79332
+	90                                nop                           IP:76d79333
+	90                                nop                           IP:76d79334
+	90                                nop                           IP:76d79335
+Relocated entry point:@ 0000000076D603A3
+	48 B8 40 93 D7 76 00 00 00 00     mov rax, 0x76d79340           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+	90                                nop                           IP:76d603b0
+	90                                nop                           IP:76d603b1
+	90                                nop                           IP:76d603b2
+
+Function: UrlIsW
+ERROR: Ordinal redirect out of range
+
+Function: UrlUnescapeA
+ERROR: Ordinal redirect out of range
+
+Function: UrlUnescapeW
+ERROR: Ordinal redirect out of range
+
+Function: WhichPlatform
+	(redirected to function: StrChrNW)
+Entry point:@ 000007FEFEC60198
+	B8 02 00 00 00                    mov eax, 0x2                  IP:fec6019d
+Relocated entry point:@ 000007FEFED303A3
+	B8 02 00 00 00                    mov eax, 0x2                  IP:fed303a8
+
+Function: wnsprintfA
+ERROR: Ordinal redirect out of range
+
+Function: wnsprintfW
+	(redirected to DLL: KERNEL32.dll!WritePrivateProfileStructW)
+	(redirected to function: WritePrivateProfileStructW)
+Entry point:@ 0000000076DF1C30
+	FF F3                             push rbx                      IP:76df1c32
+	55                                push rbp                      IP:76df1c33
+	56                                push rsi                      IP:76df1c34
+	57                                push rdi                      IP:76df1c35
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	55                                push rbp                      IP:76d603a6
+	56                                push rsi                      IP:76d603a7
+	57                                push rdi                      IP:76d603a8
+
+Function: wvnsprintfA
+	(redirected to DLL: KERNEL32.dll!GetPrivateProfileStructW)
+	(redirected to function: GetPrivateProfileStructW)
+Entry point:@ 0000000076DF1F00
+	FF F3                             push rbx                      IP:76df1f02
+	55                                push rbp                      IP:76df1f03
+	56                                push rsi                      IP:76df1f04
+	57                                push rdi                      IP:76df1f05
+Relocated entry point:@ 0000000076D603A3
+	FF F3                             push rbx                      IP:76d603a5
+	55                                push rbp                      IP:76d603a6
+	56                                push rsi                      IP:76d603a7
+	57                                push rdi                      IP:76d603a8
+
+Function: wvnsprintfW
+	(redirected to DLL: KERNEL32.dll!CreateProcessW)
+	(redirected to function: CreateProcessW)
+Entry point:@ 0000000076D905E0
+	48 83 EC 68                       sub rsp, 0x68                 IP:76d905e4
+	48 8B 84 24 B8 00 00 00           mov rax, [rsp+0xb8]           IP:76d905ec
+Relocated entry point:@ 0000000076D603A3
+	48 83 EC 68                       sub rsp, 0x68                 IP:76d603a7
+	48 8B 84 24 B8 00 00 00           mov rax, [rsp+0xb8]           IP:76d603af

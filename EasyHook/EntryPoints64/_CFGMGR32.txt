@@ -1,0 +1,2141 @@
+
+Function: CMP_GetBlockedDriverInfo
+Entry point:@ 000007FEFCE5F5C0
+	48 8B C4                          mov rax, rsp                  IP:fce5f5c3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce5f5c7
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CMP_GetServerSideDeviceInstallFlags
+Entry point:@ 000007FEFCE5F6E4
+	FF F3                             push rbx                      IP:fce5f6e6
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce5f6ea
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce403a9
+
+Function: CMP_Init_Detection
+Entry point:@ 000007FEFCE5F4C4
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5f4c9
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CMP_RegisterNotification
+Entry point:@ 000007FEFCE534F0
+	FF F3                             push rbx                      IP:fce534f2
+	56                                push rsi                      IP:fce534f3
+	57                                push rdi                      IP:fce534f4
+	41 54                             push r12                      IP:fce534f6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CMP_Report_LogOn
+Entry point:@ 000007FEFCE5F4B0
+	81 E9 20 04 02 07                 sub ecx, 0x7020420            IP:fce5f4b6
+Relocated entry point:@ 000007FEFCE403A3
+	81 E9 20 04 02 07                 sub ecx, 0x7020420            IP:fce403a9
+
+Function: CMP_UnregisterNotification
+Entry point:@ 000007FEFCE53420
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:fce53425
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:fce403a8
+
+Function: CMP_WaitNoPendingInstallEvents
+Entry point:@ 000007FEFCE55D38
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce55d3d
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce403a8
+
+Function: CMP_WaitServicesAvailable
+Entry point:@ 000007FEFCE5F4DC
+	FF F3                             push rbx                      IP:fce5f4de
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce5f4e2
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce403a9
+
+Function: CM_Add_Driver_PackageW
+Entry point:@ 000007FEFCE575F8
+	4C 8B DC                          mov r11, rsp                  IP:fce575fb
+	48 83 EC 58                       sub rsp, 0x58                 IP:fce575ff
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	48 83 EC 58                       sub rsp, 0x58                 IP:fce403aa
+
+Function: CM_Add_Driver_Package_ExW
+Entry point:@ 000007FEFCE57650
+	4C 8B DC                          mov r11, rsp                  IP:fce57653
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fce57657
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fce403aa
+
+Function: CM_Add_Empty_Log_Conf
+Entry point:@ 000007FEFCE5E7FC
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5e800
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5e806
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Add_Empty_Log_Conf_Ex
+Entry point:@ 000007FEFCE5E040
+	FF F3                             push rbx                      IP:fce5e042
+	56                                push rsi                      IP:fce5e043
+	57                                push rdi                      IP:fce5e044
+	41 54                             push r12                      IP:fce5e046
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Add_IDA
+Entry point:@ 000007FEFCE5D074
+	45 33 C9                          xor r9d, r9d                  IP:fce5d077
+	EB 5F                             jmp 0x61                      IP:fce5d079
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 D8 D0 E5 FC FE 07 00 00     mov rax, 0x7fefce5d0d8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Add_IDW
+Entry point:@ 000007FEFCE5D064
+	45 33 C9                          xor r9d, r9d                  IP:fce5d067
+	E9 0C FC FF FF                    jmp 0xfffffffffffffc11        IP:fce5d06c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 78 CC E5 FC FE 07 00 00     mov rax, 0x7fefce5cc78        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Add_ID_ExA
+Entry point:@ 000007FEFCE5D0D8
+	4C 8B DC                          mov r11, rsp                  IP:fce5d0db
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce5d0df
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce403aa
+
+Function: CM_Add_ID_ExW
+Entry point:@ 000007FEFCE5CC78
+	FF F3                             push rbx                      IP:fce5cc7a
+	56                                push rsi                      IP:fce5cc7b
+	57                                push rdi                      IP:fce5cc7c
+	48 81 EC 00 02 00 00              sub rsp, 0x200                IP:fce5cc83
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 00 02 00 00              sub rsp, 0x200                IP:fce403ae
+
+Function: CM_Add_Range
+Entry point:@ 000007FEFCE60708
+	48 8B C4                          mov rax, rsp                  IP:fce6070b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce6070f
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Add_Res_Des
+Entry point:@ 000007FEFCE664C4
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce664c8
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce664cc
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce403ab
+
+Function: CM_Add_Res_Des_Ex
+Entry point:@ 000007FEFCE64FCC
+	FF F3                             push rbx                      IP:fce64fce
+	56                                push rsi                      IP:fce64fcf
+	57                                push rdi                      IP:fce64fd0
+	41 54                             push r12                      IP:fce64fd2
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Apply_PowerScheme
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Connect_MachineA
+Entry point:@ 000007FEFCE5F83C
+	FF F3                             push rbx                      IP:fce5f83e
+	48 83 EC 20                       sub rsp, 0x20                 IP:fce5f842
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fce403a9
+
+Function: CM_Connect_MachineW
+Entry point:@ 000007FEFCE5E98C
+	48 8B C4                          mov rax, rsp                  IP:fce5e98f
+	48 89 50 10                       mov [rax+0x10], rdx           IP:fce5e993
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 50 10                       mov [rax+0x10], rdx           IP:fce403aa
+
+Function: CM_Create_DevNodeA
+Entry point:@ 000007FEFCE5CF94
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5cf98
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5cf9e
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Create_DevNodeW
+Entry point:@ 000007FEFCE5CF78
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5cf7c
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5cf82
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Create_DevNode_ExA
+Entry point:@ 000007FEFCE5D150
+	4C 8B DC                          mov r11, rsp                  IP:fce5d153
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce5d157
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce403aa
+
+Function: CM_Create_DevNode_ExW
+Entry point:@ 000007FEFCE56E00
+	FF F3                             push rbx                      IP:fce56e02
+	56                                push rsi                      IP:fce56e03
+	57                                push rdi                      IP:fce56e04
+	41 54                             push r12                      IP:fce56e06
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Create_Range_List
+Entry point:@ 000007FEFCE607DC
+	48 8B C4                          mov rax, rsp                  IP:fce607df
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce607e3
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Delete_Class_Key
+Entry point:@ 000007FEFCE63C24
+	45 33 C0                          xor r8d, r8d                  IP:fce63c27
+	E9 24 FA FF FF                    jmp 0xfffffffffffffa29        IP:fce63c2c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 50 36 E6 FC FE 07 00 00     mov rax, 0x7fefce63650        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Delete_Class_Key_Ex
+Entry point:@ 000007FEFCE63650
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce63655
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Delete_DevNode_Key
+Entry point:@ 000007FEFCE63AD4
+	45 33 C9                          xor r9d, r9d                  IP:fce63ad7
+	E9 C8 EE FF FF                    jmp 0xffffffffffffeecd        IP:fce63adc
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 A4 29 E6 FC FE 07 00 00     mov rax, 0x7fefce629a4        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Delete_DevNode_Key_Ex
+Entry point:@ 000007FEFCE629A4
+	FF F3                             push rbx                      IP:fce629a6
+	56                                push rsi                      IP:fce629a7
+	57                                push rdi                      IP:fce629a8
+	41 54                             push r12                      IP:fce629aa
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Delete_Device_Interface_KeyA
+Entry point:@ 000007FEFCE63B3C
+	45 33 C0                          xor r8d, r8d                  IP:fce63b3f
+	E9 74 08 00 00                    jmp 0x879                     IP:fce63b44
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 B8 43 E6 FC FE 07 00 00     mov rax, 0x7fefce643b8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Delete_Device_Interface_KeyW
+Entry point:@ 000007FEFCE63B2C
+	45 33 C0                          xor r8d, r8d                  IP:fce63b2f
+	E9 E4 F5 FF FF                    jmp 0xfffffffffffff5e9        IP:fce63b34
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 18 31 E6 FC FE 07 00 00     mov rax, 0x7fefce63118        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Delete_Device_Interface_Key_ExA
+Entry point:@ 000007FEFCE643B8
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce643bd
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce403a8
+
+Function: CM_Delete_Device_Interface_Key_ExW
+Entry point:@ 000007FEFCE63118
+	4C 8B DC                          mov r11, rsp                  IP:fce6311b
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fce6311f
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fce403aa
+
+Function: CM_Delete_Driver_PackageW
+Entry point:@ 000007FEFCE5D780
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5d784
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce5d788
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Delete_Driver_Package_ExW
+Entry point:@ 000007FEFCE5D498
+	48 8B C4                          mov rax, rsp                  IP:fce5d49b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce5d49f
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Delete_PowerScheme
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Delete_Range
+Entry point:@ 000007FEFCE60884
+	48 8B C4                          mov rax, rsp                  IP:fce60887
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fce6088b
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fce403aa
+
+Function: CM_Detect_Resource_Conflict
+Entry point:@ 000007FEFCE6657C
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce66580
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce66586
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Detect_Resource_Conflict_Ex
+Entry point:@ 000007FEFCE66254
+	FF F3                             push rbx                      IP:fce66256
+	56                                push rsi                      IP:fce66257
+	41 54                             push r12                      IP:fce66259
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	41 54                             push r12                      IP:fce403a8
+
+Function: CM_Disable_DevNode
+Entry point:@ 000007FEFCE5CFC0
+	45 33 C0                          xor r8d, r8d                  IP:fce5cfc3
+	E9 E8 EF FF FF                    jmp 0xffffffffffffefed        IP:fce5cfc8
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 B0 BF E5 FC FE 07 00 00     mov rax, 0x7fefce5bfb0        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Disable_DevNode_Ex
+Entry point:@ 000007FEFCE5BFB0
+	FF F3                             push rbx                      IP:fce5bfb2
+	56                                push rsi                      IP:fce5bfb3
+	57                                push rdi                      IP:fce5bfb4
+	41 54                             push r12                      IP:fce5bfb6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Disconnect_Machine
+Entry point:@ 000007FEFCE5EEC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5eec5
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Dup_Range_List
+Entry point:@ 000007FEFCE60A68
+	48 8B C4                          mov rax, rsp                  IP:fce60a6b
+	48 89 50 10                       mov [rax+0x10], rdx           IP:fce60a6f
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 50 10                       mov [rax+0x10], rdx           IP:fce403aa
+
+Function: CM_Duplicate_PowerScheme
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Enable_DevNode
+Entry point:@ 000007FEFCE5CFD0
+	45 33 C0                          xor r8d, r8d                  IP:fce5cfd3
+	E9 C0 F1 FF FF                    jmp 0xfffffffffffff1c5        IP:fce5cfd8
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 98 C1 E5 FC FE 07 00 00     mov rax, 0x7fefce5c198        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Enable_DevNode_Ex
+Entry point:@ 000007FEFCE5C198
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce5c19d
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Enumerate_Classes
+Entry point:@ 000007FEFCE63BA4
+	45 33 C9                          xor r9d, r9d                  IP:fce63ba7
+	E9 24 28 FF FF                    jmp 0xffffffffffff2829        IP:fce63bac
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 D0 63 E5 FC FE 07 00 00     mov rax, 0x7fefce563d0        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Enumerate_Classes_Ex
+Entry point:@ 000007FEFCE563D0
+	FF F3                             push rbx                      IP:fce563d2
+	56                                push rsi                      IP:fce563d3
+	57                                push rdi                      IP:fce563d4
+	48 81 EC D0 00 00 00              sub rsp, 0xd0                 IP:fce563db
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC D0 00 00 00              sub rsp, 0xd0                 IP:fce403ae
+
+Function: CM_Enumerate_EnumeratorsA
+Entry point:@ 000007FEFCE66A30
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce66a34
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce66a3a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Enumerate_EnumeratorsW
+Entry point:@ 000007FEFCE66A14
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce66a18
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce66a1e
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Enumerate_Enumerators_ExA
+Entry point:@ 000007FEFCE66B44
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce66b49
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Enumerate_Enumerators_ExW
+Entry point:@ 000007FEFCE66764
+	48 8B C4                          mov rax, rsp                  IP:fce66767
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce6676b
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Find_Range
+Entry point:@ 000007FEFCE60BA8
+	48 8B C4                          mov rax, rsp                  IP:fce60bab
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce60baf
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_First_Range
+Entry point:@ 000007FEFCE60DD0
+	48 8B C4                          mov rax, rsp                  IP:fce60dd3
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fce60dd7
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fce403aa
+
+Function: CM_Free_Log_Conf
+Entry point:@ 000007FEFCE5E818
+	45 33 C0                          xor r8d, r8d                  IP:fce5e81b
+	E9 18 FA FF FF                    jmp 0xfffffffffffffa1d        IP:fce5e820
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 38 E2 E5 FC FE 07 00 00     mov rax, 0x7fefce5e238        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Free_Log_Conf_Ex
+Entry point:@ 000007FEFCE5E238
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce5e23d
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Free_Log_Conf_Handle
+Entry point:@ 000007FEFCE5E5E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5e5e5
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Free_Range_List
+Entry point:@ 000007FEFCE60EE0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce60ee5
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce403a8
+
+Function: CM_Free_Res_Des
+Entry point:@ 000007FEFCE664F0
+	45 33 C9                          xor r9d, r9d                  IP:fce664f3
+	E9 84 EE FF FF                    jmp 0xffffffffffffee89        IP:fce664f8
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 7C 53 E6 FC FE 07 00 00     mov rax, 0x7fefce6537c        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Free_Res_Des_Ex
+Entry point:@ 000007FEFCE6537C
+	FF F3                             push rbx                      IP:fce6537e
+	56                                push rsi                      IP:fce6537f
+	41 54                             push r12                      IP:fce65381
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	41 54                             push r12                      IP:fce403a8
+
+Function: CM_Free_Res_Des_Handle
+Entry point:@ 000007FEFCE6645C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce66461
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Free_Resource_Conflict_Handle
+Entry point:@ 000007FEFCE5B97C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5b981
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Get_Child
+Entry point:@ 000007FEFCE55270
+	45 33 C9                          xor r9d, r9d                  IP:fce55273
+	E9 80 FE FF FF                    jmp 0xfffffffffffffe85        IP:fce55278
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 F8 50 E5 FC FE 07 00 00     mov rax, 0x7fefce550f8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Child_Ex
+Entry point:@ 000007FEFCE550F8
+	FF F3                             push rbx                      IP:fce550fa
+	56                                push rsi                      IP:fce550fb
+	41 54                             push r12                      IP:fce550fd
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	41 54                             push r12                      IP:fce403a8
+
+Function: CM_Get_Class_Key_NameA
+Entry point:@ 000007FEFCE63BEC
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63bf0
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce63bf6
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Class_Key_NameW
+Entry point:@ 000007FEFCE63C08
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63c0c
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce63c12
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Class_Key_Name_ExA
+Entry point:@ 000007FEFCE64570
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce64575
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Get_Class_Key_Name_ExW
+Entry point:@ 000007FEFCE63598
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce6359d
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Get_Class_NameA
+Entry point:@ 000007FEFCE63BD0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63bd4
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce63bda
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Class_NameW
+Entry point:@ 000007FEFCE63BB4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63bb8
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce63bbe
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Class_Name_ExA
+Entry point:@ 000007FEFCE644CC
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce644d1
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Get_Class_Name_ExW
+Entry point:@ 000007FEFCE633C0
+	FF F3                             push rbx                      IP:fce633c2
+	56                                push rsi                      IP:fce633c3
+	57                                push rdi                      IP:fce633c4
+	41 54                             push r12                      IP:fce633c6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Class_PropertyW
+Entry point:@ 000007FEFCE60558
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce6055c
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce60562
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_Class_Property_ExW
+Entry point:@ 000007FEFCE529EC
+	FF F3                             push rbx                      IP:fce529ee
+	56                                push rsi                      IP:fce529ef
+	57                                push rdi                      IP:fce529f0
+	41 54                             push r12                      IP:fce529f2
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Class_Property_Keys
+Entry point:@ 000007FEFCE6053C
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce60540
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce60546
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Class_Property_Keys_Ex
+Entry point:@ 000007FEFCE5FF40
+	44 89 4C 24 20                    mov [rsp+0x20], r9d           IP:fce5ff45
+Relocated entry point:@ 000007FEFCE403A3
+	44 89 4C 24 20                    mov [rsp+0x20], r9d           IP:fce403a8
+
+Function: CM_Get_Class_Registry_PropertyA
+Entry point:@ 000007FEFCE64074
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce64079
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Get_Class_Registry_PropertyW
+Entry point:@ 000007FEFCE61CE4
+	FF F3                             push rbx                      IP:fce61ce6
+	56                                push rsi                      IP:fce61ce7
+	57                                push rdi                      IP:fce61ce8
+	48 81 EC 70 01 00 00              sub rsp, 0x170                IP:fce61cef
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 70 01 00 00              sub rsp, 0x170                IP:fce403ae
+
+Function: CM_Get_Depth
+Entry point:@ 000007FEFCE66AAC
+	45 33 C9                          xor r9d, r9d                  IP:fce66aaf
+	E9 E4 FD FF FF                    jmp 0xfffffffffffffde9        IP:fce66ab4
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 98 68 E6 FC FE 07 00 00     mov rax, 0x7fefce66898        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Depth_Ex
+Entry point:@ 000007FEFCE66898
+	FF F3                             push rbx                      IP:fce6689a
+	57                                push rdi                      IP:fce6689b
+	48 81 EC 08 02 00 00              sub rsp, 0x208                IP:fce668a2
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	57                                push rdi                      IP:fce403a6
+	48 81 EC 08 02 00 00              sub rsp, 0x208                IP:fce403ad
+
+Function: CM_Get_DevNode_Custom_PropertyA
+Entry point:@ 000007FEFCE63D80
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63d84
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63d8a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Custom_PropertyW
+Entry point:@ 000007FEFCE54BF4
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce54bf8
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce54bfe
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Custom_Property_ExA
+Entry point:@ 000007FEFCE64C18
+	4C 8B DC                          mov r11, rsp                  IP:fce64c1b
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fce64c1f
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fce403aa
+
+Function: CM_Get_DevNode_Custom_Property_ExW
+Entry point:@ 000007FEFCE54C20
+	FF F3                             push rbx                      IP:fce54c22
+	56                                push rsi                      IP:fce54c23
+	57                                push rdi                      IP:fce54c24
+	41 54                             push r12                      IP:fce54c26
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_DevNode_PropertyW
+Entry point:@ 000007FEFCE60470
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce60474
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce6047a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Property_ExW
+Entry point:@ 000007FEFCE530E0
+	FF F3                             push rbx                      IP:fce530e2
+	56                                push rsi                      IP:fce530e3
+	57                                push rdi                      IP:fce530e4
+	41 54                             push r12                      IP:fce530e6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_DevNode_Property_Keys
+Entry point:@ 000007FEFCE6044C
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce60450
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce60456
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Property_Keys_Ex
+Entry point:@ 000007FEFCE5F8A8
+	FF F3                             push rbx                      IP:fce5f8aa
+	56                                push rsi                      IP:fce5f8ab
+	57                                push rdi                      IP:fce5f8ac
+	41 54                             push r12                      IP:fce5f8ae
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_DevNode_Registry_PropertyA
+Entry point:@ 000007FEFCE63A30
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63a34
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63a3a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Registry_PropertyW
+Entry point:@ 000007FEFCE54008
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce5400c
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce54012
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Registry_Property_ExA
+Entry point:@ 000007FEFCE63DAC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce63db1
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Get_DevNode_Registry_Property_ExW
+Entry point:@ 000007FEFCE54144
+	FF F3                             push rbx                      IP:fce54146
+	56                                push rsi                      IP:fce54147
+	57                                push rdi                      IP:fce54148
+	48 81 EC 90 02 00 00              sub rsp, 0x290                IP:fce5414f
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 90 02 00 00              sub rsp, 0x290                IP:fce403ae
+
+Function: CM_Get_DevNode_Status
+Entry point:@ 000007FEFCE530C0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce530c4
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce530ca
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_DevNode_Status_Ex
+Entry point:@ 000007FEFCE52FB4
+	FF F3                             push rbx                      IP:fce52fb6
+	56                                push rsi                      IP:fce52fb7
+	57                                push rdi                      IP:fce52fb8
+	48 81 EC 00 02 00 00              sub rsp, 0x200                IP:fce52fbf
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 00 02 00 00              sub rsp, 0x200                IP:fce403ae
+
+Function: CM_Get_Device_IDA
+Entry point:@ 000007FEFCE560A0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce560a4
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce560aa
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_IDW
+Entry point:@ 000007FEFCE54034
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce54038
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5403e
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_ID_ExA
+Entry point:@ 000007FEFCE560BC
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce560c1
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Get_Device_ID_ExW
+Entry point:@ 000007FEFCE52D90
+	FF F3                             push rbx                      IP:fce52d92
+	56                                push rsi                      IP:fce52d93
+	57                                push rdi                      IP:fce52d94
+	41 54                             push r12                      IP:fce52d96
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Device_ID_ListA
+Entry point:@ 000007FEFCE66A70
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce66a74
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce66a7a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_ID_ListW
+Entry point:@ 000007FEFCE66A4C
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce66a50
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce66a56
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_ID_List_ExA
+Entry point:@ 000007FEFCE66BE0
+	48 8B C4                          mov rax, rsp                  IP:fce66be3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce66be7
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_ID_List_ExW
+Entry point:@ 000007FEFCE53F0C
+	48 8B C4                          mov rax, rsp                  IP:fce53f0f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce53f13
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_ID_List_SizeA
+Entry point:@ 000007FEFCE66A9C
+	45 33 C9                          xor r9d, r9d                  IP:fce66a9f
+	E9 58 02 00 00                    jmp 0x25d                     IP:fce66aa4
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 FC 6C E6 FC FE 07 00 00     mov rax, 0x7fefce66cfc        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Device_ID_List_SizeW
+Entry point:@ 000007FEFCE66A8C
+	45 33 C9                          xor r9d, r9d                  IP:fce66a8f
+	E9 80 F1 FE FF                    jmp 0xfffffffffffef185        IP:fce66a94
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 14 5C E5 FC FE 07 00 00     mov rax, 0x7fefce55c14        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Device_ID_List_Size_ExA
+Entry point:@ 000007FEFCE66CFC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce66d01
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Get_Device_ID_List_Size_ExW
+Entry point:@ 000007FEFCE55C14
+	48 8B C4                          mov rax, rsp                  IP:fce55c17
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce55c1b
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_ID_Size
+Entry point:@ 000007FEFCE56A20
+	45 33 C9                          xor r9d, r9d                  IP:fce56a23
+	E9 B8 C4 FF FF                    jmp 0xffffffffffffc4bd        IP:fce56a28
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 E0 2E E5 FC FE 07 00 00     mov rax, 0x7fefce52ee0        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Device_ID_Size_Ex
+Entry point:@ 000007FEFCE52EE0
+	FF F3                             push rbx                      IP:fce52ee2
+	56                                push rsi                      IP:fce52ee3
+	57                                push rdi                      IP:fce52ee4
+	48 81 EC E0 01 00 00              sub rsp, 0x1e0                IP:fce52eeb
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC E0 01 00 00              sub rsp, 0x1e0                IP:fce403ae
+
+Function: CM_Get_Device_Interface_AliasA
+Entry point:@ 000007FEFCE63C34
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63c38
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63c3c
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Get_Device_Interface_AliasW
+Entry point:@ 000007FEFCE63C58
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63c5c
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63c60
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Get_Device_Interface_Alias_ExA
+Entry point:@ 000007FEFCE64614
+	48 8B C4                          mov rax, rsp                  IP:fce64617
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fce6461b
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fce403aa
+
+Function: CM_Get_Device_Interface_Alias_ExW
+Entry point:@ 000007FEFCE536E4
+	48 8B C4                          mov rax, rsp                  IP:fce536e7
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce536eb
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_Interface_ListA
+Entry point:@ 000007FEFCE63C7C
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63c80
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63c84
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Get_Device_Interface_ListW
+Entry point:@ 000007FEFCE63CA0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63ca4
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63ca8
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Get_Device_Interface_List_ExA
+Entry point:@ 000007FEFCE64788
+	4C 8B DC                          mov r11, rsp                  IP:fce6478b
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce6478f
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_Interface_List_ExW
+Entry point:@ 000007FEFCE5110C
+	48 8B C4                          mov rax, rsp                  IP:fce5110f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce51113
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_Interface_List_SizeA
+Entry point:@ 000007FEFCE63CC4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63cc8
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce63cce
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_Interface_List_SizeW
+Entry point:@ 000007FEFCE63CE0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63ce4
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce63cea
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_Interface_List_Size_ExA
+Entry point:@ 000007FEFCE648B0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce648b5
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce403a8
+
+Function: CM_Get_Device_Interface_List_Size_ExW
+Entry point:@ 000007FEFCE51AEC
+	48 8B C4                          mov rax, rsp                  IP:fce51aef
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce51af3
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Device_Interface_PropertyW
+Entry point:@ 000007FEFCE604E4
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce604e8
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce604ee
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_Interface_Property_ExW
+Entry point:@ 000007FEFCE52C20
+	48 8B C4                          mov rax, rsp                  IP:fce52c23
+	4C 89 40 18                       mov [rax+0x18], r8            IP:fce52c27
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	4C 89 40 18                       mov [rax+0x18], r8            IP:fce403aa
+
+Function: CM_Get_Device_Interface_Property_KeysW
+Entry point:@ 000007FEFCE604C8
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce604cc
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce604d2
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Device_Interface_Property_Keys_ExW
+Entry point:@ 000007FEFCE5FB24
+	FF F3                             push rbx                      IP:fce5fb26
+	56                                push rsi                      IP:fce5fb27
+	57                                push rdi                      IP:fce5fb28
+	41 54                             push r12                      IP:fce5fb2a
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_First_Log_Conf
+Entry point:@ 000007FEFCE56084
+	45 33 C9                          xor r9d, r9d                  IP:fce56087
+	E9 C8 FE FF FF                    jmp 0xfffffffffffffecd        IP:fce5608c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 54 5F E5 FC FE 07 00 00     mov rax, 0x7fefce55f54        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_First_Log_Conf_Ex
+Entry point:@ 000007FEFCE55F54
+	FF F3                             push rbx                      IP:fce55f56
+	56                                push rsi                      IP:fce55f57
+	57                                push rdi                      IP:fce55f58
+	41 54                             push r12                      IP:fce55f5a
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Global_State
+Entry point:@ 000007FEFCE5F7DC
+	45 33 C0                          xor r8d, r8d                  IP:fce5f7df
+	E9 88 F7 FF FF                    jmp 0xfffffffffffff78d        IP:fce5f7e4
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 6C EF E5 FC FE 07 00 00     mov rax, 0x7fefce5ef6c        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Global_State_Ex
+Entry point:@ 000007FEFCE5EF6C
+	FF F3                             push rbx                      IP:fce5ef6e
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce5ef72
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce403a9
+
+Function: CM_Get_HW_Prof_FlagsA
+Entry point:@ 000007FEFCE5DED8
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5dedc
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5dee2
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_HW_Prof_FlagsW
+Entry point:@ 000007FEFCE5DEBC
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5dec0
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5dec6
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_HW_Prof_Flags_ExA
+Entry point:@ 000007FEFCE5DCF8
+	48 8B C4                          mov rax, rsp                  IP:fce5dcfb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce5dcff
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_HW_Prof_Flags_ExW
+Entry point:@ 000007FEFCE5D8A4
+	FF F3                             push rbx                      IP:fce5d8a6
+	56                                push rsi                      IP:fce5d8a7
+	57                                push rdi                      IP:fce5d8a8
+	41 54                             push r12                      IP:fce5d8aa
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Hardware_Profile_InfoA
+Entry point:@ 000007FEFCE5DF3C
+	45 33 C9                          xor r9d, r9d                  IP:fce5df3f
+	E9 AC FE FF FF                    jmp 0xfffffffffffffeb1        IP:fce5df44
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 F0 DD E5 FC FE 07 00 00     mov rax, 0x7fefce5ddf0        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Hardware_Profile_InfoW
+Entry point:@ 000007FEFCE5DF2C
+	45 33 C9                          xor r9d, r9d                  IP:fce5df2f
+	E9 C4 FB FF FF                    jmp 0xfffffffffffffbc9        IP:fce5df34
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 F8 DA E5 FC FE 07 00 00     mov rax, 0x7fefce5daf8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Hardware_Profile_Info_ExA
+Entry point:@ 000007FEFCE5DDF0
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fce5ddf5
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fce403a8
+
+Function: CM_Get_Hardware_Profile_Info_ExW
+Entry point:@ 000007FEFCE5DAF8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5dafd
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Get_Log_Conf_Priority
+Entry point:@ 000007FEFCE5E838
+	45 33 C9                          xor r9d, r9d                  IP:fce5e83b
+	E9 08 FE FF FF                    jmp 0xfffffffffffffe0d        IP:fce5e840
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 48 E6 E5 FC FE 07 00 00     mov rax, 0x7fefce5e648        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Log_Conf_Priority_Ex
+Entry point:@ 000007FEFCE5E648
+	FF F3                             push rbx                      IP:fce5e64a
+	56                                push rsi                      IP:fce5e64b
+	57                                push rdi                      IP:fce5e64c
+	41 54                             push r12                      IP:fce5e64e
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Next_Log_Conf
+Entry point:@ 000007FEFCE5E828
+	45 33 C9                          xor r9d, r9d                  IP:fce5e82b
+	E9 C8 FB FF FF                    jmp 0xfffffffffffffbcd        IP:fce5e830
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 F8 E3 E5 FC FE 07 00 00     mov rax, 0x7fefce5e3f8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Next_Log_Conf_Ex
+Entry point:@ 000007FEFCE5E3F8
+	FF F3                             push rbx                      IP:fce5e3fa
+	56                                push rsi                      IP:fce5e3fb
+	57                                push rdi                      IP:fce5e3fc
+	41 54                             push r12                      IP:fce5e3fe
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Next_Res_Des
+Entry point:@ 000007FEFCE66500
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce66504
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce66508
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Get_Next_Res_Des_Ex
+Entry point:@ 000007FEFCE655FC
+	FF F3                             push rbx                      IP:fce655fe
+	56                                push rsi                      IP:fce655ff
+	57                                push rdi                      IP:fce65600
+	41 54                             push r12                      IP:fce65602
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Parent
+Entry point:@ 000007FEFCE54F70
+	45 33 C9                          xor r9d, r9d                  IP:fce54f73
+	E9 80 FE FF FF                    jmp 0xfffffffffffffe85        IP:fce54f78
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 F8 4D E5 FC FE 07 00 00     mov rax, 0x7fefce54df8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Parent_Ex
+Entry point:@ 000007FEFCE54DF8
+	FF F3                             push rbx                      IP:fce54dfa
+	56                                push rsi                      IP:fce54dfb
+	41 54                             push r12                      IP:fce54dfd
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	41 54                             push r12                      IP:fce403a8
+
+Function: CM_Get_Res_Des_Data
+Entry point:@ 000007FEFCE66524
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce66528
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce6652e
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Get_Res_Des_Data_Ex
+Entry point:@ 000007FEFCE658D0
+	FF F3                             push rbx                      IP:fce658d2
+	56                                push rsi                      IP:fce658d3
+	57                                push rdi                      IP:fce658d4
+	41 54                             push r12                      IP:fce658d6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Res_Des_Data_Size
+Entry point:@ 000007FEFCE66540
+	45 33 C9                          xor r9d, r9d                  IP:fce66543
+	E9 C8 F6 FF FF                    jmp 0xfffffffffffff6cd        IP:fce66548
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 10 5C E6 FC FE 07 00 00     mov rax, 0x7fefce65c10        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Res_Des_Data_Size_Ex
+Entry point:@ 000007FEFCE65C10
+	FF F3                             push rbx                      IP:fce65c12
+	56                                push rsi                      IP:fce65c13
+	57                                push rdi                      IP:fce65c14
+	41 54                             push r12                      IP:fce65c16
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Get_Resource_Conflict_Count
+Entry point:@ 000007FEFCE5BA00
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5ba04
+	45 33 C0                          xor r8d, r8d                  IP:fce5ba07
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	45 33 C0                          xor r8d, r8d                  IP:fce403aa
+
+Function: CM_Get_Resource_Conflict_DetailsA
+Entry point:@ 000007FEFCE5BE40
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce5be45
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fce403a8
+
+Function: CM_Get_Resource_Conflict_DetailsW
+Entry point:@ 000007FEFCE5BA70
+	48 8B C4                          mov rax, rsp                  IP:fce5ba73
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce5ba77
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Get_Sibling
+Entry point:@ 000007FEFCE55280
+	45 33 C9                          xor r9d, r9d                  IP:fce55283
+	E9 F8 FC FF FF                    jmp 0xfffffffffffffcfd        IP:fce55288
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 80 4F E5 FC FE 07 00 00     mov rax, 0x7fefce54f80        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Get_Sibling_Ex
+Entry point:@ 000007FEFCE54F80
+	FF F3                             push rbx                      IP:fce54f82
+	56                                push rsi                      IP:fce54f83
+	41 54                             push r12                      IP:fce54f85
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	41 54                             push r12                      IP:fce403a8
+
+Function: CM_Get_Version
+Entry point:@ 000007FEFCE5F7BC
+	33 C9                             xor ecx, ecx                  IP:fce5f7be
+	E9 2D F1 FF FF                    jmp 0xfffffffffffff132        IP:fce5f7c3
+Relocated entry point:@ 000007FEFCE403A3
+	33 C9                             xor ecx, ecx                  IP:fce403a5
+	48 B8 F0 E8 E5 FC FE 07 00 00     mov rax, 0x7fefce5e8f0        IP:fce403af
+	FF E0                             jmp rax                       IP:fce403b1
+
+Function: CM_Get_Version_Ex
+Entry point:@ 000007FEFCE5E8F0
+	FF F3                             push rbx                      IP:fce5e8f2
+	48 83 EC 30                       sub rsp, 0x30                 IP:fce5e8f6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 30                       sub rsp, 0x30                 IP:fce403a9
+
+Function: CM_Import_PowerScheme
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Install_DevNodeW
+Entry point:@ 000007FEFCE5DF60
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce5df64
+	48 83 64 24 38 00                 and qword [rsp+0x38], 0x0     IP:fce5df6a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 38 00                 and qword [rsp+0x38], 0x0     IP:fce403ad
+
+Function: CM_Install_DevNode_ExW
+Entry point:@ 000007FEFCE572F0
+	FF F3                             push rbx                      IP:fce572f2
+	56                                push rsi                      IP:fce572f3
+	57                                push rdi                      IP:fce572f4
+	41 54                             push r12                      IP:fce572f6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Intersect_Range_List
+Entry point:@ 000007FEFCE60FB8
+	48 8B C4                          mov rax, rsp                  IP:fce60fbb
+	48 89 70 20                       mov [rax+0x20], rsi           IP:fce60fbf
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 70 20                       mov [rax+0x20], rsi           IP:fce403aa
+
+Function: CM_Invert_Range_List
+Entry point:@ 000007FEFCE6124C
+	48 8B C4                          mov rax, rsp                  IP:fce6124f
+	48 89 58 18                       mov [rax+0x18], rbx           IP:fce61253
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 18                       mov [rax+0x18], rbx           IP:fce403aa
+
+Function: CM_Is_Dock_Station_Present
+Entry point:@ 000007FEFCE5634C
+	33 D2                             xor edx, edx                  IP:fce5634e
+	EB 08                             jmp 0xa                       IP:fce56350
+	90                                nop                           IP:fce56351
+Relocated entry point:@ 000007FEFCE403A3
+	33 D2                             xor edx, edx                  IP:fce403a5
+	48 B8 58 63 E5 FC FE 07 00 00     mov rax, 0x7fefce56358        IP:fce403af
+	FF E0                             jmp rax                       IP:fce403b1
+	90                                nop                           IP:fce403b2
+
+Function: CM_Is_Dock_Station_Present_Ex
+Entry point:@ 000007FEFCE56358
+	FF F3                             push rbx                      IP:fce5635a
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce5635e
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce403a9
+
+Function: CM_Is_Version_Available
+Entry point:@ 000007FEFCE5F7CC
+	33 D2                             xor edx, edx                  IP:fce5f7ce
+	E9 49 29 FF FF                    jmp 0xffffffffffff294e        IP:fce5f7d3
+Relocated entry point:@ 000007FEFCE403A3
+	33 D2                             xor edx, edx                  IP:fce403a5
+	48 B8 1C 21 E5 FC FE 07 00 00     mov rax, 0x7fefce5211c        IP:fce403af
+	FF E0                             jmp rax                       IP:fce403b1
+
+Function: CM_Is_Version_Available_Ex
+Entry point:@ 000007FEFCE5211C
+	FF F3                             push rbx                      IP:fce5211e
+	48 83 EC 20                       sub rsp, 0x20                 IP:fce52122
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fce403a9
+
+Function: CM_Locate_DevNodeA
+Entry point:@ 000007FEFCE66A04
+	45 33 C9                          xor r9d, r9d                  IP:fce66a07
+	E9 B0 00 00 00                    jmp 0xb5                      IP:fce66a0c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 BC 6A E6 FC FE 07 00 00     mov rax, 0x7fefce66abc        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Locate_DevNodeW
+Entry point:@ 000007FEFCE55D28
+	45 33 C9                          xor r9d, r9d                  IP:fce55d2b
+	E9 F4 C4 FF FF                    jmp 0xffffffffffffc4f9        IP:fce55d30
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 24 22 E5 FC FE 07 00 00     mov rax, 0x7fefce52224        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Locate_DevNode_ExA
+Entry point:@ 000007FEFCE66ABC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce66ac1
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Locate_DevNode_ExW
+Entry point:@ 000007FEFCE52224
+	FF F3                             push rbx                      IP:fce52226
+	56                                push rsi                      IP:fce52227
+	57                                push rdi                      IP:fce52228
+	41 54                             push r12                      IP:fce5222a
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_MapCrToSpErr
+ERROR: Unable to allocate hook: Hooking far conditional jumps is not supported.
+	83 F9 25                          cmp ecx, 0x25                 IP:fce533f3
+	0F 87 B8 50 00 00                 ja 0x50be                     IP:fce533f9
+
+Function: CM_MapCrToWin32Err
+Entry point:@ 000007FEFCE53388
+	48 83 EC 28                       sub rsp, 0x28                 IP:fce5338c
+	41 B8 0D 00 00 00                 mov r8d, 0xd                  IP:fce53392
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fce403a7
+	41 B8 0D 00 00 00                 mov r8d, 0xd                  IP:fce403ad
+
+Function: CM_Merge_Range_List
+Entry point:@ 000007FEFCE6144C
+	48 8B C4                          mov rax, rsp                  IP:fce6144f
+	48 89 70 20                       mov [rax+0x20], rsi           IP:fce61453
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 70 20                       mov [rax+0x20], rsi           IP:fce403aa
+
+Function: CM_Modify_Res_Des
+Entry point:@ 000007FEFCE66550
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce66554
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce66558
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce403ab
+
+Function: CM_Modify_Res_Des_Ex
+Entry point:@ 000007FEFCE65E9C
+	FF F3                             push rbx                      IP:fce65e9e
+	56                                push rsi                      IP:fce65e9f
+	57                                push rdi                      IP:fce65ea0
+	41 54                             push r12                      IP:fce65ea2
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Move_DevNode
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Move_DevNode_Ex
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Next_Range
+Entry point:@ 000007FEFCE61790
+	48 8B C4                          mov rax, rsp                  IP:fce61793
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce61797
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Open_Class_KeyA
+Entry point:@ 000007FEFCE63B78
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63b7c
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63b82
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Open_Class_KeyW
+Entry point:@ 000007FEFCE63B4C
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63b50
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63b56
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Open_Class_Key_ExA
+Entry point:@ 000007FEFCE64420
+	4C 8B DC                          mov r11, rsp                  IP:fce64423
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce64427
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fce403aa
+
+Function: CM_Open_Class_Key_ExW
+Entry point:@ 000007FEFCE53C80
+	FF F3                             push rbx                      IP:fce53c82
+	56                                push rsi                      IP:fce53c83
+	57                                push rdi                      IP:fce53c84
+	41 54                             push r12                      IP:fce53c86
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Open_DevNode_Key
+Entry point:@ 000007FEFCE63AA8
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63aac
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63ab2
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Open_DevNode_Key_Ex
+Entry point:@ 000007FEFCE543F0
+	4C 8B DC                          mov r11, rsp                  IP:fce543f3
+	53                                push rbx                      IP:fce543f4
+	56                                push rsi                      IP:fce543f5
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	53                                push rbx                      IP:fce403a7
+	56                                push rsi                      IP:fce403a8
+
+Function: CM_Open_Device_Interface_KeyA
+Entry point:@ 000007FEFCE63B08
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63b0c
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63b10
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Open_Device_Interface_KeyW
+Entry point:@ 000007FEFCE63AE4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63ae8
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63aec
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Open_Device_Interface_Key_ExA
+Entry point:@ 000007FEFCE64330
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce64335
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fce403a8
+
+Function: CM_Open_Device_Interface_Key_ExW
+Entry point:@ 000007FEFCE62DB8
+	FF F3                             push rbx                      IP:fce62dba
+	56                                push rsi                      IP:fce62dbb
+	57                                push rdi                      IP:fce62dbc
+	41 54                             push r12                      IP:fce62dbe
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Query_And_Remove_SubTreeA
+Entry point:@ 000007FEFCE5D030
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5d034
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce5d038
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Query_And_Remove_SubTreeW
+Entry point:@ 000007FEFCE5D000
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5d004
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce5d008
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Query_And_Remove_SubTree_ExA
+Entry point:@ 000007FEFCE5D1D4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5d1d9
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Query_And_Remove_SubTree_ExW
+Entry point:@ 000007FEFCE5C680
+	FF F3                             push rbx                      IP:fce5c682
+	56                                push rsi                      IP:fce5c683
+	57                                push rdi                      IP:fce5c684
+	41 54                             push r12                      IP:fce5c686
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Query_Arbitrator_Free_Data
+Entry point:@ 000007FEFCE5F7EC
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5f7f0
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce5f7f4
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Query_Arbitrator_Free_Data_Ex
+Entry point:@ 000007FEFCE5F154
+	FF F3                             push rbx                      IP:fce5f156
+	56                                push rsi                      IP:fce5f157
+	57                                push rdi                      IP:fce5f158
+	41 54                             push r12                      IP:fce5f15a
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Query_Arbitrator_Free_Size
+Entry point:@ 000007FEFCE5F810
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5f814
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5f81a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Query_Arbitrator_Free_Size_Ex
+Entry point:@ 000007FEFCE5F310
+	FF F3                             push rbx                      IP:fce5f312
+	56                                push rsi                      IP:fce5f313
+	57                                push rdi                      IP:fce5f314
+	41 54                             push r12                      IP:fce5f316
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Query_Remove_SubTree
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Query_Remove_SubTree_Ex
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Query_Resource_Conflict_List
+Entry point:@ 000007FEFCE5B36C
+	4C 8B DC                          mov r11, rsp                  IP:fce5b36f
+	53                                push rbx                      IP:fce5b370
+	56                                push rsi                      IP:fce5b371
+Relocated entry point:@ 000007FEFCE403A3
+	4C 8B DC                          mov r11, rsp                  IP:fce403a6
+	53                                push rbx                      IP:fce403a7
+	56                                push rsi                      IP:fce403a8
+
+Function: CM_Reenumerate_DevNode
+Entry point:@ 000007FEFCE5CFF0
+	45 33 C0                          xor r8d, r8d                  IP:fce5cff3
+	E9 E8 F4 FF FF                    jmp 0xfffffffffffff4ed        IP:fce5cff8
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 E0 C4 E5 FC FE 07 00 00     mov rax, 0x7fefce5c4e0        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Reenumerate_DevNode_Ex
+Entry point:@ 000007FEFCE5C4E0
+	FF F3                             push rbx                      IP:fce5c4e2
+	56                                push rsi                      IP:fce5c4e3
+	57                                push rdi                      IP:fce5c4e4
+	48 81 EC 10 02 00 00              sub rsp, 0x210                IP:fce5c4eb
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 10 02 00 00              sub rsp, 0x210                IP:fce403ae
+
+Function: CM_Register_Device_Driver
+Entry point:@ 000007FEFCE5D080
+	45 33 C0                          xor r8d, r8d                  IP:fce5d083
+	E9 60 FD FF FF                    jmp 0xfffffffffffffd65        IP:fce5d088
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 E8 CD E5 FC FE 07 00 00     mov rax, 0x7fefce5cde8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Register_Device_Driver_Ex
+Entry point:@ 000007FEFCE5CDE8
+	FF F3                             push rbx                      IP:fce5cdea
+	56                                push rsi                      IP:fce5cdeb
+	57                                push rdi                      IP:fce5cdec
+	48 81 EC 00 02 00 00              sub rsp, 0x200                IP:fce5cdf3
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 00 02 00 00              sub rsp, 0x200                IP:fce403ae
+
+Function: CM_Register_Device_InterfaceA
+Entry point:@ 000007FEFCE63CFC
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63d00
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63d06
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Register_Device_InterfaceW
+Entry point:@ 000007FEFCE63D28
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce63d2c
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce63d32
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	48 83 64 24 30 00                 and qword [rsp+0x30], 0x0     IP:fce403ad
+
+Function: CM_Register_Device_Interface_ExA
+Entry point:@ 000007FEFCE649DC
+	48 8B C4                          mov rax, rsp                  IP:fce649df
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce649e3
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Register_Device_Interface_ExW
+Entry point:@ 000007FEFCE63788
+	FF F3                             push rbx                      IP:fce6378a
+	56                                push rsi                      IP:fce6378b
+	57                                push rdi                      IP:fce6378c
+	41 54                             push r12                      IP:fce6378e
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Remove_SubTree
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Remove_SubTree_Ex
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Request_Device_EjectA
+Entry point:@ 000007FEFCE5D0B4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5d0b8
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce5d0bc
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Request_Device_EjectW
+Entry point:@ 000007FEFCE5D090
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5d094
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce5d098
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Request_Device_Eject_ExA
+Entry point:@ 000007FEFCE5D324
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5d329
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Request_Device_Eject_ExW
+Entry point:@ 000007FEFCE5CA88
+	FF F3                             push rbx                      IP:fce5ca8a
+	56                                push rsi                      IP:fce5ca8b
+	57                                push rdi                      IP:fce5ca8c
+	41 54                             push r12                      IP:fce5ca8e
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Request_Eject_PC
+Entry point:@ 000007FEFCE5DEAC
+	33 C9                             xor ecx, ecx                  IP:fce5deae
+	E9 0D F9 FF FF                    jmp 0xfffffffffffff912        IP:fce5deb3
+Relocated entry point:@ 000007FEFCE403A3
+	33 C9                             xor ecx, ecx                  IP:fce403a5
+	48 B8 C0 D7 E5 FC FE 07 00 00     mov rax, 0x7fefce5d7c0        IP:fce403af
+	FF E0                             jmp rax                       IP:fce403b1
+
+Function: CM_Request_Eject_PC_Ex
+Entry point:@ 000007FEFCE5D7C0
+	48 8B C4                          mov rax, rsp                  IP:fce5d7c3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce5d7c7
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_RestoreAll_DefaultPowerSchemes
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Restore_DefaultPowerScheme
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Run_Detection
+Entry point:@ 000007FEFCE5F82C
+	33 D2                             xor edx, edx                  IP:fce5f82e
+	E9 11 F8 FF FF                    jmp 0xfffffffffffff816        IP:fce5f833
+Relocated entry point:@ 000007FEFCE403A3
+	33 D2                             xor edx, edx                  IP:fce403a5
+	48 B8 44 F0 E5 FC FE 07 00 00     mov rax, 0x7fefce5f044        IP:fce403af
+	FF E0                             jmp rax                       IP:fce403b1
+
+Function: CM_Run_Detection_Ex
+Entry point:@ 000007FEFCE5F044
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5f049
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Set_ActiveScheme
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8
+
+Function: CM_Set_Class_PropertyW
+Entry point:@ 000007FEFCE60584
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce60588
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce6058c
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce403ab
+
+Function: CM_Set_Class_Property_ExW
+Entry point:@ 000007FEFCE601C0
+	FF F3                             push rbx                      IP:fce601c2
+	56                                push rsi                      IP:fce601c3
+	57                                push rdi                      IP:fce601c4
+	41 54                             push r12                      IP:fce601c6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Set_Class_Registry_PropertyA
+Entry point:@ 000007FEFCE641EC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce641f1
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Set_Class_Registry_PropertyW
+Entry point:@ 000007FEFCE622E4
+	FF F3                             push rbx                      IP:fce622e6
+	56                                push rsi                      IP:fce622e7
+	57                                push rdi                      IP:fce622e8
+	41 54                             push r12                      IP:fce622ea
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Set_DevNode_Problem
+Entry point:@ 000007FEFCE5CFE0
+	45 33 C9                          xor r9d, r9d                  IP:fce5cfe3
+	E9 54 F3 FF FF                    jmp 0xfffffffffffff359        IP:fce5cfe8
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C9                          xor r9d, r9d                  IP:fce403a6
+	48 B8 3C C3 E5 FC FE 07 00 00     mov rax, 0x7fefce5c33c        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Set_DevNode_Problem_Ex
+Entry point:@ 000007FEFCE5C33C
+	FF F3                             push rbx                      IP:fce5c33e
+	56                                push rsi                      IP:fce5c33f
+	57                                push rdi                      IP:fce5c340
+	41 54                             push r12                      IP:fce5c342
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Set_DevNode_PropertyW
+Entry point:@ 000007FEFCE6049C
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce604a0
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce604a4
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce403ab
+
+Function: CM_Set_DevNode_Property_ExW
+Entry point:@ 000007FEFCE55290
+	FF F3                             push rbx                      IP:fce55292
+	56                                push rsi                      IP:fce55293
+	57                                push rdi                      IP:fce55294
+	41 54                             push r12                      IP:fce55296
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Set_DevNode_Registry_PropertyA
+Entry point:@ 000007FEFCE63A84
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63a88
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63a8c
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Set_DevNode_Registry_PropertyW
+Entry point:@ 000007FEFCE63A60
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce63a64
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce63a68
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	8B 44 24 60                       mov eax, [rsp+0x60]           IP:fce403ab
+
+Function: CM_Set_DevNode_Registry_Property_ExA
+Entry point:@ 000007FEFCE63F30
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce63f35
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Set_DevNode_Registry_Property_ExW
+Entry point:@ 000007FEFCE5705C
+	FF F3                             push rbx                      IP:fce5705e
+	56                                push rsi                      IP:fce5705f
+	57                                push rdi                      IP:fce57060
+	41 54                             push r12                      IP:fce57062
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Set_Device_Interface_PropertyW
+Entry point:@ 000007FEFCE60510
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce60514
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce60518
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fce403a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:fce403ab
+
+Function: CM_Set_Device_Interface_Property_ExW
+Entry point:@ 000007FEFCE5FD48
+	48 8B C4                          mov rax, rsp                  IP:fce5fd4b
+	4C 89 48 20                       mov [rax+0x20], r9            IP:fce5fd4f
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	4C 89 48 20                       mov [rax+0x20], r9            IP:fce403aa
+
+Function: CM_Set_HW_Prof
+Entry point:@ 000007FEFCE5DF4C
+	45 33 C0                          xor r8d, r8d                  IP:fce5df4f
+	E9 94 FC FF FF                    jmp 0xfffffffffffffc99        IP:fce5df54
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 E8 DB E5 FC FE 07 00 00     mov rax, 0x7fefce5dbe8        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Set_HW_Prof_Ex
+Entry point:@ 000007FEFCE5DBE8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce5dbed
+Relocated entry point:@ 000007FEFCE403A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fce403a8
+
+Function: CM_Set_HW_Prof_FlagsA
+Entry point:@ 000007FEFCE5DF10
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5df14
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5df1a
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Set_HW_Prof_FlagsW
+Entry point:@ 000007FEFCE5DEF4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce5def8
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce5defe
+Relocated entry point:@ 000007FEFCE403A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fce403a7
+	48 83 64 24 20 00                 and qword [rsp+0x20], 0x0     IP:fce403ad
+
+Function: CM_Set_HW_Prof_Flags_ExA
+Entry point:@ 000007FEFCE5DD74
+	48 8B C4                          mov rax, rsp                  IP:fce5dd77
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce5dd7b
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Set_HW_Prof_Flags_ExW
+Entry point:@ 000007FEFCE56AE0
+	FF F3                             push rbx                      IP:fce56ae2
+	56                                push rsi                      IP:fce56ae3
+	57                                push rdi                      IP:fce56ae4
+	41 54                             push r12                      IP:fce56ae6
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	41 54                             push r12                      IP:fce403a9
+
+Function: CM_Setup_DevNode
+Entry point:@ 000007FEFCE5CFB0
+	45 33 C0                          xor r8d, r8d                  IP:fce5cfb3
+	E9 D8 98 FF FF                    jmp 0xffffffffffff98dd        IP:fce5cfb8
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 90 68 E5 FC FE 07 00 00     mov rax, 0x7fefce56890        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Setup_DevNode_Ex
+Entry point:@ 000007FEFCE56890
+	FF F3                             push rbx                      IP:fce56892
+	56                                push rsi                      IP:fce56893
+	57                                push rdi                      IP:fce56894
+	48 81 EC 10 02 00 00              sub rsp, 0x210                IP:fce5689b
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	57                                push rdi                      IP:fce403a7
+	48 81 EC 10 02 00 00              sub rsp, 0x210                IP:fce403ae
+
+Function: CM_Test_Range_Available
+Entry point:@ 000007FEFCE61874
+	48 8B C4                          mov rax, rsp                  IP:fce61877
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce6187b
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Uninstall_DevNode
+Entry point:@ 000007FEFCE5D054
+	45 33 C0                          xor r8d, r8d                  IP:fce5d057
+	E9 18 F8 FF FF                    jmp 0xfffffffffffff81d        IP:fce5d05c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 74 C8 E5 FC FE 07 00 00     mov rax, 0x7fefce5c874        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Uninstall_DevNode_Ex
+Entry point:@ 000007FEFCE5C874
+	FF F3                             push rbx                      IP:fce5c876
+	56                                push rsi                      IP:fce5c877
+	41 54                             push r12                      IP:fce5c879
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	56                                push rsi                      IP:fce403a6
+	41 54                             push r12                      IP:fce403a8
+
+Function: CM_Unregister_Device_InterfaceA
+Entry point:@ 000007FEFCE63D54
+	45 33 C0                          xor r8d, r8d                  IP:fce63d57
+	E9 0C 0E 00 00                    jmp 0xe11                     IP:fce63d5c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 68 4B E6 FC FE 07 00 00     mov rax, 0x7fefce64b68        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Unregister_Device_InterfaceW
+Entry point:@ 000007FEFCE63D64
+	45 33 C0                          xor r8d, r8d                  IP:fce63d67
+	E9 EC FB FF FF                    jmp 0xfffffffffffffbf1        IP:fce63d6c
+Relocated entry point:@ 000007FEFCE403A3
+	45 33 C0                          xor r8d, r8d                  IP:fce403a6
+	48 B8 58 39 E6 FC FE 07 00 00     mov rax, 0x7fefce63958        IP:fce403b0
+	FF E0                             jmp rax                       IP:fce403b2
+
+Function: CM_Unregister_Device_Interface_ExA
+Entry point:@ 000007FEFCE64B68
+	48 8B C4                          mov rax, rsp                  IP:fce64b6b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce64b6f
+Relocated entry point:@ 000007FEFCE403A3
+	48 8B C4                          mov rax, rsp                  IP:fce403a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fce403aa
+
+Function: CM_Unregister_Device_Interface_ExW
+Entry point:@ 000007FEFCE63958
+	FF F3                             push rbx                      IP:fce6395a
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce6395e
+Relocated entry point:@ 000007FEFCE403A3
+	FF F3                             push rbx                      IP:fce403a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fce403a9
+
+Function: CM_Write_UserPowerKey
+Entry point:@ 000007FEFCE5D7B0
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce5d7b5
+Relocated entry point:@ 000007FEFCE403A3
+	B8 34 00 00 00                    mov eax, 0x34                 IP:fce403a8

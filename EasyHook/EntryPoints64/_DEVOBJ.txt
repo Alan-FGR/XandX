@@ -1,0 +1,392 @@
+
+Function: DevObjBuildClassInfoList
+Entry point:@ 000007FEFCCEB0CC
+	4C 8B DC                          mov r11, rsp                  IP:fcceb0cf
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fcceb0d3
+Relocated entry point:@ 000007FEFCCC03A3
+	4C 8B DC                          mov r11, rsp                  IP:fccc03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fccc03aa
+
+Function: DevObjClassGuidsFromName
+Entry point:@ 000007FEFCCEACD0
+	FF F3                             push rbx                      IP:fcceacd2
+	56                                push rsi                      IP:fcceacd3
+	57                                push rdi                      IP:fcceacd4
+	41 54                             push r12                      IP:fcceacd6
+Relocated entry point:@ 000007FEFCCC03A3
+	FF F3                             push rbx                      IP:fccc03a5
+	56                                push rsi                      IP:fccc03a6
+	57                                push rdi                      IP:fccc03a7
+	41 54                             push r12                      IP:fccc03a9
+
+Function: DevObjClassNameFromGuid
+Entry point:@ 000007FEFCCE6878
+	48 8B C4                          mov rax, rsp                  IP:fcce687b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce687f
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjCreateDevRegKey
+Entry point:@ 000007FEFCCE6304
+	48 8B C4                          mov rax, rsp                  IP:fcce6307
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce630b
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjCreateDeviceInfo
+Entry point:@ 000007FEFCCE65B0
+	FF F3                             push rbx                      IP:fcce65b2
+	56                                push rsi                      IP:fcce65b3
+	57                                push rdi                      IP:fcce65b4
+	41 54                             push r12                      IP:fcce65b6
+Relocated entry point:@ 000007FEFCCC03A3
+	FF F3                             push rbx                      IP:fccc03a5
+	56                                push rsi                      IP:fccc03a6
+	57                                push rdi                      IP:fccc03a7
+	41 54                             push r12                      IP:fccc03a9
+
+Function: DevObjCreateDeviceInfoList
+Entry point:@ 000007FEFCCE3DF8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcce3dfd
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccc03a8
+
+Function: DevObjCreateDeviceInterface
+Entry point:@ 000007FEFCCEBE8C
+	FF F3                             push rbx                      IP:fccebe8e
+	56                                push rsi                      IP:fccebe8f
+	57                                push rdi                      IP:fccebe90
+	41 54                             push r12                      IP:fccebe92
+Relocated entry point:@ 000007FEFCCC03A3
+	FF F3                             push rbx                      IP:fccc03a5
+	56                                push rsi                      IP:fccc03a6
+	57                                push rdi                      IP:fccc03a7
+	41 54                             push r12                      IP:fccc03a9
+
+Function: DevObjCreateDeviceInterfaceRegKey
+Entry point:@ 000007FEFCCEE854
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fccee859
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fccc03a8
+
+Function: DevObjDeleteAllInterfacesForDevice
+Entry point:@ 000007FEFCCEC730
+	48 8B C4                          mov rax, rsp                  IP:fccec733
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccec737
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjDeleteDevRegKey
+Entry point:@ 000007FEFCCEE4FC
+	48 8B C4                          mov rax, rsp                  IP:fccee4ff
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccee503
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjDeleteDevice
+Entry point:@ 000007FEFCCEC8A4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccec8a9
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccc03a8
+
+Function: DevObjDeleteDeviceInfo
+Entry point:@ 000007FEFCCEB8E8
+	48 8B C4                          mov rax, rsp                  IP:fcceb8eb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcceb8ef
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjDeleteDeviceInterfaceData
+Entry point:@ 000007FEFCCE55B4
+	48 8B C4                          mov rax, rsp                  IP:fcce55b7
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce55bb
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjDeleteDeviceInterfaceRegKey
+Entry point:@ 000007FEFCCEEDF4
+	48 8B C4                          mov rax, rsp                  IP:fcceedf7
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcceedfb
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjDestroyDeviceInfoList
+Entry point:@ 000007FEFCCE40D8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcce40dd
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccc03a8
+
+Function: DevObjEnumDeviceInfo
+Entry point:@ 000007FEFCCE18BC
+	48 8B C4                          mov rax, rsp                  IP:fcce18bf
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce18c3
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjEnumDeviceInterfaces
+Entry point:@ 000007FEFCCE19F4
+	48 8B C4                          mov rax, rsp                  IP:fcce19f7
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce19fb
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetClassDescription
+Entry point:@ 000007FEFCCEAF68
+	48 8B C4                          mov rax, rsp                  IP:fcceaf6b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcceaf6f
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetClassDevs
+Entry point:@ 000007FEFCCE1AD0
+	4C 8B DC                          mov r11, rsp                  IP:fcce1ad3
+	53                                push rbx                      IP:fcce1ad4
+	56                                push rsi                      IP:fcce1ad5
+Relocated entry point:@ 000007FEFCCC03A3
+	4C 8B DC                          mov r11, rsp                  IP:fccc03a6
+	53                                push rbx                      IP:fccc03a7
+	56                                push rsi                      IP:fccc03a8
+
+Function: DevObjGetClassProperty
+Entry point:@ 000007FEFCCE5FA8
+	48 8B C4                          mov rax, rsp                  IP:fcce5fab
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce5faf
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetClassPropertyKeys
+Entry point:@ 000007FEFCCEE0A0
+	48 8B C4                          mov rax, rsp                  IP:fccee0a3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccee0a7
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetClassRegistryProperty
+Entry point:@ 000007FEFCCED130
+	48 8B C4                          mov rax, rsp                  IP:fcced133
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcced137
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInfoDetail
+Entry point:@ 000007FEFCCEBC0C
+	48 8B C4                          mov rax, rsp                  IP:fccebc0f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccebc13
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInfoListClass
+Entry point:@ 000007FEFCCEB4E0
+	48 8B C4                          mov rax, rsp                  IP:fcceb4e3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcceb4e7
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInfoListDetail
+Entry point:@ 000007FEFCCE3FF0
+	48 8B C4                          mov rax, rsp                  IP:fcce3ff3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce3ff7
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInstanceId
+Entry point:@ 000007FEFCCE2BD8
+	48 8B C4                          mov rax, rsp                  IP:fcce2bdb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce2bdf
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInterfaceAlias
+Entry point:@ 000007FEFCCE3B18
+	FF F3                             push rbx                      IP:fcce3b1a
+	56                                push rsi                      IP:fcce3b1b
+	57                                push rdi                      IP:fcce3b1c
+	41 54                             push r12                      IP:fcce3b1e
+Relocated entry point:@ 000007FEFCCC03A3
+	FF F3                             push rbx                      IP:fccc03a5
+	56                                push rsi                      IP:fccc03a6
+	57                                push rdi                      IP:fccc03a7
+	41 54                             push r12                      IP:fccc03a9
+
+Function: DevObjGetDeviceInterfaceDetail
+Entry point:@ 000007FEFCCE3394
+	48 8B C4                          mov rax, rsp                  IP:fcce3397
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce339b
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInterfaceProperty
+Entry point:@ 000007FEFCCE386C
+	48 8B C4                          mov rax, rsp                  IP:fcce386f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce3873
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceInterfacePropertyKeys
+Entry point:@ 000007FEFCCED900
+	48 8B C4                          mov rax, rsp                  IP:fcced903
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcced907
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceProperty
+Entry point:@ 000007FEFCCE4CD0
+	48 8B C4                          mov rax, rsp                  IP:fcce4cd3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce4cd7
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDevicePropertyKeys
+Entry point:@ 000007FEFCCED618
+	48 8B C4                          mov rax, rsp                  IP:fcced61b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcced61f
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjGetDeviceRegistryProperty
+Entry point:@ 000007FEFCCE5724
+	48 8B C4                          mov rax, rsp                  IP:fcce5727
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce572b
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjLocateDevice
+Entry point:@ 000007FEFCCECBD8
+	48 8B C4                          mov rax, rsp                  IP:fccecbdb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccecbdf
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjOpenClassRegKey
+Entry point:@ 000007FEFCCECD90
+	48 8B C4                          mov rax, rsp                  IP:fccecd93
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccecd97
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjOpenDevRegKey
+Entry point:@ 000007FEFCCE5B40
+	48 8B C4                          mov rax, rsp                  IP:fcce5b43
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce5b47
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjOpenDeviceInfo
+Entry point:@ 000007FEFCCE4F70
+	48 8B C4                          mov rax, rsp                  IP:fcce4f73
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce4f77
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjOpenDeviceInterface
+Entry point:@ 000007FEFCCE5290
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcce5295
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccc03a8
+
+Function: DevObjOpenDeviceInterfaceRegKey
+Entry point:@ 000007FEFCCEEBB8
+	48 8B C4                          mov rax, rsp                  IP:fcceebbb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcceebbf
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjRegisterDeviceInfo
+Entry point:@ 000007FEFCCE6980
+	FF F3                             push rbx                      IP:fcce6982
+	56                                push rsi                      IP:fcce6983
+	57                                push rdi                      IP:fcce6984
+	41 54                             push r12                      IP:fcce6986
+Relocated entry point:@ 000007FEFCCC03A3
+	FF F3                             push rbx                      IP:fccc03a5
+	56                                push rsi                      IP:fccc03a6
+	57                                push rdi                      IP:fccc03a7
+	41 54                             push r12                      IP:fccc03a9
+
+Function: DevObjRemoveDeviceInterface
+Entry point:@ 000007FEFCCEC15C
+	48 8B C4                          mov rax, rsp                  IP:fccec15f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccec163
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjSetClassProperty
+Entry point:@ 000007FEFCCEE410
+	48 8B C4                          mov rax, rsp                  IP:fccee413
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccee417
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjSetClassRegistryProperty
+Entry point:@ 000007FEFCCED3D0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcced3d5
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccc03a8
+
+Function: DevObjSetDeviceInfoDetail
+Entry point:@ 000007FEFCCEBD50
+	48 8B C4                          mov rax, rsp                  IP:fccebd53
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccebd57
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjSetDeviceInterfaceDefault
+Entry point:@ 000007FEFCCEB5F0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcceb5f5
+Relocated entry point:@ 000007FEFCCC03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fccc03a8
+
+Function: DevObjSetDeviceInterfaceProperty
+Entry point:@ 000007FEFCCEDC24
+	48 8B C4                          mov rax, rsp                  IP:fccedc27
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccedc2b
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjSetDeviceProperty
+Entry point:@ 000007FEFCCE5A2C
+	48 8B C4                          mov rax, rsp                  IP:fcce5a2f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce5a33
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa
+
+Function: DevObjSetDeviceRegistryProperty
+Entry point:@ 000007FEFCCE6C48
+	48 8B C4                          mov rax, rsp                  IP:fcce6c4b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcce6c4f
+Relocated entry point:@ 000007FEFCCC03A3
+	48 8B C4                          mov rax, rsp                  IP:fccc03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fccc03aa

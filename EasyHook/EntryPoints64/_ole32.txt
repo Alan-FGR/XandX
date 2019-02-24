@@ -1,0 +1,3682 @@
+
+Function: BindMoniker
+	(redirected to function: CLSIDFromOle1Class)
+Entry point:@ 000007FEFE8F939C
+	48 8B C4                          mov rax, rsp                  IP:fe8f939f
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8f93a3
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CLIPFORMAT_UserFree
+	(redirected to function: CLSIDFromProgID)
+Entry point:@ 000007FEFE96E360
+	C2 00 00                          ret 0x0                       IP:fe96e363
+	90                                nop                           IP:fe96e364
+	90                                nop                           IP:fe96e365
+Relocated entry point:@ 000007FEFE8E03A3
+	C2 00 00                          ret 0x0                       IP:fe8e03a6
+	90                                nop                           IP:fe8e03a7
+	90                                nop                           IP:fe8e03a8
+
+Function: CLIPFORMAT_UserFree64
+	(redirected to function: CLSIDFromProgIDEx)
+Entry point:@ 000007FEFE96E360
+	C2 00 00                          ret 0x0                       IP:fe96e363
+	90                                nop                           IP:fe96e364
+	90                                nop                           IP:fe96e365
+Relocated entry point:@ 000007FEFE8E03A3
+	C2 00 00                          ret 0x0                       IP:fe8e03a6
+	90                                nop                           IP:fe8e03a7
+	90                                nop                           IP:fe8e03a8
+
+Function: CLIPFORMAT_UserMarshal
+	(redirected to function: CLSIDFromString)
+Entry point:@ 000007FEFE984770
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe984775
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe8e03a8
+
+Function: CLIPFORMAT_UserMarshal64
+	(redirected to function: CoAddRefServerProcess)
+Entry point:@ 000007FEFE984620
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe984625
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe8e03a8
+
+Function: CLIPFORMAT_UserSize
+	(redirected to function: CoAllowSetForegroundWindow)
+Entry point:@ 000007FEFE964FA0
+	FF F3                             push rbx                      IP:fe964fa2
+	48 81 EC 20 02 00 00              sub rsp, 0x220                IP:fe964fa9
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 81 EC 20 02 00 00              sub rsp, 0x220                IP:fe8e03ac
+
+Function: CLIPFORMAT_UserSize64
+	(redirected to function: CoBuildVersion)
+Entry point:@ 000007FEFE964F00
+	FF F3                             push rbx                      IP:fe964f02
+	48 81 EC 30 02 00 00              sub rsp, 0x230                IP:fe964f09
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 81 EC 30 02 00 00              sub rsp, 0x230                IP:fe8e03ac
+
+Function: CLIPFORMAT_UserUnmarshal
+	(redirected to function: CoCancelCall)
+Entry point:@ 000007FEFE99E6B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99e6b5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CLIPFORMAT_UserUnmarshal64
+	(redirected to function: CoCopyProxy)
+Entry point:@ 000007FEFE99E4A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99e4a5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CLSIDFromOle1Class
+	(redirected to function: CoCreateFreeThreadedMarshaler)
+Entry point:@ 000007FEFE908DB8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe908dbd
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CLSIDFromProgID
+	(redirected to function: CoCreateGuid)
+Entry point:@ 000007FEFE9085A0
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:fe9085a5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:fe8e03a8
+
+Function: CLSIDFromProgIDEx
+	(redirected to function: CoCreateInstance)
+Entry point:@ 000007FEFE908F50
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe908f55
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe8e03a8
+
+Function: CLSIDFromString
+	(redirected to function: CoCreateInstanceEx)
+Entry point:@ 000007FEFE8FF9F0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8ff9f5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoAddRefServerProcess
+	(redirected to function: CoCreateObjectInContext)
+Entry point:@ 000007FEFEA08A50
+	E9 5B FE FF FF                    jmp 0xfffffffffffffe60        IP:fea08a55
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 B0 88 A0 FE FE 07 00 00     mov rax, 0x7fefea088b0        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: CoAllowSetForegroundWindow
+	(redirected to function: CoDeactivateObject)
+Entry point:@ 000007FEFE9C0840
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9c0845
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoBuildVersion
+	(redirected to function: CoDisableCallCancellation)
+Entry point:@ 000007FEFE96F150
+	B8 38 03 17 00                    mov eax, 0x170338             IP:fe96f155
+Relocated entry point:@ 000007FEFE8E03A3
+	B8 38 03 17 00                    mov eax, 0x170338             IP:fe8e03a8
+
+Function: CoCancelCall
+	(redirected to function: CoDisconnectContext)
+Entry point:@ 000007FEFE9D1B80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9d1b85
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoCopyProxy
+	(redirected to function: CoDisconnectObject)
+Entry point:@ 000007FEFE8FBB10
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8fbb15
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8e03a8
+
+Function: CoCreateFreeThreadedMarshaler
+	(redirected to function: CoDosDateTimeToFileTime)
+Entry point:@ 000007FEFE91D880
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:fe91d885
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:fe8e03a8
+
+Function: CoCreateGuid
+	(redirected to function: CoEnableCallCancellation)
+Entry point:@ 000007FEFE8FCF20
+	FF F3                             push rbx                      IP:fe8fcf22
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8fcf26
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoCreateInstance
+	(redirected to function: CoFileTimeNow)
+Entry point:@ 000007FEFE914490
+	E9 93 BD 3B FE                    jmp 0xfffffffffe3bbd98        IP:fe914495
+Relocated entry point:@ 000007FEFE8E03A3
+	48 B8 28 02 CD FC FE 07 00 00     mov rax, 0x7fefccd0228        IP:fe8e03ad
+	FF E0                             jmp rax                       IP:fe8e03af
+
+Function: CoCreateInstanceEx
+	(redirected to function: CoFileTimeToDosDateTime)
+Entry point:@ 000007FEFE8FD0B0
+	48 8B C4                          mov rax, rsp                  IP:fe8fd0b3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8fd0b7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CoCreateObjectInContext
+	(redirected to function: CoFreeAllLibraries)
+Entry point:@ 000007FEFEA4C170
+	4C 8B DC                          mov r11, rsp                  IP:fea4c173
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fea4c177
+Relocated entry point:@ 000007FEFEAF03A3
+	4C 8B DC                          mov r11, rsp                  IP:feaf03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:feaf03aa
+
+Function: CoDeactivateObject
+	(redirected to function: CoFreeLibrary)
+Entry point:@ 000007FEFEA38750
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fea38755
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: CoDisableCallCancellation
+	(redirected to function: CoFreeUnusedLibraries)
+Entry point:@ 000007FEFE8FD708
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8fd70c
+	48 85 C9                          test rcx, rcx                 IP:fe8fd70f
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 85 C9                          test rcx, rcx                 IP:fe8e03aa
+
+Function: CoDisconnectContext
+	(redirected to function: CoFreeUnusedLibrariesEx)
+Entry point:@ 000007FEFE93E100
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe93e105
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoDisconnectObject
+	(redirected to function: CoGetActivationState)
+Entry point:@ 000007FEFE8F8610
+	FF F3                             push rbx                      IP:fe8f8612
+	56                                push rsi                      IP:fe8f8613
+	57                                push rdi                      IP:fe8f8614
+	48 83 EC 50                       sub rsp, 0x50                 IP:fe8f8618
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	56                                push rsi                      IP:fe8e03a6
+	57                                push rdi                      IP:fe8e03a7
+	48 83 EC 50                       sub rsp, 0x50                 IP:fe8e03ab
+
+Function: CoDosDateTimeToFileTime
+	(redirected to function: CoGetApartmentID)
+Entry point:@ 000007FEFE9BCB30
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bcb35
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoEnableCallCancellation
+	(redirected to function: CoGetApartmentType)
+Entry point:@ 000007FEFE8FD744
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8fd748
+	48 85 C9                          test rcx, rcx                 IP:fe8fd74b
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 85 C9                          test rcx, rcx                 IP:fe8e03aa
+
+Function: CoFileTimeNow
+	(redirected to function: CoGetCallContext)
+Entry point:@ 000007FEFE9BCAC0
+	FF F3                             push rbx                      IP:fe9bcac2
+	48 83 EC 30                       sub rsp, 0x30                 IP:fe9bcac6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 30                       sub rsp, 0x30                 IP:fe8e03a9
+
+Function: CoFileTimeToDosDateTime
+	(redirected to function: CoGetCallState)
+Entry point:@ 000007FEFE9BCB90
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bcb95
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoFreeAllLibraries
+	(redirected to function: CoGetCallerTID)
+Entry point:@ 000007FEFE96E360
+	C2 00 00                          ret 0x0                       IP:fe96e363
+	90                                nop                           IP:fe96e364
+	90                                nop                           IP:fe96e365
+Relocated entry point:@ 000007FEFE8E03A3
+	C2 00 00                          ret 0x0                       IP:fe8e03a6
+	90                                nop                           IP:fe8e03a7
+	90                                nop                           IP:fe8e03a8
+
+Function: CoFreeLibrary
+	(redirected to function: CoGetCancelObject)
+Entry point:@ 000007FEFE9A1720
+	45 33 C0                          xor r8d, r8d                  IP:fe9a1723
+	48 8B D1                          mov rdx, rcx                  IP:fe9a1726
+Relocated entry point:@ 000007FEFE8E03A3
+	45 33 C0                          xor r8d, r8d                  IP:fe8e03a6
+	48 8B D1                          mov rdx, rcx                  IP:fe8e03a9
+
+Function: CoFreeUnusedLibraries
+	(redirected to function: CoGetClassObject)
+Entry point:@ 000007FEFE8F84D0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8f84d4
+	E9 82 11 04 00                    jmp 0x41187                   IP:fe8f84d9
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 B8 5B 96 93 FE FE 07 00 00     mov rax, 0x7fefe93965b        IP:fe8e03b1
+	FF E0                             jmp rax                       IP:fe8e03b3
+
+Function: CoFreeUnusedLibrariesEx
+	(redirected to function: CoGetClassVersion)
+Entry point:@ 000007FEFE8FAD10
+	FF F3                             push rbx                      IP:fe8fad12
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8fad16
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoGetActivationState
+	(redirected to function: CoGetComCatalog)
+Entry point:@ 000007FEFEA04680
+	48 83 EC 48                       sub rsp, 0x48                 IP:fea04684
+	48 8B 05 75 E1 0B 00              mov rax, [rip+0xbe175]        IP:fea0468b
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:feaf03a7
+	48 8B 05 52 24 FD FF              mov rax, [rip-0x2dbae]        IP:feaf03ae
+
+Function: CoGetApartmentID
+	(redirected to function: CoGetContextToken)
+Entry point:@ 000007FEFE8F2A60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f2a65
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoGetApartmentType
+	(redirected to function: CoGetCurrentLogicalThreadId)
+Entry point:@ 000007FEFE913DD8
+	48 8B C4                          mov rax, rsp                  IP:fe913ddb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe913ddf
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CoGetCallContext
+	(redirected to function: CoGetCurrentProcess)
+Entry point:@ 000007FEFE8F5C7C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f5c81
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoGetCallState
+	(redirected to function: CoGetDefaultContext)
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 D2                          test rdx, rdx                 IP:fe96e383
+	74 2C                             jz 0x2e                       IP:fe96e385
+
+Function: CoGetCallerTID
+	(redirected to function: CoGetInstanceFromFile)
+Entry point:@ 000007FEFEA04910
+	FF F3                             push rbx                      IP:fea04912
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea04916
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoGetCancelObject
+	(redirected to function: CoGetInstanceFromIStorage)
+Entry point:@ 000007FEFE9CC620
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe9cc625
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe8e03a8
+
+Function: CoGetClassObject
+	(redirected to function: CoGetInterceptor)
+Entry point:@ 000007FEFE91DA30
+	48 8B C4                          mov rax, rsp                  IP:fe91da33
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe91da37
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CoGetClassVersion
+	(redirected to function: CoGetInterceptorFromTypeInfo)
+Entry point:@ 000007FEFEA3D2C0
+	48 8B C4                          mov rax, rsp                  IP:fea3d2c3
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fea3d2c7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 10                       mov [rax+0x10], rbx           IP:feaf03aa
+
+Function: CoGetComCatalog
+	(redirected to function: CoGetInterfaceAndReleaseStream)
+Entry point:@ 000007FEFE905690
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe905695
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoGetContextToken
+	(redirected to function: CoGetMalloc)
+Entry point:@ 000007FEFE9159D0
+	FF F3                             push rbx                      IP:fe9159d2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe9159d6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoGetCurrentLogicalThreadId
+	(redirected to function: CoGetMarshalSizeMax)
+Entry point:@ 000007FEFE8F2C54
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f2c59
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoGetCurrentProcess
+	(redirected to function: CoGetModuleType)
+Entry point:@ 000007FEFEA09C80
+	FF F3                             push rbx                      IP:fea09c82
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea09c86
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoGetDefaultContext
+	(redirected to function: CoGetObject)
+Entry point:@ 000007FEFEA18330
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea18335
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoGetInstanceFromFile
+	(redirected to function: CoGetObjectContext)
+Entry point:@ 000007FEFEA591E0
+	48 8B C4                          mov rax, rsp                  IP:fea591e3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea591e7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: CoGetInstanceFromIStorage
+	(redirected to function: CoGetPSClsid)
+Entry point:@ 000007FEFEA590C0
+	48 8B C4                          mov rax, rsp                  IP:fea590c3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea590c7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: CoGetInterceptor
+	(redirected to function: CoGetProcessIdentifier)
+Entry point:@ 000007FEFEA15120
+	E9 9B FE FF FF                    jmp 0xfffffffffffffea0        IP:fea15125
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 C0 4F A1 FE FE 07 00 00     mov rax, 0x7fefea14fc0        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: CoGetInterceptorFromTypeInfo
+	(redirected to function: CoGetStandardMarshal)
+Entry point:@ 000007FEFEA14460
+	48 83 EC 38                       sub rsp, 0x38                 IP:fea14464
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:fea14469
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:feaf03ac
+
+Function: CoGetInterfaceAndReleaseStream
+	(redirected to function: CoGetStdMarshalEx)
+Entry point:@ 000007FEFEA47540
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea47545
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoGetMalloc
+	(redirected to function: CoGetSystemSecurityPermissions)
+ERROR: Unable to allocate hook: Hooking far conditional jumps is not supported.
+	83 F9 01                          cmp ecx, 0x1                  IP:fe910e33
+	0F 85 EE 25 03 00                 jnz 0x325f4                   IP:fe910e39
+
+Function: CoGetMarshalSizeMax
+	(redirected to function: CoGetTreatAsClass)
+Entry point:@ 000007FEFE91ACE4
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe91ace9
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8e03a8
+
+Function: CoGetModuleType
+	(redirected to function: CoImpersonateClient)
+Entry point:@ 000007FEFE9A0DA0
+	FF F5                             push rbp                      IP:fe9a0da2
+	41 54                             push r12                      IP:fe9a0da4
+	41 55                             push r13                      IP:fe9a0da6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F5                             push rbp                      IP:fe8e03a5
+	41 54                             push r12                      IP:fe8e03a7
+	41 55                             push r13                      IP:fe8e03a9
+
+Function: CoGetObject
+	(redirected to function: CoInitialize)
+Entry point:@ 000007FEFEA53510
+	FF F3                             push rbx                      IP:fea53512
+	55                                push rbp                      IP:fea53513
+	56                                push rsi                      IP:fea53514
+	57                                push rdi                      IP:fea53515
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	55                                push rbp                      IP:feaf03a6
+	56                                push rsi                      IP:feaf03a7
+	57                                push rdi                      IP:feaf03a8
+
+Function: CoGetObjectContext
+	(redirected to function: CoInitializeEx)
+Entry point:@ 000007FEFE90B1B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe90b1b5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoGetPSClsid
+	(redirected to function: CoInitializeSecurity)
+Entry point:@ 000007FEFEA18F40
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea18f45
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoGetProcessIdentifier
+	(redirected to function: CoInitializeWOW)
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe98be03
+	75 06                             jnz 0x8                       IP:fe98be05
+
+Function: CoGetStandardMarshal
+	(redirected to function: CoInstall)
+Entry point:@ 000007FEFEA1BAB0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea1bab5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoGetStdMarshalEx
+	(redirected to function: CoInvalidateRemoteMachineBindings)
+Entry point:@ 000007FEFEA1B100
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea1b105
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoGetSystemSecurityPermissions
+	(redirected to function: CoIsHandlerConnected)
+Entry point:@ 000007FEFEA046E0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fea046e4
+	48 85 D2                          test rdx, rdx                 IP:fea046e7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 85 D2                          test rdx, rdx                 IP:feaf03aa
+
+Function: CoGetTreatAsClass
+	(redirected to function: CoIsOle1Class)
+Entry point:@ 000007FEFE90273C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe902741
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoImpersonateClient
+	(redirected to function: CoLoadLibrary)
+Entry point:@ 000007FEFE8F600C
+	FF F3                             push rbx                      IP:fe8f600e
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8f6012
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoInitialize
+	(redirected to function: CoLockObjectExternal)
+Entry point:@ 000007FEFE908FA8
+	BA 02 00 00 00                    mov edx, 0x2                  IP:fe908fad
+Relocated entry point:@ 000007FEFE8E03A3
+	BA 02 00 00 00                    mov edx, 0x2                  IP:fe8e03a8
+
+Function: CoInitializeEx
+	(redirected to function: CoMarshalHresult)
+Entry point:@ 000007FEFE910680
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe910685
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoInitializeSecurity
+	(redirected to function: CoMarshalInterThreadInterfaceInStream)
+Entry point:@ 000007FEFE90728C
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe907291
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe8e03a8
+
+Function: CoInitializeWOW
+	(redirected to function: CoMarshalInterface)
+Entry point:@ 000007FEFEA4E3B0
+	FF F3                             push rbx                      IP:fea4e3b2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea4e3b6
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoInstall
+	(redirected to function: CoPopServiceDomain)
+Entry point:@ 000007FEFE987450
+	FF F3                             push rbx                      IP:fe987452
+	48 83 EC 60                       sub rsp, 0x60                 IP:fe987456
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 60                       sub rsp, 0x60                 IP:fe8e03a9
+
+Function: CoInvalidateRemoteMachineBindings
+	(redirected to function: CoPushServiceDomain)
+Entry point:@ 000007FEFEA04750
+	48 83 EC 28                       sub rsp, 0x28                 IP:fea04754
+	48 85 C9                          test rcx, rcx                 IP:fea04757
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 85 C9                          test rcx, rcx                 IP:feaf03aa
+
+Function: CoIsHandlerConnected
+	(redirected to function: CoQueryAuthenticationServices)
+Entry point:@ 000007FEFE9C08C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9c08c5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoIsOle1Class
+	(redirected to function: CoQueryClientBlanket)
+Entry point:@ 000007FEFE9C0CB0
+	FF F3                             push rbx                      IP:fe9c0cb2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe9c0cb6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoLoadLibrary
+	(redirected to function: CoQueryProxyBlanket)
+Entry point:@ 000007FEFE9A1740
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe9a1744
+	48 83 64 24 40 00                 and qword [rsp+0x40], 0x0     IP:fe9a174a
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 83 64 24 40 00                 and qword [rsp+0x40], 0x0     IP:fe8e03ad
+
+Function: CoLockObjectExternal
+	(redirected to function: CoQueryReleaseObject)
+Entry point:@ 000007FEFEA1B8C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea1b8c5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoMarshalHresult
+	(redirected to function: CoReactivateObject)
+Entry point:@ 000007FEFE9A8E80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9a8e85
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoMarshalInterThreadInterfaceInStream
+	(redirected to function: CoRegisterActivationFilter)
+Entry point:@ 000007FEFEA41AC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea41ac5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoMarshalInterface
+	(redirected to function: CoRegisterChannelHook)
+Entry point:@ 000007FEFE91AC84
+	48 8B C4                          mov rax, rsp                  IP:fe91ac87
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe91ac8b
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CoPopServiceDomain
+	(redirected to function: CoRegisterClassObject)
+Entry point:@ 000007FEFEA0C600
+	48 83 EC 28                       sub rsp, 0x28                 IP:fea0c604
+	48 85 C9                          test rcx, rcx                 IP:fea0c607
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 85 C9                          test rcx, rcx                 IP:feaf03aa
+
+Function: CoPushServiceDomain
+	(redirected to function: CoRegisterInitializeSpy)
+Entry point:@ 000007FEFEA09740
+	FF F3                             push rbx                      IP:fea09742
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea09746
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoQueryAuthenticationServices
+	(redirected to function: CoRegisterMallocSpy)
+Entry point:@ 000007FEFE9E67C0
+	48 8B C4                          mov rax, rsp                  IP:fe9e67c3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9e67c7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CoQueryClientBlanket
+	(redirected to function: CoRegisterMessageFilter)
+Entry point:@ 000007FEFEA04450
+	48 8B C4                          mov rax, rsp                  IP:fea04453
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea04457
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: CoQueryProxyBlanket
+	(redirected to function: CoRegisterPSClsid)
+Entry point:@ 000007FEFE9247A0
+	4C 8B DC                          mov r11, rsp                  IP:fe9247a3
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fe9247a7
+Relocated entry point:@ 000007FEFE8E03A3
+	4C 8B DC                          mov r11, rsp                  IP:fe8e03a6
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fe8e03aa
+
+Function: CoQueryReleaseObject
+	(redirected to function: CoRegisterSurrogate)
+Entry point:@ 000007FEFE98C1F0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe98c1f5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoReactivateObject
+	(redirected to function: CoRegisterSurrogateEx)
+Entry point:@ 000007FEFEA386C0
+	FF F3                             push rbx                      IP:fea386c2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea386c6
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoRegisterActivationFilter
+	(redirected to function: CoReleaseMarshalData)
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe93f563
+	75 06                             jnz 0x8                       IP:fe93f565
+
+Function: CoRegisterChannelHook
+	(redirected to function: CoReleaseServerProcess)
+Entry point:@ 000007FEFE904210
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe904215
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoRegisterClassObject
+	(redirected to function: CoResumeClassObjects)
+Entry point:@ 000007FEFE8F4AE0
+	FF F3                             push rbx                      IP:fe8f4ae2
+	55                                push rbp                      IP:fe8f4ae3
+	56                                push rsi                      IP:fe8f4ae4
+	57                                push rdi                      IP:fe8f4ae5
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	55                                push rbp                      IP:fe8e03a6
+	56                                push rsi                      IP:fe8e03a7
+	57                                push rdi                      IP:fe8e03a8
+
+Function: CoRegisterInitializeSpy
+	(redirected to function: CoRetireServer)
+Entry point:@ 000007FEFE9138EC
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe9138f1
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8e03a8
+
+Function: CoRegisterMallocSpy
+	(redirected to function: CoRevertToSelf)
+Entry point:@ 000007FEFEA0CA00
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fea0ca05
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feaf03a8
+
+Function: CoRegisterMessageFilter
+	(redirected to function: CoRevokeClassObject)
+Entry point:@ 000007FEFE90B284
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe90b289
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoRegisterPSClsid
+	(redirected to function: CoRevokeInitializeSpy)
+Entry point:@ 000007FEFEA17D10
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea17d15
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoRegisterSurrogate
+	(redirected to function: CoRevokeMallocSpy)
+Entry point:@ 000007FEFEA089D0
+	FF F3                             push rbx                      IP:fea089d2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea089d6
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoRegisterSurrogateEx
+	(redirected to function: CoSetCancelObject)
+Entry point:@ 000007FEFEA446D0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea446d5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: CoReleaseMarshalData
+	(redirected to function: CoSetProxyBlanket)
+Entry point:@ 000007FEFE8F6990
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8f6995
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8e03a8
+
+Function: CoReleaseServerProcess
+	(redirected to function: CoSetState)
+Entry point:@ 000007FEFEA08A40
+	E9 3B FE FF FF                    jmp 0xfffffffffffffe40        IP:fea08a45
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 80 88 A0 FE FE 07 00 00     mov rax, 0x7fefea08880        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: CoResumeClassObjects
+	(redirected to function: CoSuspendClassObjects)
+Entry point:@ 000007FEFEA36F40
+	EB CE                             jmp 0xffffffffffffffd0        IP:fea36f42
+	90                                nop                           IP:fea36f43
+	90                                nop                           IP:fea36f44
+	90                                nop                           IP:fea36f45
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 10 6F A3 FE FE 07 00 00     mov rax, 0x7fefea36f10        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+	90                                nop                           IP:feaf03b0
+	90                                nop                           IP:feaf03b1
+	90                                nop                           IP:feaf03b2
+
+Function: CoRetireServer
+	(redirected to function: CoSwitchCallContext)
+Entry point:@ 000007FEFEA04720
+	48 83 EC 28                       sub rsp, 0x28                 IP:fea04724
+	48 85 C9                          test rcx, rcx                 IP:fea04727
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 85 C9                          test rcx, rcx                 IP:feaf03aa
+
+Function: CoRevertToSelf
+	(redirected to function: CoTaskMemAlloc)
+Entry point:@ 000007FEFE8F6050
+	FF F3                             push rbx                      IP:fe8f6052
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8f6056
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoRevokeClassObject
+	(redirected to function: CoTaskMemFree)
+Entry point:@ 000007FEFE8F8814
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f8819
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoRevokeInitializeSpy
+	(redirected to function: CoTaskMemRealloc)
+Entry point:@ 000007FEFE8FA654
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:fe8fa659
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:fe8e03a8
+
+Function: CoRevokeMallocSpy
+	(redirected to function: CoTestCancel)
+Entry point:@ 000007FEFE9A8CA0
+	FF F3                             push rbx                      IP:fe9a8ca2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe9a8ca6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoSetCancelObject
+	(redirected to function: CoTreatAsClass)
+Entry point:@ 000007FEFEA045B0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fea045b5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: CoSetProxyBlanket
+	(redirected to function: CoUninitialize)
+Entry point:@ 000007FEFE925E10
+	E9 4B A4 3A FE                    jmp 0xfffffffffe3aa450        IP:fe925e15
+Relocated entry point:@ 000007FEFE8E03A3
+	48 B8 60 02 CD FC FE 07 00 00     mov rax, 0x7fefccd0260        IP:fe8e03ad
+	FF E0                             jmp rax                       IP:fe8e03af
+
+Function: CoSetState
+	(redirected to function: CoUnloadingWOW)
+Entry point:@ 000007FEFE915CC0
+	33 C0                             xor eax, eax                  IP:fe915cc2
+	C3                                ret                           IP:fe915cc3
+	90                                nop                           IP:fe915cc4
+	90                                nop                           IP:fe915cc5
+Relocated entry point:@ 000007FEFE8E03A3
+	33 C0                             xor eax, eax                  IP:fe8e03a5
+	C3                                ret                           IP:fe8e03a6
+	90                                nop                           IP:fe8e03a7
+	90                                nop                           IP:fe8e03a8
+
+Function: CoSuspendClassObjects
+	(redirected to function: CoUnmarshalHresult)
+Entry point:@ 000007FEFEA08A30
+	E9 1B FE FF FF                    jmp 0xfffffffffffffe20        IP:fea08a35
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 50 88 A0 FE FE 07 00 00     mov rax, 0x7fefea08850        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: CoSwitchCallContext
+	(redirected to function: CoUnmarshalInterface)
+Entry point:@ 000007FEFE8F5E00
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f5e05
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoTaskMemAlloc
+	(redirected to function: CoVrfCheckThreadState)
+Entry point:@ 000007FEFE915A80
+	48 8B 05 F9 98 1A 00              mov rax, [rip+0x1a98f9]       IP:fe915a87
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 05 D6 EF 1D 00              mov rax, [rip+0x1defd6]       IP:fe8e03aa
+
+Function: CoTaskMemFree
+	(redirected to function: CoVrfGetThreadState)
+Entry point:@ 000007FEFE915A30
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe915a34
+	48 8B 05 45 99 1A 00              mov rax, [rip+0x1a9945]       IP:fe915a3b
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B 05 D2 EF 1D 00              mov rax, [rip+0x1defd2]       IP:fe8e03ae
+
+Function: CoTaskMemRealloc
+	(redirected to function: CoVrfReleaseThreadState)
+Entry point:@ 000007FEFE96F100
+	48 8B 05 79 02 15 00              mov rax, [rip+0x150279]       IP:fe96f107
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 05 D6 EF 1D 00              mov rax, [rip+0x1defd6]       IP:fe8e03aa
+
+Function: CoTestCancel
+	(redirected to function: CoWaitForMultipleHandles)
+Entry point:@ 000007FEFE9FCB90
+	FF F3                             push rbx                      IP:fe9fcb92
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe9fcb96
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoTreatAsClass
+	(redirected to function: ComPs_NdrDllCanUnloadNow)
+Entry point:@ 000007FEFE9D47E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9d47e5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoUninitialize
+	(redirected to function: ComPs_NdrDllGetClassObject)
+Entry point:@ 000007FEFE90F088
+	FF F3                             push rbx                      IP:fe90f08a
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe90f08e
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CoUnloadingWOW
+	(redirected to function: ComPs_NdrDllRegisterProxy)
+Entry point:@ 000007FEFEA4F530
+	FF F3                             push rbx                      IP:fea4f532
+	48 83 EC 20                       sub rsp, 0x20                 IP:fea4f536
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feaf03a9
+
+Function: CoUnmarshalHresult
+	(redirected to function: ComPs_NdrDllUnregisterProxy)
+Entry point:@ 000007FEFE9A8E30
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9a8e35
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CoUnmarshalInterface
+	(redirected to function: CreateAntiMoniker)
+Entry point:@ 000007FEFE91A3EC
+	FF F3                             push rbx                      IP:fe91a3ee
+	55                                push rbp                      IP:fe91a3ef
+	56                                push rsi                      IP:fe91a3f0
+	57                                push rdi                      IP:fe91a3f1
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	55                                push rbp                      IP:fe8e03a6
+	56                                push rsi                      IP:fe8e03a7
+	57                                push rdi                      IP:fe8e03a8
+
+Function: CoVrfCheckThreadState
+	(redirected to function: BindMoniker)
+Entry point:@ 000007FEFE9BE560
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe9be565
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8e03a8
+
+Function: CoVrfGetThreadState
+	(redirected to function: CLIPFORMAT_UserFree)
+Entry point:@ 000007FEFE9FC460
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe9fc465
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: CoVrfReleaseThreadState
+	(redirected to function: CLIPFORMAT_UserFree64)
+Entry point:@ 000007FEFE96A520
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe96a524
+	48 85 C9                          test rcx, rcx                 IP:fe96a527
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 85 C9                          test rcx, rcx                 IP:fe8e03aa
+
+Function: CoWaitForMultipleHandles
+	(redirected to function: CreateBindCtx)
+Entry point:@ 000007FEFEA17B20
+	FF F3                             push rbx                      IP:fea17b22
+	55                                push rbp                      IP:fea17b23
+	56                                push rsi                      IP:fea17b24
+	57                                push rdi                      IP:fea17b25
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	55                                push rbp                      IP:feaf03a6
+	56                                push rsi                      IP:feaf03a7
+	57                                push rdi                      IP:feaf03a8
+
+Function: ComPs_NdrDllCanUnloadNow
+	(redirected to function: CreateClassMoniker)
+Entry point:@ 000007FEFE915B90
+	B8 01 00 00 00                    mov eax, 0x1                  IP:fe915b95
+Relocated entry point:@ 000007FEFE8E03A3
+	B8 01 00 00 00                    mov eax, 0x1                  IP:fe8e03a8
+
+Function: ComPs_NdrDllGetClassObject
+	(redirected to function: CreateDataAdviseHolder)
+Entry point:@ 000007FEFE9F5250
+	4C 8B DC                          mov r11, rsp                  IP:fe9f5253
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fe9f5257
+Relocated entry point:@ 000007FEFEAF03A3
+	4C 8B DC                          mov r11, rsp                  IP:feaf03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:feaf03aa
+
+Function: ComPs_NdrDllRegisterProxy
+	(redirected to function: CreateDataCache)
+Entry point:@ 000007FEFE9FB880
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe9fb884
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:fe9fb889
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:feaf03ac
+
+Function: ComPs_NdrDllUnregisterProxy
+	(redirected to function: CreateErrorInfo)
+Entry point:@ 000007FEFE9FB850
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe9fb854
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:fe9fb859
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:feaf03ac
+
+Function: CreateAntiMoniker
+	(redirected to function: CreateFileMoniker)
+Entry point:@ 000007FEFE9CD0B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9cd0b5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateBindCtx
+	(redirected to function: CreateGenericComposite)
+Entry point:@ 000007FEFE913C80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe913c85
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateClassMoniker
+	(redirected to function: CreateILockBytesOnHGlobal)
+Entry point:@ 000007FEFE9ABD00
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9abd05
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateDataAdviseHolder
+	(redirected to function: CreateItemMoniker)
+Entry point:@ 000007FEFE9BA0A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9ba0a5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateDataCache
+	(redirected to function: CreateObjrefMoniker)
+Entry point:@ 000007FEFE9EB4A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9eb4a5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateErrorInfo
+	(redirected to function: CreateOleAdviseHolder)
+Entry point:@ 000007FEFE9A89C0
+	FF F3                             push rbx                      IP:fe9a89c2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe9a89c6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: CreateFileMoniker
+	(redirected to function: CreatePointerMoniker)
+Entry point:@ 000007FEFE9CD110
+	FF F5                             push rbp                      IP:fe9cd112
+	56                                push rsi                      IP:fe9cd113
+	57                                push rdi                      IP:fe9cd114
+	41 54                             push r12                      IP:fe9cd116
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F5                             push rbp                      IP:fe8e03a5
+	56                                push rsi                      IP:fe8e03a6
+	57                                push rdi                      IP:fe8e03a7
+	41 54                             push r12                      IP:fe8e03a9
+
+Function: CreateGenericComposite
+	(redirected to function: CreateStdProgressIndicator)
+Entry point:@ 000007FEFE9D4E50
+	4C 8B DC                          mov r11, rsp                  IP:fe9d4e53
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fe9d4e57
+Relocated entry point:@ 000007FEFE8E03A3
+	4C 8B DC                          mov r11, rsp                  IP:fe8e03a6
+	49 89 5B 10                       mov [r11+0x10], rbx           IP:fe8e03aa
+
+Function: CreateILockBytesOnHGlobal
+	(redirected to function: CreateStreamOnHGlobal)
+Entry point:@ 000007FEFE9B9C20
+	48 8B C4                          mov rax, rsp                  IP:fe9b9c23
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9b9c27
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: CreateItemMoniker
+	(redirected to function: DcomChannelSetHResult)
+Entry point:@ 000007FEFE9CD490
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9cd495
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateObjrefMoniker
+	(redirected to function: DllDebugObjectRPCHook)
+Entry point:@ 000007FEFE9D2A60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9d2a65
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateOleAdviseHolder
+	(redirected to function: DllGetClassObject)
+Entry point:@ 000007FEFE9B9FC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b9fc5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreatePointerMoniker
+	(redirected to function: DllGetClassObjectWOW)
+Entry point:@ 000007FEFE8F9E50
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f9e55
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateStdProgressIndicator
+	(redirected to function: DllRegisterServer)
+Entry point:@ 000007FEFE9C1650
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9c1655
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: CreateStreamOnHGlobal
+	(redirected to function: DoDragDrop)
+Entry point:@ 000007FEFE9D3C30
+	48 8B C4                          mov rax, rsp                  IP:fe9d3c33
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9d3c37
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: DcomChannelSetHResult
+	(redirected to function: EnableHookObject)
+Entry point:@ 000007FEFE916EF4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe916ef8
+	48 8B 05 01 B9 1A 00              mov rax, [rip+0x1ab901]       IP:fe916eff
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe8e03a7
+	48 8B 05 52 24 1E 00              mov rax, [rip+0x1e2452]       IP:fe8e03ae
+
+Function: DllDebugObjectRPCHook
+	(redirected to function: FmtIdToPropStgName)
+Entry point:@ 000007FEFEA67210
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea67215
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: DllGetClassObject
+	(redirected to function: FreePropVariantArray)
+Entry point:@ 000007FEFE91EBF0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe91ebf5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: DllGetClassObjectWOW
+	(redirected to function: GetClassFile)
+Entry point:@ 000007FEFE91EBF0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe91ebf5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: DllRegisterServer
+	(redirected to function: GetConvertStg)
+Entry point:@ 000007FEFE9F73D0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe9f73d4
+	E8 27 D4 F6 FF                    call 0xfffffffffff6d42c       IP:fe9f73d9
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 B8 00 48 96 FE FE 07 00 00     mov rax, 0x7fefe964800        IP:feaf03b1
+	FF D0                             call rax                      IP:feaf03b3
+
+Function: DoDragDrop
+	(redirected to function: GetDocumentBitStg)
+Entry point:@ 000007FEFEA4DED0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea4ded5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: EnableHookObject
+	(redirected to function: GetErrorInfo)
+Entry point:@ 000007FEFE9CCBF0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9ccbf5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: FmtIdToPropStgName
+	(redirected to function: GetHGlobalFromILockBytes)
+Entry point:@ 000007FEFE9B2C30
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b2c35
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: FreePropVariantArray
+	(redirected to function: GetHGlobalFromStream)
+Entry point:@ 000007FEFEA16DC0
+	45 33 C0                          xor r8d, r8d                  IP:fea16dc3
+	E9 F8 9C FD FF                    jmp 0xfffffffffffd9cfd        IP:fea16dc8
+Relocated entry point:@ 000007FEFEAF03A3
+	45 33 C0                          xor r8d, r8d                  IP:feaf03a6
+	48 B8 C0 0A 9F FE FE 07 00 00     mov rax, 0x7fefe9f0ac0        IP:feaf03b0
+	FF E0                             jmp rax                       IP:feaf03b2
+
+Function: GetClassFile
+	(redirected to function: GetHookInterface)
+Entry point:@ 000007FEFEA0F930
+	4C 8D 05 F9 38 06 00              lea r8, [rip+0x638f9]         IP:fea0f937
+Relocated entry point:@ 000007FEFEAF03A3
+	4C 8D 05 86 2E F8 FF              lea r8, [rip-0x7d17a]         IP:feaf03aa
+
+Function: GetConvertStg
+	(redirected to function: GetRunningObjectTable)
+Entry point:@ 000007FEFE9F3F70
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe9f3f74
+	48 8D 54 24 38                    lea rdx, [rsp+0x38]           IP:fe9f3f79
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 8D 54 24 38                    lea rdx, [rsp+0x38]           IP:feaf03ac
+
+Function: GetDocumentBitStg
+	(redirected to function: HACCEL_UserFree)
+Entry point:@ 000007FEFE9F3FC0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe9f3fc4
+	48 8D 54 24 38                    lea rdx, [rsp+0x38]           IP:fe9f3fc9
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 8D 54 24 38                    lea rdx, [rsp+0x38]           IP:feaf03ac
+
+Function: GetErrorInfo
+	(redirected to function: HACCEL_UserFree64)
+Entry point:@ 000007FEFE926AFC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe926b01
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: GetHGlobalFromILockBytes
+	(redirected to function: HACCEL_UserMarshal)
+Entry point:@ 000007FEFE9B9B90
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b9b95
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: GetHGlobalFromStream
+	(redirected to function: HACCEL_UserMarshal64)
+Entry point:@ 000007FEFE9B94E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b94e5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: GetHookInterface
+	(redirected to function: HACCEL_UserSize)
+Entry point:@ 000007FEFE96E860
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe96e864
+	48 8B 05 2D 6E 15 00              mov rax, [rip+0x156e2d]       IP:fe96e86b
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B 05 EA 52 1E 00              mov rax, [rip+0x1e52ea]       IP:fe8e03ae
+
+Function: GetRunningObjectTable
+	(redirected to function: HACCEL_UserSize64)
+Entry point:@ 000007FEFEA08A60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea08a65
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: HACCEL_UserFree
+	(redirected to function: HACCEL_UserUnmarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HACCEL_UserFree64
+	(redirected to function: HACCEL_UserUnmarshal64)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HACCEL_UserMarshal
+	(redirected to function: HBITMAP_UserFree)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HACCEL_UserMarshal64
+	(redirected to function: HBITMAP_UserFree64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HACCEL_UserSize
+	(redirected to function: HBITMAP_UserMarshal)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HACCEL_UserSize64
+	(redirected to function: HBITMAP_UserMarshal64)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HACCEL_UserUnmarshal
+	(redirected to function: HBITMAP_UserSize)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HACCEL_UserUnmarshal64
+	(redirected to function: HBITMAP_UserSize64)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HBITMAP_UserFree
+	(redirected to function: HBITMAP_UserUnmarshal)
+Entry point:@ 000007FEFE964B40
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964b44
+	48 8B C1                          mov rax, rcx                  IP:fe964b47
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HBITMAP_UserFree64
+	(redirected to function: HBITMAP_UserUnmarshal64)
+Entry point:@ 000007FEFE964B40
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964b44
+	48 8B C1                          mov rax, rcx                  IP:fe964b47
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HBITMAP_UserMarshal
+	(redirected to function: HBRUSH_UserFree)
+Entry point:@ 000007FEFE984460
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe984465
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HBITMAP_UserMarshal64
+	(redirected to function: HBRUSH_UserFree64)
+Entry point:@ 000007FEFE9842C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9842c5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HBITMAP_UserSize
+	(redirected to function: HBRUSH_UserMarshal)
+Entry point:@ 000007FEFE984570
+	FF F3                             push rbx                      IP:fe984572
+	48 83 EC 40                       sub rsp, 0x40                 IP:fe984576
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fe8e03a9
+
+Function: HBITMAP_UserSize64
+	(redirected to function: HBRUSH_UserMarshal64)
+Entry point:@ 000007FEFE9843E0
+	FF F3                             push rbx                      IP:fe9843e2
+	48 83 EC 40                       sub rsp, 0x40                 IP:fe9843e6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fe8e03a9
+
+Function: HBITMAP_UserUnmarshal
+	(redirected to function: HBRUSH_UserSize)
+Entry point:@ 000007FEFE9BB3A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bb3a5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HBITMAP_UserUnmarshal64
+	(redirected to function: HBRUSH_UserSize64)
+Entry point:@ 000007FEFE9BB340
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bb345
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HBRUSH_UserFree
+	(redirected to function: HBRUSH_UserUnmarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HBRUSH_UserFree64
+	(redirected to function: HBRUSH_UserUnmarshal64)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HBRUSH_UserMarshal
+	(redirected to function: HDC_UserFree)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HBRUSH_UserMarshal64
+	(redirected to function: HDC_UserFree64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HBRUSH_UserSize
+	(redirected to function: HDC_UserMarshal)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HBRUSH_UserSize64
+	(redirected to function: HDC_UserMarshal64)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HBRUSH_UserUnmarshal
+	(redirected to function: HDC_UserSize)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HBRUSH_UserUnmarshal64
+	(redirected to function: HDC_UserSize64)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HDC_UserFree
+	(redirected to function: HDC_UserUnmarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HDC_UserFree64
+	(redirected to function: HDC_UserUnmarshal64)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HDC_UserMarshal
+	(redirected to function: HENHMETAFILE_UserFree)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HDC_UserMarshal64
+	(redirected to function: HENHMETAFILE_UserFree64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HDC_UserSize
+	(redirected to function: HENHMETAFILE_UserMarshal)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HDC_UserSize64
+	(redirected to function: HENHMETAFILE_UserMarshal64)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HDC_UserUnmarshal
+	(redirected to function: HENHMETAFILE_UserSize)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HDC_UserUnmarshal64
+	(redirected to function: HENHMETAFILE_UserSize64)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HENHMETAFILE_UserFree
+	(redirected to function: HENHMETAFILE_UserUnmarshal)
+Entry point:@ 000007FEFE964CF0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964cf4
+	48 8B C1                          mov rax, rcx                  IP:fe964cf7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HENHMETAFILE_UserFree64
+	(redirected to function: HENHMETAFILE_UserUnmarshal64)
+Entry point:@ 000007FEFE964CF0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964cf4
+	48 8B C1                          mov rax, rcx                  IP:fe964cf7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HENHMETAFILE_UserMarshal
+	(redirected to function: HGLOBAL_UserFree)
+Entry point:@ 000007FEFE983D60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983d65
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HENHMETAFILE_UserMarshal64
+	(redirected to function: HGLOBAL_UserFree64)
+Entry point:@ 000007FEFE983650
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983655
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HENHMETAFILE_UserSize
+	(redirected to function: HGLOBAL_UserMarshal)
+Entry point:@ 000007FEFE964DA0
+	FF F3                             push rbx                      IP:fe964da2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe964da6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HENHMETAFILE_UserSize64
+	(redirected to function: HGLOBAL_UserMarshal64)
+Entry point:@ 000007FEFE983720
+	FF F3                             push rbx                      IP:fe983722
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe983726
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HENHMETAFILE_UserUnmarshal
+	(redirected to function: HGLOBAL_UserSize)
+Entry point:@ 000007FEFE99DD90
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99dd95
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HENHMETAFILE_UserUnmarshal64
+	(redirected to function: HGLOBAL_UserSize64)
+Entry point:@ 000007FEFE9BB280
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bb285
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HGLOBAL_UserFree
+	(redirected to function: HGLOBAL_UserUnmarshal)
+Entry point:@ 000007FEFE964C10
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964c14
+	48 8B C1                          mov rax, rcx                  IP:fe964c17
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HGLOBAL_UserFree64
+	(redirected to function: HGLOBAL_UserUnmarshal64)
+Entry point:@ 000007FEFE964C10
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964c14
+	48 8B C1                          mov rax, rcx                  IP:fe964c17
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HGLOBAL_UserMarshal
+	(redirected to function: HICON_UserFree)
+Entry point:@ 000007FEFE983450
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983455
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HGLOBAL_UserMarshal64
+	(redirected to function: HICON_UserFree64)
+Entry point:@ 000007FEFE983150
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983155
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HGLOBAL_UserSize
+	(redirected to function: HICON_UserMarshal)
+Entry point:@ 000007FEFE964C90
+	FF F3                             push rbx                      IP:fe964c92
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe964c96
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HGLOBAL_UserSize64
+	(redirected to function: HICON_UserMarshal64)
+Entry point:@ 000007FEFE964C40
+	FF F3                             push rbx                      IP:fe964c42
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe964c46
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HGLOBAL_UserUnmarshal
+	(redirected to function: HICON_UserSize)
+Entry point:@ 000007FEFE99D760
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99d765
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HGLOBAL_UserUnmarshal64
+	(redirected to function: HICON_UserSize64)
+Entry point:@ 000007FEFE9BB210
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bb215
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HICON_UserFree
+	(redirected to function: HICON_UserUnmarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HICON_UserFree64
+	(redirected to function: HICON_UserUnmarshal64)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HICON_UserMarshal
+	(redirected to function: HMENU_UserFree)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HICON_UserMarshal64
+	(redirected to function: HMENU_UserFree64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HICON_UserSize
+	(redirected to function: HMENU_UserMarshal)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HICON_UserSize64
+	(redirected to function: HMENU_UserMarshal64)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HICON_UserUnmarshal
+	(redirected to function: HMENU_UserSize)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HICON_UserUnmarshal64
+	(redirected to function: HMENU_UserSize64)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMENU_UserFree
+	(redirected to function: HMENU_UserUnmarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HMENU_UserFree64
+	(redirected to function: HMENU_UserUnmarshal64)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HMENU_UserMarshal
+	(redirected to function: HMETAFILEPICT_UserFree)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMENU_UserMarshal64
+	(redirected to function: HMETAFILEPICT_UserFree64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMENU_UserSize
+	(redirected to function: HMETAFILEPICT_UserMarshal)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMENU_UserSize64
+	(redirected to function: HMETAFILEPICT_UserMarshal64)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMENU_UserUnmarshal
+	(redirected to function: HMETAFILEPICT_UserSize)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMENU_UserUnmarshal64
+	(redirected to function: HMETAFILEPICT_UserSize64)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HMETAFILEPICT_UserFree
+	(redirected to function: HMETAFILEPICT_UserUnmarshal)
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 D2                          test rdx, rdx                 IP:fe964df3
+	74 64                             jz 0x66                       IP:fe964df5
+
+Function: HMETAFILEPICT_UserFree64
+	(redirected to function: HMETAFILEPICT_UserUnmarshal64)
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 D2                          test rdx, rdx                 IP:fe964df3
+	74 64                             jz 0x66                       IP:fe964df5
+
+Function: HMETAFILEPICT_UserMarshal
+	(redirected to function: HMETAFILE_UserFree)
+Entry point:@ 000007FEFE984190
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe984195
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILEPICT_UserMarshal64
+	(redirected to function: HMETAFILE_UserFree64)
+Entry point:@ 000007FEFE983790
+	48 8B C4                          mov rax, rsp                  IP:fe983793
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe983797
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: HMETAFILEPICT_UserSize
+	(redirected to function: HMETAFILE_UserMarshal)
+Entry point:@ 000007FEFE964E60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe964e65
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILEPICT_UserSize64
+	(redirected to function: HMETAFILE_UserMarshal64)
+Entry point:@ 000007FEFE983910
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983915
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILEPICT_UserUnmarshal
+	(redirected to function: HMETAFILE_UserSize)
+Entry point:@ 000007FEFE99DDF0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99ddf5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILEPICT_UserUnmarshal64
+	(redirected to function: HMETAFILE_UserSize64)
+Entry point:@ 000007FEFE9BB2E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bb2e5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILE_UserFree
+	(redirected to function: HMETAFILE_UserUnmarshal)
+Entry point:@ 000007FEFE964D20
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964d24
+	48 8B C1                          mov rax, rcx                  IP:fe964d27
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HMETAFILE_UserFree64
+	(redirected to function: HMETAFILE_UserUnmarshal64)
+Entry point:@ 000007FEFE964D20
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964d24
+	48 8B C1                          mov rax, rcx                  IP:fe964d27
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HMETAFILE_UserMarshal
+	(redirected to function: HPALETTE_UserFree)
+Entry point:@ 000007FEFE983B50
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983b55
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILE_UserMarshal64
+	(redirected to function: HPALETTE_UserFree64)
+Entry point:@ 000007FEFE983510
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983515
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HMETAFILE_UserSize
+	(redirected to function: HPALETTE_UserMarshal)
+Entry point:@ 000007FEFE964D50
+	FF F3                             push rbx                      IP:fe964d52
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe964d56
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HMETAFILE_UserSize64
+	(redirected to function: HPALETTE_UserMarshal64)
+Entry point:@ 000007FEFE9835E0
+	FF F3                             push rbx                      IP:fe9835e2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe9835e6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HMETAFILE_UserUnmarshal
+	(redirected to function: HPALETTE_UserSize)
+Entry point:@ 000007FEFE9839D0
+	48 8B C4                          mov rax, rsp                  IP:fe9839d3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9839d7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: HMETAFILE_UserUnmarshal64
+	(redirected to function: HPALETTE_UserSize64)
+Entry point:@ 000007FEFE99D7D0
+	48 8B C4                          mov rax, rsp                  IP:fe99d7d3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe99d7d7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: HPALETTE_UserFree
+	(redirected to function: HPALETTE_UserUnmarshal)
+Entry point:@ 000007FEFE964B40
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964b44
+	48 8B C1                          mov rax, rcx                  IP:fe964b47
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HPALETTE_UserFree64
+	(redirected to function: HPALETTE_UserUnmarshal64)
+Entry point:@ 000007FEFE964B40
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe964b44
+	48 8B C1                          mov rax, rcx                  IP:fe964b47
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: HPALETTE_UserMarshal
+	(redirected to function: HRGN_UserFree)
+Entry point:@ 000007FEFE983040
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe983045
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HPALETTE_UserMarshal64
+	(redirected to function: HRGN_UserMarshal)
+Entry point:@ 000007FEFE982D20
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe982d25
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HPALETTE_UserSize
+	(redirected to function: HRGN_UserSize)
+Entry point:@ 000007FEFE964BC0
+	FF F3                             push rbx                      IP:fe964bc2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe964bc6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HPALETTE_UserSize64
+	(redirected to function: HRGN_UserUnmarshal)
+Entry point:@ 000007FEFE964B70
+	FF F3                             push rbx                      IP:fe964b72
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe964b76
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: HPALETTE_UserUnmarshal
+	(redirected to function: HWND_UserFree)
+Entry point:@ 000007FEFE99D500
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99d505
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HPALETTE_UserUnmarshal64
+	(redirected to function: HWND_UserFree64)
+Entry point:@ 000007FEFE9BB1B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9bb1b5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: HRGN_UserFree
+	(redirected to function: CLIPFORMAT_UserMarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HRGN_UserMarshal
+	(redirected to function: CLIPFORMAT_UserMarshal64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HRGN_UserSize
+	(redirected to function: CLIPFORMAT_UserSize)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HRGN_UserUnmarshal
+	(redirected to function: CLIPFORMAT_UserSize64)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HWND_UserFree
+	(redirected to function: HWND_UserMarshal)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HWND_UserFree64
+	(redirected to function: HWND_UserMarshal64)
+Entry point:@ 000007FEFEA63FE0
+	C2 00 00                          ret 0x0                       IP:fea63fe3
+	90                                nop                           IP:fea63fe4
+	90                                nop                           IP:fea63fe5
+Relocated entry point:@ 000007FEFEAF03A3
+	C2 00 00                          ret 0x0                       IP:feaf03a6
+	90                                nop                           IP:feaf03a7
+	90                                nop                           IP:feaf03a8
+
+Function: HWND_UserMarshal
+	(redirected to function: HWND_UserSize)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HWND_UserMarshal64
+	(redirected to function: HWND_UserSize64)
+Entry point:@ 000007FEFEA65580
+	E9 BB EA FF FF                    jmp 0xffffffffffffeac0        IP:fea65585
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 40 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64040        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HWND_UserSize
+	(redirected to function: HWND_UserUnmarshal)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HWND_UserSize64
+	(redirected to function: HWND_UserUnmarshal64)
+Entry point:@ 000007FEFEA65570
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65575
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64090        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HWND_UserUnmarshal
+	(redirected to function: HkOleRegisterObject)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HWND_UserUnmarshal64
+	(redirected to function: IIDFromString)
+Entry point:@ 000007FEFEA66C20
+	E9 6B E9 FF FF                    jmp 0xffffffffffffe970        IP:fea66c25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 90 55 A6 FE FE 07 00 00     mov rax, 0x7fefea65590        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: HkOleRegisterObject
+	(redirected to function: IsAccelerator)
+Entry point:@ 000007FEFE96E830
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe96e834
+	48 8B 05 65 6E 15 00              mov rax, [rip+0x156e65]       IP:fe96e83b
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B 05 F2 52 1E 00              mov rax, [rip+0x1e52f2]       IP:fe8e03ae
+
+Function: IIDFromString
+	(redirected to function: IsEqualGUID)
+Entry point:@ 000007FEFE8F8CD0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8f8cd5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: IsAccelerator
+	(redirected to function: IsValidIid)
+Entry point:@ 000007FEFE99A8F0
+	48 8B C4                          mov rax, rsp                  IP:fe99a8f3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe99a8f7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: IsEqualGUID
+	(redirected to function: IsValidInterface)
+Entry point:@ 000007FEFE91E9C0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe91e9c4
+	41 B8 10 00 00 00                 mov r8d, 0x10                 IP:fe91e9ca
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	41 B8 10 00 00 00                 mov r8d, 0x10                 IP:fe8e03ad
+
+Function: IsValidIid
+	(redirected to function: IsValidPtrIn)
+Entry point:@ 000007FEFE915B90
+	B8 01 00 00 00                    mov eax, 0x1                  IP:fe915b95
+Relocated entry point:@ 000007FEFE8E03A3
+	B8 01 00 00 00                    mov eax, 0x1                  IP:fe8e03a8
+
+Function: IsValidInterface
+	(redirected to function: IsValidPtrOut)
+Entry point:@ 000007FEFE91D840
+	48 8B D1                          mov rdx, rcx                  IP:fe91d843
+	48 85 C9                          test rcx, rcx                 IP:fe91d846
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B D1                          mov rdx, rcx                  IP:fe8e03a6
+	48 85 C9                          test rcx, rcx                 IP:fe8e03a9
+
+Function: IsValidPtrIn
+	(redirected to function: MkParseDisplayName)
+Entry point:@ 000007FEFE98BE60
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe98be64
+	48 85 C9                          test rcx, rcx                 IP:fe98be67
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 85 C9                          test rcx, rcx                 IP:fe8e03aa
+
+Function: IsValidPtrOut
+	(redirected to function: MonikerCommonPrefixWith)
+Entry point:@ 000007FEFE98BE60
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe98be64
+	48 85 C9                          test rcx, rcx                 IP:fe98be67
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 85 C9                          test rcx, rcx                 IP:fe8e03aa
+
+Function: MkParseDisplayName
+	(redirected to function: MonikerRelativePathTo)
+Entry point:@ 000007FEFE8F9888
+	48 8B C4                          mov rax, rsp                  IP:fe8f988b
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8f988f
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: MonikerCommonPrefixWith
+	(redirected to function: NdrOleInitializeExtension)
+Entry point:@ 000007FEFE98DAC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe98dac5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: MonikerRelativePathTo
+	(redirected to function: NdrProxyForwardingFunction10)
+Entry point:@ 000007FEFE9D8220
+	48 8B C4                          mov rax, rsp                  IP:fe9d8223
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9d8227
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: NdrOleInitializeExtension
+	(redirected to function: CLIPFORMAT_UserUnmarshal)
+Entry point:@ 000007FEFE907A14
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe907a19
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: NdrProxyForwardingFunction10
+	(redirected to function: NdrProxyForwardingFunction11)
+Entry point:@ 000007FEFE92CA00
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca04
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca07
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction11
+	(redirected to function: NdrProxyForwardingFunction12)
+Entry point:@ 000007FEFE92CA10
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca14
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca17
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction12
+	(redirected to function: NdrProxyForwardingFunction13)
+Entry point:@ 000007FEFE92CA20
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca24
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca27
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction13
+	(redirected to function: NdrProxyForwardingFunction14)
+Entry point:@ 000007FEFE92CA30
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca34
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca37
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction14
+	(redirected to function: NdrProxyForwardingFunction15)
+Entry point:@ 000007FEFE92CA40
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca44
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca47
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction15
+	(redirected to function: NdrProxyForwardingFunction16)
+Entry point:@ 000007FEFE92CA50
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca54
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca57
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction16
+	(redirected to function: NdrProxyForwardingFunction17)
+Entry point:@ 000007FEFE92CA60
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca64
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca67
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction17
+	(redirected to function: NdrProxyForwardingFunction18)
+Entry point:@ 000007FEFE92CA70
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca74
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca77
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction18
+	(redirected to function: NdrProxyForwardingFunction19)
+Entry point:@ 000007FEFE92CA80
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca84
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca87
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction19
+	(redirected to function: NdrProxyForwardingFunction20)
+Entry point:@ 000007FEFE92CA90
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92ca94
+	4C 8B 11                          mov r10, [rcx]                IP:fe92ca97
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction20
+	(redirected to function: NdrProxyForwardingFunction21)
+Entry point:@ 000007FEFE92CAA0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92caa4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92caa7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction21
+	(redirected to function: NdrProxyForwardingFunction22)
+Entry point:@ 000007FEFE92CAB0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cab4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cab7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction22
+	(redirected to function: NdrProxyForwardingFunction23)
+Entry point:@ 000007FEFE92CAC0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cac4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cac7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction23
+	(redirected to function: NdrProxyForwardingFunction24)
+Entry point:@ 000007FEFE92CAD0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cad4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cad7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction24
+	(redirected to function: NdrProxyForwardingFunction25)
+Entry point:@ 000007FEFE92CAE0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cae4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cae7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction25
+	(redirected to function: NdrProxyForwardingFunction26)
+Entry point:@ 000007FEFE92CAF0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92caf4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92caf7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction26
+	(redirected to function: NdrProxyForwardingFunction27)
+Entry point:@ 000007FEFE92CB00
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb04
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb07
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction27
+	(redirected to function: NdrProxyForwardingFunction28)
+Entry point:@ 000007FEFE92CB10
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb14
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb17
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction28
+	(redirected to function: NdrProxyForwardingFunction29)
+Entry point:@ 000007FEFE92CB20
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb24
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb27
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction29
+	(redirected to function: NdrProxyForwardingFunction3)
+Entry point:@ 000007FEFE92CB30
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb34
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb37
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction3
+	(redirected to function: NdrProxyForwardingFunction30)
+Entry point:@ 000007FEFE92C990
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c994
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c997
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction30
+	(redirected to function: NdrProxyForwardingFunction31)
+Entry point:@ 000007FEFE92CB40
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb44
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb47
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction31
+	(redirected to function: NdrProxyForwardingFunction32)
+Entry point:@ 000007FEFE92CB50
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb54
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb57
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction32
+	(redirected to function: NdrProxyForwardingFunction4)
+Entry point:@ 000007FEFE92CB60
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92cb64
+	4C 8B 11                          mov r10, [rcx]                IP:fe92cb67
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction4
+	(redirected to function: NdrProxyForwardingFunction5)
+Entry point:@ 000007FEFE92C9A0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c9a4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c9a7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction5
+	(redirected to function: NdrProxyForwardingFunction6)
+Entry point:@ 000007FEFE92C9B0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c9b4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c9b7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction6
+	(redirected to function: NdrProxyForwardingFunction7)
+Entry point:@ 000007FEFE92C9C0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c9c4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c9c7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction7
+	(redirected to function: NdrProxyForwardingFunction8)
+Entry point:@ 000007FEFE92C9D0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c9d4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c9d7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction8
+	(redirected to function: NdrProxyForwardingFunction9)
+Entry point:@ 000007FEFE92C9E0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c9e4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c9e7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: NdrProxyForwardingFunction9
+	(redirected to function: ObjectStublessClient10)
+Entry point:@ 000007FEFE92C9F0
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe92c9f4
+	4C 8B 11                          mov r10, [rcx]                IP:fe92c9f7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B 49 20                       mov rcx, [rcx+0x20]           IP:fe8e03a7
+	4C 8B 11                          mov r10, [rcx]                IP:fe8e03aa
+
+Function: ObjectStublessClient10
+	(redirected to function: ObjectStublessClient11)
+Entry point:@ 000007FEFE92D170
+	41 BA 0A 00 00 00                 mov r10d, 0xa                 IP:fe92d176
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 0A 00 00 00                 mov r10d, 0xa                 IP:fe8e03a9
+
+Function: ObjectStublessClient11
+	(redirected to function: ObjectStublessClient12)
+Entry point:@ 000007FEFE92D180
+	41 BA 0B 00 00 00                 mov r10d, 0xb                 IP:fe92d186
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 0B 00 00 00                 mov r10d, 0xb                 IP:fe8e03a9
+
+Function: ObjectStublessClient12
+	(redirected to function: ObjectStublessClient13)
+Entry point:@ 000007FEFE92D190
+	41 BA 0C 00 00 00                 mov r10d, 0xc                 IP:fe92d196
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 0C 00 00 00                 mov r10d, 0xc                 IP:fe8e03a9
+
+Function: ObjectStublessClient13
+	(redirected to function: ObjectStublessClient14)
+Entry point:@ 000007FEFE8F8F50
+	41 BA 0D 00 00 00                 mov r10d, 0xd                 IP:fe8f8f56
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 0D 00 00 00                 mov r10d, 0xd                 IP:fe8e03a9
+
+Function: ObjectStublessClient14
+	(redirected to function: ObjectStublessClient15)
+Entry point:@ 000007FEFE92D1A0
+	41 BA 0E 00 00 00                 mov r10d, 0xe                 IP:fe92d1a6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 0E 00 00 00                 mov r10d, 0xe                 IP:fe8e03a9
+
+Function: ObjectStublessClient15
+	(redirected to function: ObjectStublessClient16)
+Entry point:@ 000007FEFE92D1B0
+	41 BA 0F 00 00 00                 mov r10d, 0xf                 IP:fe92d1b6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 0F 00 00 00                 mov r10d, 0xf                 IP:fe8e03a9
+
+Function: ObjectStublessClient16
+	(redirected to function: ObjectStublessClient17)
+Entry point:@ 000007FEFE92D1C0
+	41 BA 10 00 00 00                 mov r10d, 0x10                IP:fe92d1c6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 10 00 00 00                 mov r10d, 0x10                IP:fe8e03a9
+
+Function: ObjectStublessClient17
+	(redirected to function: ObjectStublessClient18)
+Entry point:@ 000007FEFE8F8F60
+	41 BA 11 00 00 00                 mov r10d, 0x11                IP:fe8f8f66
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 11 00 00 00                 mov r10d, 0x11                IP:fe8e03a9
+
+Function: ObjectStublessClient18
+	(redirected to function: ObjectStublessClient19)
+Entry point:@ 000007FEFE92D1D0
+	41 BA 12 00 00 00                 mov r10d, 0x12                IP:fe92d1d6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 12 00 00 00                 mov r10d, 0x12                IP:fe8e03a9
+
+Function: ObjectStublessClient19
+	(redirected to function: ObjectStublessClient20)
+Entry point:@ 000007FEFE8F5BB0
+	41 BA 13 00 00 00                 mov r10d, 0x13                IP:fe8f5bb6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 13 00 00 00                 mov r10d, 0x13                IP:fe8e03a9
+
+Function: ObjectStublessClient20
+	(redirected to function: ObjectStublessClient21)
+Entry point:@ 000007FEFE8FCF40
+	41 BA 14 00 00 00                 mov r10d, 0x14                IP:fe8fcf46
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 14 00 00 00                 mov r10d, 0x14                IP:fe8e03a9
+
+Function: ObjectStublessClient21
+	(redirected to function: ObjectStublessClient22)
+Entry point:@ 000007FEFE8F4050
+	41 BA 15 00 00 00                 mov r10d, 0x15                IP:fe8f4056
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 15 00 00 00                 mov r10d, 0x15                IP:fe8e03a9
+
+Function: ObjectStublessClient22
+	(redirected to function: ObjectStublessClient23)
+Entry point:@ 000007FEFE92D1E0
+	41 BA 16 00 00 00                 mov r10d, 0x16                IP:fe92d1e6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 16 00 00 00                 mov r10d, 0x16                IP:fe8e03a9
+
+Function: ObjectStublessClient23
+	(redirected to function: ObjectStublessClient24)
+Entry point:@ 000007FEFE92D1F0
+	41 BA 17 00 00 00                 mov r10d, 0x17                IP:fe92d1f6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 17 00 00 00                 mov r10d, 0x17                IP:fe8e03a9
+
+Function: ObjectStublessClient24
+	(redirected to function: ObjectStublessClient25)
+Entry point:@ 000007FEFE8FDB10
+	41 BA 18 00 00 00                 mov r10d, 0x18                IP:fe8fdb16
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 18 00 00 00                 mov r10d, 0x18                IP:fe8e03a9
+
+Function: ObjectStublessClient25
+	(redirected to function: ObjectStublessClient26)
+Entry point:@ 000007FEFE8F5BA0
+	41 BA 19 00 00 00                 mov r10d, 0x19                IP:fe8f5ba6
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 19 00 00 00                 mov r10d, 0x19                IP:fe8e03a9
+
+Function: ObjectStublessClient26
+	(redirected to function: ObjectStublessClient27)
+Entry point:@ 000007FEFE92D200
+	41 BA 1A 00 00 00                 mov r10d, 0x1a                IP:fe92d206
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 1A 00 00 00                 mov r10d, 0x1a                IP:fe8e03a9
+
+Function: ObjectStublessClient27
+	(redirected to function: ObjectStublessClient28)
+Entry point:@ 000007FEFE92D210
+	41 BA 1B 00 00 00                 mov r10d, 0x1b                IP:fe92d216
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 1B 00 00 00                 mov r10d, 0x1b                IP:fe8e03a9
+
+Function: ObjectStublessClient28
+	(redirected to function: ObjectStublessClient29)
+Entry point:@ 000007FEFE92D220
+	41 BA 1C 00 00 00                 mov r10d, 0x1c                IP:fe92d226
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 1C 00 00 00                 mov r10d, 0x1c                IP:fe8e03a9
+
+Function: ObjectStublessClient29
+	(redirected to function: ObjectStublessClient3)
+Entry point:@ 000007FEFE92D230
+	41 BA 1D 00 00 00                 mov r10d, 0x1d                IP:fe92d236
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 1D 00 00 00                 mov r10d, 0x1d                IP:fe8e03a9
+
+Function: ObjectStublessClient3
+	(redirected to function: ObjectStublessClient30)
+Entry point:@ 000007FEFE919D60
+	41 BA 03 00 00 00                 mov r10d, 0x3                 IP:fe919d66
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 03 00 00 00                 mov r10d, 0x3                 IP:fe8e03a9
+
+Function: ObjectStublessClient30
+	(redirected to function: ObjectStublessClient31)
+Entry point:@ 000007FEFE92D240
+	41 BA 1E 00 00 00                 mov r10d, 0x1e                IP:fe92d246
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 1E 00 00 00                 mov r10d, 0x1e                IP:fe8e03a9
+
+Function: ObjectStublessClient31
+	(redirected to function: ObjectStublessClient32)
+Entry point:@ 000007FEFE92D250
+	41 BA 1F 00 00 00                 mov r10d, 0x1f                IP:fe92d256
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 1F 00 00 00                 mov r10d, 0x1f                IP:fe8e03a9
+
+Function: ObjectStublessClient32
+	(redirected to function: ObjectStublessClient4)
+Entry point:@ 000007FEFE92D260
+	41 BA 20 00 00 00                 mov r10d, 0x20                IP:fe92d266
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 20 00 00 00                 mov r10d, 0x20                IP:fe8e03a9
+
+Function: ObjectStublessClient4
+	(redirected to function: ObjectStublessClient5)
+Entry point:@ 000007FEFE91E610
+	41 BA 04 00 00 00                 mov r10d, 0x4                 IP:fe91e616
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 04 00 00 00                 mov r10d, 0x4                 IP:fe8e03a9
+
+Function: ObjectStublessClient5
+	(redirected to function: ObjectStublessClient6)
+Entry point:@ 000007FEFE91CA60
+	41 BA 05 00 00 00                 mov r10d, 0x5                 IP:fe91ca66
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 05 00 00 00                 mov r10d, 0x5                 IP:fe8e03a9
+
+Function: ObjectStublessClient6
+	(redirected to function: ObjectStublessClient7)
+Entry point:@ 000007FEFE8FCF60
+	41 BA 06 00 00 00                 mov r10d, 0x6                 IP:fe8fcf66
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 06 00 00 00                 mov r10d, 0x6                 IP:fe8e03a9
+
+Function: ObjectStublessClient7
+	(redirected to function: ObjectStublessClient8)
+Entry point:@ 000007FEFE927900
+	41 BA 07 00 00 00                 mov r10d, 0x7                 IP:fe927906
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 07 00 00 00                 mov r10d, 0x7                 IP:fe8e03a9
+
+Function: ObjectStublessClient8
+	(redirected to function: ObjectStublessClient9)
+Entry point:@ 000007FEFE92D160
+	41 BA 08 00 00 00                 mov r10d, 0x8                 IP:fe92d166
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 08 00 00 00                 mov r10d, 0x8                 IP:fe8e03a9
+
+Function: ObjectStublessClient9
+	(redirected to function: OleBuildVersion)
+Entry point:@ 000007FEFE8F8F40
+	41 BA 09 00 00 00                 mov r10d, 0x9                 IP:fe8f8f46
+Relocated entry point:@ 000007FEFE8E03A3
+	41 BA 09 00 00 00                 mov r10d, 0x9                 IP:fe8e03a9
+
+Function: OleBuildVersion
+	(redirected to function: OleConvertIStorageToOLESTREAM)
+Entry point:@ 000007FEFE96F150
+	B8 38 03 17 00                    mov eax, 0x170338             IP:fe96f155
+Relocated entry point:@ 000007FEFE8E03A3
+	B8 38 03 17 00                    mov eax, 0x170338             IP:fe8e03a8
+
+Function: OleConvertIStorageToOLESTREAM
+	(redirected to function: OleConvertIStorageToOLESTREAMEx)
+Entry point:@ 000007FEFEA47300
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fea47305
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feaf03a8
+
+Function: OleConvertIStorageToOLESTREAMEx
+	(redirected to function: OleConvertOLESTREAMToIStorage)
+Entry point:@ 000007FEFEA470F0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fea470f5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: OleConvertOLESTREAMToIStorage
+	(redirected to function: OleConvertOLESTREAMToIStorageEx)
+Entry point:@ 000007FEFEA43690
+	FF F3                             push rbx                      IP:fea43692
+	56                                push rsi                      IP:fea43693
+	57                                push rdi                      IP:fea43694
+	48 81 EC B0 00 00 00              sub rsp, 0xb0                 IP:fea4369b
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	56                                push rsi                      IP:feaf03a6
+	57                                push rdi                      IP:feaf03a7
+	48 81 EC B0 00 00 00              sub rsp, 0xb0                 IP:feaf03ae
+
+Function: OleConvertOLESTREAMToIStorageEx
+	(redirected to function: OleCreate)
+Entry point:@ 000007FEFEA43DE0
+	FF F3                             push rbx                      IP:fea43de2
+	55                                push rbp                      IP:fea43de3
+	56                                push rsi                      IP:fea43de4
+	57                                push rdi                      IP:fea43de5
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	55                                push rbp                      IP:feaf03a6
+	56                                push rsi                      IP:feaf03a7
+	57                                push rdi                      IP:feaf03a8
+
+Function: OleCreate
+	(redirected to function: OleCreateDefaultHandler)
+Entry point:@ 000007FEFEA52C10
+	48 8B C4                          mov rax, rsp                  IP:fea52c13
+	48 83 EC 68                       sub rsp, 0x68                 IP:fea52c17
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 83 EC 68                       sub rsp, 0x68                 IP:feaf03aa
+
+Function: OleCreateDefaultHandler
+	(redirected to function: OleCreateEmbeddingHelper)
+Entry point:@ 000007FEFEA113A0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fea113a4
+	4C 89 4C 24 28                    mov [rsp+0x28], r9            IP:fea113a9
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	4C 89 4C 24 28                    mov [rsp+0x28], r9            IP:feaf03ac
+
+Function: OleCreateEmbeddingHelper
+	(redirected to function: OleCreateEx)
+Entry point:@ 000007FEFEA11280
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea11285
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleCreateEx
+	(redirected to function: OleCreateFromData)
+Entry point:@ 000007FEFEA529E0
+	48 8B C4                          mov rax, rsp                  IP:fea529e3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea529e7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: OleCreateFromData
+	(redirected to function: OleCreateFromDataEx)
+Entry point:@ 000007FEFEA558C0
+	48 8B C4                          mov rax, rsp                  IP:fea558c3
+	48 83 EC 68                       sub rsp, 0x68                 IP:fea558c7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 83 EC 68                       sub rsp, 0x68                 IP:feaf03aa
+
+Function: OleCreateFromDataEx
+	(redirected to function: OleCreateFromFile)
+Entry point:@ 000007FEFEA55650
+	48 8B C4                          mov rax, rsp                  IP:fea55653
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea55657
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: OleCreateFromFile
+	(redirected to function: OleCreateFromFileEx)
+Entry point:@ 000007FEFEA54B50
+	FF F3                             push rbx                      IP:fea54b52
+	48 81 EC 80 00 00 00              sub rsp, 0x80                 IP:fea54b59
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 81 EC 80 00 00 00              sub rsp, 0x80                 IP:feaf03ac
+
+Function: OleCreateFromFileEx
+	(redirected to function: OleCreateLink)
+Entry point:@ 000007FEFEA54880
+	4C 8B DC                          mov r11, rsp                  IP:fea54883
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fea54887
+Relocated entry point:@ 000007FEFEAF03A3
+	4C 8B DC                          mov r11, rsp                  IP:feaf03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:feaf03aa
+
+Function: OleCreateLink
+	(redirected to function: OleCreateLinkEx)
+Entry point:@ 000007FEFEA53360
+	48 8B C4                          mov rax, rsp                  IP:fea53363
+	48 83 EC 68                       sub rsp, 0x68                 IP:fea53367
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 83 EC 68                       sub rsp, 0x68                 IP:feaf03aa
+
+Function: OleCreateLinkEx
+	(redirected to function: OleCreateLinkFromData)
+Entry point:@ 000007FEFEA531B0
+	48 8B C4                          mov rax, rsp                  IP:fea531b3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea531b7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: OleCreateLinkFromData
+	(redirected to function: OleCreateLinkFromDataEx)
+Entry point:@ 000007FEFEA555C0
+	48 8B C4                          mov rax, rsp                  IP:fea555c3
+	48 83 EC 68                       sub rsp, 0x68                 IP:fea555c7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 83 EC 68                       sub rsp, 0x68                 IP:feaf03aa
+
+Function: OleCreateLinkFromDataEx
+	(redirected to function: OleCreateLinkToFile)
+Entry point:@ 000007FEFEA55240
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fea55245
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feaf03a8
+
+Function: OleCreateLinkToFile
+	(redirected to function: OleCreateLinkToFileEx)
+Entry point:@ 000007FEFEA54F10
+	48 8B C4                          mov rax, rsp                  IP:fea54f13
+	48 83 EC 68                       sub rsp, 0x68                 IP:fea54f17
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 83 EC 68                       sub rsp, 0x68                 IP:feaf03aa
+
+Function: OleCreateLinkToFileEx
+	(redirected to function: OleCreateMenuDescriptor)
+Entry point:@ 000007FEFEA54BF0
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fea54bf5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feaf03a8
+
+Function: OleCreateMenuDescriptor
+	(redirected to function: OleCreateStaticFromData)
+Entry point:@ 000007FEFE99AA80
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe99aa85
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe8e03a8
+
+Function: OleCreateStaticFromData
+	(redirected to function: OleDestroyMenuDescriptor)
+Entry point:@ 000007FEFEA52550
+	48 8B C4                          mov rax, rsp                  IP:fea52553
+	53                                push rbx                      IP:fea52554
+	55                                push rbp                      IP:fea52555
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	53                                push rbx                      IP:feaf03a7
+	55                                push rbp                      IP:feaf03a8
+
+Function: OleDestroyMenuDescriptor
+	(redirected to function: OleDoAutoConvert)
+Entry point:@ 000007FEFE95EF10
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe95ef15
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleDoAutoConvert
+	(redirected to function: OleDraw)
+Entry point:@ 000007FEFEA3EB60
+	4C 8B DC                          mov r11, rsp                  IP:fea3eb63
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fea3eb67
+Relocated entry point:@ 000007FEFEAF03A3
+	4C 8B DC                          mov r11, rsp                  IP:feaf03a6
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:feaf03aa
+
+Function: OleDraw
+	(redirected to function: OleDuplicateData)
+Entry point:@ 000007FEFE9B8BA0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b8ba5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleDuplicateData
+	(redirected to function: OleFlushClipboard)
+Entry point:@ 000007FEFE9B8D70
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b8d75
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleFlushClipboard
+	(redirected to function: OleGetAutoConvert)
+Entry point:@ 000007FEFEA4DCA0
+	48 8B C4                          mov rax, rsp                  IP:fea4dca3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea4dca7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: OleGetAutoConvert
+	(redirected to function: OleGetClipboard)
+Entry point:@ 000007FEFE9F2610
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9f2615
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleGetClipboard
+	(redirected to function: OleGetIconOfClass)
+Entry point:@ 000007FEFEA46B40
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea46b45
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleGetIconOfClass
+	(redirected to function: OleGetIconOfFile)
+Entry point:@ 000007FEFEA3E450
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fea3e455
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feaf03a8
+
+Function: OleGetIconOfFile
+	(redirected to function: OleInitialize)
+Entry point:@ 000007FEFEA40F30
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fea40f35
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: OleInitialize
+	(redirected to function: OleInitializeWOW)
+Entry point:@ 000007FEFEA4E780
+	BA 02 00 00 00                    mov edx, 0x2                  IP:fea4e785
+Relocated entry point:@ 000007FEFEAF03A3
+	BA 02 00 00 00                    mov edx, 0x2                  IP:feaf03a8
+
+Function: OleInitializeWOW
+	(redirected to function: OleIsCurrentClipboard)
+Entry point:@ 000007FEFEA4E790
+	48 83 EC 28                       sub rsp, 0x28                 IP:fea4e794
+	48 8B CA                          mov rcx, rdx                  IP:fea4e797
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 8B CA                          mov rcx, rdx                  IP:feaf03aa
+
+Function: OleIsCurrentClipboard
+	(redirected to function: OleIsRunning)
+Entry point:@ 000007FEFEA162C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea162c5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleIsRunning
+	(redirected to function: OleLoad)
+Entry point:@ 000007FEFE9B9230
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b9235
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleLoad
+	(redirected to function: OleLoadFromStream)
+Entry point:@ 000007FEFEA528D0
+	48 8B C4                          mov rax, rsp                  IP:fea528d3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea528d7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: OleLoadFromStream
+	(redirected to function: OleLockRunning)
+Entry point:@ 000007FEFEA45160
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fea45165
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:feaf03a8
+
+Function: OleLockRunning
+	(redirected to function: OleMetafilePictFromIconAndLabel)
+Entry point:@ 000007FEFE9B91B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b91b5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleMetafilePictFromIconAndLabel
+	(redirected to function: OleNoteObjectVisible)
+Entry point:@ 000007FEFE999710
+	FF F3                             push rbx                      IP:fe999712
+	55                                push rbp                      IP:fe999713
+	56                                push rsi                      IP:fe999714
+	57                                push rdi                      IP:fe999715
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	55                                push rbp                      IP:fe8e03a6
+	56                                push rsi                      IP:fe8e03a7
+	57                                push rdi                      IP:fe8e03a8
+
+Function: OleNoteObjectVisible
+	(redirected to function: OleQueryCreateFromData)
+Entry point:@ 000007FEFEA1CAA0
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:fea1caa6
+Relocated entry point:@ 000007FEFEAF03A3
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:feaf03a9
+
+Function: OleQueryCreateFromData
+	(redirected to function: OleQueryLinkFromData)
+Entry point:@ 000007FEFEA40870
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea40875
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleQueryLinkFromData
+	(redirected to function: OleRegEnumFormatEtc)
+Entry point:@ 000007FEFEA40610
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea40615
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleRegEnumFormatEtc
+	(redirected to function: OleRegEnumVerbs)
+Entry point:@ 000007FEFEA3DF90
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea3df95
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleRegEnumVerbs
+	(redirected to function: OleRegGetMiscStatus)
+Entry point:@ 000007FEFEA3DA90
+	4C 8B DC                          mov r11, rsp                  IP:fea3da93
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fea3da97
+Relocated entry point:@ 000007FEFEAF03A3
+	4C 8B DC                          mov r11, rsp                  IP:feaf03a6
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:feaf03aa
+
+Function: OleRegGetMiscStatus
+	(redirected to function: OleRegGetUserType)
+Entry point:@ 000007FEFE9F26E0
+	48 8B C4                          mov rax, rsp                  IP:fe9f26e3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9f26e7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: OleRegGetUserType
+	(redirected to function: OleRun)
+Entry point:@ 000007FEFE9F27E0
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe9f27e5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:feaf03a8
+
+Function: OleRun
+	(redirected to function: OleSave)
+Entry point:@ 000007FEFE9B92A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b92a5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleSave
+	(redirected to function: OleSaveToStream)
+Entry point:@ 000007FEFE9B90A0
+	FF F3                             push rbx                      IP:fe9b90a2
+	56                                push rsi                      IP:fe9b90a3
+	57                                push rdi                      IP:fe9b90a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:fe9b90a8
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	56                                push rsi                      IP:fe8e03a6
+	57                                push rdi                      IP:fe8e03a7
+	48 83 EC 40                       sub rsp, 0x40                 IP:fe8e03ab
+
+Function: OleSaveToStream
+	(redirected to function: OleSetAutoConvert)
+Entry point:@ 000007FEFE9C1C70
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe9c1c75
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe8e03a8
+
+Function: OleSetAutoConvert
+	(redirected to function: OleSetClipboard)
+Entry point:@ 000007FEFE9C8990
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe9c8995
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe8e03a8
+
+Function: OleSetClipboard
+	(redirected to function: OleSetContainedObject)
+Entry point:@ 000007FEFEA4E0D0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea4e0d5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: OleSetContainedObject
+	(redirected to function: OleSetMenuDescriptor)
+Entry point:@ 000007FEFE9B9140
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b9145
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleSetMenuDescriptor
+	(redirected to function: OleTranslateAccelerator)
+Entry point:@ 000007FEFE9B72F0
+	48 8B C4                          mov rax, rsp                  IP:fe9b72f3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9b72f7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: OleTranslateAccelerator
+	(redirected to function: OleUninitialize)
+Entry point:@ 000007FEFE9B71E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b71e5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: OleUninitialize
+	(redirected to function: OpenOrCreateStream)
+Entry point:@ 000007FEFEA4E490
+	48 83 EC 38                       sub rsp, 0x38                 IP:fea4e494
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:fea4e49d
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feaf03b0
+
+Function: OpenOrCreateStream
+	(redirected to function: ProgIDFromCLSID)
+Entry point:@ 000007FEFE95D020
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe95d025
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: ProgIDFromCLSID
+	(redirected to function: PropStgNameToFmtId)
+Entry point:@ 000007FEFEA3D380
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea3d385
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: PropStgNameToFmtId
+	(redirected to function: PropSysAllocString)
+Entry point:@ 000007FEFE9B2BC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b2bc5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: PropSysAllocString
+	(redirected to function: PropSysFreeString)
+Entry point:@ 000007FEFE95A060
+	48 FF 25 01 51 16 00              jmp qword [rip+0x165101]      IP:fe95a067
+Relocated entry point:@ 000007FEFE8E03A3
+	48 FF 25 BE ED 1D 00              jmp qword [rip+0x1dedbe]      IP:fe8e03aa
+
+Function: PropSysFreeString
+	(redirected to function: PropVariantChangeType)
+Entry point:@ 000007FEFE95A050
+	E9 4B 4F FE FF                    jmp 0xfffffffffffe4f50        IP:fe95a055
+Relocated entry point:@ 000007FEFE8E03A3
+	48 B8 A0 EF 93 FE FE 07 00 00     mov rax, 0x7fefe93efa0        IP:fe8e03ad
+	FF E0                             jmp rax                       IP:fe8e03af
+
+Function: PropVariantChangeType
+	(redirected to function: CLIPFORMAT_UserUnmarshal64)
+Entry point:@ 000007FEFE9F1160
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9f1165
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: PropVariantClear
+Entry point:@ 000007FEFE913E68
+	33 D2                             xor edx, edx                  IP:fe913e6a
+	EB 08                             jmp 0xa                       IP:fe913e6c
+	90                                nop                           IP:fe913e6d
+Relocated entry point:@ 000007FEFE8E03A3
+	33 D2                             xor edx, edx                  IP:fe8e03a5
+	48 B8 74 3E 91 FE FE 07 00 00     mov rax, 0x7fefe913e74        IP:fe8e03af
+	FF E0                             jmp rax                       IP:fe8e03b1
+	90                                nop                           IP:fe8e03b2
+
+Function: PropVariantCopy
+Entry point:@ 000007FEFE9F0350
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fe9f0355
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: ReadClassStg
+Entry point:@ 000007FEFE9B9000
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe9b9005
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe8e03a8
+
+Function: ReadClassStm
+Entry point:@ 000007FEFE9EBF80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9ebf85
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: ReadFmtUserTypeStg
+Entry point:@ 000007FEFE9F3E80
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:fe9f3e85
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 20                    mov [rsp+0x20], rbx           IP:feaf03a8
+
+Function: ReadOleStg
+Entry point:@ 000007FEFEA45E70
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea45e75
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: ReadStringStream
+Entry point:@ 000007FEFE9E4180
+	48 8B C4                          mov rax, rsp                  IP:fe9e4183
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9e4187
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: RegisterDragDrop
+Entry point:@ 000007FEFEA4DB80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea4db85
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: ReleaseStgMedium
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe93d3c3
+	74 0F                             jz 0x11                       IP:fe93d3c5
+
+Function: RevokeDragDrop
+Entry point:@ 000007FEFEA4DA80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea4da85
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: SNB_UserFree
+Entry point:@ 000007FEFE9649E0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe9649e4
+	48 8B C1                          mov rax, rcx                  IP:fe9649e7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: SNB_UserFree64
+Entry point:@ 000007FEFE9649E0
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe9649e4
+	48 8B C1                          mov rax, rcx                  IP:fe9649e7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fe8e03a7
+	48 8B C1                          mov rax, rcx                  IP:fe8e03aa
+
+Function: SNB_UserMarshal
+Entry point:@ 000007FEFE964A10
+	48 8B C4                          mov rax, rsp                  IP:fe964a13
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe964a17
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: SNB_UserMarshal64
+Entry point:@ 000007FEFE9648A0
+	48 8B C4                          mov rax, rsp                  IP:fe9648a3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9648a7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: SNB_UserSize
+Entry point:@ 000007FEFE964AD0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe964ad5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: SNB_UserSize64
+Entry point:@ 000007FEFE964970
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe964975
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: SNB_UserUnmarshal
+Entry point:@ 000007FEFE99CFB0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99cfb5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: SNB_UserUnmarshal64
+Entry point:@ 000007FEFE99CC60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe99cc65
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: STGMEDIUM_UserFree
+ERROR: Unable to allocate hook: Hooking far conditional jumps is not supported.
+	48 85 D2                          test rdx, rdx                 IP:fe9ec323
+	0F 84 87 00 00 00                 jz 0x8d                       IP:fe9ec329
+
+Function: STGMEDIUM_UserFree64
+ERROR: Unable to allocate hook: Hooking far conditional jumps is not supported.
+	48 85 D2                          test rdx, rdx                 IP:fe9ec323
+	0F 84 87 00 00 00                 jz 0x8d                       IP:fe9ec329
+
+Function: STGMEDIUM_UserMarshal
+Entry point:@ 000007FEFEA42700
+	48 8B C4                          mov rax, rsp                  IP:fea42703
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea42707
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: STGMEDIUM_UserMarshal64
+Entry point:@ 000007FEFEA424F0
+	48 8B C4                          mov rax, rsp                  IP:fea424f3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea424f7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: STGMEDIUM_UserSize
+Entry point:@ 000007FEFEA39EC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea39ec5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: STGMEDIUM_UserSize64
+Entry point:@ 000007FEFEA39D20
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea39d25
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: STGMEDIUM_UserUnmarshal
+Entry point:@ 000007FEFEA49230
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea49235
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: STGMEDIUM_UserUnmarshal64
+Entry point:@ 000007FEFEA490C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea490c5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: SetConvertStg
+Entry point:@ 000007FEFE9F3F50
+	8B C2                             mov eax, edx                  IP:fe9f3f52
+	F7 D8                             neg eax                       IP:fe9f3f54
+	45 1B C0                          sbb r8d, r8d                  IP:fe9f3f57
+Relocated entry point:@ 000007FEFEAF03A3
+	8B C2                             mov eax, edx                  IP:feaf03a5
+	F7 D8                             neg eax                       IP:feaf03a7
+	45 1B C0                          sbb r8d, r8d                  IP:feaf03aa
+
+Function: SetDocumentBitStg
+Entry point:@ 000007FEFE9F3FA0
+	8B C2                             mov eax, edx                  IP:fe9f3fa2
+	F7 D8                             neg eax                       IP:fe9f3fa4
+	45 1B C0                          sbb r8d, r8d                  IP:fe9f3fa7
+Relocated entry point:@ 000007FEFEAF03A3
+	8B C2                             mov eax, edx                  IP:feaf03a5
+	F7 D8                             neg eax                       IP:feaf03a7
+	45 1B C0                          sbb r8d, r8d                  IP:feaf03aa
+
+Function: SetErrorInfo
+Entry point:@ 000007FEFE93E630
+	FF F7                             push rdi                      IP:fe93e632
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe93e636
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F7                             push rdi                      IP:fe8e03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe8e03a9
+
+Function: StgConvertPropertyToVariant
+Entry point:@ 000007FEFEA0AE80
+	48 83 EC 48                       sub rsp, 0x48                 IP:fea0ae84
+	48 8D 44 24 30                    lea rax, [rsp+0x30]           IP:fea0ae89
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:feaf03a7
+	48 8D 44 24 30                    lea rax, [rsp+0x30]           IP:feaf03ac
+
+Function: StgConvertVariantToProperty
+Entry point:@ 000007FEFE9E35C0
+	4C 8B DC                          mov r11, rsp                  IP:fe9e35c3
+	48 83 EC 58                       sub rsp, 0x58                 IP:fe9e35c7
+Relocated entry point:@ 000007FEFE8E03A3
+	4C 8B DC                          mov r11, rsp                  IP:fe8e03a6
+	48 83 EC 58                       sub rsp, 0x58                 IP:fe8e03aa
+
+Function: StgCreateDocfile
+Entry point:@ 000007FEFEA355E0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fea355e4
+	45 85 C0                          test r8d, r8d                 IP:fea355e7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	45 85 C0                          test r8d, r8d                 IP:feaf03aa
+
+Function: StgCreateDocfileOnILockBytes
+Entry point:@ 000007FEFEA32EB0
+	48 8B C4                          mov rax, rsp                  IP:fea32eb3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea32eb7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: StgCreatePropSetStg
+Entry point:@ 000007FEFE9B2C90
+	48 8B C4                          mov rax, rsp                  IP:fe9b2c93
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe9b2c97
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: StgCreatePropStg
+Entry point:@ 000007FEFEA00780
+	48 8B C4                          mov rax, rsp                  IP:fea00783
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea00787
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: StgCreateStorageEx
+Entry point:@ 000007FEFEA358C0
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fea358c5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feaf03a8
+
+Function: StgGetIFillLockBytesOnFile
+Entry point:@ 000007FEFEA0E910
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea0e915
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: StgGetIFillLockBytesOnILockBytes
+Entry point:@ 000007FEFE9B1160
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b1165
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: StgIsStorageFile
+Entry point:@ 000007FEFE997820
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe997825
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: StgIsStorageILockBytes
+Entry point:@ 000007FEFE95B5A0
+	FF F3                             push rbx                      IP:fe95b5a2
+	48 83 EC 60                       sub rsp, 0x60                 IP:fe95b5a6
+Relocated entry point:@ 000007FEFE8E03A3
+	FF F3                             push rbx                      IP:fe8e03a5
+	48 83 EC 60                       sub rsp, 0x60                 IP:fe8e03a9
+
+Function: StgOpenAsyncDocfileOnIFillLockBytes
+Entry point:@ 000007FEFEA33B70
+	48 8B C4                          mov rax, rsp                  IP:fea33b73
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea33b77
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: StgOpenPropStg
+Entry point:@ 000007FEFEA005F0
+	48 8B C4                          mov rax, rsp                  IP:fea005f3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea005f7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: StgOpenStorage
+Entry point:@ 000007FEFE909620
+	4C 8B DC                          mov r11, rsp                  IP:fe909623
+	48 83 EC 48                       sub rsp, 0x48                 IP:fe909627
+Relocated entry point:@ 000007FEFE8E03A3
+	4C 8B DC                          mov r11, rsp                  IP:fe8e03a6
+	48 83 EC 48                       sub rsp, 0x48                 IP:fe8e03aa
+
+Function: StgOpenStorageEx
+Entry point:@ 000007FEFEA357A0
+	48 8B C4                          mov rax, rsp                  IP:fea357a3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea357a7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: StgOpenStorageOnHandle
+Entry point:@ 000007FEFEA35760
+	48 83 EC 38                       sub rsp, 0x38                 IP:fea35764
+	48 8B 44 24 68                    mov rax, [rsp+0x68]           IP:fea35769
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	48 8B 44 24 68                    mov rax, [rsp+0x68]           IP:feaf03ac
+
+Function: StgOpenStorageOnILockBytes
+Entry point:@ 000007FEFEA32BA0
+	FF F3                             push rbx                      IP:fea32ba2
+	55                                push rbp                      IP:fea32ba3
+	56                                push rsi                      IP:fea32ba4
+	57                                push rdi                      IP:fea32ba5
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	55                                push rbp                      IP:feaf03a6
+	56                                push rsi                      IP:feaf03a7
+	57                                push rdi                      IP:feaf03a8
+
+Function: StgPropertyLengthAsVariant
+Entry point:@ 000007FEFE9F0210
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe9f0214
+	4C 8D 4C 24 20                    lea r9, [rsp+0x20]            IP:fe9f0219
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feaf03a7
+	4C 8D 4C 24 20                    lea r9, [rsp+0x20]            IP:feaf03ac
+
+Function: StgSetTimes
+Entry point:@ 000007FEFE997750
+	48 8B C4                          mov rax, rsp                  IP:fe997753
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe997757
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: StringFromCLSID
+Entry point:@ 000007FEFE93D340
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe93d345
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: StringFromGUID2
+Entry point:@ 000007FEFE910E50
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe910e55
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: StringFromIID
+Entry point:@ 000007FEFE9ED570
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9ed575
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: UpdateDCOMSettings
+Entry point:@ 000007FEFEA40990
+	48 8D 0D A9 0D 08 00              lea rcx, [rip+0x80da9]        IP:fea40997
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8D 0D 96 13 FD FF              lea rcx, [rip-0x2ec6a]        IP:feaf03aa
+
+Function: UpdateProcessTracing
+Entry point:@ 000007FEFEA09720
+	44 8B C2                          mov r8d, edx                  IP:fea09723
+	8B D1                             mov edx, ecx                  IP:fea09725
+Relocated entry point:@ 000007FEFEAF03A3
+	44 8B C2                          mov r8d, edx                  IP:feaf03a6
+	8B D1                             mov edx, ecx                  IP:feaf03a8
+
+Function: UtConvertDvtd16toDvtd32
+Entry point:@ 000007FEFE95C3D0
+	48 8B C4                          mov rax, rsp                  IP:fe95c3d3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe95c3d7
+Relocated entry point:@ 000007FEFE8E03A3
+	48 8B C4                          mov rax, rsp                  IP:fe8e03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fe8e03aa
+
+Function: UtConvertDvtd32toDvtd16
+Entry point:@ 000007FEFE95BFC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe95bfc5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: UtGetDvtd16Info
+Entry point:@ 000007FEFE95C610
+	48 89 7C 24 08                    mov [rsp+0x8], rdi            IP:fe95c615
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 7C 24 08                    mov [rsp+0x8], rdi            IP:fe8e03a8
+
+Function: UtGetDvtd32Info
+Entry point:@ 000007FEFE95C290
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe95c295
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: WdtpInterfacePointer_UserFree
+Entry point:@ 000007FEFEA64020
+	48 83 EC 28                       sub rsp, 0x28                 IP:fea64024
+	48 85 C9                          test rcx, rcx                 IP:fea64027
+Relocated entry point:@ 000007FEFEAF03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feaf03a7
+	48 85 C9                          test rcx, rcx                 IP:feaf03aa
+
+Function: WdtpInterfacePointer_UserFree64
+Entry point:@ 000007FEFEA65500
+	E9 1B EB FF FF                    jmp 0xffffffffffffeb20        IP:fea65505
+Relocated entry point:@ 000007FEFEAF03A3
+	48 B8 20 40 A6 FE FE 07 00 00     mov rax, 0x7fefea64020        IP:feaf03ad
+	FF E0                             jmp rax                       IP:feaf03af
+
+Function: WdtpInterfacePointer_UserMarshal
+Entry point:@ 000007FEFEA68DB0
+	48 8B C4                          mov rax, rsp                  IP:fea68db3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea68db7
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: WdtpInterfacePointer_UserMarshal64
+Entry point:@ 000007FEFEA68C90
+	48 8B C4                          mov rax, rsp                  IP:fea68c93
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fea68c97
+Relocated entry point:@ 000007FEFEAF03A3
+	48 8B C4                          mov rax, rsp                  IP:feaf03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feaf03aa
+
+Function: WdtpInterfacePointer_UserSize
+Entry point:@ 000007FEFEA68BF0
+	FF F3                             push rbx                      IP:fea68bf2
+	48 83 EC 30                       sub rsp, 0x30                 IP:fea68bf6
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 30                       sub rsp, 0x30                 IP:feaf03a9
+
+Function: WdtpInterfacePointer_UserSize64
+Entry point:@ 000007FEFEA68B80
+	FF F3                             push rbx                      IP:fea68b82
+	48 83 EC 30                       sub rsp, 0x30                 IP:fea68b86
+Relocated entry point:@ 000007FEFEAF03A3
+	FF F3                             push rbx                      IP:feaf03a5
+	48 83 EC 30                       sub rsp, 0x30                 IP:feaf03a9
+
+Function: WdtpInterfacePointer_UserUnmarshal
+Entry point:@ 000007FEFEA695A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea695a5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: WdtpInterfacePointer_UserUnmarshal64
+Entry point:@ 000007FEFEA69520
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fea69525
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feaf03a8
+
+Function: WriteClassStg
+Entry point:@ 000007FEFE9B8FC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b8fc5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: WriteClassStm
+Entry point:@ 000007FEFE9B8EC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9b8ec5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: WriteFmtUserTypeStg
+Entry point:@ 000007FEFEA3E9D0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fea3e9d5
+Relocated entry point:@ 000007FEFEAF03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feaf03a8
+
+Function: WriteOleStg
+Entry point:@ 000007FEFE9C9AD0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe9c9ad5
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe8e03a8
+
+Function: WriteStringStream
+Entry point:@ 000007FEFE95CF50
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe95cf55
+Relocated entry point:@ 000007FEFE8E03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fe8e03a8

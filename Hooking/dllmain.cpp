@@ -76,26 +76,29 @@ void createLogger(HINSTANCE hInstance)
 }
 
 static std::wstring curLog;
-void log(std::wstring msg, bool pause = false)
+void log(std::string msg, bool pause = false)
 {
-    msg = std::to_wstring(((uint64_t)
-        std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count())
-        %10000000000ul)
-        + L": " + msg + L"\r\n";
-    curLog = msg + curLog;
+    printf(msg.c_str());
+    printf("\n");
+    return;
+    //msg = std::to_wstring(((uint64_t)
+    //    std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now().time_since_epoch()).count())
+    //    %10000000000ul)
+    //    + L": " + msg + L"\r\n";
+    //curLog = msg + curLog;
 
-    if (curLog.size() > 1000)
-        curLog.resize(1000);
+    //if (curLog.size() > 1000)
+    //    curLog.resize(1000);
 
-    TCHAR *pbuf = (TCHAR*)&(curLog.data()[0]);
-    SetWindowText(textArea, pbuf);
-    //todo pause (for dbg)
+    //TCHAR *pbuf = (TCHAR*)&(curLog.data()[0]);
+    //SetWindowText(textArea, pbuf);
+    ////todo pause (for dbg)
 }
 
 HWND(WINAPI *origCreateWindowExA)(_In_ DWORD dwExStyle, _In_opt_ LPCSTR lpClassName, _In_opt_ LPCSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HMENU hMenu, _In_opt_ HINSTANCE hInstance, _In_opt_ LPVOID lpParam) = CreateWindowExA;
 HWND WINAPI itcpCreateWindowExA(_In_ DWORD dwExStyle, _In_opt_ LPCSTR lpClassName, _In_opt_ LPCSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HMENU hMenu, _In_opt_ HINSTANCE hInstance, _In_opt_ LPVOID lpParam) {
     auto r = origCreateWindowExA(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
-    log(L"itcpCreateWindowExA");
+    log("itcpCreateWindowExA");
     return r;
 }
 void hookCreateWindowExA() { DetourAttach(&(PVOID&)origCreateWindowExA, itcpCreateWindowExA); }
@@ -103,8 +106,9 @@ void detachCreateWindowExA() { DetourDetach(&(PVOID&)origCreateWindowExA, itcpCr
 
 HWND(WINAPI *origCreateWindowExW)(_In_ DWORD dwExStyle, _In_opt_ LPCWSTR lpClassName, _In_opt_ LPCWSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HMENU hMenu, _In_opt_ HINSTANCE hInstance, _In_opt_ LPVOID lpParam) = CreateWindowExW;
 HWND WINAPI itcpCreateWindowExW(_In_ DWORD dwExStyle, _In_opt_ LPCWSTR lpClassName, _In_opt_ LPCWSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HMENU hMenu, _In_opt_ HINSTANCE hInstance, _In_opt_ LPVOID lpParam) {
-    auto r = origCreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
-    log(L"itcpCreateWindowExW");
+    //auto r = origCreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
+    auto r = origCreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle, 440, 0, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
+    log("itcpCreateWindowExW");
     return  r;
 }
 void hookCreateWindowExW() { DetourAttach(&(PVOID&)origCreateWindowExW, itcpCreateWindowExW); }
@@ -113,9 +117,9 @@ void detachCreateWindowExW() { DetourDetach(&(PVOID&)origCreateWindowExW, itcpCr
 BOOL(WINAPI *origGetClientRect)(_In_ HWND hWnd, _Out_ LPRECT lpRect) = GetClientRect;
 BOOL WINAPI itcpGetClientRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
     auto r = origGetClientRect(hWnd, lpRect);
-    lpRect->right = lpRect->left + 400;
-    lpRect->bottom = lpRect->top + 300;
-    log(L"itcpGetClientRect");
+    lpRect->right = 200;
+    //lpRect->bottom = lpRect->top + 300;
+    log("itcpGetClientRect");
     return r;
 }
 void hookGetClientRect() { DetourAttach(&(PVOID&)origGetClientRect, itcpGetClientRect); }
@@ -124,11 +128,87 @@ void detachGetClientRect() { DetourDetach(&(PVOID&)origGetClientRect, itcpGetCli
 BOOL(WINAPI *origGetWindowRect)(_In_ HWND hWnd, _Out_ LPRECT lpRect) = GetWindowRect;
 BOOL WINAPI itcpGetWindowRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
     auto r = origGetWindowRect(hWnd, lpRect);
-    log(L"itcpGetWindowRect");
+    log("itcpGetWindowRect");
     return r;
 }
 void hookGetWindowRect() { DetourAttach(&(PVOID&)origGetWindowRect, itcpGetWindowRect); }
 void detachGetWindowRect() { DetourDetach(&(PVOID&)origGetWindowRect, itcpGetWindowRect); }
+
+BOOL(WINAPI *origAdjustWindowRectEx)(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu, _In_ DWORD dwExStyle) = AdjustWindowRectEx;
+BOOL WINAPI itcpAdjustWindowRectEx(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu, _In_ DWORD dwExStyle) {
+    log("hooked itcpAdjustWindowRectEx called");
+    auto r = origAdjustWindowRectEx(lpRect, dwStyle, bMenu, dwExStyle);
+    return r;
+}
+void hookAdjustWindowRectEx() { DetourAttach(&(PVOID&)origAdjustWindowRectEx, itcpAdjustWindowRectEx); }
+void detachAdjustWindowRectEx() { DetourDetach(&(PVOID&)origAdjustWindowRectEx, itcpAdjustWindowRectEx); }
+
+
+BOOL(WINAPI *origAdjustWindowRect)(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu) = AdjustWindowRect;
+BOOL WINAPI itcpAdjustWindowRect(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu) {
+    log("hooked itcpAdjustWindowRect called");
+    auto r = origAdjustWindowRect(lpRect, dwStyle, bMenu);
+    return r;
+}
+void hookAdjustWindowRect() { DetourAttach(&(PVOID&)origAdjustWindowRect, itcpAdjustWindowRect); }
+void detachAdjustWindowRect() { DetourDetach(&(PVOID&)origAdjustWindowRect, itcpAdjustWindowRect); }
+
+
+//BOOL(WINAPI *origAdjustWindowRectExForDpi)(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu, _In_ DWORD dwExStyle, _In_ UINT dpi) = AdjustWindowRectExForDpi;
+//BOOL WINAPI itcpAdjustWindowRectExForDpi(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu, _In_ DWORD dwExStyle, _In_ UINT dpi) {
+//    log("hooked itcpAdjustWindowRectExForDpi called");
+//    auto r = origAdjustWindowRectExForDpi(lpRect, dwStyle, bMenu, dwExStyle, dpi);
+//    return r;
+//}
+//void hookAdjustWindowRectExForDpi() { DetourAttach(&(PVOID&)origAdjustWindowRectExForDpi, itcpAdjustWindowRectExForDpi); }
+//void detachAdjustWindowRectExForDpi() { DetourDetach(&(PVOID&)origAdjustWindowRectExForDpi, itcpAdjustWindowRectExForDpi); }
+
+HWND(WINAPI *origCreateMDIWindowW)(_In_ LPCWSTR lpClassName, _In_ LPCWSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HINSTANCE hInstance, _In_ LPARAM lParam) = CreateMDIWindowW;
+HWND WINAPI itcpCreateMDIWindowW(_In_ LPCWSTR lpClassName, _In_ LPCWSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HINSTANCE hInstance, _In_ LPARAM lParam) {
+    log("hooked itcpCreateMDIWindowW called");
+    auto r = origCreateMDIWindowW(lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hInstance, lParam);
+    return r;
+}
+void hookCreateMDIWindowW() { DetourAttach(&(PVOID&)origCreateMDIWindowW, itcpCreateMDIWindowW); }
+void detachCreateMDIWindowW() { DetourDetach(&(PVOID&)origCreateMDIWindowW, itcpCreateMDIWindowW); }
+
+
+HWND(WINAPI *origCreateMDIWindowA)(_In_ LPCSTR lpClassName, _In_ LPCSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HINSTANCE hInstance, _In_ LPARAM lParam) = CreateMDIWindowA;
+HWND WINAPI itcpCreateMDIWindowA(_In_ LPCSTR lpClassName, _In_ LPCSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HINSTANCE hInstance, _In_ LPARAM lParam) {
+    log("hooked itcpCreateMDIWindowA called");
+    auto r = origCreateMDIWindowA(lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hInstance, lParam);
+    return r;
+}
+void hookCreateMDIWindowA() { DetourAttach(&(PVOID&)origCreateMDIWindowA, itcpCreateMDIWindowA); }
+void detachCreateMDIWindowA() { DetourDetach(&(PVOID&)origCreateMDIWindowA, itcpCreateMDIWindowA); }
+
+BOOL(WINAPI *origShowWindow)(_In_ HWND hWnd, _In_ int nCmdShow) = ShowWindow;
+BOOL WINAPI itcpShowWindow(_In_ HWND hWnd, _In_ int nCmdShow) {
+    log("hooked itcpShowWindow called");
+    auto r = origShowWindow(hWnd, nCmdShow);
+    return r;
+}
+void hookShowWindow() { DetourAttach(&(PVOID&)origShowWindow, itcpShowWindow); }
+void detachShowWindow() { DetourDetach(&(PVOID&)origShowWindow, itcpShowWindow); }
+
+BOOL(WINAPI *origShowWindowAsync)(_In_ HWND hWnd, _In_ int nCmdShow) = ShowWindowAsync;
+BOOL WINAPI itcpShowWindowAsync(_In_ HWND hWnd, _In_ int nCmdShow) {
+    log("hooked itcpShowWindowAsync called");
+    auto r = origShowWindowAsync(hWnd, nCmdShow);
+    return r;//TODO
+}
+void hookShowWindowAsync() { DetourAttach(&(PVOID&)origShowWindowAsync, itcpShowWindowAsync); }
+void detachShowWindowAsync() { DetourDetach(&(PVOID&)origShowWindowAsync, itcpShowWindowAsync); }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,7 +230,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  dwReason, LPVOID lpReserved)
     if (dwReason == DLL_PROCESS_ATTACH) {
         printf("attaching");
 
-        createLogger(hModule);
+        //createLogger(hModule);
 
         DetourRestoreAfterWith();
         DetourTransactionBegin();
@@ -161,6 +241,13 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  dwReason, LPVOID lpReserved)
         hookCreateWindowExA();
         hookCreateWindowExW();
         hookGetWindowRect();
+        hookAdjustWindowRect();
+        hookAdjustWindowRectEx();
+        //hookAdjustWindowRectExForDpi();
+        hookCreateMDIWindowA();
+        hookCreateMDIWindowW();
+        hookShowWindow();
+        hookShowWindowAsync();
 
         DetourTransactionCommit();
     }

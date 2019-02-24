@@ -38,8 +38,8 @@ def convert(txt):
             fptw = ftype+" ("+api+" *orig"+fname+")("+",".join(fargs)+") = "+fname+";"
 
             fisg = ' '.join(sig.split("(")[0].split(" ")[:-1])+" itcp"+fname+"("+",".join(fargs)+") {\n"+\
-                '    log(L"hooked itcp'+fname+' called");\n'+\
-                '    auto r = orig'+fname+"("+', '.join([p.split(' ')[-1] for p in fargs])+");\n    todo\n}"
+                '    log("hooked itcp'+fname+' called");\n'+\
+                '    auto r = orig'+fname+"("+', '.join([p.split(' ')[-1] for p in fargs])+");\n    return r;//TODO\n}"
 
             fatt = "void hook"+fname+"(){DetourAttach(&(PVOID&)orig"+fname+", itcp"+fname+");}\n"
             fdet = "void detach"+fname+"(){DetourDetach(&(PVOID&)orig"+fname+", itcp"+fname+");}\n"
