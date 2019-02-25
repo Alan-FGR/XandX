@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 
     //auto hr = CreateProcess(binWChars, nullptr, nullptr, nullptr, true, 0, nullptr, nullptr, &si, &pi);
 
-    const WCHAR* dllToInject = L"C:/Projects/RetroX/x64/Release/Hooking2dll.dll";
+    const WCHAR* dllToInject = L"C:/Projects/RetroX/Release/Hooking2dll.dll";
     wprintf(L"Attempting to inject: %s\n\n", dllToInject);
 
     HMODULE hmod = GetModuleHandle(0);
@@ -44,8 +44,16 @@ int main(int argc, char* argv[])
     static PVOID addr = (PVOID)&hmod;
 
     ULONG outPID;
-    NTSTATUS nt = RhCreateAndInject(binWChars, nullptr, CREATE_SUSPENDED, EASYHOOK_INJECT_DEFAULT, nullptr,
-        (WCHAR*)dllToInject, nullptr, 0, &outPID);
+
+    NTSTATUS nt = RhCreateAndInject(binWChars, nullptr, CREATE_SUSPENDED, EASYHOOK_INJECT_DEFAULT,
+#if _WIN64
+        nullptr,
+        (WCHAR*)dllToInject,
+#else
+        (WCHAR*)dllToInject,
+        nullptr,
+#endif
+        nullptr, 0, &outPID);
 
     // NTSTATUS nt = RhInjectLibrary(
     //     pi.dwProcessId,   // The process to inject into
