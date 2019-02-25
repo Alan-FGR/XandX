@@ -4,7 +4,11 @@
 #include "pch.h"
 #include <iostream>
 
+#include <string>
+
 #include <easyhook.h>
+#include <minwinbase.h>
+#include <chrono>
 
 #if _WIN64
 #pragma comment(lib, "EasyHook64.lib")
@@ -13,60 +17,62 @@
 #endif
 
 using namespace std;
-
-BOOL WINAPI myBeepHook(DWORD dwFreq, DWORD dwDuration);
-
-BOOL WINAPI myBeepHook(DWORD dwFreq, DWORD dwDuration)
+int main(int argc, char* argv[])
 {
-    cout << "\n****All your beeps belong to us!\n\n";
-    return Beep(dwFreq + 800, dwDuration);
-}
+    const char* binChars = argv[1];
 
-int main(int argc, TCHAR* argv[])
-{
-    HOOK_TRACE_INFO hHook = { NULL }; // keep track of our hook
-    cout << "\n";
-    cout << GetProcAddress(GetModuleHandle(TEXT("kernel32")), "Beep");
+    size_t resultSize;
+    mbsrtowcs_s(&resultSize, nullptr, 0, &binChars, 0, nullptr);
 
-    // Install the hook
-    NTSTATUS result = LhInstallHook(
-        GetProcAddress(GetModuleHandle(TEXT("kernel32")), "Beep"),
-        myBeepHook,
-        NULL,
-        &hHook);
-    if (FAILED(result))
+    WCHAR* binWChars = new WCHAR[resultSize+1]();
+
+    mbsrtowcs_s(&resultSize, binWChars, resultSize + 1, &binChars, resultSize + 1, nullptr);
+
+    PROCESS_INFORMATION pi;
+    STARTUPINFO si;
+
+    ZeroMemory(&si, sizeof STARTUPINFO);
+    ZeroMemory(&pi, sizeof PROCESS_INFORMATION);
+
+    //auto hr = CreateProcess(binWChars, nullptr, nullptr, nullptr, true, 0, nullptr, nullptr, &si, &pi);
+
+    const WCHAR* dllToInject = L"C:/Projects/RetroX/x64/Release/Hooking2dll.dll";
+    wprintf(L"Attempting to inject: %s\n\n", dllToInject);
+
+    HMODULE hmod = GetModuleHandle(0);
+
+    static PVOID addr = (PVOID)&hmod;
+
+    ULONG outPID;
+    NTSTATUS nt = RhCreateAndInject(binWChars, nullptr, CREATE_SUSPENDED, EASYHOOK_INJECT_DEFAULT, nullptr,
+        (WCHAR*)dllToInject, nullptr, 0, &outPID);
+
+    // NTSTATUS nt = RhInjectLibrary(
+    //     pi.dwProcessId,   // The process to inject into
+    //     0,           // ThreadId to wake up upon injection
+    //     EASYHOOK_INJECT_DEFAULT,
+    //     NULL, // 32-bit
+    //     (WCHAR*)dllToInject,		 // 64-bit not provided
+    //     &addr, // data to send to injected DLL entry point
+    //     sizeof (HMODULE)// size of data to send
+    // );
+
+
+    if (nt != 0)
     {
-        wstring s(RtlGetLastErrorString());
-        wcout << "Failed to install hook: ";
-        wcout << s.c_str();
-        cout << "\n\nPress any key to exit.";
-        cin.get();
-        return -1;
+        printf("RhInjectLibrary failed with error code = %d\n", nt);
+        PWCHAR err = RtlGetLastErrorString();
+        std::wcout << err << "\n";
+    }
+    else
+    {
+        std::wcout << L"Library injected successfully.\n";
     }
 
-    cout << "Beep after hook installed but not enabled.\n";
-    Beep(500, 500);
 
-    cout << "Activating hook for current thread only.\n";
-    // If the threadId in the ACL is set to 0, 
-    // then internally EasyHook uses GetCurrentThreadId()
-    ULONG ACLEntries[1] = { 0 };
-    LhSetInclusiveACL(ACLEntries, 1, &hHook);
-
-    cout << "Beep after hook enabled.\n";
-    Beep(500, 500);
-
-    cout << "Uninstall hook\n";
-    LhUninstallHook(&hHook);
-
-    cout << "Beep after hook uninstalled\n";
-    Beep(500, 500);
-
-    cout << "\n\nRestore ALL entry points of pending removals issued by LhUninstallHook()\n";
-    LhWaitForPendingRemovals();
-
-    cout << "Press any key to exit.";
-    cin.get();
-
+    std::wcout << "Press Enter to exit";
+    std::wstring input;
+    std::getline(std::wcin, input);
+    std::getline(std::wcin, input);
     return 0;
 }
