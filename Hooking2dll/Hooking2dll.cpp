@@ -16,6 +16,7 @@
 
 #include "Logging.h"
 
+#include "../Hooking2/HookParams.h"
 
 void Hook(const char* funcName, void* calledFunc)
 {
@@ -61,19 +62,13 @@ BOOL WINAPI itcpGetClientRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
     return r;
 }
 
-// EasyHook will be looking for this export to support DLL injection. If not found then 
-// DLL injection will fail.
-extern "C" void __declspec(dllexport) __stdcall NativeInjectionEntryPoint(REMOTE_ENTRY_INFO* inRemoteInfo);
-
-void __stdcall NativeInjectionEntryPoint(REMOTE_ENTRY_INFO* inRemoteInfo)
+extern "C" __declspec(dllexport) void __stdcall NativeInjectionEntryPoint(REMOTE_ENTRY_INFO* inRemoteInfo)
 {
-    std::cout << "\n\nNativeInjectionEntryPointt(REMOTE_ENTRY_INFO* inRemoteInfo)\n\n" <<
-        "IIIII           jjj               tt                dd !!! \n"
-        " III  nn nnn          eee    cccc tt      eee       dd !!! \n"
-        " III  nnn  nn   jjj ee   e cc     tttt  ee   e  dddddd !!! \n"
-        " III  nn   nn   jjj eeeee  cc     tt    eeeee  dd   dd     \n"
-        "IIIII nn   nn   jjj  eeeee  ccccc  tttt  eeeee  dddddd !!! \n"
-        "              jjjj                                         \n\n";
+    std::cout << "\nINJECTION ENTRY POINT REACHED!\n";
+
+    HookParams hpars = *reinterpret_cast<HookParams*>(inRemoteInfo->UserData);
+
+    std::cout << hpars.fakeClientWidth << std::endl;
 
     Hook("GetClientRect", itcpGetClientRect);
     Hook("CreateWindowExW", itcpCreateWindowExW);

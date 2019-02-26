@@ -1,47 +1,107 @@
-// Hooking2.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include "pch.h"
 #include <iostream>
 
 #include <string>
 
-#include <easyhook.h>
-#include <minwinbase.h>
 #include <chrono>
 
+#include "cxxopts.hpp"
+
+#include <easyhook.h>
 #if _WIN64
 #pragma comment(lib, "EasyHook64.lib")
 #else
 #pragma comment(lib, "EasyHook32.lib")
 #endif
 
+#include "HookParams.h"
+
+std::tuple<int16_t, int16_t> parseSize(std::string xSepSize)
+{
+    auto x = xSepSize.substr(0, xSepSize.find("x"));
+    auto y = xSepSize.substr(xSepSize.find("x")+1, xSepSize.length());
+    return std::make_tuple(std::stoi(x), std::stoi(y));
+}
+
+void pl(const char* l){std::cout << l << std::endl;}
+
 using namespace std;
 int main(int argc, char* argv[])
 {
-    const char* binChars = argv[1];
+    HookParams hpars;
+    static PVOID addr = (PVOID)&hpars;
 
-    size_t resultSize;
-    mbsrtowcs_s(&resultSize, nullptr, 0, &binChars, 0, nullptr);
+    WCHAR* binWChars;
 
-    WCHAR* binWChars = new WCHAR[resultSize+1]();
+    try {
+        cxxopts::Options options("cc");
 
-    mbsrtowcs_s(&resultSize, binWChars, resultSize + 1, &binChars, resultSize + 1, nullptr);
+        options.add_options()
+            ("s,windowSize", "Internal Window Size", cxxopts::value<std::string>())
+            ("p,windowPos", "Internal Window Position", cxxopts::value<std::string>())
+            ("w,forceWindow", "Force Windowed Mode (TODO)")//TODO
+            ("b,borderless", "Borderless Window")
+            ;
+
+        if (argc < 3)
+        {
+            pl("Usage:");
+            pl("  Arguments:");
+            pl("    cc.exe client_size [OPTIONS] program");
+            pl("  Options:");
+            auto optHelp = options.help();
+            cout << optHelp.substr(optHelp.find("]")+3, optHelp.length());
+            pl("NOTE: All sizes are in the format WIDTHxHEIGHT, example: 1280x720\n");
+            pl("Examples:");
+            pl("  Run with custom client size of 720x480:");
+            pl("    cc.exe 720x480 SomeProgram.exe");
+            pl("  Run with custom client size and place borderless 800x600 window at 100x200");
+            pl("    cc.exe 720x480 -s 800x600 -p 100x200 -b SomeProgram.exe");
+            exit(-1);
+        }
+
+        int pargc = argc - 2;
+        char** taddr = &argv[1];
+
+        pl("Parsing arguments...");
+        auto pars = options.parse(pargc, taddr);
+
+        if (pars.count("s")) {
+            auto[x, y] = parseSize(pars["s"].as<std::string>());
+            hpars.windowWidth = x;
+            hpars.windowHeight = y;
+        }
+
+        if (pars.count("p")) {
+            auto[x, y] = parseSize(pars["p"].as<std::string>());
+            hpars.windowPosX = x;
+            hpars.windowPosY = y;
+        }
+
+        if (pars.count("b")) hpars.borderLess = true;
+
+        pl("Parsing client size...");
+        std::tuple<int16_t, int16_t> clientSize = parseSize(argv[1]);
+        const char* binChars = argv[argc - 1];
+
+        pl("Parsing program name...");
+        size_t bcSize;
+        mbsrtowcs_s(&bcSize, nullptr, 0, &binChars, 0, nullptr);
+        binWChars = new WCHAR[bcSize + 1]();
+        mbsrtowcs_s(&bcSize, binWChars, bcSize + 1, &binChars, bcSize + 1, nullptr);
+    }
+    catch (...) { pl("ERROR: Couldn't parse options, refer to usage by running without arguments."); exit(-1); }
 
     PROCESS_INFORMATION pi;
     STARTUPINFO si;
 
-    ZeroMemory(&si, sizeof STARTUPINFO);
-    ZeroMemory(&pi, sizeof PROCESS_INFORMATION);
+    memset(&si, 0, sizeof STARTUPINFO);
+    memset(&pi, 0, sizeof PROCESS_INFORMATION);
 
     //auto hr = CreateProcess(binWChars, nullptr, nullptr, nullptr, true, 0, nullptr, nullptr, &si, &pi);
 
-    const WCHAR* dllToInject = L"C:/Projects/RetroX/Release/Hooking2dll.dll";
+    const WCHAR* dllToInject = L"C:/Projects/RetroX/x64/Release/Hooking2dll.dll";
     wprintf(L"Attempting to inject: %s\n\n", dllToInject);
-
-    HMODULE hmod = GetModuleHandle(0);
-
-    static PVOID addr = (PVOID)&hmod;
 
     ULONG outPID;
 
@@ -53,7 +113,7 @@ int main(int argc, char* argv[])
         (WCHAR*)dllToInject,
         nullptr,
 #endif
-        nullptr, 0, &outPID);
+        addr, sizeof HookParams, &outPID);
 
     // NTSTATUS nt = RhInjectLibrary(
     //     pi.dwProcessId,   // The process to inject into
@@ -65,22 +125,15 @@ int main(int argc, char* argv[])
     //     sizeof (HMODULE)// size of data to send
     // );
 
-
     if (nt != 0)
     {
-        printf("RhInjectLibrary failed with error code = %d\n", nt);
-        PWCHAR err = RtlGetLastErrorString();
-        std::wcout << err << "\n";
-    }
-    else
-    {
-        std::wcout << L"Library injected successfully.\n";
+        printf("Injection failed with code = %d\n", nt);
+        std::wcout << RtlGetLastErrorString() << "\n";
     }
 
+    // std::wcout << "Press Enter to exit";
+    // std::wstring input;
+    // std::getline(std::wcin, input);
 
-    std::wcout << "Press Enter to exit";
-    std::wstring input;
-    std::getline(std::wcin, input);
-    std::getline(std::wcin, input);
     return 0;
 }
