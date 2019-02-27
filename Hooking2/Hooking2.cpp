@@ -16,14 +16,16 @@
 
 #include "HookParams.h"
 
+void pl(const char* l){std::cout << l << std::endl;}
+
 std::tuple<int16_t, int16_t> parseSize(std::string xSepSize)
 {
     auto x = xSepSize.substr(0, xSepSize.find("x"));
     auto y = xSepSize.substr(xSepSize.find("x")+1, xSepSize.length());
+    std::cout << "Parsed size: " << xSepSize << std::endl;
     return std::make_tuple(std::stoi(x), std::stoi(y));
 }
 
-void pl(const char* l){std::cout << l << std::endl;}
 
 using namespace std;
 int main(int argc, char* argv[])
@@ -67,18 +69,24 @@ int main(int argc, char* argv[])
         auto pars = options.parse(pargc, taddr);
 
         if (pars.count("s")) {
+            pl("Found window size option, parsing size...");
             auto[x, y] = parseSize(pars["s"].as<std::string>());
             hpars.windowWidth = x;
             hpars.windowHeight = y;
         }
 
         if (pars.count("p")) {
+            pl("Found window position option, parsing size...");
             auto[x, y] = parseSize(pars["p"].as<std::string>());
             hpars.windowPosX = x;
             hpars.windowPosY = y;
         }
 
-        if (pars.count("b")) hpars.borderLess = true;
+        if (pars.count("b"))
+        {
+            pl("Found borderless flag.");
+            hpars.borderLess = true;
+        }
 
         pl("Parsing client size...");
         std::tuple<int16_t, int16_t> clientSize = parseSize(argv[1]);
