@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hooking2", "Hooking2\Hookin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hooking2dll", "Hooking2dll\Hooking2dll.vcxproj", "{0EAED083-42E1-498A-A840-25DCD4728029}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppendMacro", "AppendMacro\AppendMacro.vcxproj", "{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -62,6 +64,14 @@ Global
 		{0EAED083-42E1-498A-A840-25DCD4728029}.Release|x64.Build.0 = Release|x64
 		{0EAED083-42E1-498A-A840-25DCD4728029}.Release|x86.ActiveCfg = Release|Win32
 		{0EAED083-42E1-498A-A840-25DCD4728029}.Release|x86.Build.0 = Release|Win32
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Debug|x64.ActiveCfg = Debug|x64
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Debug|x64.Build.0 = Debug|x64
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Debug|x86.ActiveCfg = Debug|Win32
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Debug|x86.Build.0 = Debug|Win32
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Release|x64.ActiveCfg = Release|x64
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Release|x64.Build.0 = Release|x64
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Release|x86.ActiveCfg = Release|Win32
+		{C58A9D7D-3B5F-4F07-9B8D-D7FED6B5E734}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

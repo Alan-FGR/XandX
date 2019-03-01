@@ -1,5 +1,3 @@
-// Hooking2dll.cpp : Defines the exported functions for the DLL application.
-//
 
 #include "stdafx.h"
 
@@ -46,7 +44,6 @@ void Hook(const char* funcName, void* calledFunc)
     LhSetExclusiveACL(ACLEntries, 1, &hHook);
 }
 
-
 HWND WINAPI itcpCreateWindowExW(_In_ DWORD dwExStyle, _In_opt_ LPCWSTR lpClassName, _In_opt_ LPCWSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HMENU hMenu, _In_opt_ HINSTANCE hInstance, _In_opt_ LPVOID lpParam) {
     //auto r = origCreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle, X, Y, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
     auto r = CreateWindowExW(dwExStyle, lpClassName, L"HOOKED", WS_POPUP, 440, 220, nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
@@ -60,6 +57,29 @@ BOOL WINAPI itcpGetClientRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
     //lpRect->bottom = lpRect->top + 300;
     //printf("itcpGetClientRect");
     return r;
+}
+
+void browse()
+{
+    UpdateWindow       ;
+    MoveWindow         ;
+    SetWindowPos       ;
+    CreateWindowExA    ;
+    CreateWindowExW    ;
+                       ;
+    SetWindowLongA     ;
+    GetWindowLongA     ;
+    SetWindowLongW     ;
+    GetWindowLongW     ;
+                       ;
+    AdjustWindowRect   ;
+    AdjustWindowRectEx ;
+    ShowWindow         ;
+                       ;
+    ScreenToClient     ;
+    ClientToScreen     ;
+    GetClientRect      ;
+    GetWindowRect      ;
 }
 
 extern "C" __declspec(dllexport) void __stdcall NativeInjectionEntryPoint(REMOTE_ENTRY_INFO* inRemoteInfo)
