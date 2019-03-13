@@ -66,9 +66,11 @@ BOOL WINAPI itcpGetClientRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
 #if _DEBUG
 	printf("INTERCEPTED GetClientRect\n");
 #endif
+	//TODO modes
+	lpRect->right = lpRect->left + params.fakeClientWidth;
+	lpRect->bottom = lpRect->bottom + params.fakeClientHeight;
 	auto r = GetClientRect(hWnd, lpRect);
-
-	return r; TODO
+	return r;
 }
 
 
@@ -77,7 +79,7 @@ BOOL WINAPI itcpGetWindowRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
 	printf("INTERCEPTED GetWindowRect\n");
 #endif
 	auto r = GetWindowRect(hWnd, lpRect);
-	return r; TODO
+	return r; //TODO
 }
 
 
@@ -86,7 +88,7 @@ BOOL WINAPI itcpAdjustWindowRect(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_
 	printf("INTERCEPTED AdjustWindowRect\n");
 #endif
 	auto r = AdjustWindowRect(lpRect, dwStyle, bMenu);
-	return r; TODO
+	return r; //TODO
 }
 
 BOOL WINAPI itcpAdjustWindowRectEx(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu, _In_ DWORD dwExStyle) {
@@ -94,7 +96,7 @@ BOOL WINAPI itcpAdjustWindowRectEx(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _I
 	printf("INTERCEPTED AdjustWindowRectEx\n");
 #endif
 	auto r = AdjustWindowRectEx(lpRect, dwStyle, bMenu, dwExStyle);
-	return r; TODO
+	return r; //TODO
 }
 
 #if(WINVER >= 0x0605)
@@ -103,34 +105,16 @@ BOOL WINAPI itcpAdjustWindowRectExForDpi(_Inout_ LPRECT lpRect, _In_ DWORD dwSty
 	printf("INTERCEPTED AdjustWindowRectExForDpi\n");
 #endif
 	auto r = AdjustWindowRectExForDpi(lpRect, dwStyle, bMenu, dwExStyle, dpi);
-	return r; TODO
+	return r; //TODO
 }
 #endif
-
-BOOL WINAPI itcpMoveWindow(_In_ HWND hWnd, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_ BOOL bRepaint) {
-#if _DEBUG
-	printf("INTERCEPTED MoveWindow\n");
-#endif
-	auto r = MoveWindow(hWnd, X, Y, nWidth, nHeight, bRepaint);
-	return r; TODO
-}
-
-
-BOOL WINAPI itcpSetWindowPos(_In_ HWND hWnd, _In_opt_ HWND hWndInsertAfter, _In_ int X, _In_ int Y, _In_ int cx, _In_ int cy, _In_ UINT uFlags) {
-#if _DEBUG
-	printf("INTERCEPTED SetWindowPos\n");
-#endif
-	auto r = SetWindowPos(hWnd, hWndInsertAfter, X, Y, cx, cy, uFlags);
-	return r; TODO
-}
-
 
 BOOL WINAPI itcpGetWindowPlacement(_In_ HWND hWnd, _Inout_ WINDOWPLACEMENT* lpwndpl) {
 #if _DEBUG
 	printf("INTERCEPTED GetWindowPlacement\n");
 #endif
-	auto r = GetWindowPlacement(hWnd, *lpwndpl);
-	return r; TODO
+	auto r = GetWindowPlacement(hWnd, lpwndpl);
+	return r; //TODO
 }
 
 
@@ -138,8 +122,8 @@ BOOL WINAPI itcpSetWindowPlacement(_In_ HWND hWnd, _In_ CONST WINDOWPLACEMENT* l
 #if _DEBUG
 	printf("INTERCEPTED SetWindowPlacement\n");
 #endif
-	auto r = SetWindowPlacement(hWnd, *lpwndpl);
-	return r; TODO
+	auto r = SetWindowPlacement(hWnd, lpwndpl);
+	return r; //TODO
 }
 
 
@@ -148,7 +132,7 @@ BOOL WINAPI itcpShowWindow(_In_ HWND hWnd, _In_ int nCmdShow) {
 	printf("INTERCEPTED ShowWindow\n");
 #endif
 	auto r = ShowWindow(hWnd, nCmdShow);
-	return r; TODO
+	return r; //TODO
 }
 
 
@@ -157,7 +141,7 @@ BOOL WINAPI itcpClientToScreen(_In_ HWND hWnd, _Inout_ LPPOINT lpPoint) {
 	printf("INTERCEPTED ClientToScreen\n");
 #endif
 	auto r = ClientToScreen(hWnd, lpPoint);
-	return r; TODO
+	return r; //TODO
 }
 
 
@@ -166,7 +150,7 @@ BOOL WINAPI itcpScreenToClient(_In_ HWND hWnd, _Inout_ LPPOINT lpPoint) {
 	printf("INTERCEPTED ScreenToClient\n");
 #endif
 	auto r = ScreenToClient(hWnd, lpPoint);
-	return r; TODO
+	return r; //TODO
 }
 
 
