@@ -35,16 +35,13 @@ def convert(txt):
 
             fargs = sig.split("(")[1].split(")")[0].split(",")
 
-            fptw = ftype+" ("+api+" *orig"+fname+")("+",".join(fargs)+") = "+fname+";"
-
             fisg = ' '.join(sig.split("(")[0].split(" ")[:-1])+" itcp"+fname+"("+",".join(fargs)+") {\n"+\
-                '    log("hooked itcp'+fname+' called");\n'+\
-                '    auto r = orig'+fname+"("+', '.join([p.split(' ')[-1] for p in fargs])+");\n    return r;//TODO\n}"
+                '#if _DEBUG\n    printf("INTERCEPTED '+fname+'\\n");\n#endif\n'+\
+                '    auto r = '+fname+"("+', '.join([p.split(' ')[-1] for p in fargs])+");\n    return r;TODO\n}"
 
-            fatt = "void hook"+fname+"(){DetourAttach(&(PVOID&)orig"+fname+", itcp"+fname+");}\n"
-            fdet = "void detach"+fname+"(){DetourDetach(&(PVOID&)orig"+fname+", itcp"+fname+");}\n"
+            fatt = "hooks.emplace_back(Hook(\""+fname+"\", itcp"+fname+"));\n"
 
-            out.append(fptw+"\n"+fisg+"\n"+fatt+fdet+"\n")
+            out.append(fisg+"\n"+fatt+"\n")
 
         except:
             out.append("ERROR")
@@ -68,3 +65,36 @@ button = tkinter.Button(root, text="extract hooks", command=gui_convert).pack()
 outtext.pack()
 
 root.mainloop()
+
+
+
+
+
+
+
+# int = """
+# HWND
+# WINAPI
+# CreateWindowExW(
+    # _In_ DWORD dwExStyle,
+    # _In_opt_ LPCWSTR lpClassName,
+    # _In_opt_ LPCWSTR lpWindowName,
+    # _In_ DWORD dwStyle,
+    # _In_ int X,
+    # _In_ int Y,
+    # _In_ int nWidth,
+    # _In_ int nHeight,
+    # _In_opt_ HWND hWndParent,
+    # _In_opt_ HMENU hMenu,
+    # _In_opt_ HINSTANCE hInstance,
+    # _In_opt_ LPVOID lpParam);
+	# """
+
+
+# print(convert(int))
+
+
+
+
+
+

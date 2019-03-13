@@ -111,7 +111,7 @@ int main(int argc, char* argv[])
     const WCHAR* dllToInject = L"C:/Projects/RetroX/x64/Release/Hooking2dll.dll";
     wprintf(L"Attempting to inject: %s\n\n", dllToInject);
 
-    ULONG outPID;
+    ULONG pid;
 
     NTSTATUS nt = RhCreateAndInject(binWChars, nullptr, CREATE_SUSPENDED, EASYHOOK_INJECT_DEFAULT,
 #if _WIN64
@@ -121,7 +121,7 @@ int main(int argc, char* argv[])
         (WCHAR*)dllToInject,
         nullptr,
 #endif
-        addr, sizeof HookParams, &outPID);
+        addr, sizeof HookParams, &pid);
 
     // NTSTATUS nt = RhInjectLibrary(
     //     pi.dwProcessId,   // The process to inject into
@@ -142,6 +142,10 @@ int main(int argc, char* argv[])
     // std::wcout << "Press Enter to exit";
     // std::wstring input;
     // std::getline(std::wcin, input);
+
+	// HANDLE pHandle = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, false, pid);
+	//
+	// WaitForSingleObject(pHandle, INFINITE);
 
     return 0;
 }
