@@ -1,6 +1,0 @@
-
-Function: Detoured
-Entry point:@ 0000000074171000
-	48 8B 05 F9 1F 00 00              mov rax, [rip+0x1ff9]         IP:74171007
-Relocated entry point:@ 00000000741603A3
-	48 8B 05 56 2C 01 00              mov rax, [rip+0x12c56]        IP:741603aa
