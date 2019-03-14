@@ -1,0 +1,220 @@
+
+Function: CPAcquireContext
+Entry point:@ 000007FEFBFC230C
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fbfc2311
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:fbfb03a8
+
+Function: CPCreateHash
+Entry point:@ 000007FEFBFC3A80
+	48 8B C4                          mov rax, rsp                  IP:fbfc3a83
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fbfc3a87
+Relocated entry point:@ 000007FEFBFB03A3
+	48 8B C4                          mov rax, rsp                  IP:fbfb03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fbfb03aa
+
+Function: CPDecrypt
+Entry point:@ 000007FEFBFDCC1C
+	FF F3                             push rbx                      IP:fbfdcc1e
+	48 83 EC 40                       sub rsp, 0x40                 IP:fbfdcc22
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F3                             push rbx                      IP:fbfb03a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fbfb03a9
+
+Function: CPDeriveKey
+Entry point:@ 000007FEFBFDDBC8
+	FF F3                             push rbx                      IP:fbfddbca
+	55                                push rbp                      IP:fbfddbcb
+	56                                push rsi                      IP:fbfddbcc
+	57                                push rdi                      IP:fbfddbcd
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F3                             push rbx                      IP:fbfb03a5
+	55                                push rbp                      IP:fbfb03a6
+	56                                push rsi                      IP:fbfb03a7
+	57                                push rdi                      IP:fbfb03a8
+
+Function: CPDestroyHash
+Entry point:@ 000007FEFBFC37B0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fbfc37b5
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fbfb03a8
+
+Function: CPDestroyKey
+Entry point:@ 000007FEFBFC5530
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fbfc5535
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fbfb03a8
+
+Function: CPDuplicateHash
+Entry point:@ 000007FEFBFDD948
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfdd94d
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPDuplicateKey
+Entry point:@ 000007FEFBFE0A28
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfe0a2d
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPEncrypt
+Entry point:@ 000007FEFBFDC64C
+	FF F3                             push rbx                      IP:fbfdc64e
+	48 83 EC 50                       sub rsp, 0x50                 IP:fbfdc652
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F3                             push rbx                      IP:fbfb03a5
+	48 83 EC 50                       sub rsp, 0x50                 IP:fbfb03a9
+
+Function: CPExportKey
+Entry point:@ 000007FEFBFC59E8
+	FF F5                             push rbp                      IP:fbfc59ea
+	41 54                             push r12                      IP:fbfc59ec
+	41 55                             push r13                      IP:fbfc59ee
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F5                             push rbp                      IP:fbfb03a5
+	41 54                             push r12                      IP:fbfb03a7
+	41 55                             push r13                      IP:fbfb03a9
+
+Function: CPGenKey
+Entry point:@ 000007FEFBFC9A80
+	FF F3                             push rbx                      IP:fbfc9a82
+	55                                push rbp                      IP:fbfc9a83
+	56                                push rsi                      IP:fbfc9a84
+	57                                push rdi                      IP:fbfc9a85
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F3                             push rbx                      IP:fbfb03a5
+	55                                push rbp                      IP:fbfb03a6
+	56                                push rsi                      IP:fbfb03a7
+	57                                push rdi                      IP:fbfb03a8
+
+Function: CPGenRandom
+Entry point:@ 000007FEFBFC1D3C
+	FF F3                             push rbx                      IP:fbfc1d3e
+	48 83 EC 20                       sub rsp, 0x20                 IP:fbfc1d42
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F3                             push rbx                      IP:fbfb03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fbfb03a9
+
+Function: CPGetHashParam
+Entry point:@ 000007FEFBFC3C7C
+	FF F5                             push rbp                      IP:fbfc3c7e
+	56                                push rsi                      IP:fbfc3c7f
+	57                                push rdi                      IP:fbfc3c80
+	41 54                             push r12                      IP:fbfc3c82
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F5                             push rbp                      IP:fbfb03a5
+	56                                push rsi                      IP:fbfb03a6
+	57                                push rdi                      IP:fbfb03a7
+	41 54                             push r12                      IP:fbfb03a9
+
+Function: CPGetKeyParam
+Entry point:@ 000007FEFBFDFC68
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfdfc6d
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPGetProvParam
+Entry point:@ 000007FEFBFE0230
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfe0235
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPGetUserKey
+Entry point:@ 000007FEFBFC90D0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fbfc90d5
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fbfb03a8
+
+Function: CPHashData
+Entry point:@ 000007FEFBFC38B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfc38b5
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPHashSessionKey
+Entry point:@ 000007FEFBFDD430
+	48 8B C4                          mov rax, rsp                  IP:fbfdd433
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fbfdd437
+Relocated entry point:@ 000007FEFBFB03A3
+	48 8B C4                          mov rax, rsp                  IP:fbfb03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fbfb03aa
+
+Function: CPImportKey
+Entry point:@ 000007FEFBFC5658
+	FF F5                             push rbp                      IP:fbfc565a
+	41 54                             push r12                      IP:fbfc565c
+	41 55                             push r13                      IP:fbfc565e
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F5                             push rbp                      IP:fbfb03a5
+	41 54                             push r12                      IP:fbfb03a7
+	41 55                             push r13                      IP:fbfb03a9
+
+Function: CPReleaseContext
+Entry point:@ 000007FEFBFC33C8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfc33cd
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPSetHashParam
+Entry point:@ 000007FEFBFC5BE8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfc5bed
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPSetKeyParam
+Entry point:@ 000007FEFBFDF838
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfdf83d
+Relocated entry point:@ 000007FEFBFB03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fbfb03a8
+
+Function: CPSetProvParam
+Entry point:@ 000007FEFBFE0078
+	48 8B C4                          mov rax, rsp                  IP:fbfe007b
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fbfe007f
+Relocated entry point:@ 000007FEFBFB03A3
+	48 8B C4                          mov rax, rsp                  IP:fbfb03a6
+	48 89 58 10                       mov [rax+0x10], rbx           IP:fbfb03aa
+
+Function: CPSignHash
+Entry point:@ 000007FEFBFC8B48
+	FF F5                             push rbp                      IP:fbfc8b4a
+	56                                push rsi                      IP:fbfc8b4b
+	57                                push rdi                      IP:fbfc8b4c
+	41 54                             push r12                      IP:fbfc8b4e
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F5                             push rbp                      IP:fbfb03a5
+	56                                push rsi                      IP:fbfb03a6
+	57                                push rdi                      IP:fbfb03a7
+	41 54                             push r12                      IP:fbfb03a9
+
+Function: CPVerifySignature
+Entry point:@ 000007FEFBFC701C
+	FF F5                             push rbp                      IP:fbfc701e
+	56                                push rsi                      IP:fbfc701f
+	57                                push rdi                      IP:fbfc7020
+	41 54                             push r12                      IP:fbfc7022
+Relocated entry point:@ 000007FEFBFB03A3
+	FF F5                             push rbp                      IP:fbfb03a5
+	56                                push rsi                      IP:fbfb03a6
+	57                                push rdi                      IP:fbfb03a7
+	41 54                             push r12                      IP:fbfb03a9
+
+Function: DllRegisterServer
+Entry point:@ 000007FEFBFE2BEC
+	4C 8B DC                          mov r11, rsp                  IP:fbfe2bef
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fbfe2bf3
+Relocated entry point:@ 000007FEFBFB03A3
+	4C 8B DC                          mov r11, rsp                  IP:fbfb03a6
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fbfb03aa
+
+Function: DllUnregisterServer
+Entry point:@ 000007FEFBFE2C80
+	33 C0                             xor eax, eax                  IP:fbfe2c82
+	C3                                ret                           IP:fbfe2c83
+	90                                nop                           IP:fbfe2c84
+	90                                nop                           IP:fbfe2c85
+Relocated entry point:@ 000007FEFBFB03A3
+	33 C0                             xor eax, eax                  IP:fbfb03a5
+	C3                                ret                           IP:fbfb03a6
+	90                                nop                           IP:fbfb03a7
+	90                                nop                           IP:fbfb03a8

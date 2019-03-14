@@ -1,0 +1,961 @@
+
+Function: CtfImmAppCompatEnableIMEonProtectedCode
+Entry point:@ 000007FEFEB6BF58
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feb6bf61
+Relocated entry point:@ 000007FEFEB303A3
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feb303ac
+
+Function: CtfImmCoUninitialize
+Entry point:@ 000007FEFEB532A0
+	FF F3                             push rbx                      IP:feb532a2
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb532a6
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: CtfImmDispatchDefImeMessage
+Entry point:@ 000007FEFEB5134C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb51351
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: CtfImmEnterCoInitCountSkipMode
+Entry point:@ 000007FEFEB6BAA0
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb6baa4
+	8B 0D 5A 65 00 00                 mov ecx, [rip+0x655a]         IP:feb6baaa
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	8B 0D 57 1C 04 00                 mov ecx, [rip+0x41c57]        IP:feb303ad
+
+Function: CtfImmGenerateMessage
+Entry point:@ 000007FEFEB5FA50
+	48 8B C4                          mov rax, rsp                  IP:feb5fa53
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb5fa57
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb303aa
+
+Function: CtfImmGetCompatibleKeyboardLayout
+Entry point:@ 000007FEFEB6BF4C
+	E9 13 02 00 00                    jmp 0x218                     IP:feb6bf51
+Relocated entry point:@ 000007FEFEB303A3
+	48 B8 64 C1 B6 FE FE 07 00 00     mov rax, 0x7fefeb6c164        IP:feb303ad
+	FF E0                             jmp rax                       IP:feb303af
+
+Function: CtfImmGetGuidAtom
+Entry point:@ 000007FEFEB6BBC0
+	48 8B C4                          mov rax, rsp                  IP:feb6bbc3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb6bbc7
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb303aa
+
+Function: CtfImmGetIMEFileName
+Entry point:@ 000007FEFEB6BE9C
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb6bea1
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: CtfImmGetTMAEFlags
+Entry point:@ 000007FEFEB52888
+	FF F3                             push rbx                      IP:feb5288a
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb5288e
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: CtfImmHideToolbarWnd
+Entry point:@ 000007FEFEB6BB50
+	FF F3                             push rbx                      IP:feb6bb52
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb6bb56
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: CtfImmIsCiceroEnabled
+Entry point:@ 000007FEFEB6BE70
+	48 8B 0D A9 61 00 00              mov rcx, [rip+0x61a9]         IP:feb6be77
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B 0D 76 1C 04 00              mov rcx, [rip+0x41c76]        IP:feb303aa
+
+Function: CtfImmIsCiceroStartedInThread
+Entry point:@ 000007FEFEB53800
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feb53809
+Relocated entry point:@ 000007FEFEB303A3
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feb303ac
+
+Function: CtfImmIsGuidMapEnable
+Entry point:@ 000007FEFEB6BC78
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb6bc7d
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: CtfImmIsTextFrameServiceDisabled
+Entry point:@ 000007FEFEB6BE90
+	33 C0                             xor eax, eax                  IP:feb6be92
+	C3                                ret                           IP:feb6be93
+	90                                nop                           IP:feb6be94
+	90                                nop                           IP:feb6be95
+Relocated entry point:@ 000007FEFEB303A3
+	33 C0                             xor eax, eax                  IP:feb303a5
+	C3                                ret                           IP:feb303a6
+	90                                nop                           IP:feb303a7
+	90                                nop                           IP:feb303a8
+
+Function: CtfImmLastEnabledWndDestroy
+Entry point:@ 000007FEFEB53340
+	33 C0                             xor eax, eax                  IP:feb53342
+	BA 04 00 00 00                    mov edx, 0x4                  IP:feb53347
+Relocated entry point:@ 000007FEFEB303A3
+	33 C0                             xor eax, eax                  IP:feb303a5
+	BA 04 00 00 00                    mov edx, 0x4                  IP:feb303aa
+
+Function: CtfImmLeaveCoInitCountSkipMode
+Entry point:@ 000007FEFEB6BAD4
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb6bad8
+	8B 0D 26 65 00 00                 mov ecx, [rip+0x6526]         IP:feb6bade
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	8B 0D 57 1C 04 00                 mov ecx, [rip+0x41c57]        IP:feb303ad
+
+Function: CtfImmNotify
+Entry point:@ 000007FEFEB51170
+	EB 06                             jmp 0x8                       IP:feb51172
+	90                                nop                           IP:feb51173
+	90                                nop                           IP:feb51174
+	90                                nop                           IP:feb51175
+Relocated entry point:@ 000007FEFEB303A3
+	48 B8 78 11 B5 FE FE 07 00 00     mov rax, 0x7fefeb51178        IP:feb303ad
+	FF E0                             jmp rax                       IP:feb303af
+	90                                nop                           IP:feb303b0
+	90                                nop                           IP:feb303b1
+	90                                nop                           IP:feb303b2
+
+Function: CtfImmRestoreToolbarWnd
+Entry point:@ 000007FEFEB6BB10
+	FF F3                             push rbx                      IP:feb6bb12
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb6bb16
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: CtfImmSetAppCompatFlags
+Entry point:@ 000007FEFEB53BB0
+	8B 05 52 E4 01 00                 mov eax, [rip+0x1e452]        IP:feb53bb6
+Relocated entry point:@ 000007FEFEB303A3
+	8B 05 5F 1C 04 00                 mov eax, [rip+0x41c5f]        IP:feb303a9
+
+Function: CtfImmSetCiceroStartInThread
+Entry point:@ 000007FEFEB51530
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feb51539
+Relocated entry point:@ 000007FEFEB303A3
+	65 48 8B 04 25 30 00 00 00        mov rax, [gs:0x30]            IP:feb303ac
+
+Function: CtfImmSetDefaultRemoteKeyboardLayout
+Entry point:@ 000007FEFEB6BF40
+	E9 13 02 00 00                    jmp 0x218                     IP:feb6bf45
+Relocated entry point:@ 000007FEFEB303A3
+	48 B8 58 C1 B6 FE FE 07 00 00     mov rax, 0x7fefeb6c158        IP:feb303ad
+	FF E0                             jmp rax                       IP:feb303af
+
+Function: CtfImmTIMActivate
+Entry point:@ 000007FEFEB521B8
+	4C 8B DC                          mov r11, rsp                  IP:feb521bb
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:feb521bf
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B DC                          mov r11, rsp                  IP:feb303a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:feb303aa
+
+Function: GetKeyboardLayoutCP
+Entry point:@ 000007FEFEB5FD0C
+	FF F3                             push rbx                      IP:feb5fd0e
+	48 83 EC 40                       sub rsp, 0x40                 IP:feb5fd12
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:feb303a9
+
+Function: ImmActivateLayout
+Entry point:@ 000007FEFEB5D2A0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5d2a5
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmAssociateContext
+Entry point:@ 000007FEFEB51750
+	48 8B C4                          mov rax, rsp                  IP:feb51753
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb51757
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb303aa
+
+Function: ImmAssociateContextEx
+Entry point:@ 000007FEFEB58240
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb58245
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmCallImeConsoleIME
+Entry point:@ 000007FEFEB6A9BC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb6a9c1
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmConfigureIMEA
+Entry point:@ 000007FEFEB5D460
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5d465
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmConfigureIMEW
+Entry point:@ 000007FEFEB5D6C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5d6c5
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmCreateContext
+Entry point:@ 000007FEFEB58150
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb58155
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmCreateIMCC
+Entry point:@ 000007FEFEB52CBC
+	B8 04 00 00 00                    mov eax, 0x4                  IP:feb52cc1
+Relocated entry point:@ 000007FEFEB303A3
+	B8 04 00 00 00                    mov eax, 0x4                  IP:feb303a8
+
+Function: ImmCreateSoftKeyboard
+Entry point:@ 000007FEFEB64A54
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb64a59
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: ImmDestroyContext
+Entry point:@ 000007FEFEB581E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb581e5
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmDestroyIMCC
+Entry point:@ 000007FEFEB53600
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb53604
+	48 85 C9                          test rcx, rcx                 IP:feb53607
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmDestroySoftKeyboard
+Entry point:@ 000007FEFEB64D00
+	48 FF 25 89 84 00 00              jmp qword [rip+0x8489]        IP:feb64d07
+Relocated entry point:@ 000007FEFEB303A3
+	48 FF 25 E6 CD 03 00              jmp qword [rip+0x3cde6]       IP:feb303aa
+
+Function: ImmDisableIME
+Entry point:@ 000007FEFEB51828
+	EB 06                             jmp 0x8                       IP:feb5182a
+	90                                nop                           IP:feb5182b
+	90                                nop                           IP:feb5182c
+	90                                nop                           IP:feb5182d
+Relocated entry point:@ 000007FEFEB303A3
+	48 B8 30 18 B5 FE FE 07 00 00     mov rax, 0x7fefeb51830        IP:feb303ad
+	FF E0                             jmp rax                       IP:feb303af
+	90                                nop                           IP:feb303b0
+	90                                nop                           IP:feb303b1
+	90                                nop                           IP:feb303b2
+
+Function: ImmDisableIme
+Entry point:@ 000007FEFEB51828
+	EB 06                             jmp 0x8                       IP:feb5182a
+	90                                nop                           IP:feb5182b
+	90                                nop                           IP:feb5182c
+	90                                nop                           IP:feb5182d
+Relocated entry point:@ 000007FEFEB303A3
+	48 B8 30 18 B5 FE FE 07 00 00     mov rax, 0x7fefeb51830        IP:feb303ad
+	FF E0                             jmp rax                       IP:feb303af
+	90                                nop                           IP:feb303b0
+	90                                nop                           IP:feb303b1
+	90                                nop                           IP:feb303b2
+
+Function: ImmDisableTextFrameService
+Entry point:@ 000007FEFEB6BE90
+	33 C0                             xor eax, eax                  IP:feb6be92
+	C3                                ret                           IP:feb6be93
+	90                                nop                           IP:feb6be94
+	90                                nop                           IP:feb6be95
+Relocated entry point:@ 000007FEFEB303A3
+	33 C0                             xor eax, eax                  IP:feb303a5
+	C3                                ret                           IP:feb303a6
+	90                                nop                           IP:feb303a7
+	90                                nop                           IP:feb303a8
+
+Function: ImmEnumInputContext
+Entry point:@ 000007FEFEB53434
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb53439
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmEnumRegisterWordA
+Entry point:@ 000007FEFEB6074C
+	48 8B C4                          mov rax, rsp                  IP:feb6074f
+	48 89 58 10                       mov [rax+0x10], rbx           IP:feb60753
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 10                       mov [rax+0x10], rbx           IP:feb303aa
+
+Function: ImmEnumRegisterWordW
+Entry point:@ 000007FEFEB6094C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb60951
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmEscapeA
+Entry point:@ 000007FEFEB5D940
+	FF F3                             push rbx                      IP:feb5d942
+	56                                push rsi                      IP:feb5d943
+	57                                push rdi                      IP:feb5d944
+	41 54                             push r12                      IP:feb5d946
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	56                                push rsi                      IP:feb303a6
+	57                                push rdi                      IP:feb303a7
+	41 54                             push r12                      IP:feb303a9
+
+Function: ImmEscapeW
+Entry point:@ 000007FEFEB5DC38
+	FF F3                             push rbx                      IP:feb5dc3a
+	56                                push rsi                      IP:feb5dc3b
+	57                                push rdi                      IP:feb5dc3c
+	41 54                             push r12                      IP:feb5dc3e
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	56                                push rsi                      IP:feb303a6
+	57                                push rdi                      IP:feb303a7
+	41 54                             push r12                      IP:feb303a9
+
+Function: ImmFreeLayout
+Entry point:@ 000007FEFEB5D0E8
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb5d0ed
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: ImmGenerateMessage
+Entry point:@ 000007FEFEB5F88C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5f891
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetAppCompatFlags
+Entry point:@ 000007FEFEB537D0
+	FF F3                             push rbx                      IP:feb537d2
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb537d6
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: ImmGetCandidateListA
+Entry point:@ 000007FEFEB59DB0
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb59db4
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:feb59dbc
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb303a7
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:feb303af
+
+Function: ImmGetCandidateListCountA
+Entry point:@ 000007FEFEB59C1C
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:feb59c22
+Relocated entry point:@ 000007FEFEB303A3
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:feb303a9
+
+Function: ImmGetCandidateListCountW
+Entry point:@ 000007FEFEB59C30
+	45 33 C0                          xor r8d, r8d                  IP:feb59c33
+	EB 0B                             jmp 0xd                       IP:feb59c35
+Relocated entry point:@ 000007FEFEB303A3
+	45 33 C0                          xor r8d, r8d                  IP:feb303a6
+	48 B8 40 9C B5 FE FE 07 00 00     mov rax, 0x7fefeb59c40        IP:feb303b0
+	FF E0                             jmp rax                       IP:feb303b2
+
+Function: ImmGetCandidateListW
+Entry point:@ 000007FEFEB59DCC
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb59dd0
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:feb59dd5
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb303a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:feb303ac
+
+Function: ImmGetCandidateWindow
+Entry point:@ 000007FEFEB52144
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb52149
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetCompositionFontA
+Entry point:@ 000007FEFEB5A4F4
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb5a4f9
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmGetCompositionFontW
+Entry point:@ 000007FEFEB5A5C8
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb5a5cd
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmGetCompositionStringA
+Entry point:@ 000007FEFEB58B80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb58b85
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetCompositionStringW
+Entry point:@ 000007FEFEB58C60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb58c65
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetCompositionWindow
+Entry point:@ 000007FEFEB520C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb520c5
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetContext
+Entry point:@ 000007FEFEB51A0C
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb51a10
+	48 85 C9                          test rcx, rcx                 IP:feb51a13
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmGetConversionListA
+Entry point:@ 000007FEFEB5A7FC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5a801
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetConversionListW
+Entry point:@ 000007FEFEB5A9F0
+	48 8B C4                          mov rax, rsp                  IP:feb5a9f3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb5a9f7
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb303aa
+
+Function: ImmGetConversionStatus
+Entry point:@ 000007FEFEB52D20
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb52d25
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetDefaultIMEWnd
+Entry point:@ 000007FEFEB518E4
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb518e8
+	48 8B 05 31 07 02 00              mov rax, [rip+0x20731]        IP:feb518ef
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 8B 05 72 1C 04 00              mov rax, [rip+0x41c72]        IP:feb303ae
+
+Function: ImmGetDescriptionA
+Entry point:@ 000007FEFEB5E58C
+	4C 8B DC                          mov r11, rsp                  IP:feb5e58f
+	49 89 4B 08                       mov [r11+0x8], rcx            IP:feb5e593
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B DC                          mov r11, rsp                  IP:feb303a6
+	49 89 4B 08                       mov [r11+0x8], rcx            IP:feb303aa
+
+Function: ImmGetDescriptionW
+Entry point:@ 000007FEFEB5E4D4
+	4C 8B DC                          mov r11, rsp                  IP:feb5e4d7
+	49 89 5B 20                       mov [r11+0x20], rbx           IP:feb5e4db
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B DC                          mov r11, rsp                  IP:feb303a6
+	49 89 5B 20                       mov [r11+0x20], rbx           IP:feb303aa
+
+Function: ImmGetGuideLineA
+Entry point:@ 000007FEFEB59F4C
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb59f50
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:feb59f58
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb303a7
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:feb303af
+
+Function: ImmGetGuideLineW
+Entry point:@ 000007FEFEB59F68
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb59f6c
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:feb59f71
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:feb303a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:feb303ac
+
+Function: ImmGetHotKey
+Entry point:@ 000007FEFEB5C6C0
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb5c6c4
+	48 85 D2                          test rdx, rdx                 IP:feb5c6c7
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 D2                          test rdx, rdx                 IP:feb303aa
+
+Function: ImmGetIMCCLockCount
+Entry point:@ 000007FEFEB5FCA0
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb5fca4
+	48 85 C9                          test rcx, rcx                 IP:feb5fca7
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmGetIMCCSize
+Entry point:@ 000007FEFEB5FCEC
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb5fcf0
+	48 85 C9                          test rcx, rcx                 IP:feb5fcf3
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmGetIMCLockCount
+Entry point:@ 000007FEFEB5FC48
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5fc4d
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetIMEFileNameA
+Entry point:@ 000007FEFEB5E770
+	4C 8B DC                          mov r11, rsp                  IP:feb5e773
+	49 89 4B 08                       mov [r11+0x8], rcx            IP:feb5e777
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B DC                          mov r11, rsp                  IP:feb303a6
+	49 89 4B 08                       mov [r11+0x8], rcx            IP:feb303aa
+
+Function: ImmGetIMEFileNameW
+Entry point:@ 000007FEFEB5E65C
+	4C 8B DC                          mov r11, rsp                  IP:feb5e65f
+	49 89 5B 20                       mov [r11+0x20], rbx           IP:feb5e663
+Relocated entry point:@ 000007FEFEB303A3
+	4C 8B DC                          mov r11, rsp                  IP:feb303a6
+	49 89 5B 20                       mov [r11+0x20], rbx           IP:feb303aa
+
+Function: ImmGetImeInfoEx
+Entry point:@ 000007FEFEB522FC
+	FF F3                             push rbx                      IP:feb522fe
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb52302
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: ImmGetImeMenuItemsA
+Entry point:@ 000007FEFEB6BA44
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb6ba48
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:feb6ba4c
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb303a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:feb303ab
+
+Function: ImmGetImeMenuItemsW
+Entry point:@ 000007FEFEB6BA74
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb6ba78
+	83 64 24 30 00                    and dword [rsp+0x30], 0x0     IP:feb6ba7d
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb303a7
+	83 64 24 30 00                    and dword [rsp+0x30], 0x0     IP:feb303ac
+
+Function: ImmGetOpenStatus
+Entry point:@ 000007FEFEB5A3E4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5a3e9
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetProperty
+Entry point:@ 000007FEFEB5E8F0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb5e8f5
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: ImmGetRegisterWordStyleA
+Entry point:@ 000007FEFEB604B8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb604bd
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetRegisterWordStyleW
+Entry point:@ 000007FEFEB60600
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb60605
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetStatusWindowPos
+Entry point:@ 000007FEFEB5ABE8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5abed
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmGetVirtualKey
+Entry point:@ 000007FEFEB5FBDC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5fbe1
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmIMPGetIMEA
+Entry point:@ 000007FEFEB65484
+	FF F3                             push rbx                      IP:feb65486
+	48 81 EC 00 03 00 00              sub rsp, 0x300                IP:feb6548d
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 81 EC 00 03 00 00              sub rsp, 0x300                IP:feb303ac
+
+Function: ImmIMPGetIMEW
+Entry point:@ 000007FEFEB653F0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb653f5
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmIMPQueryIMEA
+Entry point:@ 000007FEFEB65828
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb6582d
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: ImmIMPQueryIMEW
+Entry point:@ 000007FEFEB656C8
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb656cd
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: ImmIMPSetIMEA
+Entry point:@ 000007FEFEB65A48
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb65a4d
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmIMPSetIMEW
+Entry point:@ 000007FEFEB658E8
+	48 8B C4                          mov rax, rsp                  IP:feb658eb
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb658ef
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb303aa
+
+Function: ImmInstallIMEA
+Entry point:@ 000007FEFEB5ECF8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5ecfd
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmInstallIMEW
+Entry point:@ 000007FEFEB5E9DC
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb5e9e1
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmIsIME
+Entry point:@ 000007FEFEB52034
+	48 81 EC C8 01 00 00              sub rsp, 0x1c8                IP:feb5203b
+Relocated entry point:@ 000007FEFEB303A3
+	48 81 EC C8 01 00 00              sub rsp, 0x1c8                IP:feb303aa
+
+Function: ImmIsUIMessageA
+Entry point:@ 000007FEFEB5F7CC
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb5f7d0
+	81 FA 0D 01 00 00                 cmp edx, 0x10d                IP:feb5f7d6
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	81 FA 0D 01 00 00                 cmp edx, 0x10d                IP:feb303ad
+
+Function: ImmIsUIMessageW
+Entry point:@ 000007FEFEB5F82C
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb5f830
+	81 FA 0D 01 00 00                 cmp edx, 0x10d                IP:feb5f836
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	81 FA 0D 01 00 00                 cmp edx, 0x10d                IP:feb303ad
+
+Function: ImmLoadIME
+Entry point:@ 000007FEFEB52360
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb52365
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:feb303a8
+
+Function: ImmLoadLayout
+Entry point:@ 000007FEFEB536C4
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb536c9
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmLockClientImc
+Entry point:@ 000007FEFEB51870
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb51875
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmLockIMC
+Entry point:@ 000007FEFEB514D4
+	BA 01 00 00 00                    mov edx, 0x1                  IP:feb514d9
+Relocated entry point:@ 000007FEFEB303A3
+	BA 01 00 00 00                    mov edx, 0x1                  IP:feb303a8
+
+Function: ImmLockIMCC
+Entry point:@ 000007FEFEB514F0
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb514f4
+	48 85 C9                          test rcx, rcx                 IP:feb514f7
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmLockImeDpi
+Entry point:@ 000007FEFEB51A58
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb51a5d
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmNotifyIME
+Entry point:@ 000007FEFEB53F94
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb53f99
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmProcessKey
+Entry point:@ 000007FEFEB539C8
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb539cd
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmPutImeMenuItemsIntoMappedFile
+Entry point:@ 000007FEFEB6AF44
+	48 8B C4                          mov rax, rsp                  IP:feb6af47
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb6af4b
+Relocated entry point:@ 000007FEFEB303A3
+	48 8B C4                          mov rax, rsp                  IP:feb303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:feb303aa
+
+Function: ImmReSizeIMCC
+Entry point:@ 000007FEFEB5FCC4
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb5fcc8
+	48 85 C9                          test rcx, rcx                 IP:feb5fccb
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmRegisterClient
+Entry point:@ 000007FEFEB51608
+	FF F3                             push rbx                      IP:feb5160a
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb5160e
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: ImmRegisterWordA
+Entry point:@ 000007FEFEB5FE00
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5fe05
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmRegisterWordW
+Entry point:@ 000007FEFEB5FFA4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5ffa9
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmReleaseContext
+Entry point:@ 000007FEFEB51A30
+	B8 01 00 00 00                    mov eax, 0x1                  IP:feb51a35
+Relocated entry point:@ 000007FEFEB303A3
+	B8 01 00 00 00                    mov eax, 0x1                  IP:feb303a8
+
+Function: ImmRequestMessageA
+Entry point:@ 000007FEFEB5C69C
+	41 B9 01 00 00 00                 mov r9d, 0x1                  IP:feb5c6a2
+Relocated entry point:@ 000007FEFEB303A3
+	41 B9 01 00 00 00                 mov r9d, 0x1                  IP:feb303a9
+
+Function: ImmRequestMessageW
+Entry point:@ 000007FEFEB5C6B0
+	45 33 C9                          xor r9d, r9d                  IP:feb5c6b3
+	E9 1C FF FF FF                    jmp 0xffffffffffffff21        IP:feb5c6b8
+Relocated entry point:@ 000007FEFEB303A3
+	45 33 C9                          xor r9d, r9d                  IP:feb303a6
+	48 B8 D4 C5 B5 FE FE 07 00 00     mov rax, 0x7fefeb5c5d4        IP:feb303b0
+	FF E0                             jmp rax                       IP:feb303b2
+
+Function: ImmSendIMEMessageExA
+Entry point:@ 000007FEFEB652E0
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:feb652e6
+Relocated entry point:@ 000007FEFEB303A3
+	41 B8 01 00 00 00                 mov r8d, 0x1                  IP:feb303a9
+
+Function: ImmSendIMEMessageExW
+Entry point:@ 000007FEFEB652D0
+	45 33 C0                          xor r8d, r8d                  IP:feb652d3
+	EB 1B                             jmp 0x1d                      IP:feb652d5
+Relocated entry point:@ 000007FEFEB303A3
+	45 33 C0                          xor r8d, r8d                  IP:feb303a6
+	48 B8 F0 52 B6 FE FE 07 00 00     mov rax, 0x7fefeb652f0        IP:feb303b0
+	FF E0                             jmp rax                       IP:feb303b2
+
+Function: ImmSetActiveContext
+Entry point:@ 000007FEFEB51B54
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb51b59
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSetActiveContextConsoleIME
+Entry point:@ 000007FEFEB6AB80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb6ab85
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSetCandidateWindow
+Entry point:@ 000007FEFEB5ACFC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5ad01
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSetCompositionFontA
+Entry point:@ 000007FEFEB5A690
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb5a695
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmSetCompositionFontW
+Entry point:@ 000007FEFEB53E80
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb53e85
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:feb303a8
+
+Function: ImmSetCompositionStringA
+Entry point:@ 000007FEFEB58D40
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb58d44
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:feb58d48
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb303a7
+	8B 44 24 78                       mov eax, [rsp+0x78]           IP:feb303ab
+
+Function: ImmSetCompositionStringW
+Entry point:@ 000007FEFEB58D70
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb58d74
+	83 64 24 30 00                    and dword [rsp+0x30], 0x0     IP:feb58d79
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:feb303a7
+	83 64 24 30 00                    and dword [rsp+0x30], 0x0     IP:feb303ac
+
+Function: ImmSetCompositionWindow
+Entry point:@ 000007FEFEB53D14
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb53d19
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSetConversionStatus
+Entry point:@ 000007FEFEB5A24C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5a251
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSetHotKey
+	(redirected to DLL: USER32.dll!CliImmSetHotKey)
+	(redirected to function: CliImmSetHotKey)
+Entry point:@ 0000000076ECD370
+	48 8B C4                          mov rax, rsp                  IP:76ecd373
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76ecd377
+Relocated entry point:@ 0000000076D603A3
+	48 8B C4                          mov rax, rsp                  IP:76d603a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:76d603aa
+
+Function: ImmSetOpenStatus
+Entry point:@ 000007FEFEB5A428
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5a42d
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSetStatusWindowPos
+Entry point:@ 000007FEFEB5AC5C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5ac61
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmShowSoftKeyboard
+Entry point:@ 000007FEFEB64D10
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb64d14
+	48 85 C9                          test rcx, rcx                 IP:feb64d17
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmSimulateHotKey
+Entry point:@ 000007FEFEB5C6E4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb5c6e9
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmSystemHandler
+Entry point:@ 000007FEFEB5FD88
+	FF F3                             push rbx                      IP:feb5fd8a
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb5fd8e
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: ImmTranslateMessage
+Entry point:@ 000007FEFEB64D30
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb64d35
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmUnlockClientImc
+Entry point:@ 000007FEFEB51CD0
+	FF F3                             push rbx                      IP:feb51cd2
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb51cd6
+Relocated entry point:@ 000007FEFEB303A3
+	FF F3                             push rbx                      IP:feb303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:feb303a9
+
+Function: ImmUnlockIMC
+Entry point:@ 000007FEFEB51D8C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb51d91
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmUnlockIMCC
+Entry point:@ 000007FEFEB51510
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb51514
+	48 85 C9                          test rcx, rcx                 IP:feb51517
+Relocated entry point:@ 000007FEFEB303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:feb303a7
+	48 85 C9                          test rcx, rcx                 IP:feb303aa
+
+Function: ImmUnlockImeDpi
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:feb51acb
+	74 4E                             jz 0x50                       IP:feb51acd
+
+Function: ImmUnregisterWordA
+Entry point:@ 000007FEFEB6015C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb60161
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmUnregisterWordW
+Entry point:@ 000007FEFEB60300
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb60305
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmWINNLSEnableIME
+Entry point:@ 000007FEFEB65240
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb65245
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmWINNLSGetEnableStatus
+Entry point:@ 000007FEFEB65280
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb65285
+Relocated entry point:@ 000007FEFEB303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:feb303a8
+
+Function: ImmWINNLSGetIMEHotkey
+Entry point:@ 000007FEFEB6BE90
+	33 C0                             xor eax, eax                  IP:feb6be92
+	C3                                ret                           IP:feb6be93
+	90                                nop                           IP:feb6be94
+	90                                nop                           IP:feb6be95
+Relocated entry point:@ 000007FEFEB303A3
+	33 C0                             xor eax, eax                  IP:feb303a5
+	C3                                ret                           IP:feb303a6
+	90                                nop                           IP:feb303a7
+	90                                nop                           IP:feb303a8

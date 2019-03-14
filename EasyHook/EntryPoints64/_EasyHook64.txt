@@ -1,0 +1,354 @@
+
+Function: ?GetRemoteModuleExportDirectory@@YAHPEAXPEAUHINSTANCE__@@PEAU_IMAGE_EXPORT_DIRECTORY@@U_IMAGE_DOS_HEADER@@U_IMAGE_NT_HEADERS64@@@Z
+Entry point:@ 000007FEDF1AC860
+	40 53                             push rbx                      IP:df1ac862
+	56                                push rsi                      IP:df1ac863
+	41 54                             push r12                      IP:df1ac865
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	56                                push rsi                      IP:df1803a6
+	41 54                             push r12                      IP:df1803a8
+
+Function: DbgAttachDebugger
+Entry point:@ 000007FEDF1A7240
+	48 83 EC 28                       sub rsp, 0x28                 IP:df1a7244
+	48 83 3D D4 44 03 00 00           cmp qword [rip+0x344d4], 0x0  IP:df1a724c
+Relocated entry point:@ 000007FEDF1803A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:df1803a7
+	48 83 3D 71 B3 05 00 00           cmp qword [rip+0x5b371], 0x0  IP:df1803af
+
+Function: DbgDetachDebugger
+Entry point:@ 000007FEDF1A71D0
+	48 83 EC 28                       sub rsp, 0x28                 IP:df1a71d4
+	48 8B 0D 5D 45 03 00              mov rcx, [rip+0x3455d]        IP:df1a71db
+Relocated entry point:@ 000007FEDF1803A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:df1803a7
+	48 8B 0D 8A B3 05 00              mov rcx, [rip+0x5b38a]        IP:df1803ae
+
+Function: DbgGetProcessIdByHandle
+Entry point:@ 000007FEDF1A6F60
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a6f65
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: DbgGetThreadIdByHandle
+Entry point:@ 000007FEDF1A7080
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a7085
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: DbgHandleToObjectName
+Entry point:@ 000007FEDF1A6D80
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:df1a6d85
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:df1803a8
+
+Function: DbgIsAvailable
+Entry point:@ 000007FEDF1A71A0
+	B8 01 00 00 00                    mov eax, 0x1                  IP:df1a71a5
+Relocated entry point:@ 000007FEDF1803A3
+	B8 01 00 00 00                    mov eax, 0x1                  IP:df1803a8
+
+Function: DbgIsEnabled
+Entry point:@ 000007FEDF1A71B0
+	33 C0                             xor eax, eax                  IP:df1a71b2
+	48 39 05 67 45 03 00              cmp [rip+0x34567], rax        IP:df1a71b9
+Relocated entry point:@ 000007FEDF1803A3
+	33 C0                             xor eax, eax                  IP:df1803a5
+	48 39 05 74 B3 05 00              cmp [rip+0x5b374], rax        IP:df1803ac
+
+Function: GacCreateContext
+Entry point:@ 000007FEDF1A9820
+	40 53                             push rbx                      IP:df1a9822
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a9826
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: GacInstallAssembly
+Entry point:@ 000007FEDF1A97B0
+	4C 8B DC                          mov r11, rsp                  IP:df1a97b3
+	53                                push rbx                      IP:df1a97b4
+	48 83 EC 50                       sub rsp, 0x50                 IP:df1a97b8
+Relocated entry point:@ 000007FEDF1803A3
+	4C 8B DC                          mov r11, rsp                  IP:df1803a6
+	53                                push rbx                      IP:df1803a7
+	48 83 EC 50                       sub rsp, 0x50                 IP:df1803ab
+
+Function: GacReleaseContext
+Entry point:@ 000007FEDF1A9930
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a9935
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: GacUninstallAssembly
+Entry point:@ 000007FEDF1A9700
+	4C 8B DC                          mov r11, rsp                  IP:df1a9703
+	57                                push rdi                      IP:df1a9704
+	48 83 EC 60                       sub rsp, 0x60                 IP:df1a9708
+Relocated entry point:@ 000007FEDF1803A3
+	4C 8B DC                          mov r11, rsp                  IP:df1803a6
+	57                                push rdi                      IP:df1803a7
+	48 83 EC 60                       sub rsp, 0x60                 IP:df1803ab
+
+Function: HookCompleteInjection
+Entry point:@ 000007FEDF1A8F80
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a8f85
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhBarrierBeginStackTrace
+Entry point:@ 000007FEDF1A5710
+	40 53                             push rbx                      IP:df1a5712
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a5716
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhBarrierCallStackTrace
+Entry point:@ 000007FEDF1A62A0
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:df1a62a5
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:df1803a8
+
+Function: LhBarrierEndStackTrace
+Entry point:@ 000007FEDF1A5670
+	40 53                             push rbx                      IP:df1a5672
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a5676
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhBarrierGetAddressOfReturnAddress
+Entry point:@ 000007FEDF1A57F0
+	40 53                             push rbx                      IP:df1a57f2
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a57f6
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhBarrierGetCallback
+Entry point:@ 000007FEDF1A59C0
+	40 53                             push rbx                      IP:df1a59c2
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a59c6
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhBarrierGetCallingModule
+Entry point:@ 000007FEDF1A6250
+	40 53                             push rbx                      IP:df1a6252
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a6256
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhBarrierGetReturnAddress
+Entry point:@ 000007FEDF1A58C0
+	40 53                             push rbx                      IP:df1a58c2
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a58c6
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhBarrierPointerToModule
+Entry point:@ 000007FEDF1A6450
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a6455
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhEnumModules
+Entry point:@ 000007FEDF1A6660
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a6665
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhGetHookBypassAddress
+Entry point:@ 000007FEDF1A7DB0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a7db5
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhInstallHook
+Entry point:@ 000007FEDF1A7640
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:df1a7645
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:df1803a8
+
+Function: LhIsThreadIntercepted
+Entry point:@ 000007FEDF1A5AC0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a5ac5
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhSetExclusiveACL
+Entry point:@ 000007FEDF1A4E40
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a4e45
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhSetGlobalExclusiveACL
+Entry point:@ 000007FEDF1A4E00
+	4C 8B C1                          mov r8, rcx                   IP:df1a4e03
+	44 8B CA                          mov r9d, edx                  IP:df1a4e06
+Relocated entry point:@ 000007FEDF1803A3
+	4C 8B C1                          mov r8, rcx                   IP:df1803a6
+	44 8B CA                          mov r9d, edx                  IP:df1803a9
+
+Function: LhSetGlobalInclusiveACL
+Entry point:@ 000007FEDF1A4E20
+	4C 8B C1                          mov r8, rcx                   IP:df1a4e23
+	44 8B CA                          mov r9d, edx                  IP:df1a4e26
+Relocated entry point:@ 000007FEDF1803A3
+	4C 8B C1                          mov r8, rcx                   IP:df1803a6
+	44 8B CA                          mov r9d, edx                  IP:df1803a9
+
+Function: LhSetInclusiveACL
+Entry point:@ 000007FEDF1A4F40
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a4f45
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: LhUninstallAllHooks
+Entry point:@ 000007FEDF1A8980
+	40 55                             push rbp                      IP:df1a8982
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a8986
+Relocated entry point:@ 000007FEDF1803A3
+	40 55                             push rbp                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhUninstallHook
+Entry point:@ 000007FEDF1A8B20
+	40 53                             push rbx                      IP:df1a8b22
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a8b26
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: LhUpdateModuleInformation
+Entry point:@ 000007FEDF1A6840
+	48 83 EC 68                       sub rsp, 0x68                 IP:df1a6844
+	48 8D 0D F5 4E 03 00              lea rcx, [rip+0x34ef5]        IP:df1a684b
+Relocated entry point:@ 000007FEDF1803A3
+	48 83 EC 68                       sub rsp, 0x68                 IP:df1803a7
+	48 8D 0D 92 B3 05 00              lea rcx, [rip+0x5b392]        IP:df1803ae
+
+Function: LhWaitForPendingRemovals
+Entry point:@ 000007FEDF1A8850
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1a8855
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: ReleaseTestFuncHookResults
+Entry point:@ 000007FEDF1AA480
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:df1aa485
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 74 24 10                    mov [rsp+0x10], rsi           IP:df1803a8
+
+Function: RhCreateAndInject
+Entry point:@ 000007FEDF1AC9B0
+	44 89 4C 24 20                    mov [rsp+0x20], r9d           IP:df1ac9b5
+Relocated entry point:@ 000007FEDF1803A3
+	44 89 4C 24 20                    mov [rsp+0x20], r9d           IP:df1803a8
+
+Function: RhCreateStealthRemoteThread
+Entry point:@ 000007FEDF1A9CD0
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:df1a9cd5
+Relocated entry point:@ 000007FEDF1803A3
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:df1803a8
+
+Function: RhGetProcessToken
+Entry point:@ 000007FEDF1AD0C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1ad0c5
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: RhInjectLibrary
+Entry point:@ 000007FEDF1AB5C0
+	48 8B C4                          mov rax, rsp                  IP:df1ab5c3
+	44 89 40 18                       mov [rax+0x18], r8d           IP:df1ab5c7
+Relocated entry point:@ 000007FEDF1803A3
+	48 8B C4                          mov rax, rsp                  IP:df1803a6
+	44 89 40 18                       mov [rax+0x18], r8d           IP:df1803aa
+
+Function: RhInstallDriver
+Entry point:@ 000007FEDF1A8D40
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:df1a8d45
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 18                    mov [rsp+0x18], rbx           IP:df1803a8
+
+Function: RhInstallSupportDriver
+Entry point:@ 000007FEDF1A8D00
+	40 53                             push rbx                      IP:df1a8d02
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1a8d06
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: RhIsAdministrator
+Entry point:@ 000007FEDF1AD080
+	48 83 EC 28                       sub rsp, 0x28                 IP:df1ad084
+	33 D2                             xor edx, edx                  IP:df1ad086
+Relocated entry point:@ 000007FEDF1803A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:df1803a7
+	33 D2                             xor edx, edx                  IP:df1803a9
+
+Function: RhIsX64Process
+Entry point:@ 000007FEDF1AD2E0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1ad2e5
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: RhIsX64System
+Entry point:@ 000007FEDF1AD4A0
+	B8 01 00 00 00                    mov eax, 0x1                  IP:df1ad4a5
+Relocated entry point:@ 000007FEDF1803A3
+	B8 01 00 00 00                    mov eax, 0x1                  IP:df1803a8
+
+Function: RhWakeUpProcess
+Entry point:@ 000007FEDF1AD200
+	40 53                             push rbx                      IP:df1ad202
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1ad206
+Relocated entry point:@ 000007FEDF1803A3
+	40 53                             push rbx                      IP:df1803a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:df1803a9
+
+Function: RtlCreateSuspendedProcess
+Entry point:@ 000007FEDF1ACB20
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:df1acb25
+Relocated entry point:@ 000007FEDF1803A3
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:df1803a8
+
+Function: RtlGetLastError
+Entry point:@ 000007FEDF1AD530
+	8B 05 76 F7 02 00                 mov eax, [rip+0x2f776]        IP:df1ad536
+Relocated entry point:@ 000007FEDF1803A3
+	8B 05 03 C9 05 00                 mov eax, [rip+0x5c903]        IP:df1803a9
+
+Function: RtlGetLastErrorString
+Entry point:@ 000007FEDF1AD540
+	48 8B 05 D9 CD 02 00              mov rax, [rip+0x2cdd9]        IP:df1ad547
+Relocated entry point:@ 000007FEDF1803A3
+	48 8B 05 76 9F 05 00              mov rax, [rip+0x59f76]        IP:df1803aa
+
+Function: RtlGetLastErrorStringCopy
+Entry point:@ 000007FEDF1AD4B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1ad4b5
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:df1803a8
+
+Function: RtlInstallService
+Entry point:@ 000007FEDF1A99A0
+	40 56                             push rsi                      IP:df1a99a2
+	41 54                             push r12                      IP:df1a99a4
+	41 56                             push r14                      IP:df1a99a6
+Relocated entry point:@ 000007FEDF1803A3
+	40 56                             push rsi                      IP:df1803a5
+	41 54                             push r12                      IP:df1803a7
+	41 56                             push r14                      IP:df1803a9
+
+Function: TestFuncHooks
+Entry point:@ 000007FEDF1AA510
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:df1aa515
+Relocated entry point:@ 000007FEDF1803A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:df1803a8

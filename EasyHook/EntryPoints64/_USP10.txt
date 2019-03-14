@@ -1,0 +1,302 @@
+
+Function: LpkPresent
+Entry point:@ 000007FEFE6FD210
+	C7 05 82 A7 06 00 01 00 00 00     mov dword [rip+0x6a782], 0x1  IP:fe6fd21a
+Relocated entry point:@ 000007FEFE6D03A3
+	C7 05 EF 75 09 00 01 00 00 00     mov dword [rip+0x975ef], 0x1  IP:fe6d03ad
+
+Function: ScriptApplyDigitSubstitution
+Entry point:@ 000007FEFE6EC830
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6ec835
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6d03a8
+
+Function: ScriptApplyLogicalWidth
+Entry point:@ 000007FEFE6EA310
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:fe6ea315
+Relocated entry point:@ 000007FEFE6D03A3
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:fe6d03a8
+
+Function: ScriptBreak
+Entry point:@ 000007FEFE6E9B30
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6e9b35
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptCPtoX
+Entry point:@ 000007FEFE6E9C60
+	48 8B C4                          mov rax, rsp                  IP:fe6e9c63
+	44 89 48 20                       mov [rax+0x20], r9d           IP:fe6e9c67
+Relocated entry point:@ 000007FEFE6D03A3
+	48 8B C4                          mov rax, rsp                  IP:fe6d03a6
+	44 89 48 20                       mov [rax+0x20], r9d           IP:fe6d03aa
+
+Function: ScriptCacheGetHeight
+Entry point:@ 000007FEFE6EAA90
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6eaa95
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6d03a8
+
+Function: ScriptFreeCache
+Entry point:@ 000007FEFE6E8620
+	40 53                             push rbx                      IP:fe6e8622
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe6e8626
+Relocated entry point:@ 000007FEFE6D03A3
+	40 53                             push rbx                      IP:fe6d03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe6d03a9
+
+Function: ScriptGetCMap
+Entry point:@ 000007FEFE6EA5D0
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6ea5d5
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptGetFontAlternateGlyphs
+Entry point:@ 000007FEFE7208B0
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe7208b5
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptGetFontFeatureTags
+Entry point:@ 000007FEFE720610
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:fe720615
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 4C 24 08                    mov [rsp+0x8], rcx            IP:fe6d03a8
+
+Function: ScriptGetFontLanguageTags
+Entry point:@ 000007FEFE720400
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe720405
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptGetFontProperties
+Entry point:@ 000007FEFE6EA8D0
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6ea8d5
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6d03a8
+
+Function: ScriptGetFontScriptTags
+Entry point:@ 000007FEFE720290
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe720295
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptGetGlyphABCWidth
+Entry point:@ 000007FEFE6EA780
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6ea785
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6d03a8
+
+Function: ScriptGetLogicalWidths
+Entry point:@ 000007FEFE6EA150
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:fe6ea155
+Relocated entry point:@ 000007FEFE6D03A3
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:fe6d03a8
+
+Function: ScriptGetProperties
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe6ea8a3
+	75 0B                             jnz 0xd                       IP:fe6ea8a5
+
+Function: ScriptIsComplex
+Entry point:@ 000007FEFE6EC250
+	48 8B C4                          mov rax, rsp                  IP:fe6ec253
+	56                                push rsi                      IP:fe6ec254
+	57                                push rdi                      IP:fe6ec255
+Relocated entry point:@ 000007FEFE6D03A3
+	48 8B C4                          mov rax, rsp                  IP:fe6d03a6
+	56                                push rsi                      IP:fe6d03a7
+	57                                push rdi                      IP:fe6d03a8
+
+Function: ScriptItemize
+Entry point:@ 000007FEFE6E86A0
+	48 83 EC 48                       sub rsp, 0x48                 IP:fe6e86a4
+	48 85 C9                          test rcx, rcx                 IP:fe6e86a7
+Relocated entry point:@ 000007FEFE6D03A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:fe6d03a7
+	48 85 C9                          test rcx, rcx                 IP:fe6d03aa
+
+Function: ScriptItemizeOpenType
+Entry point:@ 000007FEFE7201B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe7201b5
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6d03a8
+
+Function: ScriptJustify
+Entry point:@ 000007FEFE6E91F0
+	48 8B C4                          mov rax, rsp                  IP:fe6e91f3
+	44 89 40 18                       mov [rax+0x18], r8d           IP:fe6e91f7
+Relocated entry point:@ 000007FEFE6D03A3
+	48 8B C4                          mov rax, rsp                  IP:fe6d03a6
+	44 89 40 18                       mov [rax+0x18], r8d           IP:fe6d03aa
+
+Function: ScriptLayout
+Entry point:@ 000007FEFE6E8710
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6e8715
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6d03a8
+
+Function: ScriptPlace
+Entry point:@ 000007FEFE6E8A90
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6e8a95
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptPlaceOpenType
+Entry point:@ 000007FEFE71FCB0
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe71fcb5
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6d03a8
+
+Function: ScriptPositionSingleGlyph
+Entry point:@ 000007FEFE720CB0
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe720cb5
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 10                    mov [rsp+0x10], rbp           IP:fe6d03a8
+
+Function: ScriptRecordDigitSubstitution
+Entry point:@ 000007FEFE6EC440
+	40 55                             push rbp                      IP:fe6ec442
+	56                                push rsi                      IP:fe6ec443
+	57                                push rdi                      IP:fe6ec444
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:fe6ec44b
+Relocated entry point:@ 000007FEFE6D03A3
+	40 55                             push rbp                      IP:fe6d03a5
+	56                                push rsi                      IP:fe6d03a6
+	57                                push rdi                      IP:fe6d03a7
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:fe6d03ae
+
+Function: ScriptShape
+Entry point:@ 000007FEFE6E87D0
+	4C 89 44 24 18                    mov [rsp+0x18], r8            IP:fe6e87d5
+Relocated entry point:@ 000007FEFE6D03A3
+	4C 89 44 24 18                    mov [rsp+0x18], r8            IP:fe6d03a8
+
+Function: ScriptShapeOpenType
+Entry point:@ 000007FEFE71F780
+	44 89 4C 24 20                    mov [rsp+0x20], r9d           IP:fe71f785
+Relocated entry point:@ 000007FEFE6D03A3
+	44 89 4C 24 20                    mov [rsp+0x20], r9d           IP:fe6d03a8
+
+Function: ScriptStringAnalyse
+Entry point:@ 000007FEFE6EAF40
+	40 55                             push rbp                      IP:fe6eaf42
+	57                                push rdi                      IP:fe6eaf43
+	41 55                             push r13                      IP:fe6eaf45
+Relocated entry point:@ 000007FEFE6D03A3
+	40 55                             push rbp                      IP:fe6d03a5
+	57                                push rdi                      IP:fe6d03a6
+	41 55                             push r13                      IP:fe6d03a8
+
+Function: ScriptStringCPtoX
+Entry point:@ 000007FEFE6EB740
+	48 8B C4                          mov rax, rsp                  IP:fe6eb743
+	44 89 40 18                       mov [rax+0x18], r8d           IP:fe6eb747
+Relocated entry point:@ 000007FEFE6D03A3
+	48 8B C4                          mov rax, rsp                  IP:fe6d03a6
+	44 89 40 18                       mov [rax+0x18], r8d           IP:fe6d03aa
+
+Function: ScriptStringFree
+Entry point:@ 000007FEFE6EB3B0
+	40 56                             push rsi                      IP:fe6eb3b2
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe6eb3b6
+Relocated entry point:@ 000007FEFE6D03A3
+	40 56                             push rsi                      IP:fe6d03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe6d03a9
+
+Function: ScriptStringGetLogicalWidths
+Entry point:@ 000007FEFE6EBBC0
+	40 56                             push rsi                      IP:fe6ebbc2
+	41 57                             push r15                      IP:fe6ebbc4
+	48 83 EC 58                       sub rsp, 0x58                 IP:fe6ebbc8
+Relocated entry point:@ 000007FEFE6D03A3
+	40 56                             push rsi                      IP:fe6d03a5
+	41 57                             push r15                      IP:fe6d03a7
+	48 83 EC 58                       sub rsp, 0x58                 IP:fe6d03ab
+
+Function: ScriptStringGetOrder
+Entry point:@ 000007FEFE6EB4A0
+	40 53                             push rbx                      IP:fe6eb4a2
+	41 54                             push r12                      IP:fe6eb4a4
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe6eb4a8
+Relocated entry point:@ 000007FEFE6D03A3
+	40 53                             push rbx                      IP:fe6d03a5
+	41 54                             push r12                      IP:fe6d03a7
+	48 83 EC 38                       sub rsp, 0x38                 IP:fe6d03ab
+
+Function: ScriptStringOut
+Entry point:@ 000007FEFE6EBF00
+	89 54 24 10                       mov [rsp+0x10], edx           IP:fe6ebf04
+	55                                push rbp                      IP:fe6ebf05
+Relocated entry point:@ 000007FEFE6D03A3
+	89 54 24 10                       mov [rsp+0x10], edx           IP:fe6d03a7
+	55                                push rbp                      IP:fe6d03a8
+
+Function: ScriptStringValidate
+Entry point:@ 000007FEFE6EBDA0
+	48 83 EC 08                       sub rsp, 0x8                  IP:fe6ebda4
+	4C 8B D1                          mov r10, rcx                  IP:fe6ebda7
+Relocated entry point:@ 000007FEFE6D03A3
+	48 83 EC 08                       sub rsp, 0x8                  IP:fe6d03a7
+	4C 8B D1                          mov r10, rcx                  IP:fe6d03aa
+
+Function: ScriptStringXtoCP
+Entry point:@ 000007FEFE6EB960
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:fe6eb965
+Relocated entry point:@ 000007FEFE6D03A3
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:fe6d03a8
+
+Function: ScriptString_pLogAttr
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe6eb483
+	75 03                             jnz 0x5                       IP:fe6eb485
+
+Function: ScriptString_pSize
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe6eb443
+	75 03                             jnz 0x5                       IP:fe6eb445
+
+Function: ScriptString_pcOutChars
+ERROR: Unable to allocate hook: Hooking near conditional jumps is not supported.
+	48 85 C9                          test rcx, rcx                 IP:fe6eb463
+	75 03                             jnz 0x5                       IP:fe6eb465
+
+Function: ScriptSubstituteSingleGlyph
+Entry point:@ 000007FEFE720A50
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe720a55
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 6C 24 18                    mov [rsp+0x18], rbp           IP:fe6d03a8
+
+Function: ScriptTextOut
+Entry point:@ 000007FEFE6E8D30
+	48 8B C4                          mov rax, rsp                  IP:fe6e8d33
+	44 89 48 20                       mov [rax+0x20], r9d           IP:fe6e8d37
+Relocated entry point:@ 000007FEFE6D03A3
+	48 8B C4                          mov rax, rsp                  IP:fe6d03a6
+	44 89 48 20                       mov [rax+0x20], r9d           IP:fe6d03aa
+
+Function: ScriptXtoCP
+Entry point:@ 000007FEFE6E9EB0
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:fe6e9eb5
+Relocated entry point:@ 000007FEFE6D03A3
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:fe6d03a8
+
+Function: UspAllocCache
+Entry point:@ 000007FEFE6FD230
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6fd235
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6d03a8
+
+Function: UspAllocTemp
+Entry point:@ 000007FEFE6FD630
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6fd635
+Relocated entry point:@ 000007FEFE6D03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fe6d03a8
+
+Function: UspFreeMem
+Entry point:@ 000007FEFE6FD810
+	40 53                             push rbx                      IP:fe6fd812
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe6fd816
+Relocated entry point:@ 000007FEFE6D03A3
+	40 53                             push rbx                      IP:fe6d03a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fe6d03a9

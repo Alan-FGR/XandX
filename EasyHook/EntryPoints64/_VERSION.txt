@@ -1,0 +1,112 @@
+
+Function: GetFileVersionInfoA
+Entry point:@ 000007FEFCA01B14
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fca01b19
+Relocated entry point:@ 000007FEFC9F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fc9f03a8
+
+Function: GetFileVersionInfoByHandle
+Entry point:@ 000007FEFCA01E40
+	48 8B C4                          mov rax, rsp                  IP:fca01e43
+	48 89 70 10                       mov [rax+0x10], rsi           IP:fca01e47
+Relocated entry point:@ 000007FEFC9F03A3
+	48 8B C4                          mov rax, rsp                  IP:fc9f03a6
+	48 89 70 10                       mov [rax+0x10], rsi           IP:fc9f03aa
+
+Function: GetFileVersionInfoExW
+Entry point:@ 000007FEFCA0193C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fca01941
+Relocated entry point:@ 000007FEFC9F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fc9f03a8
+
+Function: GetFileVersionInfoSizeA
+Entry point:@ 000007FEFCA01AB4
+	FF F3                             push rbx                      IP:fca01ab6
+	48 83 EC 40                       sub rsp, 0x40                 IP:fca01aba
+Relocated entry point:@ 000007FEFC9F03A3
+	FF F3                             push rbx                      IP:fc9f03a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fc9f03a9
+
+Function: GetFileVersionInfoSizeExW
+Entry point:@ 000007FEFCA014E8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fca014ed
+Relocated entry point:@ 000007FEFC9F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fc9f03a8
+
+Function: GetFileVersionInfoSizeW
+Entry point:@ 000007FEFCA015FC
+	4C 8B C2                          mov r8, rdx                   IP:fca015ff
+	48 8B D1                          mov rdx, rcx                  IP:fca01602
+Relocated entry point:@ 000007FEFC9F03A3
+	4C 8B C2                          mov r8, rdx                   IP:fc9f03a6
+	48 8B D1                          mov rdx, rcx                  IP:fc9f03a9
+
+Function: GetFileVersionInfoW
+Entry point:@ 000007FEFCA01614
+	48 83 EC 38                       sub rsp, 0x38                 IP:fca01618
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:fca0161d
+Relocated entry point:@ 000007FEFC9F03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fc9f03a7
+	4C 89 4C 24 20                    mov [rsp+0x20], r9            IP:fc9f03ac
+
+Function: VerFindFileA
+Entry point:@ 000007FEFCA02820
+	4C 8B DC                          mov r11, rsp                  IP:fca02823
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fca02827
+Relocated entry point:@ 000007FEFC9F03A3
+	4C 8B DC                          mov r11, rsp                  IP:fc9f03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fc9f03aa
+
+Function: VerFindFileW
+Entry point:@ 000007FEFCA03F50
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fca03f55
+Relocated entry point:@ 000007FEFC9F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fc9f03a8
+
+Function: VerInstallFileA
+Entry point:@ 000007FEFCA02AF0
+	4C 8B DC                          mov r11, rsp                  IP:fca02af3
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fca02af7
+Relocated entry point:@ 000007FEFC9F03A3
+	4C 8B DC                          mov r11, rsp                  IP:fc9f03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fc9f03aa
+
+Function: VerInstallFileW
+Entry point:@ 000007FEFCA043F8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fca043fd
+Relocated entry point:@ 000007FEFC9F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fc9f03a8
+
+Function: VerLanguageNameA
+	(redirected to DLL: KERNEL32.dll!VerLanguageNameA)
+	(redirected to function: VerLanguageNameA)
+Entry point:@ 0000000076DBC0A0
+	E9 4F 51 FE FF                    jmp 0xfffffffffffe5154        IP:76dbc0a5
+Relocated entry point:@ 0000000076D603A3
+	48 B8 F4 11 DA 76 00 00 00 00     mov rax, 0x76da11f4           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+
+Function: VerLanguageNameW
+	(redirected to DLL: KERNEL32.dll!VerLanguageNameW)
+	(redirected to function: VerLanguageNameW)
+Entry point:@ 0000000076DBC090
+	E9 6B 51 FE FF                    jmp 0xfffffffffffe5170        IP:76dbc095
+Relocated entry point:@ 0000000076D603A3
+	48 B8 00 12 DA 76 00 00 00 00     mov rax, 0x76da1200           IP:76d603ad
+	FF E0                             jmp rax                       IP:76d603af
+
+Function: VerQueryValueA
+Entry point:@ 000007FEFCA01B94
+	48 83 EC 38                       sub rsp, 0x38                 IP:fca01b98
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:fca01b9d
+Relocated entry point:@ 000007FEFC9F03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fc9f03a7
+	83 64 24 20 00                    and dword [rsp+0x20], 0x0     IP:fc9f03ac
+
+Function: VerQueryValueW
+Entry point:@ 000007FEFCA015E0
+	48 83 EC 38                       sub rsp, 0x38                 IP:fca015e4
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:fca015ec
+Relocated entry point:@ 000007FEFC9F03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:fc9f03a7
+	C7 44 24 20 01 00 00 00           mov dword [rsp+0x20], 0x1     IP:fc9f03af

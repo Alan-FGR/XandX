@@ -1,0 +1,1143 @@
+
+Function: AttachProfiler
+	(redirected to function: CoUninitializeCor)
+Entry point:@ 000007FEF2E0B7E0
+	48 8B C4                          mov rax, rsp                  IP:f2e0b7e3
+	41 56                             push r14                      IP:f2e0b7e5
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: CertCreateAuthenticodeLicense
+	(redirected to function: CoUninitializeEE)
+Entry point:@ 000007FEF2BE9D50
+	4C 8B DC                          mov r11, rsp                  IP:f2be9d53
+	49 89 5B 20                       mov [r11+0x20], rbx           IP:f2be9d57
+Relocated entry point:@ 000007FEF29F03A3
+	4C 8B DC                          mov r11, rsp                  IP:f29f03a6
+	49 89 5B 20                       mov [r11+0x20], rbx           IP:f29f03aa
+
+Function: CertFreeAuthenticodeSignerInfo
+	(redirected to function: CompareAssemblyIdentity)
+Entry point:@ 000007FEF2BE9AB0
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:f2be9ab5
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:f29f03a8
+
+Function: CertFreeAuthenticodeTimestamperInfo
+	(redirected to function: CompareAssemblyIdentityWithConfig)
+Entry point:@ 000007FEF2BE9A70
+	53                                push rbx                      IP:f2be9a71
+	48 83 EC 20                       sub rsp, 0x20                 IP:f2be9a75
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 20                       sub rsp, 0x20                 IP:f29f03a8
+
+Function: CertTimestampAuthenticodeLicense
+	(redirected to function: CopyPDBs)
+Entry point:@ 000007FEF2BE9B70
+	53                                push rbx                      IP:f2be9b71
+	48 83 EC 30                       sub rsp, 0x30                 IP:f2be9b75
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 30                       sub rsp, 0x30                 IP:f29f03a8
+
+Function: CertVerifyAuthenticodeLicense
+	(redirected to function: CorDllMainForThunk)
+Entry point:@ 000007FEF2BE9C50
+	53                                push rbx                      IP:f2be9c51
+	48 83 EC 30                       sub rsp, 0x30                 IP:f2be9c55
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 30                       sub rsp, 0x30                 IP:f29f03a8
+
+Function: ClearDownloadCache
+	(redirected to function: CorExitProcess)
+Entry point:@ 000007FEF2FFC090
+	E9 A7 F1 FF FF                    jmp 0xfffffffffffff1ac        IP:f2ffc095
+Relocated entry point:@ 000007FEF33F03A3
+	48 B8 3C B2 FF F2 FE 07 00 00     mov rax, 0x7fef2ffb23c        IP:f33f03ad
+	FF E0                             jmp rax                       IP:f33f03af
+
+Function: ClrCreateManagedInstance
+	(redirected to function: CorLaunchApplication)
+Entry point:@ 000007FEF2B242A0
+	53                                push rbx                      IP:f2b242a1
+	56                                push rsi                      IP:f2b242a2
+	57                                push rdi                      IP:f2b242a3
+	41 54                             push r12                      IP:f2b242a5
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	56                                push rsi                      IP:f29f03a5
+	57                                push rdi                      IP:f29f03a6
+	41 54                             push r12                      IP:f29f03a8
+
+Function: CoEEShutDownCOM
+	(redirected to function: CorMarkThreadInThreadPool)
+Entry point:@ 000007FEF2DE4C70
+	48 8B C4                          mov rax, rsp                  IP:f2de4c73
+	57                                push rdi                      IP:f2de4c74
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:f2de4c7b
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:f29f03ae
+
+Function: CoInitializeCor
+	(redirected to function: CreateActContext)
+Entry point:@ 000007FEF300A2F0
+	53                                push rbx                      IP:f300a2f1
+	48 83 EC 40                       sub rsp, 0x40                 IP:f300a2f5
+Relocated entry point:@ 000007FEF33F03A3
+	53                                push rbx                      IP:f33f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f33f03a8
+
+Function: CoInitializeEE
+	(redirected to function: CreateApplicationContext)
+Entry point:@ 000007FEF2DE4F20
+	57                                push rdi                      IP:f2de4f21
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2de4f25
+Relocated entry point:@ 000007FEF29F03A3
+	57                                push rdi                      IP:f29f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03a8
+
+Function: CoUninitializeCor
+	(redirected to function: CreateAssemblyCache)
+Entry point:@ 000007FEF2DE1660
+	53                                push rbx                      IP:f2de1661
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2de1665
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03a8
+
+Function: CoUninitializeEE
+	(redirected to function: CreateAssemblyConfigCookie)
+Entry point:@ 000007FEF2A04E00
+	C2 00 00                          ret 0x0                       IP:f2a04e03
+	90                                nop                           IP:f2a04e04
+	90                                nop                           IP:f2a04e05
+Relocated entry point:@ 000007FEF29F03A3
+	C2 00 00                          ret 0x0                       IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	90                                nop                           IP:f29f03a8
+
+Function: CompareAssemblyIdentity
+	(redirected to function: CreateAssemblyEnum)
+Entry point:@ 000007FEF30101B0
+	48 83 EC 48                       sub rsp, 0x48                 IP:f30101b4
+	48 8B 44 24 78                    mov rax, [rsp+0x78]           IP:f30101b9
+Relocated entry point:@ 000007FEF33F03A3
+	48 83 EC 48                       sub rsp, 0x48                 IP:f33f03a7
+	48 8B 44 24 78                    mov rax, [rsp+0x78]           IP:f33f03ac
+
+Function: CompareAssemblyIdentityWithConfig
+	(redirected to function: CreateAssemblyNameObject)
+Entry point:@ 000007FEF30101E0
+	48 8B C4                          mov rax, rsp                  IP:f30101e3
+	55                                push rbp                      IP:f30101e4
+	56                                push rsi                      IP:f30101e5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	55                                push rbp                      IP:f33f03a7
+	56                                push rsi                      IP:f33f03a8
+
+Function: CopyPDBs
+	(redirected to function: CreateCMSFromXml)
+Entry point:@ 000007FEF2B99CF0
+	48 8B C4                          mov rax, rsp                  IP:f2b99cf3
+	55                                push rbp                      IP:f2b99cf4
+	41 54                             push r12                      IP:f2b99cf6
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	55                                push rbp                      IP:f29f03a7
+	41 54                             push r12                      IP:f29f03a9
+
+Function: CorDllMainForThunk
+	(redirected to function: CertFreeAuthenticodeTimestamperInfo)
+Entry point:@ 000007FEF2DE2F60
+	53                                push rbx                      IP:f2de2f61
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2de2f65
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03a8
+
+Function: CorExitProcess
+	(redirected to function: CreateHistoryReader)
+Entry point:@ 000007FEF2DE4FB0
+	33 D2                             xor edx, edx                  IP:f2de4fb2
+	E9 01 72 F0 FF                    jmp 0xfffffffffff07206        IP:f2de4fb7
+Relocated entry point:@ 000007FEF29F03A3
+	33 D2                             xor edx, edx                  IP:f29f03a5
+	48 B8 B8 C1 CE F2 FE 07 00 00     mov rax, 0x7fef2cec1b8        IP:f29f03af
+	FF E0                             jmp rax                       IP:f29f03b1
+
+Function: CorLaunchApplication
+	(redirected to function: CreateInstallReferenceEnum)
+Entry point:@ 000007FEF2E0D860
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:f2e0d865
+Relocated entry point:@ 000007FEF29F03A3
+	44 89 44 24 18                    mov [rsp+0x18], r8d           IP:f29f03a8
+
+Function: CorMarkThreadInThreadPool
+	(redirected to function: DeleteShadowCache)
+Entry point:@ 000007FEF2DE1660
+	53                                push rbx                      IP:f2de1661
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2de1665
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03a8
+
+Function: CreateActContext
+	(redirected to function: DestroyAssemblyConfigCookie)
+Entry point:@ 000007FEF2BEA350
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2bea355
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: CreateApplicationContext
+	(redirected to function: DllCanUnloadNowInternal)
+Entry point:@ 000007FEF2AE6E90
+	48 8B C4                          mov rax, rsp                  IP:f2ae6e93
+	41 56                             push r14                      IP:f2ae6e95
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: CreateAssemblyCache
+	(redirected to function: DllGetActivationFactoryImpl)
+Entry point:@ 000007FEF2FFE9C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2ffe9c5
+Relocated entry point:@ 000007FEF33F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f33f03a8
+
+Function: CreateAssemblyConfigCookie
+	(redirected to function: DllGetClassObjectInternal)
+Entry point:@ 000007FEF3010CB0
+	48 8B C4                          mov rax, rsp                  IP:f3010cb3
+	55                                push rbp                      IP:f3010cb4
+	41 54                             push r12                      IP:f3010cb6
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	55                                push rbp                      IP:f33f03a7
+	41 54                             push r12                      IP:f33f03a9
+
+Function: CreateAssemblyEnum
+	(redirected to function: DllRegisterServerInternal)
+Entry point:@ 000007FEF2FFF560
+	48 8B C4                          mov rax, rsp                  IP:f2fff563
+	4C 89 40 18                       mov [rax+0x18], r8            IP:f2fff567
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	4C 89 40 18                       mov [rax+0x18], r8            IP:f33f03aa
+
+Function: CreateAssemblyNameObject
+	(redirected to function: DllUnregisterServerInternal)
+Entry point:@ 000007FEF2B5F4E0
+	48 8B C4                          mov rax, rsp                  IP:f2b5f4e3
+	57                                push rdi                      IP:f2b5f4e4
+	41 56                             push r14                      IP:f2b5f4e6
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	41 56                             push r14                      IP:f29f03a9
+
+Function: CreateCMSFromXml
+	(redirected to function: EEDllRegisterServer)
+Entry point:@ 000007FEF2BEA290
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2bea295
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: CreateHistoryReader
+	(redirected to function: EEDllUnregisterServer)
+Entry point:@ 000007FEF2C216C0
+	B8 01 40 00 80                    mov eax, 0x80004001           IP:f2c216c5
+Relocated entry point:@ 000007FEF29F03A3
+	B8 01 40 00 80                    mov eax, 0x80004001           IP:f29f03a8
+
+Function: CreateInstallReferenceEnum
+	(redirected to function: GetAddrOfContractShutoffFlag)
+Entry point:@ 000007FEF2FFFF60
+	48 8B C4                          mov rax, rsp                  IP:f2ffff63
+	41 56                             push r14                      IP:f2ffff65
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: DeleteShadowCache
+	(redirected to function: GetAppIdAuthority)
+Entry point:@ 000007FEF2FFB9E0
+	48 8B C4                          mov rax, rsp                  IP:f2ffb9e3
+	55                                push rbp                      IP:f2ffb9e4
+	56                                push rsi                      IP:f2ffb9e5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	55                                push rbp                      IP:f33f03a7
+	56                                push rsi                      IP:f33f03a8
+
+Function: DestroyAssemblyConfigCookie
+	(redirected to function: GetAssemblyIdentityFromFile)
+Entry point:@ 000007FEF3010F50
+	48 83 EC 28                       sub rsp, 0x28                 IP:f3010f54
+	E8 57 48 9F FF                    call 0xffffffffff9f485c       IP:f3010f59
+Relocated entry point:@ 000007FEF33F03A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:f33f03a7
+	48 B8 B0 57 A0 F2 FE 07 00 00     mov rax, 0x7fef2a057b0        IP:f33f03b1
+	FF D0                             call rax                      IP:f33f03b3
+
+Function: DllCanUnloadNowInternal
+	(redirected to function: GetAssemblyMDImport)
+Entry point:@ 000007FEF2A0D170
+	B8 01 00 00 00                    mov eax, 0x1                  IP:f2a0d175
+Relocated entry point:@ 000007FEF29F03A3
+	B8 01 00 00 00                    mov eax, 0x1                  IP:f29f03a8
+
+Function: DllGetActivationFactoryImpl
+	(redirected to function: GetCLRFunction)
+Entry point:@ 000007FEF2E070A0
+	48 8B C4                          mov rax, rsp                  IP:f2e070a3
+	41 54                             push r12                      IP:f2e070a5
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 54                             push r12                      IP:f29f03a8
+
+Function: DllGetClassObjectInternal
+	(redirected to function: GetCLRIdentityManager)
+Entry point:@ 000007FEF2B21D20
+	48 8B C4                          mov rax, rsp                  IP:f2b21d23
+	57                                push rdi                      IP:f2b21d24
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2b21d28
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03ab
+
+Function: DllRegisterServerInternal
+	(redirected to function: GetCachePath)
+Entry point:@ 000007FEF2A0D240
+	33 C0                             xor eax, eax                  IP:f2a0d242
+	C3                                ret                           IP:f2a0d243
+	90                                nop                           IP:f2a0d244
+	E9 07 80 FF FF                    jmp 0xffffffffffff800c        IP:f2a0d249
+Relocated entry point:@ 000007FEF29F03A3
+	33 C0                             xor eax, eax                  IP:f29f03a5
+	C3                                ret                           IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	48 B8 50 52 A0 F2 FE 07 00 00     mov rax, 0x7fef2a05250        IP:f29f03b1
+	FF E0                             jmp rax                       IP:f29f03b3
+
+Function: DllUnregisterServerInternal
+	(redirected to function: GetClassActivatorForApplicationImpl)
+Entry point:@ 000007FEF2A0D240
+	33 C0                             xor eax, eax                  IP:f2a0d242
+	C3                                ret                           IP:f2a0d243
+	90                                nop                           IP:f2a0d244
+	E9 07 80 FF FF                    jmp 0xffffffffffff800c        IP:f2a0d249
+Relocated entry point:@ 000007FEF29F03A3
+	33 C0                             xor eax, eax                  IP:f29f03a5
+	C3                                ret                           IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	48 B8 50 52 A0 F2 FE 07 00 00     mov rax, 0x7fef2a05250        IP:f29f03b1
+	FF E0                             jmp rax                       IP:f29f03b3
+
+Function: EEDllRegisterServer
+	(redirected to function: GetHashFromAssemblyFile)
+Entry point:@ 000007FEF2DE4FC0
+	48 8B C4                          mov rax, rsp                  IP:f2de4fc3
+	57                                push rdi                      IP:f2de4fc4
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:f2de4fcb
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:f29f03ae
+
+Function: EEDllUnregisterServer
+	(redirected to function: GetHashFromAssemblyFileW)
+Entry point:@ 000007FEF2DE52B0
+	48 8B C4                          mov rax, rsp                  IP:f2de52b3
+	57                                push rdi                      IP:f2de52b4
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:f2de52bb
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 81 EC 90 00 00 00              sub rsp, 0x90                 IP:f29f03ae
+
+Function: GetAddrOfContractShutoffFlag
+	(redirected to function: CertTimestampAuthenticodeLicense)
+Entry point:@ 000007FEF2DF6090
+	48 8D 05 89 DB 56 00              lea rax, [rip+0x56db89]       IP:f2df6097
+Relocated entry point:@ 000007FEF29F03A3
+	48 8D 05 76 38 97 00              lea rax, [rip+0x973876]       IP:f29f03aa
+
+Function: GetAppIdAuthority
+	(redirected to function: GetHashFromBlob)
+Entry point:@ 000007FEF2BEA3F0
+	53                                push rbx                      IP:f2bea3f1
+	48 83 EC 20                       sub rsp, 0x20                 IP:f2bea3f5
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 20                       sub rsp, 0x20                 IP:f29f03a8
+
+Function: GetAssemblyIdentityFromFile
+	(redirected to function: GetHashFromFile)
+Entry point:@ 000007FEF3012750
+	48 8B C4                          mov rax, rsp                  IP:f3012753
+	57                                push rdi                      IP:f3012754
+	48 83 EC 40                       sub rsp, 0x40                 IP:f3012758
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	48 83 EC 40                       sub rsp, 0x40                 IP:f33f03ab
+
+Function: GetAssemblyMDImport
+	(redirected to function: GetHashFromFileW)
+Entry point:@ 000007FEF2DE1750
+	48 8B C4                          mov rax, rsp                  IP:f2de1753
+	57                                push rdi                      IP:f2de1754
+	48 83 EC 50                       sub rsp, 0x50                 IP:f2de1758
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 83 EC 50                       sub rsp, 0x50                 IP:f29f03ab
+
+Function: GetCLRFunction
+	(redirected to function: CertVerifyAuthenticodeLicense)
+Entry point:@ 000007FEF2A9E0D0
+	57                                push rdi                      IP:f2a9e0d1
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2a9e0d5
+Relocated entry point:@ 000007FEF29F03A3
+	57                                push rdi                      IP:f29f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03a8
+
+Function: GetCLRIdentityManager
+	(redirected to function: GetHashFromHandle)
+Entry point:@ 000007FEF3014380
+	48 8B C4                          mov rax, rsp                  IP:f3014383
+	41 56                             push r14                      IP:f3014385
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: GetCachePath
+	(redirected to function: GetHistoryFileDirectory)
+Entry point:@ 000007FEF3004C00
+	4C 8B DC                          mov r11, rsp                  IP:f3004c03
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:f3004c07
+Relocated entry point:@ 000007FEF33F03A3
+	4C 8B DC                          mov r11, rsp                  IP:f33f03a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:f33f03aa
+
+Function: GetClassActivatorForApplicationImpl
+	(redirected to function: ClearDownloadCache)
+Entry point:@ 000007FEF2DFD960
+	48 8B C4                          mov rax, rsp                  IP:f2dfd963
+	56                                push rsi                      IP:f2dfd964
+	57                                push rdi                      IP:f2dfd965
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	56                                push rsi                      IP:f29f03a7
+	57                                push rdi                      IP:f29f03a8
+
+Function: GetHashFromAssemblyFile
+	(redirected to function: GetIdentityAuthority)
+Entry point:@ 000007FEF30350B0
+	48 8B C4                          mov rax, rsp                  IP:f30350b3
+	55                                push rbp                      IP:f30350b4
+	56                                push rsi                      IP:f30350b5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	55                                push rbp                      IP:f33f03a7
+	56                                push rsi                      IP:f33f03a8
+
+Function: GetHashFromAssemblyFileW
+	(redirected to function: GetMetaDataInternalInterface)
+Entry point:@ 000007FEF30352C0
+	48 8B C4                          mov rax, rsp                  IP:f30352c3
+	41 56                             push r14                      IP:f30352c5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: GetHashFromBlob
+	(redirected to function: GetMetaDataInternalInterfaceFromPublic)
+Entry point:@ 000007FEF3035420
+	48 8B C4                          mov rax, rsp                  IP:f3035423
+	89 50 10                          mov [rax+0x10], edx           IP:f3035426
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	89 50 10                          mov [rax+0x10], edx           IP:f33f03a9
+
+Function: GetHashFromFile
+	(redirected to function: GetMetaDataPublicInterfaceFromInternal)
+Entry point:@ 000007FEF3035690
+	48 8B C4                          mov rax, rsp                  IP:f3035693
+	41 56                             push r14                      IP:f3035695
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: GetHashFromFileW
+	(redirected to function: GetPermissionRequests)
+Entry point:@ 000007FEF30357B0
+	48 8B C4                          mov rax, rsp                  IP:f30357b3
+	41 56                             push r14                      IP:f30357b5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: GetHashFromHandle
+	(redirected to function: GetPrivateContextsPerfCounters)
+Entry point:@ 000007FEF30358D0
+	48 8B C4                          mov rax, rsp                  IP:f30358d3
+	41 54                             push r12                      IP:f30358d5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 54                             push r12                      IP:f33f03a8
+
+Function: GetHistoryFileDirectory
+	(redirected to function: GetRuntimeStackWalkInfo)
+Entry point:@ 000007FEF2C216C0
+	B8 01 40 00 80                    mov eax, 0x80004001           IP:f2c216c5
+Relocated entry point:@ 000007FEF29F03A3
+	B8 01 40 00 80                    mov eax, 0x80004001           IP:f29f03a8
+
+Function: GetIdentityAuthority
+	(redirected to function: GetUserStateManager)
+Entry point:@ 000007FEF2A9EED0
+	53                                push rbx                      IP:f2a9eed1
+	48 83 EC 20                       sub rsp, 0x20                 IP:f2a9eed5
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 20                       sub rsp, 0x20                 IP:f29f03a8
+
+Function: GetMetaDataInternalInterface
+	(redirected to function: GetUserStore)
+Entry point:@ 000007FEF2B7C030
+	48 8B C4                          mov rax, rsp                  IP:f2b7c033
+	41 56                             push r14                      IP:f2b7c035
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: GetMetaDataInternalInterfaceFromPublic
+	(redirected to function: IEE)
+Entry point:@ 000007FEF2A8B980
+	48 8B C4                          mov rax, rsp                  IP:f2a8b983
+	57                                push rdi                      IP:f2a8b984
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2a8b988
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03ab
+
+Function: GetMetaDataPublicInterfaceFromInternal
+	(redirected to function: InitializeFusion)
+Entry point:@ 000007FEF2B9A450
+	48 8B C4                          mov rax, rsp                  IP:f2b9a453
+	57                                push rdi                      IP:f2b9a454
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2b9a458
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03ab
+
+Function: GetPermissionRequests
+	(redirected to function: InstallCustomModule)
+Entry point:@ 000007FEF2E19600
+	53                                push rbx                      IP:f2e19601
+	56                                push rsi                      IP:f2e19602
+	57                                push rdi                      IP:f2e19603
+	41 54                             push r12                      IP:f2e19605
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	56                                push rsi                      IP:f29f03a5
+	57                                push rdi                      IP:f29f03a6
+	41 54                             push r12                      IP:f29f03a8
+
+Function: GetPrivateContextsPerfCounters
+	(redirected to function: IsOS)
+Entry point:@ 000007FEF2AFA970
+	48 8B 05 69 9F 84 00              mov rax, [rip+0x849f69]       IP:f2afa977
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B 05 36 45 95 00              mov rax, [rip+0x954536]       IP:f29f03aa
+
+Function: GetRuntimeStackWalkInfo
+	(redirected to function: LegacyNGenCompile)
+Entry point:@ 000007FEF2E0AB20
+	48 8B C4                          mov rax, rsp                  IP:f2e0ab23
+	41 56                             push r14                      IP:f2e0ab25
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: GetUserStateManager
+	(redirected to function: LegacyNGenCreateZapper)
+Entry point:@ 000007FEF2BEA120
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2bea125
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: GetUserStore
+	(redirected to function: LegacyNGenFreeZapper)
+Entry point:@ 000007FEF2BEA070
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2bea075
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: IEE
+	(redirected to function: LegacyNGenTryEnumerateFusionCache)
+Entry point:@ 000007FEF2A9C9C0
+	53                                push rbx                      IP:f2a9c9c1
+	48 83 EC 30                       sub rsp, 0x30                 IP:f2a9c9c5
+Relocated entry point:@ 000007FEF29F03A3
+	53                                push rbx                      IP:f29f03a4
+	48 83 EC 30                       sub rsp, 0x30                 IP:f29f03a8
+
+Function: InitializeFusion
+	(redirected to function: LoadStringRC)
+Entry point:@ 000007FEF2AA26C0
+	48 8B C4                          mov rax, rsp                  IP:f2aa26c3
+	55                                push rbp                      IP:f2aa26c4
+	41 56                             push r14                      IP:f2aa26c6
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	55                                push rbp                      IP:f29f03a7
+	41 56                             push r14                      IP:f29f03a9
+
+Function: InstallCustomModule
+	(redirected to function: LoadStringRCEx)
+Entry point:@ 000007FEF2A0D240
+	33 C0                             xor eax, eax                  IP:f2a0d242
+	C3                                ret                           IP:f2a0d243
+	90                                nop                           IP:f2a0d244
+	E9 07 80 FF FF                    jmp 0xffffffffffff800c        IP:f2a0d249
+Relocated entry point:@ 000007FEF29F03A3
+	33 C0                             xor eax, eax                  IP:f29f03a5
+	C3                                ret                           IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	48 B8 50 52 A0 F2 FE 07 00 00     mov rax, 0x7fef2a05250        IP:f29f03b1
+	FF E0                             jmp rax                       IP:f29f03b3
+
+Function: IsOS
+	(redirected to function: LogHelp_LogAssert)
+Entry point:@ 000007FEF2AA00B0
+	48 8B C4                          mov rax, rsp                  IP:f2aa00b3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:f2aa00b7
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:f29f03aa
+
+Function: LegacyNGenCompile
+	(redirected to function: LogHelp_NoGuiOnAssert)
+Entry point:@ 000007FEF3047370
+	48 8B C4                          mov rax, rsp                  IP:f3047373
+	41 56                             push r14                      IP:f3047375
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: LegacyNGenCreateZapper
+	(redirected to function: LogHelp_TerminateOnAssert)
+Entry point:@ 000007FEF3047600
+	48 8B C4                          mov rax, rsp                  IP:f3047603
+	48 89 48 08                       mov [rax+0x8], rcx            IP:f3047607
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	48 89 48 08                       mov [rax+0x8], rcx            IP:f33f03aa
+
+Function: LegacyNGenFreeZapper
+	(redirected to function: LookupHistoryAssembly)
+Entry point:@ 000007FEF30478C0
+	57                                push rdi                      IP:f30478c1
+	48 83 EC 40                       sub rsp, 0x40                 IP:f30478c5
+Relocated entry point:@ 000007FEF33F03A3
+	57                                push rdi                      IP:f33f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f33f03a8
+
+Function: LegacyNGenTryEnumerateFusionCache
+	(redirected to function: MetaDataGetDispenser)
+Entry point:@ 000007FEF3047960
+	48 8B C4                          mov rax, rsp                  IP:f3047963
+	41 56                             push r14                      IP:f3047965
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: LoadStringRC
+	(redirected to function: AttachProfiler)
+Entry point:@ 000007FEF2DE1C20
+	48 8B C4                          mov rax, rsp                  IP:f2de1c23
+	41 56                             push r14                      IP:f2de1c25
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: LoadStringRCEx
+	(redirected to function: NGenCreateNGenWorker)
+Entry point:@ 000007FEF2DE1D00
+	48 8B C4                          mov rax, rsp                  IP:f2de1d03
+	41 56                             push r14                      IP:f2de1d05
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: LogHelp_LogAssert
+	(redirected to function: NukeDownloadedCache)
+Entry point:@ 000007FEF2A04E00
+	C2 00 00                          ret 0x0                       IP:f2a04e03
+	90                                nop                           IP:f2a04e04
+	90                                nop                           IP:f2a04e05
+Relocated entry point:@ 000007FEF29F03A3
+	C2 00 00                          ret 0x0                       IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	90                                nop                           IP:f29f03a8
+
+Function: LogHelp_NoGuiOnAssert
+	(redirected to function: ParseManifest)
+Entry point:@ 000007FEF2A0D240
+	33 C0                             xor eax, eax                  IP:f2a0d242
+	C3                                ret                           IP:f2a0d243
+	90                                nop                           IP:f2a0d244
+	E9 07 80 FF FF                    jmp 0xffffffffffff800c        IP:f2a0d249
+Relocated entry point:@ 000007FEF29F03A3
+	33 C0                             xor eax, eax                  IP:f29f03a5
+	C3                                ret                           IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	48 B8 50 52 A0 F2 FE 07 00 00     mov rax, 0x7fef2a05250        IP:f29f03b1
+	FF E0                             jmp rax                       IP:f29f03b3
+
+Function: LogHelp_TerminateOnAssert
+	(redirected to function: PostErrorVA)
+Entry point:@ 000007FEF2A04E00
+	C2 00 00                          ret 0x0                       IP:f2a04e03
+	90                                nop                           IP:f2a04e04
+	90                                nop                           IP:f2a04e05
+Relocated entry point:@ 000007FEF29F03A3
+	C2 00 00                          ret 0x0                       IP:f29f03a6
+	90                                nop                           IP:f29f03a7
+	90                                nop                           IP:f29f03a8
+
+Function: LookupHistoryAssembly
+	(redirected to function: PreBindAssembly)
+Entry point:@ 000007FEF2C216C0
+	B8 01 40 00 80                    mov eax, 0x80004001           IP:f2c216c5
+Relocated entry point:@ 000007FEF29F03A3
+	B8 01 40 00 80                    mov eax, 0x80004001           IP:f29f03a8
+
+Function: MetaDataGetDispenser
+	(redirected to function: PreBindAssemblyEx)
+Entry point:@ 000007FEF2A8BF30
+	48 8B C4                          mov rax, rsp                  IP:f2a8bf33
+	57                                push rdi                      IP:f2a8bf34
+	48 83 EC 50                       sub rsp, 0x50                 IP:f2a8bf38
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 83 EC 50                       sub rsp, 0x50                 IP:f29f03ab
+
+Function: NGenCreateNGenWorker
+	(redirected to function: ReOpenMetaDataWithMemory)
+Entry point:@ 000007FEF2CF5A80
+	48 8B C4                          mov rax, rsp                  IP:f2cf5a83
+	57                                push rdi                      IP:f2cf5a84
+	41 54                             push r12                      IP:f2cf5a86
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	41 54                             push r12                      IP:f29f03a9
+
+Function: NukeDownloadedCache
+	(redirected to function: ReOpenMetaDataWithMemoryEx)
+Entry point:@ 000007FEF2FFC090
+	E9 A7 F1 FF FF                    jmp 0xfffffffffffff1ac        IP:f2ffc095
+Relocated entry point:@ 000007FEF33F03A3
+	48 B8 3C B2 FF F2 FE 07 00 00     mov rax, 0x7fef2ffb23c        IP:f33f03ad
+	FF E0                             jmp rax                       IP:f33f03af
+
+Function: ParseManifest
+	(redirected to function: SetMSIHandleForLogging)
+Entry point:@ 000007FEF2BEA1D0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2bea1d5
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: PostErrorVA
+	(redirected to function: SetRuntimeInfo)
+Entry point:@ 000007FEF2FE7360
+	55                                push rbp                      IP:f2fe7361
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2fe7365
+Relocated entry point:@ 000007FEF33F03A3
+	55                                push rbp                      IP:f33f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f33f03a8
+
+Function: PreBindAssembly
+	(redirected to function: StrongNameCompareAssemblies)
+Entry point:@ 000007FEF2AABCE0
+	48 83 EC 38                       sub rsp, 0x38                 IP:f2aabce4
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:f2aabce9
+Relocated entry point:@ 000007FEF29F03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:f29f03a7
+	48 8B 44 24 60                    mov rax, [rsp+0x60]           IP:f29f03ac
+
+Function: PreBindAssemblyEx
+	(redirected to function: StrongNameDigestEmbed)
+Entry point:@ 000007FEF2AABD00
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2aabd05
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: ReOpenMetaDataWithMemory
+	(redirected to function: CertCreateAuthenticodeLicense)
+Entry point:@ 000007FEF2DE1DF0
+	48 8B C4                          mov rax, rsp                  IP:f2de1df3
+	57                                push rdi                      IP:f2de1df4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2de1df8
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	57                                push rdi                      IP:f29f03a7
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03ab
+
+Function: ReOpenMetaDataWithMemoryEx
+	(redirected to function: StrongNameDigestGenerate)
+Entry point:@ 000007FEF2DE1EB0
+	48 8B C4                          mov rax, rsp                  IP:f2de1eb3
+	41 56                             push r14                      IP:f2de1eb5
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: SetMSIHandleForLogging
+	(redirected to function: StrongNameDigestSign)
+Entry point:@ 000007FEF3005CA0
+	53                                push rbx                      IP:f3005ca1
+	48 83 EC 20                       sub rsp, 0x20                 IP:f3005ca5
+Relocated entry point:@ 000007FEF33F03A3
+	53                                push rbx                      IP:f33f03a4
+	48 83 EC 20                       sub rsp, 0x20                 IP:f33f03a8
+
+Function: SetRuntimeInfo
+	(redirected to function: ClrCreateManagedInstance)
+Entry point:@ 000007FEF2AA3C80
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:f2aa3c85
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:f29f03a8
+
+Function: StrongNameCompareAssemblies
+	(redirected to function: StrongNameErrorInfo)
+Entry point:@ 000007FEF3035A40
+	55                                push rbp                      IP:f3035a41
+	53                                push rbx                      IP:f3035a42
+	56                                push rsi                      IP:f3035a43
+	57                                push rdi                      IP:f3035a44
+	41 54                             push r12                      IP:f3035a46
+Relocated entry point:@ 000007FEF33F03A3
+	55                                push rbp                      IP:f33f03a4
+	53                                push rbx                      IP:f33f03a5
+	56                                push rsi                      IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 54                             push r12                      IP:f33f03a9
+
+Function: StrongNameDigestEmbed
+	(redirected to function: StrongNameFreeBuffer)
+Entry point:@ 000007FEF3035D10
+	48 8B C4                          mov rax, rsp                  IP:f3035d13
+	41 56                             push r14                      IP:f3035d15
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: StrongNameDigestGenerate
+	(redirected to function: StrongNameGetBlob)
+Entry point:@ 000007FEF3035E00
+	48 8B C4                          mov rax, rsp                  IP:f3035e03
+	57                                push rdi                      IP:f3035e04
+	41 56                             push r14                      IP:f3035e06
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameDigestSign
+	(redirected to function: StrongNameGetBlobFromImage)
+Entry point:@ 000007FEF3035F00
+	48 8B C4                          mov rax, rsp                  IP:f3035f03
+	41 54                             push r12                      IP:f3035f05
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 54                             push r12                      IP:f33f03a8
+
+Function: StrongNameErrorInfo
+	(redirected to function: StrongNameGetPublicKey)
+Entry point:@ 000007FEF3036070
+	53                                push rbx                      IP:f3036071
+	48 83 EC 40                       sub rsp, 0x40                 IP:f3036075
+Relocated entry point:@ 000007FEF33F03A3
+	53                                push rbx                      IP:f33f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f33f03a8
+
+Function: StrongNameFreeBuffer
+	(redirected to function: StrongNameGetPublicKeyEx)
+Entry point:@ 000007FEF2B83030
+	57                                push rdi                      IP:f2b83031
+	48 83 EC 40                       sub rsp, 0x40                 IP:f2b83035
+Relocated entry point:@ 000007FEF29F03A3
+	57                                push rdi                      IP:f29f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f29f03a8
+
+Function: StrongNameGetBlob
+	(redirected to function: StrongNameHashSize)
+Entry point:@ 000007FEF3036100
+	48 8B C4                          mov rax, rsp                  IP:f3036103
+	41 56                             push r14                      IP:f3036105
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: StrongNameGetBlobFromImage
+	(redirected to function: StrongNameKeyDelete)
+Entry point:@ 000007FEF3036260
+	48 8B C4                          mov rax, rsp                  IP:f3036263
+	57                                push rdi                      IP:f3036264
+	41 56                             push r14                      IP:f3036266
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameGetPublicKey
+	(redirected to function: StrongNameKeyGen)
+Entry point:@ 000007FEF30363D0
+	48 8B C4                          mov rax, rsp                  IP:f30363d3
+	57                                push rdi                      IP:f30363d4
+	41 56                             push r14                      IP:f30363d6
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameGetPublicKeyEx
+	(redirected to function: StrongNameKeyGenEx)
+Entry point:@ 000007FEF30364B0
+	48 8B C4                          mov rax, rsp                  IP:f30364b3
+	48 89 48 08                       mov [rax+0x8], rcx            IP:f30364b7
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	48 89 48 08                       mov [rax+0x8], rcx            IP:f33f03aa
+
+Function: StrongNameHashSize
+	(redirected to function: StrongNameKeyInstall)
+Entry point:@ 000007FEF30368D0
+	55                                push rbp                      IP:f30368d1
+	56                                push rsi                      IP:f30368d2
+	57                                push rdi                      IP:f30368d3
+	48 83 EC 50                       sub rsp, 0x50                 IP:f30368d7
+Relocated entry point:@ 000007FEF33F03A3
+	55                                push rbp                      IP:f33f03a4
+	56                                push rsi                      IP:f33f03a5
+	57                                push rdi                      IP:f33f03a6
+	48 83 EC 50                       sub rsp, 0x50                 IP:f33f03aa
+
+Function: StrongNameKeyDelete
+	(redirected to function: StrongNameSignatureGeneration)
+Entry point:@ 000007FEF3036A60
+	57                                push rdi                      IP:f3036a61
+	48 83 EC 40                       sub rsp, 0x40                 IP:f3036a65
+Relocated entry point:@ 000007FEF33F03A3
+	57                                push rdi                      IP:f33f03a4
+	48 83 EC 40                       sub rsp, 0x40                 IP:f33f03a8
+
+Function: StrongNameKeyGen
+	(redirected to function: StrongNameSignatureGenerationEx)
+Entry point:@ 000007FEF3036B40
+	48 8B C4                          mov rax, rsp                  IP:f3036b43
+	57                                push rdi                      IP:f3036b44
+	41 56                             push r14                      IP:f3036b46
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameKeyGenEx
+	(redirected to function: StrongNameSignatureSize)
+Entry point:@ 000007FEF3036C60
+	48 8B C4                          mov rax, rsp                  IP:f3036c63
+	48 89 48 08                       mov [rax+0x8], rcx            IP:f3036c67
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	48 89 48 08                       mov [rax+0x8], rcx            IP:f33f03aa
+
+Function: StrongNameKeyInstall
+	(redirected to function: StrongNameSignatureVerification)
+Entry point:@ 000007FEF3036F00
+	56                                push rsi                      IP:f3036f01
+	57                                push rdi                      IP:f3036f02
+	41 56                             push r14                      IP:f3036f04
+	48 83 EC 50                       sub rsp, 0x50                 IP:f3036f08
+Relocated entry point:@ 000007FEF33F03A3
+	56                                push rsi                      IP:f33f03a4
+	57                                push rdi                      IP:f33f03a5
+	41 56                             push r14                      IP:f33f03a7
+	48 83 EC 50                       sub rsp, 0x50                 IP:f33f03ab
+
+Function: StrongNameSignatureGeneration
+	(redirected to function: StrongNameSignatureVerificationEx)
+Entry point:@ 000007FEF3037060
+	48 8B C4                          mov rax, rsp                  IP:f3037063
+	57                                push rdi                      IP:f3037064
+	41 56                             push r14                      IP:f3037066
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameSignatureGenerationEx
+	(redirected to function: StrongNameSignatureVerificationEx2)
+Entry point:@ 000007FEF3037140
+	55                                push rbp                      IP:f3037141
+	53                                push rbx                      IP:f3037142
+	56                                push rsi                      IP:f3037143
+	57                                push rdi                      IP:f3037144
+	41 54                             push r12                      IP:f3037146
+Relocated entry point:@ 000007FEF33F03A3
+	55                                push rbp                      IP:f33f03a4
+	53                                push rbx                      IP:f33f03a5
+	56                                push rsi                      IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 54                             push r12                      IP:f33f03a9
+
+Function: StrongNameSignatureSize
+	(redirected to function: StrongNameSignatureVerificationFromImage)
+Entry point:@ 000007FEF3037880
+	48 8B C4                          mov rax, rsp                  IP:f3037883
+	55                                push rbp                      IP:f3037884
+	41 54                             push r12                      IP:f3037886
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	55                                push rbp                      IP:f33f03a7
+	41 54                             push r12                      IP:f33f03a9
+
+Function: StrongNameSignatureVerification
+	(redirected to function: StrongNameTokenFromAssembly)
+Entry point:@ 000007FEF2BCAE80
+	48 8B C4                          mov rax, rsp                  IP:f2bcae83
+	41 56                             push r14                      IP:f2bcae85
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: StrongNameSignatureVerificationEx
+	(redirected to function: StrongNameTokenFromAssemblyEx)
+Entry point:@ 000007FEF3037BE0
+	48 8B C4                          mov rax, rsp                  IP:f3037be3
+	41 56                             push r14                      IP:f3037be5
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: StrongNameSignatureVerificationEx2
+	(redirected to function: StrongNameTokenFromPublicKey)
+Entry point:@ 000007FEF3037CB0
+	48 8B C4                          mov rax, rsp                  IP:f3037cb3
+	57                                push rdi                      IP:f3037cb4
+	41 56                             push r14                      IP:f3037cb6
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameSignatureVerificationFromImage
+	(redirected to function: TranslateSecurityAttributes)
+Entry point:@ 000007FEF3037DD0
+	48 8B C4                          mov rax, rsp                  IP:f3037dd3
+	57                                push rdi                      IP:f3037dd4
+	41 56                             push r14                      IP:f3037dd6
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	57                                push rdi                      IP:f33f03a7
+	41 56                             push r14                      IP:f33f03a9
+
+Function: StrongNameTokenFromAssembly
+	(redirected to function: _AxlGetIssuerPublicKeyHash)
+Entry point:@ 000007FEF3037F20
+	48 8B C4                          mov rax, rsp                  IP:f3037f23
+	41 56                             push r14                      IP:f3037f25
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	41 56                             push r14                      IP:f33f03a8
+
+Function: StrongNameTokenFromAssemblyEx
+	(redirected to function: _AxlPublicKeyBlobToPublicKeyToken)
+Entry point:@ 000007FEF3037FF0
+	48 8B C4                          mov rax, rsp                  IP:f3037ff3
+	55                                push rbp                      IP:f3037ff4
+	41 54                             push r12                      IP:f3037ff6
+Relocated entry point:@ 000007FEF33F03A3
+	48 8B C4                          mov rax, rsp                  IP:f33f03a6
+	55                                push rbp                      IP:f33f03a7
+	41 54                             push r12                      IP:f33f03a9
+
+Function: StrongNameTokenFromPublicKey
+	(redirected to function: _AxlRSAKeyValueToPublicKeyToken)
+Entry point:@ 000007FEF2B82E50
+	48 8B C4                          mov rax, rsp                  IP:f2b82e53
+	55                                push rbp                      IP:f2b82e54
+	41 54                             push r12                      IP:f2b82e56
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	55                                push rbp                      IP:f29f03a7
+	41 54                             push r12                      IP:f29f03a9
+
+Function: TranslateSecurityAttributes
+	(redirected to function: _CorDllMain)
+Entry point:@ 000007FEF2E1A780
+	48 8B C4                          mov rax, rsp                  IP:f2e1a783
+	41 56                             push r14                      IP:f2e1a785
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	41 56                             push r14                      IP:f29f03a8
+
+Function: _AxlGetIssuerPublicKeyHash
+	(redirected to function: CoEEShutDownCOM)
+Entry point:@ 000007FEF2BE93C0
+	4C 8B DC                          mov r11, rsp                  IP:f2be93c3
+	53                                push rbx                      IP:f2be93c4
+	48 83 EC 70                       sub rsp, 0x70                 IP:f2be93c8
+Relocated entry point:@ 000007FEF29F03A3
+	4C 8B DC                          mov r11, rsp                  IP:f29f03a6
+	53                                push rbx                      IP:f29f03a7
+	48 83 EC 70                       sub rsp, 0x70                 IP:f29f03ab
+
+Function: _AxlPublicKeyBlobToPublicKeyToken
+	(redirected to function: CoInitializeCor)
+Entry point:@ 000007FEF2BE8F30
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:f2be8f35
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:f29f03a8
+
+Function: _AxlRSAKeyValueToPublicKeyToken
+	(redirected to function: CoInitializeEE)
+Entry point:@ 000007FEF2BE8FE0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f2be8fe5
+Relocated entry point:@ 000007FEF29F03A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:f29f03a8
+
+Function: _CorDllMain
+	(redirected to function: _CorExeMain)
+Entry point:@ 000007FEF2DE55A0
+	48 8B C4                          mov rax, rsp                  IP:f2de55a3
+	48 83 EC 58                       sub rsp, 0x58                 IP:f2de55a7
+Relocated entry point:@ 000007FEF29F03A3
+	48 8B C4                          mov rax, rsp                  IP:f29f03a6
+	48 83 EC 58                       sub rsp, 0x58                 IP:f29f03aa
+
+Function: _CorExeMain
+	(redirected to function: _CorExeMain2)
+Entry point:@ 000007FEF2A6F0B0
+	48 83 EC 38                       sub rsp, 0x38                 IP:f2a6f0b4
+	48 83 64 24 40 00                 and qword [rsp+0x40], 0x0     IP:f2a6f0ba
+Relocated entry point:@ 000007FEF29F03A3
+	48 83 EC 38                       sub rsp, 0x38                 IP:f29f03a7
+	48 83 64 24 40 00                 and qword [rsp+0x40], 0x0     IP:f29f03ad
+
+Function: _CorExeMain2
+ERROR: Ordinal redirect out of range

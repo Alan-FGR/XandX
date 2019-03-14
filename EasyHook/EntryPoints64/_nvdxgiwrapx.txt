@@ -1,0 +1,29 @@
+
+Function: Hook
+	(redirected to function: Unhook)
+Entry point:@ 000007FEF8B51430
+	48 83 EC 28                       sub rsp, 0x28                 IP:f8b51434
+	E8 D7 FB FF FF                    call 0xfffffffffffffbdc       IP:f8b51439
+Relocated entry point:@ 000007FEF8B403A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:f8b403a7
+	48 B8 10 10 B5 F8 FE 07 00 00     mov rax, 0x7fef8b51010        IP:f8b403b1
+	FF D0                             call rax                      IP:f8b403b3
+
+Function: Unhook
+	(redirected to function: initialise)
+Entry point:@ 000007FEF8B51570
+	48 83 EC 28                       sub rsp, 0x28                 IP:f8b51574
+	E8 C7 FC FF FF                    call 0xfffffffffffffccc       IP:f8b51579
+Relocated entry point:@ 000007FEF8B403A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:f8b403a7
+	48 B8 40 12 B5 F8 FE 07 00 00     mov rax, 0x7fef8b51240        IP:f8b403b1
+	FF D0                             call rax                      IP:f8b403b3
+
+Function: initialise
+	(redirected to function: Hook)
+Entry point:@ 000007FEF8B51590
+	80 E1 01                          and cl, 0x1                   IP:f8b51593
+	88 0D A8 B1 01 00                 mov [rip+0x1b1a8], cl         IP:f8b51599
+Relocated entry point:@ 000007FEF8B403A3
+	80 E1 01                          and cl, 0x1                   IP:f8b403a6
+	88 0D 95 C3 02 00                 mov [rip+0x2c395], cl         IP:f8b403ac

@@ -1,0 +1,605 @@
+
+Function: CtfImeAssociateFocus
+	(redirected to function: CtfImeConfigure)
+Entry point:@ 000007FEFCF4383C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf43841
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeConfigure
+	(redirected to function: CtfImeConversionList)
+Entry point:@ 000007FEFCF81B38
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf81b3d
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeConversionList
+	(redirected to function: CtfImeCreateInputContext)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeCreateInputContext
+	(redirected to function: CtfImeCreateThreadMgr)
+Entry point:@ 000007FEFCF4EB70
+	FF F3                             push rbx                      IP:fcf4eb72
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf4eb76
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf303a9
+
+Function: CtfImeCreateThreadMgr
+	(redirected to function: CtfImeDestroy)
+Entry point:@ 000007FEFCF4D5C0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf4d5c5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeDestroy
+	(redirected to function: CtfImeDestroyInputContext)
+Entry point:@ 000007FEFCF81BFC
+	48 83 EC 28                       sub rsp, 0x28                 IP:fcf81c00
+	33 C9                             xor ecx, ecx                  IP:fcf81c02
+Relocated entry point:@ 000007FEFCF303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fcf303a7
+	33 C9                             xor ecx, ecx                  IP:fcf303a9
+
+Function: CtfImeDestroyInputContext
+	(redirected to function: CtfImeDestroyThreadMgr)
+Entry point:@ 000007FEFCF5F0F4
+	FF F3                             push rbx                      IP:fcf5f0f6
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf5f0fa
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf303a9
+
+Function: CtfImeDestroyThreadMgr
+	(redirected to function: CtfImeDispatchDefImeMessage)
+Entry point:@ 000007FEFCF56B90
+	FF F3                             push rbx                      IP:fcf56b92
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf56b96
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf303a9
+
+Function: CtfImeDispatchDefImeMessage
+	(redirected to function: CtfImeEnumRegisterWord)
+Entry point:@ 000007FEFCF41FE4
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf41fe9
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeEnumRegisterWord
+	(redirected to function: CtfImeEscape)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeEscape
+	(redirected to function: CtfImeEscapeEx)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeEscapeEx
+	(redirected to function: CtfImeGetGuidAtom)
+Entry point:@ 000007FEFCF81E0C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf81e11
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeGetGuidAtom
+	(redirected to function: CtfImeGetRegisterWordStyle)
+Entry point:@ 000007FEFCF81E84
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf81e89
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeGetRegisterWordStyle
+	(redirected to function: CtfImeInquire)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeInquire
+	(redirected to function: CtfImeInquireExW)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeInquireExW
+	(redirected to function: CtfImeIsGuidMapEnable)
+Entry point:@ 000007FEFCF51B14
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf51b19
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeIsGuidMapEnable
+	(redirected to function: CtfImeIsIME)
+Entry point:@ 000007FEFCF81EE0
+	FF F3                             push rbx                      IP:fcf81ee2
+	48 83 EC 40                       sub rsp, 0x40                 IP:fcf81ee6
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 40                       sub rsp, 0x40                 IP:fcf303a9
+
+Function: CtfImeIsIME
+	(redirected to function: CtfImeProcessCicHotkey)
+Entry point:@ 000007FEFCF81F3C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf81f41
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeProcessCicHotkey
+	(redirected to function: CtfImeProcessKey)
+Entry point:@ 000007FEFCF609B8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf609bd
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeProcessKey
+	(redirected to function: CtfImeRegisterWord)
+Entry point:@ 000007FEFCF60618
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf6061d
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeRegisterWord
+	(redirected to function: CtfImeSelect)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeSelect
+	(redirected to function: CtfImeSelectEx)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfImeSelectEx
+	(redirected to function: CtfImeSetActiveContext)
+Entry point:@ 000007FEFCF46E5C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf46e61
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeSetActiveContext
+	(redirected to function: CtfImeSetCompositionString)
+Entry point:@ 000007FEFCF43708
+	EB 06                             jmp 0x8                       IP:fcf4370a
+	90                                nop                           IP:fcf4370b
+	90                                nop                           IP:fcf4370c
+	90                                nop                           IP:fcf4370d
+Relocated entry point:@ 000007FEFCF303A3
+	48 B8 10 37 F4 FC FE 07 00 00     mov rax, 0x7fefcf43710        IP:fcf303ad
+	FF E0                             jmp rax                       IP:fcf303af
+	90                                nop                           IP:fcf303b0
+	90                                nop                           IP:fcf303b1
+	90                                nop                           IP:fcf303b2
+
+Function: CtfImeSetCompositionString
+	(redirected to function: CtfImeSetFocus)
+Entry point:@ 000007FEFCF81C20
+	48 8B C4                          mov rax, rsp                  IP:fcf81c23
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcf81c27
+Relocated entry point:@ 000007FEFCF303A3
+	48 8B C4                          mov rax, rsp                  IP:fcf303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcf303aa
+
+Function: CtfImeSetFocus
+	(redirected to function: CtfImeToAsciiEx)
+Entry point:@ 000007FEFCF81DB0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf81db5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: CtfImeToAsciiEx
+	(redirected to function: CtfImeUnregisterWord)
+Entry point:@ 000007FEFCF81CE0
+	48 8B C4                          mov rax, rsp                  IP:fcf81ce3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcf81ce7
+Relocated entry point:@ 000007FEFCF303A3
+	48 8B C4                          mov rax, rsp                  IP:fcf303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcf303aa
+
+Function: CtfImeUnregisterWord
+	(redirected to function: CtfNotifyIME)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: CtfNotifyIME
+	(redirected to function: DllCanUnloadNow)
+Entry point:@ 000007FEFCF62FD0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf62fd5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: DllCanUnloadNow
+	(redirected to function: DllGetClassObject)
+Entry point:@ 000007FEFCF5F030
+	33 C0                             xor eax, eax                  IP:fcf5f032
+	39 05 88 A3 09 00                 cmp [rip+0x9a388], eax        IP:fcf5f038
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	39 05 15 90 0C 00                 cmp [rip+0xc9015], eax        IP:fcf303ab
+
+Function: DllGetClassObject
+	(redirected to function: DllRegisterServer)
+Entry point:@ 000007FEFCF584F0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf584f5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: DllRegisterServer
+	(redirected to function: DllUnregisterServer)
+Entry point:@ 000007FEFCF7F300
+	4C 8B DC                          mov r11, rsp                  IP:fcf7f303
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fcf7f307
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B DC                          mov r11, rsp                  IP:fcf303a6
+	49 89 5B 08                       mov [r11+0x8], rbx            IP:fcf303aa
+
+Function: DllUnregisterServer
+	(redirected to function: SetInputScope)
+Entry point:@ 000007FEFCF7F6BC
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf7f6c1
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: SetInputScope
+	(redirected to function: SetInputScopeXML)
+Entry point:@ 000007FEFCF69908
+	89 54 24 10                       mov [rsp+0x10], edx           IP:fcf6990c
+	4C 8B DC                          mov r11, rsp                  IP:fcf6990f
+Relocated entry point:@ 000007FEFCF303A3
+	89 54 24 10                       mov [rsp+0x10], edx           IP:fcf303a7
+	4C 8B DC                          mov r11, rsp                  IP:fcf303aa
+
+Function: SetInputScopeXML
+	(redirected to function: SetInputScopes)
+Entry point:@ 000007FEFCFAFD04
+	4C 8B DC                          mov r11, rsp                  IP:fcfafd07
+	48 83 EC 58                       sub rsp, 0x58                 IP:fcfafd0b
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B DC                          mov r11, rsp                  IP:fcf303a6
+	48 83 EC 58                       sub rsp, 0x58                 IP:fcf303aa
+
+Function: SetInputScopes
+	(redirected to function: SetInputScopes2)
+Entry point:@ 000007FEFCFAFCC0
+	4C 8B DC                          mov r11, rsp                  IP:fcfafcc3
+	48 83 EC 58                       sub rsp, 0x58                 IP:fcfafcc7
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B DC                          mov r11, rsp                  IP:fcf303a6
+	48 83 EC 58                       sub rsp, 0x58                 IP:fcf303aa
+
+Function: SetInputScopes2
+	(redirected to function: TF_CUASAppFix)
+Entry point:@ 000007FEFCF69464
+	4C 8B DC                          mov r11, rsp                  IP:fcf69467
+	48 83 EC 58                       sub rsp, 0x58                 IP:fcf6946b
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B DC                          mov r11, rsp                  IP:fcf303a6
+	48 83 EC 58                       sub rsp, 0x58                 IP:fcf303aa
+
+Function: TF_CUASAppFix
+	(redirected to function: TF_CanUninitialize)
+Entry point:@ 000007FEFCF8156C
+	48 83 EC 28                       sub rsp, 0x28                 IP:fcf81570
+	48 85 C9                          test rcx, rcx                 IP:fcf81573
+Relocated entry point:@ 000007FEFCF303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fcf303a7
+	48 85 C9                          test rcx, rcx                 IP:fcf303aa
+
+Function: TF_CanUninitialize
+	(redirected to function: TF_CleanUpPrivateMessages)
+Entry point:@ 000007FEFCF61968
+	48 83 EC 28                       sub rsp, 0x28                 IP:fcf6196c
+	8B 0D CE 76 09 00                 mov ecx, [rip+0x976ce]        IP:fcf61972
+Relocated entry point:@ 000007FEFCF303A3
+	48 83 EC 28                       sub rsp, 0x28                 IP:fcf303a7
+	8B 0D 93 8C 0C 00                 mov ecx, [rip+0xc8c93]        IP:fcf303ad
+
+Function: TF_CleanUpPrivateMessages
+	(redirected to function: TF_CreateCategoryMgr)
+Entry point:@ 000007FEFCF5708C
+	FF F3                             push rbx                      IP:fcf5708e
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf57092
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf303a9
+
+Function: TF_CreateCategoryMgr
+	(redirected to function: TF_CreateCicLoadMutex)
+Entry point:@ 000007FEFCF5E9FC
+	4C 8B C1                          mov r8, rcx                   IP:fcf5e9ff
+	48 8D 15 4A 70 08 00              lea rdx, [rip+0x8704a]        IP:fcf5ea06
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B C1                          mov r8, rcx                   IP:fcf303a6
+	48 8D 15 A3 56 0B 00              lea rdx, [rip+0xb56a3]        IP:fcf303ad
+
+Function: TF_CreateCicLoadMutex
+	(redirected to function: TF_CreateCicLoadWinStaMutex)
+Entry point:@ 000007FEFCF5A7C0
+	FF F3                             push rbx                      IP:fcf5a7c2
+	48 81 EC 60 02 00 00              sub rsp, 0x260                IP:fcf5a7c9
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 81 EC 60 02 00 00              sub rsp, 0x260                IP:fcf303ac
+
+Function: TF_CreateCicLoadWinStaMutex
+	(redirected to function: TF_CreateDisplayAttributeMgr)
+Entry point:@ 000007FEFCF5ECF0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf5ecf5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_CreateDisplayAttributeMgr
+	(redirected to function: TF_CreateInputProcessorProfiles)
+Entry point:@ 000007FEFCF81288
+	4C 8B C1                          mov r8, rcx                   IP:fcf8128b
+	48 8D 15 86 5D 06 00              lea rdx, [rip+0x65d86]        IP:fcf81292
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B C1                          mov r8, rcx                   IP:fcf303a6
+	48 8D 15 6B 6C 0B 00              lea rdx, [rip+0xb6c6b]        IP:fcf303ad
+
+Function: TF_CreateInputProcessorProfiles
+	(redirected to function: TF_CreateLangBarItemMgr)
+Entry point:@ 000007FEFCF812A0
+	4C 8B C1                          mov r8, rcx                   IP:fcf812a3
+	48 8D 15 96 4D 06 00              lea rdx, [rip+0x64d96]        IP:fcf812aa
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B C1                          mov r8, rcx                   IP:fcf303a6
+	48 8D 15 93 5C 0B 00              lea rdx, [rip+0xb5c93]        IP:fcf303ad
+
+Function: TF_CreateLangBarItemMgr
+	(redirected to function: TF_CreateLangBarMgr)
+Entry point:@ 000007FEFCF812C0
+	4C 8B C1                          mov r8, rcx                   IP:fcf812c3
+	48 8D 15 76 3B 06 00              lea rdx, [rip+0x63b76]        IP:fcf812ca
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B C1                          mov r8, rcx                   IP:fcf303a6
+	48 8D 15 93 4A 0B 00              lea rdx, [rip+0xb4a93]        IP:fcf303ad
+
+Function: TF_CreateLangBarMgr
+	(redirected to function: TF_CreateThreadMgr)
+Entry point:@ 000007FEFCF59A90
+	4C 8B C1                          mov r8, rcx                   IP:fcf59a93
+	48 8D 15 BE EA 08 00              lea rdx, [rip+0x8eabe]        IP:fcf59a9a
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B C1                          mov r8, rcx                   IP:fcf303a6
+	48 8D 15 AB 81 0B 00              lea rdx, [rip+0xb81ab]        IP:fcf303ad
+
+Function: TF_CreateThreadMgr
+	(redirected to function: TF_GetAppCompatFlags)
+Entry point:@ 000007FEFCF81270
+	4C 8B C1                          mov r8, rcx                   IP:fcf81273
+	48 8D 15 6E 33 06 00              lea rdx, [rip+0x6336e]        IP:fcf8127a
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B C1                          mov r8, rcx                   IP:fcf303a6
+	48 8D 15 3B 42 0B 00              lea rdx, [rip+0xb423b]        IP:fcf303ad
+
+Function: TF_GetAppCompatFlags
+	(redirected to function: TF_GetCompatibleKeyboardLayout)
+Entry point:@ 000007FEFCF42310
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf42315
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_GetCompatibleKeyboardLayout
+	(redirected to function: TF_GetGlobalCompartment)
+Entry point:@ 000007FEFCF819F4
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fcf819f9
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fcf303a8
+
+Function: TF_GetGlobalCompartment
+	(redirected to function: TF_GetInitSystemFlags)
+Entry point:@ 000007FEFCF813B0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf813b5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_GetInitSystemFlags
+	(redirected to function: TF_GetInputScope)
+Entry point:@ 000007FEFCF59E4C
+	FF F3                             push rbx                      IP:fcf59e4e
+	48 83 EC 70                       sub rsp, 0x70                 IP:fcf59e52
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 70                       sub rsp, 0x70                 IP:fcf303a9
+
+Function: TF_GetInputScope
+	(redirected to function: TF_GetShowFloatingStatus)
+Entry point:@ 000007FEFCF53120
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf53125
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_GetShowFloatingStatus
+	(redirected to function: TF_GetThreadFlags)
+Entry point:@ 000007FEFCF59F88
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf59f8d
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_GetThreadFlags
+	(redirected to function: TF_GetThreadMgr)
+Entry point:@ 000007FEFCF42E4C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf42e51
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_GetThreadMgr
+	(redirected to function: TF_InitSystem)
+Entry point:@ 000007FEFCF60A90
+	FF F3                             push rbx                      IP:fcf60a92
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf60a96
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf303a9
+
+Function: TF_InitSystem
+	(redirected to function: TF_InvalidAssemblyListCacheIfExist)
+Entry point:@ 000007FEFCF5A2C4
+	FF F3                             push rbx                      IP:fcf5a2c6
+	55                                push rbp                      IP:fcf5a2c7
+	56                                push rsi                      IP:fcf5a2c8
+	57                                push rdi                      IP:fcf5a2c9
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	55                                push rbp                      IP:fcf303a6
+	56                                push rsi                      IP:fcf303a7
+	57                                push rdi                      IP:fcf303a8
+
+Function: TF_InvalidAssemblyListCacheIfExist
+	(redirected to function: TF_IsCtfmonRunning)
+Entry point:@ 000007FEFCF42410
+	33 C0                             xor eax, eax                  IP:fcf42412
+	C3                                ret                           IP:fcf42413
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf42417
+Relocated entry point:@ 000007FEFCF303A3
+	33 C0                             xor eax, eax                  IP:fcf303a5
+	C3                                ret                           IP:fcf303a6
+	41 83 FD 02                       cmp r13d, 0x2                 IP:fcf303aa
+
+Function: TF_IsCtfmonRunning
+	(redirected to function: TF_IsThreadWithFlags)
+Entry point:@ 000007FEFCF8B2F0
+	E9 27 EF FD FF                    jmp 0xfffffffffffdef2c        IP:fcf8b2f5
+Relocated entry point:@ 000007FEFCF303A3
+	48 B8 1C A2 F6 FC FE 07 00 00     mov rax, 0x7fefcf6a21c        IP:fcf303ad
+	FF E0                             jmp rax                       IP:fcf303af
+
+Function: TF_IsThreadWithFlags
+	(redirected to function: TF_MapCompatibleHKL)
+Entry point:@ 000007FEFCF42F74
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf42f79
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_MapCompatibleHKL
+	(redirected to function: TF_MapCompatibleKeyboardTip)
+Entry point:@ 000007FEFCF815B0
+	48 8B C4                          mov rax, rsp                  IP:fcf815b3
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcf815b7
+Relocated entry point:@ 000007FEFCF303A3
+	48 8B C4                          mov rax, rsp                  IP:fcf303a6
+	48 89 58 08                       mov [rax+0x8], rbx            IP:fcf303aa
+
+Function: TF_MapCompatibleKeyboardTip
+	(redirected to function: TF_Notify)
+Entry point:@ 000007FEFCF815A4
+	E9 47 E3 FF FF                    jmp 0xffffffffffffe34c        IP:fcf815a9
+Relocated entry point:@ 000007FEFCF303A3
+	48 B8 F0 F8 F7 FC FE 07 00 00     mov rax, 0x7fefcf7f8f0        IP:fcf303ad
+	FF E0                             jmp rax                       IP:fcf303af
+
+Function: TF_Notify
+	(redirected to function: TF_PostAllThreadMsg)
+Entry point:@ 000007FEFCF41C90
+	4C 89 44 24 18                    mov [rsp+0x18], r8            IP:fcf41c95
+Relocated entry point:@ 000007FEFCF303A3
+	4C 89 44 24 18                    mov [rsp+0x18], r8            IP:fcf303a8
+
+Function: TF_PostAllThreadMsg
+	(redirected to function: TF_RunInputCPL)
+Entry point:@ 000007FEFCF812D8
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf812dd
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_RunInputCPL
+	(redirected to function: CtfImeAssociateFocus)
+Entry point:@ 000007FEFCFA588C
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcfa5891
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_SendLangBandMsg
+Entry point:@ 000007FEFCF5EE38
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf5ee3d
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_SetDefaultRemoteKeyboardLayout
+Entry point:@ 000007FEFCF8175C
+	4C 8B DC                          mov r11, rsp                  IP:fcf8175f
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fcf81763
+Relocated entry point:@ 000007FEFCF303A3
+	4C 8B DC                          mov r11, rsp                  IP:fcf303a6
+	49 89 5B 18                       mov [r11+0x18], rbx           IP:fcf303aa
+
+Function: TF_SetShowFloatingStatus
+Entry point:@ 000007FEFCFB3418
+	EB 06                             jmp 0x8                       IP:fcfb341a
+	90                                nop                           IP:fcfb341b
+	90                                nop                           IP:fcfb341c
+	90                                nop                           IP:fcfb341d
+Relocated entry point:@ 000007FEFCF303A3
+	48 B8 20 34 FB FC FE 07 00 00     mov rax, 0x7fefcfb3420        IP:fcf303ad
+	FF E0                             jmp rax                       IP:fcf303af
+	90                                nop                           IP:fcf303b0
+	90                                nop                           IP:fcf303b1
+	90                                nop                           IP:fcf303b2
+
+Function: TF_SetThreadFlags
+Entry point:@ 000007FEFCF5EDF0
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf5edf5
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 08                    mov [rsp+0x8], rbx            IP:fcf303a8
+
+Function: TF_UninitSystem
+Entry point:@ 000007FEFCF5969C
+	FF F3                             push rbx                      IP:fcf5969e
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf596a2
+Relocated entry point:@ 000007FEFCF303A3
+	FF F3                             push rbx                      IP:fcf303a5
+	48 83 EC 20                       sub rsp, 0x20                 IP:fcf303a9
+
+Function: TF_WaitForInitialized
+Entry point:@ 000007FEFCF8166C
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fcf81671
+Relocated entry point:@ 000007FEFCF303A3
+	48 89 5C 24 10                    mov [rsp+0x10], rbx           IP:fcf303a8
