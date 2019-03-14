@@ -145,8 +145,12 @@ BOOL WINAPI itcpShowWindow(_In_ HWND hWnd, _In_ int nCmdShow) {
 		)
 	{
 		if (params.mode == HookMode::Reapply) {
-			SetWindowLongPtr(hWnd, GWL_STYLE, WS_POPUP);
-			SetWindowPos(hWnd, HWND_TOP, 0, 0, 600, 600, SWP_NOMOVE | SWP_NOREPOSITION | SWP_SHOWWINDOW);
+			if (params.borderLess)
+				SetWindowLongPtr(hWnd, GWL_STYLE, WS_POPUP);
+			SetWindowPos(hWnd, HWND_TOP,
+				HP(0, params.windowPosX), HP(0, params.windowPosY),
+				HP(params.fakeClientWidth, params.windowWidth), HP(params.fakeClientHeight, params.windowHeight),
+				SWP_NOMOVE | SWP_NOREPOSITION | SWP_SHOWWINDOW);
 		}
 	}
 

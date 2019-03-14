@@ -117,7 +117,7 @@ int main(int argc, char* argv[])
     memset(&si, 0, sizeof STARTUPINFO);
     memset(&pi, 0, sizeof PROCESS_INFORMATION);
 
-    const WCHAR* dllToInject = L"Hooking2dll.dll";
+    const WCHAR* dllToInject = L"Library.dll";
     wprintf(L"Attempting to inject: %s\n\n", dllToInject);
 
     ULONG pid;
