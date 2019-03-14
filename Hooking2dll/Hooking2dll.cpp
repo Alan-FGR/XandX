@@ -22,13 +22,33 @@ HookParams params;
 #define HP(x,o) (o == -1 ? x : o)
 #define IfBL(t,f) (params.borderLess ? t : f)
 
+void UpdateWindowRect(LPRECT& lpRect)
+{
+	if (params.windowPosX >= 0) {
+		lpRect->left = params.windowPosX;
+		lpRect->top  = params.windowPosY;
+	}
+	if (params.mode == HookMode::Modify && params.windowWidth >= 0) {
+		lpRect->right = lpRect->left + params.windowWidth;
+		lpRect->bottom = lpRect->top + params.windowHeight;
+	}
+}
+
 HWND WINAPI itcpCreateWindowExW(_In_ DWORD dwExStyle, _In_opt_ LPCWSTR lpClassName, _In_opt_ LPCWSTR lpWindowName, _In_ DWORD dwStyle, _In_ int X, _In_ int Y, _In_ int nWidth, _In_ int nHeight, _In_opt_ HWND hWndParent, _In_opt_ HMENU hMenu, _In_opt_ HINSTANCE hInstance, _In_opt_ LPVOID lpParam) {
 #if _DEBUG
 	printf("INTERCEPTED CreateWindowExW\n");
 #endif
-	auto r = CreateWindowExW(dwExStyle, lpClassName, lpWindowName, IfBL(WS_POPUP, dwStyle),
-		HP(X, params.windowPosX), HP(Y, params.windowPosY), HP(nWidth, params.windowWidth), HP(nHeight, params.windowHeight),
-		hWndParent, hMenu, hInstance, lpParam);
+	HWND r;
+	if (params.mode == HookMode::Modify)
+		r = CreateWindowExW(dwExStyle, lpClassName, lpWindowName,
+				            IfBL(WS_POPUP, dwStyle),
+				            HP(X, params.windowPosX), HP(Y, params.windowPosY),
+				            HP(nWidth, params.windowWidth), HP(nHeight, params.windowHeight),
+				            hWndParent, hMenu, hInstance, lpParam);
+	else
+		r = CreateWindowExW(dwExStyle, lpClassName, lpWindowName, dwStyle,
+		                    HP(X, params.windowPosX), HP(Y, params.windowPosY),
+		                    nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
 	return r;
 }
 
@@ -36,9 +56,17 @@ HWND WINAPI itcpCreateWindowExA(_In_ DWORD dwExStyle, _In_opt_ LPCSTR lpClassNam
 #if _DEBUG
 	printf("INTERCEPTED CreateWindowExA\n");
 #endif
-	auto r = CreateWindowExA(dwExStyle, lpClassName, lpWindowName, IfBL(WS_POPUP, dwStyle),
-		HP(X, params.windowPosX), HP(Y, params.windowPosY), HP(nWidth, params.windowWidth), HP(nHeight, params.windowHeight),
-		hWndParent, hMenu, hInstance, lpParam);
+	HWND r;
+	if (params.mode == HookMode::Modify)
+		r = CreateWindowExA(dwExStyle, lpClassName, lpWindowName,
+				            IfBL(WS_POPUP, dwStyle),
+				            HP(X, params.windowPosX), HP(Y, params.windowPosY),
+				            HP(nWidth, params.windowWidth), HP(nHeight, params.windowHeight),
+				            hWndParent, hMenu, hInstance, lpParam);
+	else
+		r = CreateWindowExA(dwExStyle, lpClassName, lpWindowName, dwStyle,
+		                    HP(X, params.windowPosX), HP(Y, params.windowPosY),
+		                    nWidth, nHeight, hWndParent, hMenu, hInstance, lpParam);
 	return r;
 }
 
@@ -46,9 +74,14 @@ BOOL WINAPI itcpMoveWindow(_In_ HWND hWnd, _In_ int X, _In_ int Y, _In_ int nWid
 #if _DEBUG
 	printf("INTERCEPTED MoveWindow\n");
 #endif
-	auto r = MoveWindow(hWnd,
-		HP(X, params.windowPosX), HP(Y, params.windowPosY), HP(nWidth, params.windowWidth), HP(nHeight, params.windowHeight),
-		bRepaint);
+	BOOL r;
+	if (params.mode == HookMode::Modify)
+		r = MoveWindow(hWnd,
+		               HP(X, params.windowPosX), HP(Y, params.windowPosY), HP(nWidth, params.windowWidth),
+		               HP(nHeight, params.windowHeight),
+		               bRepaint);
+	else
+		r = MoveWindow(hWnd, HP(X, params.windowPosX), HP(Y, params.windowPosY), nWidth, nHeight, bRepaint);
 	return r;
 }
 
@@ -56,9 +89,13 @@ BOOL WINAPI itcpSetWindowPos(_In_ HWND hWnd, _In_opt_ HWND hWndInsertAfter, _In_
 #if _DEBUG
 	printf("INTERCEPTED SetWindowPos\n");
 #endif
-	auto r = SetWindowPos(hWnd, hWndInsertAfter,
+	BOOL r;
+	if (params.mode == HookMode::Modify)
+		r = SetWindowPos(hWnd, hWndInsertAfter,
 		HP(X, params.windowPosX), HP(Y, params.windowPosY), HP(cx, params.windowWidth), HP(cy, params.windowHeight),
 		uFlags);
+	else
+		r = SetWindowPos(hWnd, hWndInsertAfter, HP(X, params.windowPosX), HP(Y, params.windowPosY), cx, cy, uFlags);
 	return r;
 }
 
@@ -66,29 +103,21 @@ BOOL WINAPI itcpGetClientRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
 #if _DEBUG
 	printf("INTERCEPTED GetClientRect\n");
 #endif
-	//TODO modes
-	lpRect->right = lpRect->left + params.fakeClientWidth;
-	lpRect->bottom = lpRect->bottom + params.fakeClientHeight;
-	auto r = GetClientRect(hWnd, lpRect);
+	BOOL r = GetClientRect(hWnd, lpRect);
+	{
+		lpRect->right = lpRect->left + params.fakeClientWidth;
+		lpRect->bottom = lpRect->bottom + params.fakeClientHeight;
+	}
 	return r;
 }
-
-
-BOOL WINAPI itcpGetWindowRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
-#if _DEBUG
-	printf("INTERCEPTED GetWindowRect\n");
-#endif
-	auto r = GetWindowRect(hWnd, lpRect);
-	return r; //TODO
-}
-
 
 BOOL WINAPI itcpAdjustWindowRect(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu) {
 #if _DEBUG
 	printf("INTERCEPTED AdjustWindowRect\n");
 #endif
 	auto r = AdjustWindowRect(lpRect, dwStyle, bMenu);
-	return r; //TODO
+	UpdateWindowRect(lpRect);
+	return r;
 }
 
 BOOL WINAPI itcpAdjustWindowRectEx(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _In_ BOOL bMenu, _In_ DWORD dwExStyle) {
@@ -96,6 +125,44 @@ BOOL WINAPI itcpAdjustWindowRectEx(_Inout_ LPRECT lpRect, _In_ DWORD dwStyle, _I
 	printf("INTERCEPTED AdjustWindowRectEx\n");
 #endif
 	auto r = AdjustWindowRectEx(lpRect, dwStyle, bMenu, dwExStyle);
+	UpdateWindowRect(lpRect);
+	return r;
+}
+
+BOOL WINAPI itcpShowWindow(_In_ HWND hWnd, _In_ int nCmdShow) {
+#if _DEBUG
+	printf("INTERCEPTED ShowWindow\n");
+#endif
+	auto r = ShowWindow(hWnd, nCmdShow);
+
+	if  (  nCmdShow == SW_MAXIMIZE       
+		|| nCmdShow == SW_RESTORE        
+		|| nCmdShow == SW_SHOW           
+		|| nCmdShow == SW_SHOWDEFAULT    
+		|| nCmdShow == SW_SHOWMAXIMIZED  
+		|| nCmdShow == SW_SHOWNA         
+		|| nCmdShow == SW_SHOWNOACTIVATE 
+		|| nCmdShow == SW_SHOWNORMAL
+		)
+	{
+		if (params.mode == HookMode::Reapply) {
+			SetWindowLongPtr(hWnd, GWL_STYLE, WS_POPUP);
+			SetWindowPos(hWnd, HWND_TOP, 0, 0, 600, 600, SWP_NOMOVE | SWP_NOREPOSITION | SWP_SHOWWINDOW);
+		}
+	}
+
+	return r; //TODO
+}
+
+
+
+#if _DEBUG
+
+BOOL WINAPI itcpGetWindowRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
+#if _DEBUG
+	printf("INTERCEPTED GetWindowRect\n");
+#endif
+	auto r = GetWindowRect(hWnd, lpRect);
 	return r; //TODO
 }
 
@@ -117,7 +184,6 @@ BOOL WINAPI itcpGetWindowPlacement(_In_ HWND hWnd, _Inout_ WINDOWPLACEMENT* lpwn
 	return r; //TODO
 }
 
-
 BOOL WINAPI itcpSetWindowPlacement(_In_ HWND hWnd, _In_ CONST WINDOWPLACEMENT* lpwndpl) {
 #if _DEBUG
 	printf("INTERCEPTED SetWindowPlacement\n");
@@ -125,16 +191,6 @@ BOOL WINAPI itcpSetWindowPlacement(_In_ HWND hWnd, _In_ CONST WINDOWPLACEMENT* l
 	auto r = SetWindowPlacement(hWnd, lpwndpl);
 	return r; //TODO
 }
-
-
-BOOL WINAPI itcpShowWindow(_In_ HWND hWnd, _In_ int nCmdShow) {
-#if _DEBUG
-	printf("INTERCEPTED ShowWindow\n");
-#endif
-	auto r = ShowWindow(hWnd, nCmdShow);
-	return r; //TODO
-}
-
 
 BOOL WINAPI itcpClientToScreen(_In_ HWND hWnd, _Inout_ LPPOINT lpPoint) {
 #if _DEBUG
@@ -153,7 +209,7 @@ BOOL WINAPI itcpScreenToClient(_In_ HWND hWnd, _Inout_ LPPOINT lpPoint) {
 	return r; //TODO
 }
 
-
+#endif
 
 
 
@@ -178,12 +234,12 @@ HOOK_TRACE_INFO Hook(const char* funcName, void* calledFunc)
 	{
 		std::wstring s(RtlGetLastErrorString());
 		std::wcout << "Failed to install hook: ";
-		std::wcout << s;
+		std::wcout << s << std::endl;
 	}
 	else
 	{
 		std::wcout << "Hook installed successfully: ";
-		std::wcout << funcName;
+		std::wcout << funcName << std::endl;
 	}
 
 	// If the threadId in the ACL is set to 0,
@@ -200,9 +256,7 @@ extern "C" __declspec(dllexport) void __stdcall NativeInjectionEntryPoint(REMOTE
 {
     std::cout << "\nINJECTION ENTRY POINT REACHED!\n";
 
-    HookParams hpars = *reinterpret_cast<HookParams*>(inRemoteInfo->UserData);
-
-    std::cout << hpars.fakeClientWidth << std::endl;
+    params = *reinterpret_cast<HookParams*>(inRemoteInfo->UserData);
 
 	std::vector<HOOK_TRACE_INFO> hooks;
 
@@ -211,21 +265,24 @@ extern "C" __declspec(dllexport) void __stdcall NativeInjectionEntryPoint(REMOTE
 	hooks.emplace_back(Hook("MoveWindow", itcpMoveWindow));
 	hooks.emplace_back(Hook("SetWindowPos", itcpSetWindowPos));
 	hooks.emplace_back(Hook("GetClientRect", itcpGetClientRect));
-	hooks.emplace_back(Hook("GetWindowRect", itcpGetWindowRect));
-	hooks.emplace_back(Hook("AdjustWindowRect", itcpAdjustWindowRect));
-	hooks.emplace_back(Hook("AdjustWindowRectEx", itcpAdjustWindowRectEx));
 	hooks.emplace_back(Hook("MoveWindow", itcpMoveWindow));
 	hooks.emplace_back(Hook("SetWindowPos", itcpSetWindowPos));
-	hooks.emplace_back(Hook("GetWindowPlacement", itcpGetWindowPlacement));
-	hooks.emplace_back(Hook("SetWindowPlacement", itcpSetWindowPlacement));
+	hooks.emplace_back(Hook("AdjustWindowRect", itcpAdjustWindowRect));
+	hooks.emplace_back(Hook("AdjustWindowRectEx", itcpAdjustWindowRectEx));
 	hooks.emplace_back(Hook("ShowWindow", itcpShowWindow));
-	hooks.emplace_back(Hook("ClientToScreen", itcpClientToScreen));
-	hooks.emplace_back(Hook("ScreenToClient", itcpScreenToClient));
 
+#if _DEBUG
+	hooks.emplace_back(Hook("GetWindowRect", itcpGetWindowRect));
 #if(WINVER >= 0x0605)
 	hooks.emplace_back(Hook("AdjustWindowRectExForDpi", itcpAdjustWindowRectExForDpi));
 #endif
+	hooks.emplace_back(Hook("GetWindowPlacement", itcpGetWindowPlacement));
+	hooks.emplace_back(Hook("SetWindowPlacement", itcpSetWindowPlacement));
+	hooks.emplace_back(Hook("ClientToScreen", itcpClientToScreen));
+	hooks.emplace_back(Hook("ScreenToClient", itcpScreenToClient));
+#endif
 
+	
     RhWakeUpProcess();
 
 	//WaitForSingleObject(OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, false, inRemoteInfo->HostPID), INFINITE);

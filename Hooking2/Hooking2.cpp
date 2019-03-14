@@ -43,6 +43,7 @@ int main(int argc, char* argv[])
             ("p,windowPos", "Internal Window Position", cxxopts::value<std::string>())
             ("w,forceWindow", "Force Windowed Mode (TODO)")//TODO
             ("b,borderless", "Borderless Window")
+            ("m,mode", "Interception Mode", cxxopts::value<std::string>())
             ;
 
         if (argc < 3)
@@ -54,11 +55,14 @@ int main(int argc, char* argv[])
             auto optHelp = options.help();
             cout << optHelp.substr(optHelp.find("]")+3, optHelp.length());
             pl("NOTE: All sizes are in the format WIDTHxHEIGHT, example: 1280x720\n");
+            pl("Available interception modes: reapply (default), modify\n");
             pl("Examples:");
-            pl("  Run with custom client size of 720x480:");
-            pl("    cc.exe 720x480 SomeProgram.exe");
+            pl("  Run with custom client size of 640x480:");
+            pl("    cc.exe 640x480 SomeProgram.exe");
             pl("  Run with custom client size and place borderless 800x600 window at 100x200");
-            pl("    cc.exe 720x480 -s 800x600 -p 100x200 -b SomeProgram.exe");
+            pl("    cc.exe 640x480 -s 800x600 -p 100x200 -b SomeProgram.exe");
+			pl("  Run with custom client size of 640x480 and 'modify' interception mode:");
+            pl("    cc.exe 640x480 -m=modify SomeProgram.exe");
             exit(-1);
         }
 
@@ -88,8 +92,21 @@ int main(int argc, char* argv[])
             hpars.borderLess = true;
         }
 
+		if (pars.count("m"))
+        {
+            pl("Found mode flag.");
+			if (pars["p"].as<std::string>() == "modify")
+				hpars.mode = HookMode::Modify;
+			else if (pars["p"].as<std::string>() == "reapply")
+				hpars.mode = HookMode::Reapply;
+			else
+				pl("invalid mode, defaulting to reapply...");
+        }
+
         pl("Parsing client size...");
         std::tuple<int16_t, int16_t> clientSize = parseSize(argv[1]);
+		hpars.fakeClientWidth = std::get<0>(clientSize);
+		hpars.fakeClientHeight = std::get<1>(clientSize);
         const char* binChars = argv[argc - 1];
 
         pl("Parsing program name...");
@@ -106,9 +123,8 @@ int main(int argc, char* argv[])
     memset(&si, 0, sizeof STARTUPINFO);
     memset(&pi, 0, sizeof PROCESS_INFORMATION);
 
-    //auto hr = CreateProcess(binWChars, nullptr, nullptr, nullptr, true, 0, nullptr, nullptr, &si, &pi);
-
-    const WCHAR* dllToInject = L"C:/Projects/RetroX/x64/Release/Hooking2dll.dll";
+    //const WCHAR* dllToInject = L"C:/Projects/RetroX/x64/Release/Hooking2dll.dll";
+    const WCHAR* dllToInject = L"Hooking2dll.dll";
     wprintf(L"Attempting to inject: %s\n\n", dllToInject);
 
     ULONG pid;
@@ -123,29 +139,11 @@ int main(int argc, char* argv[])
 #endif
         addr, sizeof HookParams, &pid);
 
-    // NTSTATUS nt = RhInjectLibrary(
-    //     pi.dwProcessId,   // The process to inject into
-    //     0,           // ThreadId to wake up upon injection
-    //     EASYHOOK_INJECT_DEFAULT,
-    //     NULL, // 32-bit
-    //     (WCHAR*)dllToInject,		 // 64-bit not provided
-    //     &addr, // data to send to injected DLL entry point
-    //     sizeof (HMODULE)// size of data to send
-    // );
-
     if (nt != 0)
     {
         printf("Injection failed with code = %d\n", nt);
         std::wcout << RtlGetLastErrorString() << "\n";
     }
-
-    // std::wcout << "Press Enter to exit";
-    // std::wstring input;
-    // std::getline(std::wcin, input);
-
-	// HANDLE pHandle = OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, false, pid);
-	//
-	// WaitForSingleObject(pHandle, INFINITE);
 
     return 0;
 }
