@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Injector", "Injector\Injector.vcxproj", "{82549624-2579-45C9-BA7E-1D30807416FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D627DDA1-65DC-4D75-BB37-B2E3E2947394} = {D627DDA1-65DC-4D75-BB37-B2E3E2947394}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Library", "Library\Library.vcxproj", "{D627DDA1-65DC-4D75-BB37-B2E3E2947394}"
 EndProject

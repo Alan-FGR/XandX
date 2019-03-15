@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -20,6 +21,18 @@ HookParams params;
 
 #define HP(x,o) (o == -1 ? x : o)
 #define IfBL(t,f) (params.borderLess ? t : f)
+
+#if _DEBUG
+FILE* logfile = NULL;
+void log(char const* const c, ...)
+{
+	printf(c);
+	if (logfile == NULL)
+		fopen_s(&logfile, "XandX_log.txt", "a");
+	fprintf_s(logfile, c);
+}
+#define printf(x) log(x)
+#endif
 
 void UpdateWindowRect(LPRECT& lpRect)
 {
@@ -184,6 +197,13 @@ BOOL WINAPI itcpGetWindowPlacement(_In_ HWND hWnd, _Inout_ WINDOWPLACEMENT* lpwn
 	printf("INTERCEPTED GetWindowPlacement\n");
 #endif
 	auto r = GetWindowPlacement(hWnd, lpwndpl);
+	// if (params.mode == HookMode::Modify && params.windowWidth >= 0)
+	// {
+	// 	lpwndpl->rcNormalPosition.right = lpwndpl->rcNormalPosition.left + params.windowWidth*2;
+	// 	lpwndpl->rcNormalPosition.bottom = lpwndpl->rcNormalPosition.top + params.windowHeight*2;
+	// 	lpwndpl->ptMaxPosition.x = lpwndpl->ptMinPosition.x + params.windowWidth*2;
+	// 	lpwndpl->ptMaxPosition.y = lpwndpl->ptMinPosition.y + params.windowHeight*2;
+	// }
 	return r; //TODO
 }
 
@@ -202,7 +222,6 @@ BOOL WINAPI itcpClientToScreen(_In_ HWND hWnd, _Inout_ LPPOINT lpPoint) {
 	auto r = ClientToScreen(hWnd, lpPoint);
 	return r; //TODO
 }
-
 
 BOOL WINAPI itcpScreenToClient(_In_ HWND hWnd, _Inout_ LPPOINT lpPoint) {
 #if _DEBUG
@@ -274,16 +293,16 @@ extern "C" __declspec(dllexport) void __stdcall NativeInjectionEntryPoint(REMOTE
 	hooks.emplace_back(Hook("AdjustWindowRectEx", itcpAdjustWindowRectEx));
 	hooks.emplace_back(Hook("ShowWindow", itcpShowWindow));
 
-#if _DEBUG
-	hooks.emplace_back(Hook("GetWindowRect", itcpGetWindowRect));
-#if(WINVER >= 0x0605)
+ #if _DEBUG
+ 	hooks.emplace_back(Hook("GetWindowRect", itcpGetWindowRect));
+ #if(WINVER >= 0x0605)
 	hooks.emplace_back(Hook("AdjustWindowRectExForDpi", itcpAdjustWindowRectExForDpi));
-#endif
-	hooks.emplace_back(Hook("GetWindowPlacement", itcpGetWindowPlacement));
+ #endif
+ 	hooks.emplace_back(Hook("GetWindowPlacement", itcpGetWindowPlacement));
 	hooks.emplace_back(Hook("SetWindowPlacement", itcpSetWindowPlacement));
 	hooks.emplace_back(Hook("ClientToScreen", itcpClientToScreen));
-	hooks.emplace_back(Hook("ScreenToClient", itcpScreenToClient));
-#endif
+ 	hooks.emplace_back(Hook("ScreenToClient", itcpScreenToClient));
+ #endif
 
 	
     RhWakeUpProcess();

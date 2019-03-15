@@ -89,9 +89,9 @@ int main(int argc, char* argv[])
 		if (pars.count("m"))
         {
             pl("Found mode flag.");
-			if (pars["p"].as<std::string>() == "modify")
+			if (pars["m"].as<std::string>() == "modify")
 				hpars.mode = HookMode::Modify;
-			else if (pars["p"].as<std::string>() == "reapply")
+			else if (pars["m"].as<std::string>() == "reapply")
 				hpars.mode = HookMode::Reapply;
 			else
 				pl("invalid mode, defaulting to reapply...");
@@ -137,6 +137,8 @@ int main(int argc, char* argv[])
         printf("Injection failed with code = %d\n", nt);
         std::wcout << RtlGetLastErrorString() << "\n";
     }
+
+	getchar();
 
     return 0;
 }
