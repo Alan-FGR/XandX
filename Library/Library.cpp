@@ -105,7 +105,7 @@ BOOL WINAPI itcpGetClientRect(_In_ HWND hWnd, _Out_ LPRECT lpRect) {
 	BOOL r = GetClientRect(hWnd, lpRect);
 	{
 		lpRect->right = lpRect->left + params.fakeClientWidth;
-		lpRect->bottom = lpRect->bottom + params.fakeClientHeight;
+		lpRect->bottom = lpRect->top + params.fakeClientHeight;
 	}
 	return r;
 }
